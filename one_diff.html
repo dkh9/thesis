@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Diff</title>
+    <style>
+        body {
+            font-family: monospace, monospace;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .file-inputs {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .tree-container {
+            width: 48%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            overflow-y: auto;
+            max-height: 80vh;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        .folder {
+            cursor: pointer;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .arrow {
+            font-size: 12px;
+            margin-right: 5px;
+            transform: rotate(0deg);
+            transition: transform 0.1s ease;
+        }
+
+        .arrow.expanded {
+            transform: rotate(90deg);
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .file {
+            margin-left: 0px;
+        }
+
+        .added {
+            color: green;
+            font-weight: bold;
+        }
+
+        .deleted {
+            color: red;
+            font-weight: bold;
+        }
+        .modified {
+        color: #555;
+        font-weight: bold;
+    }
+    </style>
+    <script>
+
+function isLeafNode(obj) {
+    return typeof obj === "object" &&
+        obj !== null &&
+        "added" in obj &&
+        "deleted" in obj &&
+        "status" in obj;
+}
+
+function createTree(data, parent) {
+    for (const key in data) {
+        // Skip keys that are not actual directories/files
+        if (["added", "deleted", "status"].includes(key)) {
+            continue;
+        }
+
+        const value = data[key];
+
+        if (key === "__renamed__") {
+            const renamedSection = document.createElement("div");
+            renamedSection.innerHTML = "<h3>Renamed Files</h3>";
+            const renamedList = document.createElement("ul");
+            
+            for (const newPath in value) {
+                const info = value[newPath];
+                const file = document.createElement("li");
+                file.classList.add("file", "renamed");
+            
+                file.innerHTML = `
+                    <span class="file-path">${info.old_path}</span>
+                    &nbsp;→&nbsp;
+                    <span class="file-path">${newPath}</span>
+                    (<span class="added">${info.added}</span>, <span class="deleted">${info.deleted}</span>)
+                `;
+                renamedList.appendChild(file);
+            }
+        
+            parent.appendChild(renamedSection);
+            parent.appendChild(renamedList);
+            continue; // skip normal rendering
+        }
+
+
+        if (isLeafNode(value)) {
+            // Render file (leaf)
+            const file = document.createElement("li");
+            file.classList.add("file", value.status); // apply status class
+            file.innerHTML = `${key} (<span class="added">${value.added}</span>, <span class="deleted">${value.deleted}</span>) [${value.status}]`;
+            parent.appendChild(file);
+        } else {
+            // Render folder
+            const folderContainer = document.createElement("li");
+            const folderHeader = document.createElement("div");
+            folderHeader.classList.add("folder");
+
+            const arrow = document.createElement("span");
+            arrow.textContent = ">";
+            arrow.classList.add("arrow");
+
+            const folderName = document.createElement("span");
+            //folderName.textContent = key;
+
+            const addedTotal = value.added ?? 0;
+            const deletedTotal = value.deleted ?? 0;
+            folderName.innerHTML = `${key} (<span class="added">${addedTotal}</span>, <span class="deleted">${deletedTotal}</span>)`;
+
+            folderHeader.appendChild(arrow);
+            folderHeader.appendChild(folderName);
+            folderContainer.appendChild(folderHeader);
+
+            const childList = document.createElement("ul");
+            childList.classList.add("hidden");
+
+            folderHeader.addEventListener("click", () => {
+                childList.classList.toggle("hidden");
+                arrow.classList.toggle("expanded");
+            });
+
+            createTree(value, childList);
+            folderContainer.appendChild(childList);
+            parent.appendChild(folderContainer);
+        }
+    }
+}
+
+
+
+        function loadJSON(event, containerId) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function (e) {
+                    try {
+                        const jsonData = JSON.parse(e.target.result);
+                        const treeContainer = document.getElementById(containerId);
+                        treeContainer.innerHTML = "";
+                        createTree(jsonData, treeContainer);
+                    } catch (err) {
+                        alert("Invalid JSON file. Please check the content and try again.");
+                    }
+                };
+                reader.readAsText(file);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>JSON Diff</h1>
+    <div class="file-inputs">
+        <div>
+            <label for="inputfile1">JSON Diff File:</label>
+            <input type="file" id="inputfile1" accept=".json">
+        </div>
+    </div>
+    <div class="container">
+        <div id="tree-container1" class="tree-container"></div>
+    </div>
+    <script>
+        document.getElementById('inputfile1').addEventListener('change', (event) => loadJSON(event, 'tree-container1'));
+    </script>
+</body>
+
+</html>
