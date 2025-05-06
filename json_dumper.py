@@ -1,6 +1,7 @@
 import json
 import sys
 from collections import defaultdict
+import re
 
 def wrap_json_with_topmost_key(original_json, topmost_key):
     if not isinstance(original_json, dict):
@@ -49,14 +50,35 @@ def parse_diff_to_json(diff_text):
     lines = diff_text.strip().split("\n")
     renamed_files = {}
 
+    brace_rename_pattern = re.compile(r'\{([^{}]+) => ([^{}]+)\}(/.+)')
+
     dev_null_counter = 0
     for line in lines:
+            
         parts = line.split()
-        path = ""
+        #path = ""
         added, deleted = parts[:2]
+        path = parts[2]
         status = ""
+
         if "=>" in line:
             if parts[2].startswith("{") and parts[3] == "=>":
+
+                match = brace_rename_pattern.search(line)
+                if match:
+                    if "/" in match.group(1) or "/" in match.group(2):
+                        old_prefix, new_prefix, suffix = match.groups()
+                        old_path = old_prefix + suffix
+                        new_path = new_prefix + suffix
+
+                        status = "renamed"
+                        renamed_files[new_path] = {
+                            "old_path": old_path,
+                            "added": int(added) if added.isdigit() else 0,
+                            "deleted": int(deleted) if deleted.isdigit() else 0,
+                        }
+                        continue
+
                 path = parts[2] + parts[3] + parts[4]
                 status = "modified"
 
