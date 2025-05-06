@@ -34,7 +34,7 @@
         }
 
         .tree-container {
-            width: 48%;
+            width: 70%;
             border: 1px solid #ccc;
             border-radius: 5px;
             padding: 10px;
@@ -95,7 +95,16 @@
         .modified {
         color: #555;
         font-weight: bold;
-    }
+        }
+        
+        .file.renamed {
+            margin-bottom: 8px;
+            padding: 6px 10px;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+        }
+
     </style>
     <script>
 
@@ -204,8 +213,6 @@ function isLeafNode(obj) {
         }
     }
 }
-
-
 
         function loadJSON(event, containerId) {
             const file = event.target.files[0];
