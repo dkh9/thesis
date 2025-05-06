@@ -107,25 +107,42 @@ function isLeafNode(obj) {
         "status" in obj;
 }
 
-function createTree(data, parent) {
-    for (const key in data) {
-        // Skip keys that are not actual directories/files
-        if (["added", "deleted", "status"].includes(key)) {
-            continue;
-        }
-
-        const value = data[key];
-
-        if (key === "__renamed__") {
-            const renamedSection = document.createElement("div");
-            renamedSection.innerHTML = "<h3>Renamed Files</h3>";
-            const renamedList = document.createElement("ul");
+        function createTree(data, parent) {
+            for (const key in data) {
+                // Skip keys that are not actual directories/files
+                if (["added", "deleted", "status"].includes(key)) {
+                    continue;
+                }
             
+                const value = data[key];
+            
+                if (key === "__renamed__") {
+            const folderContainer = document.createElement("li");
+                
+            const folderHeader = document.createElement("div");
+            folderHeader.classList.add("folder");
+                
+            const arrow = document.createElement("span");
+            arrow.textContent = ">";
+            arrow.classList.add("arrow");
+                
+            const folderName = document.createElement("span");
+            folderName.textContent = "Renamed Files";
+                
+            folderHeader.appendChild(arrow);
+            folderHeader.appendChild(folderName);
+            folderContainer.appendChild(folderHeader);
+                
+            const renamedList = document.createElement("ul");
+            renamedList.classList.add("hidden");
+                
             for (const newPath in value) {
+                if (newPath === "added" || newPath === "deleted") continue; // skip accidental numeric summary fields
                 const info = value[newPath];
+                if (!info || typeof info !== "object") continue;
+            
                 const file = document.createElement("li");
                 file.classList.add("file", "renamed");
-                console.log(info)
                 file.innerHTML = `
                     <span class="file-path">${info.old_path}</span>
                     &nbsp;→&nbsp;
@@ -135,8 +152,13 @@ function createTree(data, parent) {
                 renamedList.appendChild(file);
             }
         
-            parent.appendChild(renamedSection);
-            parent.appendChild(renamedList);
+            folderHeader.addEventListener("click", () => {
+                renamedList.classList.toggle("hidden");
+                arrow.classList.toggle("expanded");
+            });
+        
+            folderContainer.appendChild(renamedList);
+            parent.appendChild(folderContainer);
             continue; // skip normal rendering
         }
 
