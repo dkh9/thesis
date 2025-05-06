@@ -40,11 +40,13 @@
             padding: 10px;
             overflow-y: auto;
             max-height: 80vh;
+            
+            padding-left: 20px; 
         }
 
         ul {
             list-style-type: none;
-            padding-left: 20px;
+            padding-left: 18px;
         }
 
         .folder {
@@ -52,6 +54,10 @@
             font-weight: bold;
             display: flex;
             align-items: center;
+
+            padding: 4px 0;
+            margin-left: 5px; /* offset folder entries from container edge */
+            gap: 6px;
         }
 
         .arrow {
@@ -59,6 +65,10 @@
             margin-right: 5px;
             transform: rotate(0deg);
             transition: transform 0.1s ease;
+
+            width: 12px;
+            text-align: center;
+            margin-right: 6px;
         }
 
         .arrow.expanded {
