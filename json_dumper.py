@@ -16,9 +16,11 @@ def aggregate_totals(data):
     if isinstance(data, dict):
         added_total, deleted_total = 0, 0
         for key, value in data.items():
+            if key == "__renamed__":
+                continue
             if isinstance(value, dict) and "added" in value and "deleted" in value:
-                if value.get("status") == "renamed":
-                    continue 
+                #if value.get("status") == "renamed":
+                #    continue 
                 added_total += value["added"] if value["added"] != "NONTEXT" else 0
                 deleted_total += value["deleted"] if value["deleted"] != "NONTEXT" else 0
             else:

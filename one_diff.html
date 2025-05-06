@@ -115,7 +115,7 @@ function createTree(data, parent) {
                 const info = value[newPath];
                 const file = document.createElement("li");
                 file.classList.add("file", "renamed");
-            
+                console.log(info)
                 file.innerHTML = `
                     <span class="file-path">${info.old_path}</span>
                     &nbsp;→&nbsp;
