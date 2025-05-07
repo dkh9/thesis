@@ -105,6 +105,23 @@
             border: 1px solid #ddd;
         }
 
+        .file-header {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .file-analysis {
+            margin-left: 20px;
+            margin-top: 4px;
+            padding: 6px 10px;
+            background-color: #f1f1f1;
+            border-left: 3px solid #999;
+            font-style: italic;
+            white-space: pre-wrap;
+        }
+
+
     </style>
     <script>
 
@@ -125,59 +142,111 @@ function isLeafNode(obj) {
             
                 const value = data[key];
             
-                if (key === "__renamed__") {
-            const folderContainer = document.createElement("li");
-                
-            const folderHeader = document.createElement("div");
-            folderHeader.classList.add("folder");
-                
+    if (key === "__renamed__") {
+        const folderContainer = document.createElement("li");
+        const folderHeader = document.createElement("div");
+        folderHeader.classList.add("folder");
+        const arrow = document.createElement("span");
+        arrow.textContent = ">";
+        arrow.classList.add("arrow");
+        const folderName = document.createElement("span");
+        folderName.textContent = "Renamed Files";
+        folderHeader.appendChild(arrow);
+        folderHeader.appendChild(folderName);
+        folderContainer.appendChild(folderHeader);
+        const renamedList = document.createElement("ul");
+        renamedList.classList.add("hidden");
+        for (const newPath in value) {
+            if (newPath === "added" || newPath === "deleted") continue;
+            const info = value[newPath];
+            if (!info || typeof info !== "object") continue;
+        
+            const fileContainer = document.createElement("li");
+            fileContainer.classList.add("file", "renamed");
+        
+            const fileHeader = document.createElement("div");
+            fileHeader.classList.add("file-header");
+        
             const arrow = document.createElement("span");
             arrow.textContent = ">";
             arrow.classList.add("arrow");
-                
-            const folderName = document.createElement("span");
-            folderName.textContent = "Renamed Files";
-                
-            folderHeader.appendChild(arrow);
-            folderHeader.appendChild(folderName);
-            folderContainer.appendChild(folderHeader);
-                
-            const renamedList = document.createElement("ul");
-            renamedList.classList.add("hidden");
-                
-            for (const newPath in value) {
-                if (newPath === "added" || newPath === "deleted") continue; // skip accidental numeric summary fields
-                const info = value[newPath];
-                if (!info || typeof info !== "object") continue;
+        
+            const fileInfo = document.createElement("span");
+            fileInfo.innerHTML = `
+                <span class="file-path">${info.old_path}</span>
+                &nbsp;→&nbsp;
+                <span class="file-path">${newPath}</span>
+                (<span class="added">${info.added}</span>, <span class="deleted">${info.deleted}</span>)
+            `;
+        
+            fileHeader.appendChild(arrow);
+            fileHeader.appendChild(fileInfo);
+            fileContainer.appendChild(fileHeader);
+        
+            if (info.analysis && info.analysis.trim() !== "") {
+                const analysisContent = document.createElement("div");
+                analysisContent.classList.add("file-analysis", "hidden");
+                analysisContent.textContent = info.analysis;
             
-                const file = document.createElement("li");
-                file.classList.add("file", "renamed");
-                file.innerHTML = `
-                    <span class="file-path">${info.old_path}</span>
-                    &nbsp;→&nbsp;
-                    <span class="file-path">${newPath}</span>
-                    (<span class="added">${info.added}</span>, <span class="deleted">${info.deleted}</span>)
-                `;
-                renamedList.appendChild(file);
+                fileHeader.addEventListener("click", () => {
+                    analysisContent.classList.toggle("hidden");
+                    arrow.classList.toggle("expanded");
+                });
+            
+                fileContainer.appendChild(analysisContent);
+            } else {
+                arrow.style.visibility = "hidden";
             }
         
-            folderHeader.addEventListener("click", () => {
-                renamedList.classList.toggle("hidden");
-                arrow.classList.toggle("expanded");
-            });
-        
-            folderContainer.appendChild(renamedList);
-            parent.appendChild(folderContainer);
-            continue; // skip normal rendering
+            renamedList.appendChild(fileContainer);
         }
+    
+        folderHeader.addEventListener("click", () => {
+            renamedList.classList.toggle("hidden");
+            arrow.classList.toggle("expanded");
+        });
+    
+        folderContainer.appendChild(renamedList);
+        parent.appendChild(folderContainer);
+        continue;
+    }
+
 
 
         if (isLeafNode(value)) {
-            // Render file (leaf)
-            const file = document.createElement("li");
-            file.classList.add("file", value.status); // apply status class
-            file.innerHTML = `${key} (<span class="added">${value.added}</span>, <span class="deleted">${value.deleted}</span>) [${value.status}]`;
-            parent.appendChild(file);
+            const fileContainer = document.createElement("li");
+            fileContainer.classList.add("file", value.status);
+
+            const fileHeader = document.createElement("div");
+            fileHeader.classList.add("file-header");
+
+            const arrow = document.createElement("span");
+            arrow.textContent = ">";
+            arrow.classList.add("arrow");
+
+            const fileInfo = document.createElement("span");
+            fileInfo.innerHTML = `${key} (<span class="added">${value.added}</span>, <span class="deleted">${value.deleted}</span>) [${value.status}]`;
+
+            fileHeader.appendChild(arrow);
+            fileHeader.appendChild(fileInfo);
+            fileContainer.appendChild(fileHeader);
+
+            if (value.analysis && value.analysis.trim() !== "") {
+                const analysisContent = document.createElement("div");
+                analysisContent.classList.add("file-analysis", "hidden");
+                analysisContent.textContent = value.analysis;
+            
+                fileHeader.addEventListener("click", () => {
+                    analysisContent.classList.toggle("hidden");
+                    arrow.classList.toggle("expanded");
+                });
+            
+                fileContainer.appendChild(analysisContent);
+            } else {
+                arrow.style.visibility = "hidden"; // hide arrow if no analysis
+            }
+        
+            parent.appendChild(fileContainer);
         } else {
             // Render folder
             const folderContainer = document.createElement("li");
@@ -235,7 +304,7 @@ function isLeafNode(obj) {
 </head>
 
 <body>
-    <h1>JSON Diff</h1>
+    <h1>my knock-off Meld</h1>
     <div class="file-inputs">
         <div>
             <label for="inputfile1">JSON Diff File:</label>
