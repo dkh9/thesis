@@ -4,6 +4,16 @@ from collections import defaultdict
 import re
 import cert_equivalence
 import subprocess
+import tempfile
+import shutil
+import summarize_radiff as radigest
+
+def is_executable_elf(path):
+    try:
+        output = subprocess.check_output(["file", path], text=True)
+        return "ELF" in output and "executable" in output
+    except subprocess.CalledProcessError:
+        return False
 
 def wrap_json_with_topmost_key(original_json, topmost_key):
     if not isinstance(original_json, dict):
@@ -72,6 +82,7 @@ def parse_diff_to_json(diff_text):
 
     brace_rename_pattern = re.compile(r'\{([^{}]+) => ([^{}]+)\}(/.+)')
     so_pattern = re.compile(r'\{([^{}]+)\s*=>\s*([^{}]+)\}[^{}]*\/([\w.-]+\.so)')
+    apk_pattern = re.compile(r'([\w./-]+\.apk)')
 
     so_counter = 0
     for line in lines:
@@ -105,23 +116,67 @@ def parse_diff_to_json(diff_text):
                 path = parts[2] + parts[3] + parts[4]
                 status = "modified"
                 so_match = so_pattern.search(path)
-                if so_match:
-                    #print(path)
-                    so_counter += 1
-                    so_path_1, so_path_2 = reconstruct_paths(path)
-                    
-                    #print("so_counter: ", so_counter)
-                    cmd = [
-                        "radiff2",
-                        "-AC",
-                        "-e", "bin.relocs.apply=true",
-                        so_path_1,
-                        so_path_2
-                    ]
-                    #print("so_counter: ", so_counter)
-                    #result = subprocess.run(cmd, capture_output=True, text=True)
-                    #extra_analysis = result.stdout
-                    extra_analysis = "so_analysis"
+                apk_match = apk_pattern.search(path)
+                so_path_1, so_path_2 = reconstruct_paths(path)
+                if so_match: #or radigest.is_executable_elf(so_path_1):
+                    pass
+                    ##print(path)
+                    #so_counter += 1
+#
+                    #similarity, distance = radigest.get_similarity_and_distance(so_path_1, so_path_2)
+#
+                    #summary = radigest.parse_function_diffs(so_path_1, so_path_2)
+                    #total = summary["total_functions"]
+                    #changed = summary["changed"]
+                    #
+                    #formatted_summary = (
+                    #    #f"\n=== Summary for {lib_name} ===\n"
+                    #    f"Similarity Score: {similarity:.3f}\n"
+                    #    f"Radiff2 Distance: {distance}\n"
+                    #    f"Total functions analyzed: {total}\n"
+                    #    f"- Identical functions: {summary['identical']} ({summary['identical'] / total:.1%})\n"
+                    #    f"- New functions: {summary['new']} ({summary['new'] / total:.1%})\n"
+                    #    f"- Changed functions (sim < 1.0, excluding NEW): {changed} ({changed / total:.1%})\n"
+                    #    f"- Changed matched functions: {summary['changed matched']} ({summary['changed matched'] / total:.1%})\n"
+                    #    f"- Changed unmatched functions: {summary['changed unmatched']} ({summary['changed unmatched'] / total:.1%})"
+                    #)
+#
+                    #extra_analysis = formatted_summary
+                    #extra_analysis += "\n"
+                    #extra_analysis += radigest.compare_checksec_properties(so_path_1, so_path_2)
+                
+                elif apk_match:
+                    apk_path_1, apk_path_2 = reconstruct_paths(path)
+                    #extra_analysis = f"apk_file:\n  old_path: {apk_path_1}\n  new_path: {apk_path_2}"
+                        # Create temporary directories
+                    tmp_dir1 = tempfile.mkdtemp(prefix="apk1_")
+                    tmp_dir2 = tempfile.mkdtemp(prefix="apk2_")
+                
+                    try:
+                        subprocess.run(["unzip", "-q", apk_path_1, "-d", tmp_dir1], check=True)
+                        subprocess.run(["unzip", "-q", apk_path_2, "-d", tmp_dir2], check=True)
+
+                        # Run git diff --no-index --numstat
+                        diff_result = subprocess.run(
+                            ["git", "diff", "--no-index", "--numstat", tmp_dir1, tmp_dir2],
+                            capture_output=True, text=True
+                        )
+                        diff_output = diff_result.stdout.strip()
+
+                        # Check for AndroidManifest.xml in the diff
+                        manifest_changed = any("AndroidManifest.xml" in line for line in diff_output.splitlines())
+                        manifest_status = "AndroidManifest.xml changed: yes" if manifest_changed else "AndroidManifest.xml changed: no"
+
+                        # Prepare the final extra_analysis
+                        extra_analysis = diff_output + "\n\n" + manifest_status
+
+                    except subprocess.CalledProcessError as e:
+                        extra_analysis = f"Error processing APK diff: {e}"
+                    finally:
+                        # Clean up temporary directories
+                        shutil.rmtree(tmp_dir1)
+                        shutil.rmtree(tmp_dir2)
+
 
                 elif "security/cacerts" in path:
                     cert1, cert2 = reconstruct_paths(path)
@@ -197,5 +252,7 @@ def dump_json(filename, topmost_key = None):
 
 
 if __name__ == "__main__":
-    res = dump_json("shorter.diff")
-    print(res)
+    res = dump_json("a55-10-gen-arm.diff")
+    with open("a55-system-arm64.json", "w") as f:
+        f.write(res)
+    #print(res)
