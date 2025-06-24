@@ -69,11 +69,13 @@ def main(rc_dir):
         actual_path = rc_dir / rel_path
         print("Actual path: ", actual_path, " result: ", is_elf_binary(actual_path))
         if is_elf_binary(actual_path):
-            filtered.append(binary)
+            filtered.append(actual_path)
 
     print(f"\nUsed ELF binaries in .rc files ({len(filtered)}):")
-    for bin_path in sorted(filtered):
-        print(f"  {bin_path}")
+    with open("bins_in_rc.txt", "w") as f:
+        for bin_path in sorted(filtered):
+            print(f"  {bin_path}")
+            f.write(str(bin_path)+ "\n")
 
 
 if __name__ == "__main__":
