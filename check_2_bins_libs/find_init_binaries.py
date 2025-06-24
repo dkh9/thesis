@@ -1,0 +1,84 @@
+import os
+import re
+from pathlib import Path
+
+def collect_rc_files(rc_root):
+    return list(Path(rc_root).rglob("*.rc"))
+
+def parse_rc_file(path, service_map, found_binaries):
+    with open(path, "r", encoding="utf-8", errors="ignore") as f:
+        for line in f:
+            line = line.strip()
+            if not line or line.startswith("#"):
+                continue
+
+            # Match service lines
+            if line.startswith("service "):
+                match = re.match(r"service\s+(\S+)\s+(\S+)", line)
+                if match:
+                    service_name, binary_path = match.groups()
+                    service_map[service_name] = binary_path
+                    found_binaries.add(binary_path)
+
+            # Match exec and exec_background
+            elif line.startswith("exec") or line.startswith("exec_background"):
+                parts = line.split()
+                for i, token in enumerate(parts):
+                    if token.startswith("/") and not token.startswith("/dev"):  # crude heuristic
+                        found_binaries.add(token)
+                        break
+
+            # Match exec_start
+            elif line.startswith("exec_start "):
+                match = re.match(r"exec_start\s+(\S+)", line)
+                if match:
+                    svc = match.group(1)
+                    if svc in service_map:
+                        found_binaries.add(service_map[svc])
+
+#def filter_system_bin(binaries):
+#    return sorted(set(b for b in binaries if b.startswith("/system/bin/")))
+
+def is_elf_binary(path):
+    try:
+        with open(path, 'rb') as f:
+            return f.read(4) == b'\x7fELF'
+    except Exception:
+        return False
+
+
+def main(rc_dir):
+    rc_dir = Path(rc_dir).resolve()
+    print("RC_DIR: ", rc_dir)
+    #system_root = rc_dir.parents[1]  # Assuming rc_dir = /path/to/system/etc/init → system_root = /path/to/system
+
+    service_map = {}
+    found_binaries = set()
+
+    rc_files = collect_rc_files(rc_dir)
+    print("RC FILES LIST:")
+    for rc_file in rc_files:
+        print(rc_file)
+        parse_rc_file(rc_file, service_map, found_binaries)
+
+    print("-------------")
+
+    filtered = []
+    for binary in found_binaries:
+        rel_path = binary.lstrip("/")  # Remove leading slash
+        actual_path = rc_dir / rel_path
+        print("Actual path: ", actual_path, " result: ", is_elf_binary(actual_path))
+        if is_elf_binary(actual_path):
+            filtered.append(binary)
+
+    print(f"\nUsed ELF binaries in .rc files ({len(filtered)}):")
+    for bin_path in sorted(filtered):
+        print(f"  {bin_path}")
+
+
+if __name__ == "__main__":
+    import argparse
+    parser = argparse.ArgumentParser(description="Extract /system/bin/* binaries used during Android init")
+    parser.add_argument("rc_dir", help="Directory containing .rc files (e.g., extracted system/etc/init/)")
+    args = parser.parse_args()
+    main(args.rc_dir)
