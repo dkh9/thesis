@@ -1,5 +1,6 @@
 import subprocess
 from collections import defaultdict
+import json
 
 def get_needed_libs(binary_path):
     try:
@@ -40,12 +41,7 @@ def main(binaries_file):
             for lib in libs:
                 lib_to_bins[lib].append(binary_path)
 
-    # Print results
-    for lib, bins in sorted(lib_to_bins.items()):
-        print(f"{lib}:")
-        for b in bins:
-            print(f"  {b}")
-        print()
+    print(json.dumps(lib_to_bins, indent=2))
 
 if __name__ == "__main__":
     import sys
