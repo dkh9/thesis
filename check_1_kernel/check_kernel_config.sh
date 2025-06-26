@@ -1,3 +1,4 @@
+#!/bin/bash
 
 KERNEL_1_ELF="kernel_1.elf"
 KERNEL_2_ELF="kernel_2.elf"

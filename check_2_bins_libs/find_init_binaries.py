@@ -2,6 +2,24 @@ import os
 import re
 from pathlib import Path
 
+def resolve_binary_path(binary, partition_root):
+    """
+    Given a binary path like /system/bin/foo and the root dir (e.g., a15-850),
+    return actual file path on disk.
+    """
+    path = binary.lstrip("/")  # remove leading slash
+    first_part = path.split("/")[0]
+
+    # Handle partition prefixes
+    if first_part in ("vendor", "product", "odm", "system_ext"):
+        subpath = "/".join(path.split("/")[1:])  # strip the leading system/, etc.
+        actual_path = partition_root / first_part / subpath
+    else:
+        # fallback for binaries that don’t have a partition prefix
+        actual_path = partition_root / first_part / path
+
+    return actual_path
+
 def collect_rc_files(rc_root):
     return list(Path(rc_root).rglob("*.rc"))
 
@@ -12,7 +30,6 @@ def parse_rc_file(path, service_map, found_binaries):
             if not line or line.startswith("#"):
                 continue
 
-            # Match service lines
             if line.startswith("service "):
                 match = re.match(r"service\s+(\S+)\s+(\S+)", line)
                 if match:
@@ -20,7 +37,6 @@ def parse_rc_file(path, service_map, found_binaries):
                     service_map[service_name] = binary_path
                     found_binaries.add(binary_path)
 
-            # Match exec and exec_background
             elif line.startswith("exec") or line.startswith("exec_background"):
                 parts = line.split()
                 for i, token in enumerate(parts):
@@ -28,16 +44,12 @@ def parse_rc_file(path, service_map, found_binaries):
                         found_binaries.add(token)
                         break
 
-            # Match exec_start
             elif line.startswith("exec_start "):
                 match = re.match(r"exec_start\s+(\S+)", line)
                 if match:
                     svc = match.group(1)
                     if svc in service_map:
                         found_binaries.add(service_map[svc])
-
-#def filter_system_bin(binaries):
-#    return sorted(set(b for b in binaries if b.startswith("/system/bin/")))
 
 def is_elf_binary(path):
     try:
@@ -65,14 +77,15 @@ def main(rc_dir):
 
     filtered = []
     for binary in found_binaries:
-        rel_path = binary.lstrip("/")  # Remove leading slash
-        actual_path = rc_dir / rel_path
+        #rel_path = binary.lstrip("/")  # Remove leading slash
+        #actual_path = rc_dir / rel_path
+        actual_path = resolve_binary_path(binary, rc_dir)
         print("Actual path: ", actual_path, " result: ", is_elf_binary(actual_path))
         if is_elf_binary(actual_path):
             filtered.append(actual_path)
 
     print(f"\nUsed ELF binaries in .rc files ({len(filtered)}):")
-    with open("bins_in_rc.txt", "w") as f:
+    with open(args.out_file, "w") as f:
         for bin_path in sorted(filtered):
             print(f"  {bin_path}")
             f.write(str(bin_path)+ "\n")
@@ -82,5 +95,6 @@ if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser(description="Extract /system/bin/* binaries used during Android init")
     parser.add_argument("rc_dir", help="Directory containing .rc files (e.g., extracted system/etc/init/)")
+    parser.add_argument("out_file", help="Output file")
     args = parser.parse_args()
     main(args.rc_dir)
