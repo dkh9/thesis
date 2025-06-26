@@ -75,33 +75,80 @@ def parse_function_diffs(file1, file2):
     return summary
 
 def compare_checksec_properties(file1, file2):
+    import re
+
     def run_checksec(path):
         cmd = ["checksec", "--format=json", f"--file={path}"]
         output = subprocess.check_output(cmd, text=True)
         return json.loads(output)[path]
 
+    def classify(value):
+        value = str(value).lower()
+        if value in {"yes", "full", "enabled"}:
+            return "OK"
+        elif value in {"no", "partial", "none", "missing"}:
+            return "FAIL"
+        return None
+
+    def is_informational_field(key):
+        return key in {"fortified", "fortify-able"}
+
+    def numeric_delta(old, new):
+        try:
+            return int(new) - int(old)
+        except Exception:
+            return None
+
     try:
         props1 = run_checksec(file1)
         props2 = run_checksec(file2)
     except subprocess.CalledProcessError as e:
-        return f"Error running checksec on {file1} or {file2}:\n{e}"
+        return {
+            "error": f"Error running checksec on {file1} or {file2}: {e}"
+        }
 
-    lines = ["\n=== Checksec Hardening Comparison ==="]
-    if props1 == props2:
-        lines.append("Security hardening properties are identical:")
-        for k, v in props1.items():
-            lines.append(f"- {k}: {v}")
-    else:
-        lines.append("Security hardening differences detected:")
-        all_keys = sorted(set(props1.keys()) | set(props2.keys()))
-        for key in all_keys:
-            v1 = props1.get(key, "<missing>")
-            v2 = props2.get(key, "<missing>")
-            if v1 != v2:
-                lines.append(f"- {key}:")
-                lines.append(f"  old: {v1}")
-                lines.append(f"  new: {v2}")
-    return "\n".join(lines)
+    result = {
+        "identical": props1 == props2,
+        "differences": []
+    }
+
+    all_keys = sorted(set(props1.keys()) | set(props2.keys()))
+    for key in all_keys:
+        v1 = props1.get(key, "<missing>")
+        v2 = props2.get(key, "<missing>")
+        if v1 != v2:
+            c1 = classify(v1)
+            c2 = classify(v2)
+            change_type = None
+            extra_info = None
+
+            if c1 == "OK" and c2 == "FAIL":
+                change_type = "OK → FAIL"
+            elif c1 == "FAIL" and c2 == "OK":
+                change_type = "FAIL → OK"
+            elif is_informational_field(key):
+                delta = numeric_delta(v1, v2)
+                change_type = "informational"
+                if delta is not None:
+                    sign = "+" if delta > 0 else ""
+                    extra_info = f"delta: {sign}{delta}"
+                else:
+                    extra_info = "non-numeric delta"
+
+            else:
+                change_type = f"{v1} → {v2}"  # fallback raw
+
+            entry = {
+                "option": key,
+                "old": v1,
+                "new": v2,
+                "change": change_type
+            }
+            if extra_info:
+                entry["extra_info"] = extra_info
+            result["differences"].append(entry)
+
+    return result
 
 def print_summary(lib_name, summary, similarity, distance):
     total = summary["total_functions"]
