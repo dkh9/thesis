@@ -12,6 +12,175 @@ from os.path import basename
 import os
 from pathlib import Path
 
+def looks_encrypted(path):
+    from math import log2
+    from collections import Counter
+
+    def entropy(data):
+        total = len(data)
+        counts = Counter(data)
+        return -sum(c / total * log2(c / total) for c in counts.values())
+
+    with open(path, "rb") as f:
+        chunk = f.read(4096)
+        return entropy(chunk) > 7.5  # threshold for randomness
+
+
+def format_checksec_summary(checksec_props):
+    if "error" in checksec_props:
+        return f"Checksec Error: {checksec_props['error']}"
+
+    lines = ["\n=== Checksec Hardening Comparison ==="]
+    if checksec_props.get("identical", False):
+        lines.append("Security hardening properties are identical.")
+    else:
+        lines.append("Differences in hardening detected:")
+        for diff in checksec_props.get("differences", []):
+            line = f"- {diff['option']}: {diff['old']} → {diff['new']} ({diff['change']})"
+            if "extra_info" in diff:
+                line += f" [{diff['extra_info']}]"
+            lines.append(line)
+    return "\n".join(lines)
+
+def is_tee_trusted_app(path):
+    try:
+        with open(path, "rb") as f:
+            header = f.read(16)
+            if header.startswith(b"SEC3") and b"\x7fELF" in header:
+                return True
+            if header.startswith(b"SEC2") and b"\x7fELF" in header:
+                return True
+    except Exception:
+        return False
+
+def strip_sec3_header(input_path, output_path):
+    with open(input_path, "rb") as fin, open(output_path, "wb") as fout:
+        data = fin.read()
+        elf_offset = data.find(b"\x7fELF")
+        if elf_offset == -1:
+            raise ValueError(f"ELF header not found in {input_path}")
+        fout.write(data[elf_offset:])
+
+def analyze_tee_trusted_app(path, ta1_path, ta2_path, rc_bin_paths):
+    tmp1 = tempfile.NamedTemporaryFile(delete=False, suffix=".ta.elf")
+    tmp2 = tempfile.NamedTemporaryFile(delete=False, suffix=".ta.elf")
+
+    strip_sec3_header(ta1_path, tmp1.name)
+    strip_sec3_header(ta2_path, tmp2.name)
+
+    checksec_props = radigest.compare_checksec_properties(tmp1.name, tmp2.name)
+    similarity, distance = radigest.get_similarity_and_distance(tmp1.name, tmp2.name)
+    summary = radigest.parse_function_diffs(tmp1.name, tmp2.name)
+    total = summary["total_functions"]
+    changed = summary["changed"]
+
+    digest = {
+        "Similarity Score": round(similarity, 3),
+        "Radiff2 Distance": distance,
+        "Total Functions Analyzed": total,
+        "Identical Functions": summary['identical'],
+        "New Functions": summary['new'],
+        "Changed Functions (sim < 1.0, excluding NEW)": changed,
+        "Changed Matched Functions": summary['changed matched'],
+        "Changed Unmatched Functions": summary['changed unmatched'],
+        "Mentioned in .rc": any(p.endswith(ta2_path) for p in rc_bin_paths),
+        "TEE": True,
+        "Hardening comparison": checksec_props,
+        "Obfuscated": False
+    }
+
+    formatted_summary = (
+        f"Similarity Score: {digest['Similarity Score']:.3f}\n"
+        f"Radiff2 Distance: {digest['Radiff2 Distance']}\n"
+        f"Total functions analyzed: {digest['Total Functions Analyzed']}\n"
+        f"- Identical functions: {digest['Identical Functions']}\n"
+        f"- New functions: {digest['New Functions']}\n"
+        f"- Changed functions (sim < 1.0, excluding NEW): {digest['Changed Functions (sim < 1.0, excluding NEW)']}\n"
+        f"- Changed matched functions: {digest['Changed Matched Functions']}\n"
+        f"- Changed unmatched functions: {digest['Changed Unmatched Functions']}"
+        f"- TEE: true"
+        f"- Hardening: {format_checksec_summary(checksec_props)}"
+    )
+
+    os.unlink(tmp1.name)
+    os.unlink(tmp2.name)
+
+    return digest, formatted_summary
+
+def analyze_apk_diff(apk_path_1, apk_path_2):
+    tmp_dir1 = tempfile.mkdtemp(prefix="apk1_")
+    tmp_dir2 = tempfile.mkdtemp(prefix="apk2_")
+    try:
+        subprocess.run(["unzip", "-q", apk_path_1, "-d", tmp_dir1], check=True)
+        subprocess.run(["unzip", "-q", apk_path_2, "-d", tmp_dir2], check=True)
+
+        diff_result = subprocess.run(
+            ["git", "diff", "--no-index", "--numstat", tmp_dir1, tmp_dir2],
+            capture_output=True, text=True
+        )
+        diff_output = diff_result.stdout.strip()
+
+        manifest_changed = any("AndroidManifest.xml" in line for line in diff_output.splitlines())
+        manifest_status = "AndroidManifest.xml changed: yes" if manifest_changed else "AndroidManifest.xml changed: no"
+
+        return diff_output + "\n\n" + manifest_status
+    except subprocess.CalledProcessError as e:
+        return f"Error processing APK diff: {e}"
+    finally:
+        shutil.rmtree(tmp_dir1)
+        shutil.rmtree(tmp_dir2)
+
+def analyze_shared_lib_or_bin(path, so_path_1, so_path_2, rc_bin_paths, rc_libs, so_match):
+    is_shared_lib = so_match is not None
+    lib_or_bin_name = basename(so_path_2)
+
+    checksec_props = radigest.compare_checksec_properties(so_path_1, so_path_2)
+    similarity, distance = radigest.get_similarity_and_distance(so_path_1, so_path_2)
+    summary = radigest.parse_function_diffs(so_path_1, so_path_2)
+    total = summary["total_functions"]
+    changed = summary["changed"]
+
+    digest = {
+        "Similarity Score": round(similarity, 3),
+        "Radiff2 Distance": distance,
+        "Total Functions Analyzed": total,
+        "Identical Functions": summary['identical'],
+        "New Functions": summary['new'],
+        "Changed Functions (sim < 1.0, excluding NEW)": changed,
+        "Changed Matched Functions": summary['changed matched'],
+        "Changed Unmatched Functions": summary['changed unmatched'],
+        "Mentioned in .rc": lib_or_bin_name == "init",
+        "TEE": False,
+        "Hardening comparison": checksec_props
+    }
+
+    mentioned_in_rc = "true" if lib_or_bin_name == "init" else "false;"
+    if is_shared_lib:
+        if lib_or_bin_name in rc_libs:
+            digest["Mentioned in .rc"] = True
+            digest["Used By"] = [os.path.basename(p) for p in rc_libs[lib_or_bin_name]]
+            mentioned_in_rc = "true"
+    else:
+        matched_rc_bin = any(p.endswith(so_path_2) for p in rc_bin_paths)
+        if matched_rc_bin:
+            digest["Mentioned in .rc"] = True
+            mentioned_in_rc = "true"
+
+    formatted_summary = (
+        f"Similarity Score: {similarity:.3f}\n"
+        f"Radiff2 Distance: {distance}\n"
+        f"Total functions analyzed: {total}\n"
+        f"- Identical functions: {summary['identical']} ({summary['identical'] / total:.1%})\n"
+        f"- New functions: {summary['new']} ({summary['new'] / total:.1%})\n"
+        f"- Changed functions (sim < 1.0, excluding NEW): {changed} ({changed / total:.1%})\n"
+        f"- Changed matched functions: {summary['changed matched']} ({summary['changed matched'] / total:.1%})\n"
+        f"- Changed unmatched functions: {summary['changed unmatched']} ({summary['changed unmatched'] / total:.1%})"
+        f"- TEE: False"
+        f"- Hardening: {format_checksec_summary(checksec_props)}"
+    )
+
+    return digest, formatted_summary + "\nMentioned in rc:" + mentioned_in_rc
+
 def extract_tail_path(path, levels=3):
     p = Path(path)
     return str(Path(*p.parts[-levels:]))
@@ -131,95 +300,28 @@ def parse_diff_to_json(diff_text, rc_bin_paths=None, rc_libs=None):
                 apk_match = apk_pattern.search(path)
                 so_path_1, so_path_2 = reconstruct_paths(path)
 
-
-                if so_match or radigest.is_executable_elf(so_path_2):
-                    mentioned_in_rc = "false"
-                    is_shared_lib = so_match is not None
-                    lib_or_bin_name = basename(so_path_2)  # we use *_2 because that's the newer one
-
-                    checksec_props = radigest.compare_checksec_properties(so_path_1, so_path_2)
-                    similarity, distance = radigest.get_similarity_and_distance(so_path_1, so_path_2)
-                    summary = radigest.parse_function_diffs(so_path_1, so_path_2)
-                    total = summary["total_functions"]
-                    changed = summary["changed"]
-                    
-                    digest = {
-                        "Similarity Score": round(similarity, 3),
-                        "Radiff2 Distance": distance,
-                        "Total Functions Analyzed": total,
-                        "Identical Functions": summary['identical'],
-                        "New Functions": summary['new'],
-                        "Changed Functions (sim < 1.0, excluding NEW)": changed,
-                        "Changed Matched Functions": summary['changed matched'],
-                        "Changed Unmatched Functions": summary['changed unmatched'],
-                        "Mentioned in .rc": False,  # default, updated below
-                        "Hardening comparison" : checksec_props
-                    }
-                    
-                    # === Check for .rc mention ===
-                    if is_shared_lib:
-                        if lib_or_bin_name in rc_libs:
-                            digest["Mentioned in .rc"] = True
-                            digest["Used By"] = [os.path.basename(p) for p in rc_libs[lib_or_bin_name]]
-                            mentioned_in_rc = "true"
-                    else:
-                        matched_rc_bin = any(p.endswith(so_path_2) for p in rc_bin_paths)
-                        if matched_rc_bin:
-                            digest["Mentioned in .rc"] = True
-                            mentioned_in_rc = "true"
-                    
-                    formatted_summary = (
-                        #f"\n=== Summary for {lib_name} ===\n"
-                        f"Similarity Score: {similarity:.3f}\n"
-                        f"Radiff2 Distance: {distance}\n"
-                        f"Total functions analyzed: {total}\n"
-                        f"- Identical functions: {summary['identical']} ({summary['identical'] / total:.1%})\n"
-                        f"- New functions: {summary['new']} ({summary['new'] / total:.1%})\n"
-                        f"- Changed functions (sim < 1.0, excluding NEW): {changed} ({changed / total:.1%})\n"
-                        f"- Changed matched functions: {summary['changed matched']} ({summary['changed matched'] / total:.1%})\n"
-                        f"- Changed unmatched functions: {summary['changed unmatched']} ({summary['changed unmatched'] / total:.1%})"
-                    )
-
-                    # === Determine name to use as JSON key ===
-                    formatted_digests[extract_tail_path(so_path_2, 4)] = digest
-
-                    extra_analysis += formatted_summary
-                    extra_analysis += "\nMentioned in rc:" + mentioned_in_rc
-                    extra_analysis += checksec_props
-
-                
-                elif apk_match:
+                if apk_match:
                     apk_path_1, apk_path_2 = reconstruct_paths(path)
-                    #extra_analysis = f"apk_file:\n  old_path: {apk_path_1}\n  new_path: {apk_path_2}"
-                        # Create temporary directories
-                    tmp_dir1 = tempfile.mkdtemp(prefix="apk1_")
-                    tmp_dir2 = tempfile.mkdtemp(prefix="apk2_")
+                    extra_analysis = analyze_apk_diff(apk_path_1, apk_path_2)
                 
-                    try:
-                        subprocess.run(["unzip", "-q", apk_path_1, "-d", tmp_dir1], check=True)
-                        subprocess.run(["unzip", "-q", apk_path_2, "-d", tmp_dir2], check=True)
+                elif "tee" in path:
+                    ta1_path, ta2_path = reconstruct_paths(path)
+                    print("TEE1: ", ta1_path, "TEE2: ", ta2_path)
+                    if is_tee_trusted_app(ta2_path):
+                        print("Is trusted app!")
+                        digest, formatted_summary = analyze_tee_trusted_app(path, ta1_path, ta2_path, rc_bin_paths)
+                        formatted_digests[extract_tail_path(ta2_path, 4)] = digest
+                        extra_analysis = formatted_summary
+                    elif looks_encrypted(ta2_path):
+                        print("Looks enctypted!")
+                        digest = {"TEE" : True, "Obfuscated" : True }
+                        formatted_digests[extract_tail_path(ta2_path, 4)] = digest
+                        extra_analysis = "TEE: true;\n Obfuscated: true"
 
-                        # Run git diff --no-index --numstat
-                        diff_result = subprocess.run(
-                            ["git", "diff", "--no-index", "--numstat", tmp_dir1, tmp_dir2],
-                            capture_output=True, text=True
-                        )
-                        diff_output = diff_result.stdout.strip()
 
-                        # Check for AndroidManifest.xml in the diff
-                        manifest_changed = any("AndroidManifest.xml" in line for line in diff_output.splitlines())
-                        manifest_status = "AndroidManifest.xml changed: yes" if manifest_changed else "AndroidManifest.xml changed: no"
-
-                        # Prepare the final extra_analysis
-                        extra_analysis = diff_output + "\n\n" + manifest_status
-
-                    except subprocess.CalledProcessError as e:
-                        extra_analysis = f"Error processing APK diff: {e}"
-                    finally:
-                        # Clean up temporary directories
-                        shutil.rmtree(tmp_dir1)
-                        shutil.rmtree(tmp_dir2)
-
+                elif so_match or radigest.is_executable_elf(so_path_2):
+                    digest, extra_analysis = analyze_shared_lib_or_bin(path, so_path_1, so_path_2, rc_bin_paths, rc_libs, so_match)
+                    formatted_digests[extract_tail_path(so_path_2, 4)] = digest
 
                 elif "security/cacerts" in path:
                     cert1, cert2 = reconstruct_paths(path)
@@ -297,8 +399,6 @@ def dump_json(filename, bins_in_rc, elf_libs_file, topmost_key = None):
     print(full_rc_bin_paths)
     print("-------------------------------------------------")
 
-    import json
-
     with open(elf_libs_file) as f:
         rc_libs = json.load(f)
     print(rc_libs)
@@ -307,7 +407,6 @@ def dump_json(filename, bins_in_rc, elf_libs_file, topmost_key = None):
     
     result = parse_diff_to_json(diff_text, full_rc_bin_paths, rc_libs)
     #result = parse_diff_to_json(diff_text)
-
 
     if topmost_key is not None:
         result = wrap_json_with_topmost_key(result, topmost_key)
@@ -328,5 +427,5 @@ if __name__ == "__main__":
     args = parser.parse_args()
     res = dump_json(args.diff_file, args.bins_in_rc, args.elf_libs)
     #print(res)
-    with open("a15-full-401-850.json", "w") as f:
+    with open("a15-401-850-3.json", "w") as f:
         f.write(res)
