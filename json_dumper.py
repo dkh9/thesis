@@ -12,6 +12,29 @@ from os.path import basename
 import os
 from pathlib import Path
 
+TIER_3_IGNORED_PREFIXES = (
+    "META-INF/", "SEC-INF/", "META-INF/CERT.RSA", "META-INF/CERT.SF", "META-INF/MANIFEST.MF"
+)
+TIER_1_CRITICAL = ("classes", "AndroidManifest.xml")
+TIER_2_MEANINGFUL = ("lib/", "assets/", "res/", "resources.arsc", "kotlin/", "smali/")
+
+APK_PREFIX_PATTERN = re.compile(r"apk[12]_[^/]+/")
+
+def categorize_path(path: str) -> str:
+    # Normalize path: remove leading apk1_xxx/ or apk2_xxx/ prefix
+    path = APK_PREFIX_PATTERN.sub("", path)
+    parts = path.split("/", 1)
+    if len(parts) == 2:
+        path = parts[1]
+
+    if path.startswith(TIER_3_IGNORED_PREFIXES):
+        return "tier_3"
+    if any(key in path for key in TIER_1_CRITICAL):
+        return "tier_1"
+    if any(key in path for key in TIER_2_MEANINGFUL):
+        return "tier_2"
+    return "unclassified"
+
 def looks_encrypted(path):
     from math import log2
     from collections import Counter
@@ -108,6 +131,7 @@ def analyze_tee_trusted_app(path, ta1_path, ta2_path, rc_bin_paths):
     return digest, formatted_summary
 
 def analyze_apk_diff(apk_path_1, apk_path_2):
+    apk_diff_formatted_summary = {}
     tmp_dir1 = tempfile.mkdtemp(prefix="apk1_")
     tmp_dir2 = tempfile.mkdtemp(prefix="apk2_")
     try:
@@ -120,12 +144,94 @@ def analyze_apk_diff(apk_path_1, apk_path_2):
         )
         diff_output = diff_result.stdout.strip()
 
+        tiered_changes = {
+            "tier_1": [],
+            "tier_2": [],
+            "tier_3": [],
+            "unclassified": []
+        }
+        dex_diff_outputs = {}
+
+        for line in diff_result.stdout.strip().splitlines():
+            parts = line.split("\t")
+            if len(parts) != 3:
+                continue
+            added, removed, path = parts
+            
+            raw_path = path.strip()          # Handle git rename/add/delete notation
+            if "=>" in raw_path:
+                # Convert Git-style brace expansion into two full paths
+                match = re.search(r'^(.*){(.+?) => (.+?)}(.*)$', raw_path)
+                if match:
+                    prefix, src_mid, dst_mid, suffix = match.groups()
+                    src_path = f"{prefix}{src_mid}{suffix}".strip()
+                    dst_path = f"{prefix}{dst_mid}{suffix}".strip()
+                else:
+                    # Fallback in case of other style like {file => dev/null}
+                    parts = raw_path.strip("{}").split("=>")
+                    src_path = parts[0].strip()
+                    dst_path = parts[1].strip()
+
+                if "dev/null" in src_path:
+                    rel_path = dst_path.split("/", 1)[-1]
+                    change_type = "added"
+                elif "dev/null" in dst_path:
+                    rel_path = src_path.split("/", 1)[-1]
+                    change_type = "deleted"
+                else:
+                    rel_path = dst_path.split("/", 1)[-1]
+                    change_type = "modified"
+            else:
+                rel_path = raw_path.split("/", 1)[-1] if "/" in raw_path else raw_path
+                change_type = "modified"
+
+            if not rel_path or rel_path.lower() == "null":
+                continue
+
+            tier = categorize_path(rel_path)
+            change_entry = {
+                "file": rel_path,
+                "added": added,
+                "removed": removed,
+                "change_type": change_type
+            }
+
+            #if "classes" in rel_path and rel_path.endswith(".dex"):
+            if "classes" in rel_path and rel_path.endswith(".dex") and change_type == "modified":
+                dex_path1 = os.path.join(tmp_dir1, rel_path)
+                dex_path2 = os.path.join(tmp_dir2, rel_path)
+                if os.path.exists(dex_path1) and os.path.exists(dex_path2):
+                    try:
+                        print("Decompiling ", dex_path1, " and ", dex_path2)
+                        #dex_diff_outputs[rel_path] = decompile_dex_and_diff(dex_path1, dex_path2)
+                    except subprocess.CalledProcessError as e:
+                        pass
+                        #dex_diff_outputs[rel_path] = f"Decompilation error: {str(e)}"
+            
+            if tier != "tier_3":
+                tiered_changes[tier].append(change_entry)
+
+        has_meaningful_diff = any(tiered_changes[t] for t in ["tier_1", "tier_2"])
+
+        if has_meaningful_diff:
+            apk_diff_formatted_summary = {
+                "apk": os.path.basename(apk_path_1),
+                "priv-app": "priv-app" in apk_path_1,
+                "changes": tiered_changes,
+                "dex_diffs": dex_diff_outputs
+            }
+
         manifest_changed = any("AndroidManifest.xml" in line for line in diff_output.splitlines())
         manifest_status = "AndroidManifest.xml changed: yes" if manifest_changed else "AndroidManifest.xml changed: no"
 
-        return diff_output + "\n\n" + manifest_status
+        return diff_output + "\n\n" + manifest_status, apk_diff_formatted_summary
     except subprocess.CalledProcessError as e:
-        return f"Error processing APK diff: {e}"
+        apk_diff_formatted_summary = {
+            "apk": os.path.basename(apk_path_1),
+            "priv-app": "priv-app" in apk_path_1,
+            "error": f"Error processing APK diff: {e}"
+        }
+        return f"Error processing APK diff: {e}", apk_diff_formatted_summary
     finally:
         shutil.rmtree(tmp_dir1)
         shutil.rmtree(tmp_dir2)
@@ -268,6 +374,8 @@ def parse_diff_to_json(diff_text, rc_bin_paths=None, rc_libs=None):
 
     so_counter = 0
     formatted_digests = {}
+    formatted_apk_digests = {}
+
     for line in lines:
         parts = line.split()
         added, deleted = parts[:2]
@@ -302,7 +410,9 @@ def parse_diff_to_json(diff_text, rc_bin_paths=None, rc_libs=None):
 
                 if apk_match:
                     apk_path_1, apk_path_2 = reconstruct_paths(path)
-                    extra_analysis = analyze_apk_diff(apk_path_1, apk_path_2)
+                    extra_analysis, apk_digest = analyze_apk_diff(apk_path_1, apk_path_2)
+                    if apk_digest != {}:
+                        formatted_apk_digests[extract_tail_path(apk_path_1, 4)] = apk_digest
                 
                 elif "tee" in path:
                     ta1_path, ta2_path = reconstruct_paths(path)
@@ -320,8 +430,9 @@ def parse_diff_to_json(diff_text, rc_bin_paths=None, rc_libs=None):
 
 
                 elif so_match or radigest.is_executable_elf(so_path_2):
-                    digest, extra_analysis = analyze_shared_lib_or_bin(path, so_path_1, so_path_2, rc_bin_paths, rc_libs, so_match)
-                    formatted_digests[extract_tail_path(so_path_2, 4)] = digest
+                    pass
+                    #digest, extra_analysis = analyze_shared_lib_or_bin(path, so_path_1, so_path_2, rc_bin_paths, rc_libs, so_match)
+                    #formatted_digests[extract_tail_path(so_path_2, 4)] = digest
 
                 elif "security/cacerts" in path:
                     cert1, cert2 = reconstruct_paths(path)
@@ -379,8 +490,11 @@ def parse_diff_to_json(diff_text, rc_bin_paths=None, rc_libs=None):
         path_parts = path.split("/")
         add_to_hierarchy(path_parts, (added, deleted), root, status, extra_analysis)
     
-    with open("formatted_digests.json", "w") as f:
+    with open("formatted_digests-0.json", "w") as f:
         json.dump(formatted_digests, f, indent=2)
+    
+    with open("formatted_apk_digests.json", "w") as f:
+        json.dump(formatted_apk_digests, f, indent=2)
 
     root["__renamed__"] = renamed_files
     return root
