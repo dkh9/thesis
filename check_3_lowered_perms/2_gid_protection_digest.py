@@ -123,10 +123,10 @@ def compare_gids(old, new, perm_levels, diff_summary):
 
 # --- Main ---
 if len(sys.argv) != 5:
-    print("Usage: compare_gid_permissions.py old.json new.json permissions.jsonl protection_diff_summary.json outfile.json")
+    print("Usage: compare_gid_permissions.py old.json new.json permissions.jsonl protection_diff_summary.json")
     sys.exit(1)
 
-old_json, new_json, perm_jsonl, diff_json, outfile = sys.argv[1:]
+old_json, new_json, perm_jsonl, diff_json = sys.argv[1:]
 
 old_gid_map = load_json(old_json)
 new_gid_map = load_json(new_json)
@@ -135,7 +135,7 @@ diff_summary = load_protection_diff(diff_json)
 
 summary = compare_gids(old_gid_map, new_gid_map, perm_levels, diff_summary)
 
-with open(outfile, "w") as f:
+with open("2_gid_digest.json", "w") as f:
     json.dump(summary, f, indent=2)
 
-print("Summary written to ", outfile)
+print("Summary written to 2_gid_digest.json")
