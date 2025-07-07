@@ -19,6 +19,10 @@ TIER_1_CRITICAL = ("classes", "AndroidManifest.xml")
 TIER_2_MEANINGFUL = ("lib/", "assets/", "res/", "resources.arsc", "kotlin/", "smali/")
 
 APK_PREFIX_PATTERN = re.compile(r"apk[12]_[^/]+/")
+#APK_PREFIX_PATTERN = re.compile(r"^(tmp/)?apk[12]_[^/]+/")
+
+def normalize_rel_path(rel_path: str) -> str:
+    return APK_PREFIX_PATTERN.sub("", rel_path)
 
 def categorize_path(path: str) -> str:
     # Normalize path: remove leading apk1_xxx/ or apk2_xxx/ prefix
@@ -130,6 +134,23 @@ def analyze_tee_trusted_app(path, ta1_path, ta2_path, rc_bin_paths):
 
     return digest, formatted_summary
 
+def decompile_dex_and_diff(dex_path1, dex_path2):
+    print("AAAAA\n")
+    diff_result = subprocess.run(
+            ["git", "diff", "--no-index", "--numstat", dex_path1, dex_path2],
+            capture_output=True, text=True
+        )
+
+    #with tempfile.TemporaryDirectory() as d1, tempfile.TemporaryDirectory() as d2:
+    #    subprocess.run(["jadx", "-d", d1, dex_path1], check=True)
+    #    subprocess.run(["jadx", "-d", d2, dex_path2], check=True)
+#
+    #    diff_result = subprocess.run(
+    #        ["git", "diff", "--no-index", "--numstat", d1, d2],
+    #        capture_output=True, text=True
+    #    )
+    #    return diff_result.stdout.strip()
+
 def analyze_apk_diff(apk_path_1, apk_path_2):
     apk_diff_formatted_summary = {}
     tmp_dir1 = tempfile.mkdtemp(prefix="apk1_")
@@ -196,17 +217,24 @@ def analyze_apk_diff(apk_path_1, apk_path_2):
                 "change_type": change_type
             }
 
+            normalized_rel_path = normalize_rel_path(rel_path)
+
             #if "classes" in rel_path and rel_path.endswith(".dex"):
             if "classes" in rel_path and rel_path.endswith(".dex") and change_type == "modified":
-                dex_path1 = os.path.join(tmp_dir1, rel_path)
-                dex_path2 = os.path.join(tmp_dir2, rel_path)
+                print("WAnt to decompile")
+                dex_path1 = os.path.join(tmp_dir1, normalized_rel_path)
+                dex_path2 = os.path.join(tmp_dir2, normalized_rel_path)
+                print("Dex path1: ", dex_path1)
+                print("Dex path2: ", dex_path2)
+                print("APK path1: ", apk_path_1)
+                print("APK path2: ", apk_path_2)
                 if os.path.exists(dex_path1) and os.path.exists(dex_path2):
                     try:
                         print("Decompiling ", dex_path1, " and ", dex_path2)
-                        #dex_diff_outputs[rel_path] = decompile_dex_and_diff(dex_path1, dex_path2)
+                        dex_diff_outputs[rel_path] = decompile_dex_and_diff(dex_path1, dex_path2)
                     except subprocess.CalledProcessError as e:
-                        pass
-                        #dex_diff_outputs[rel_path] = f"Decompilation error: {str(e)}"
+                        #pass
+                        dex_diff_outputs[rel_path] = f"Decompilation error: {str(e)}"
             
             if tier != "tier_3":
                 tiered_changes[tier].append(change_entry)
