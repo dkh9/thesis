@@ -4,57 +4,64 @@ import json
 from collections import defaultdict
 
 def parse_broadcasts(path):
-    """Parses protected broadcasts script output"""
-    result = {}
-    current_apk = None
+    """Returns a set of all protected broadcasts, ignoring lines starting with '###'."""
+    broadcasts = set()
     with open(path) as f:
         for line in f:
             line = line.strip()
-            if line.startswith("###"):
-                current_apk = line[4:]
-                result[current_apk] = []
-            elif current_apk and line:
-                result[current_apk].append(line)
-    return result
+            if not line.startswith("###") and line:
+                broadcasts.add(line)
+    return broadcasts
 
 def parse_intents(path):
-    """Parses intent-filters script output"""
-    result = {}
-    current_apk = None
+    """Returns a set of all intent actions, ignoring lines starting with '=='."""
+    intents = set()
     with open(path) as f:
         for line in f:
             line = line.strip()
-            if line.startswith("=="):
-                current_apk = line[3:-2] if line.endswith("==") else line[3:]
-                result[current_apk] = []
-            elif current_apk and line:
-                result[current_apk].append(line)
-    return result
+            if not line.startswith("==") and line:
+                intents.add(line)
+    return intents
 
 def main():
-    if len(sys.argv) != 3:
-        print("Usage: check_undeclared_broadcasts.py <protected_broadcasts.txt> <intent_filters.txt>")
+    if len(sys.argv) != 5:
+        print("Usage: check_undeclared_broadcasts.py <protected_broadcasts_v1.txt> <intent_filters_v1.txt> <protected_broadcasts_v2.txt> <intent_filters_v2.txt>")
         sys.exit(1)
 
-    protected_path, intents_path = sys.argv[1], sys.argv[2]
+    protected_path_1, intents_path_1, protected_path_2, intents_path_2 = sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4]
 
-    protected = parse_broadcasts(protected_path)
-    intents = parse_intents(intents_path)
+    protected_v1 = parse_broadcasts(protected_path_1)
+    intents_v1 = parse_intents(intents_path_1)
 
-    all_declared = set()
-    for plist in protected.values():
-        all_declared.update(plist)
+    protected_v2 = parse_broadcasts(protected_path_2)
+    intents_v2 = parse_intents(intents_path_2)
 
-    summary = defaultdict(list)
-    for apk, intent_list in intents.items():
-        for intent in intent_list:
-            if intent not in all_declared:
-                summary[apk].append(intent)
+    decreased_security = []
+    increased_security = []
 
-    with open("undeclared_broadcasts_summary.json", "w") as f:
-        json.dump(summary, f, indent=2)
+    # Broadcasts declared in v1 but missing in v2 (potential security regression)
+    removed_broadcasts = protected_v1 - protected_v2
+    print("REMOVED: ", removed_broadcasts)
+    for bc in removed_broadcasts:
+        if bc in intents_v2:
+            decreased_security.append(bc)
 
-    print("Summary written to undeclared_broadcasts_summary.json")
+    # Broadcasts declared in v2 but missing in v1 (potential security improvement)
+    added_broadcasts = protected_v2 - protected_v1
+    print("ADDED:", added_broadcasts)
+    for bc in added_broadcasts:
+        if bc in intents_v1:
+            increased_security.append(bc)
+    
+    print("Length protected_v1:", len(protected_v1))
+    print("Length protected_v2:", len(protected_v2))
+
+    output = {
+        "decreased": decreased_security,
+        "increased": increased_security
+    }
+
+    print(json.dumps(output, indent=2))
 
 if __name__ == "__main__":
     main()

@@ -7,11 +7,10 @@ base_score = {
     "normal": 10,
     "dangerous": 20,
     "signature": 30,
-    "signatureOrSystem": 30,  # Deprecated but same meaning
-    "internal": 40            # Rare and undocumented
+    "signatureOrSystem": 30,
+    "internal": 40
 }
 
-# Flag weights (minor modifiers)
 flag_weights = {
     "privileged": 5,
     "appop": 2,
@@ -31,21 +30,17 @@ flag_weights = {
 
 def score_level(level_string):
     if not level_string:
-        return base_score["normal"]  # Default to "normal" if unspecified
-
+        return base_score["normal"]
     parts = [p.strip() for p in level_string.split('|') if p.strip()]
     base = None
     flags = []
-
     for part in parts:
         if part in base_score and base is None:
             base = part
         else:
             flags.append(part)
-
     base_val = base_score.get(base, base_score["normal"])
     flag_val = sum(flag_weights.get(f, 1) for f in flags)
-
     return base_val + flag_val
 
 def load_json(path):
@@ -68,13 +63,9 @@ def load_protection_diff(path):
         "decreased": summary.get("decreased", [])
     }
 
-def get_permission_set(component_entry):
-    return set(component_entry.values())
-
 def compare_components(old_map, new_map, perm_levels, diff_summary):
     result = {"increased": [], "decreased": []}
     component_types = ["activity", "service", "receiver", "provider"]
-
     all_apks = set(old_map.keys()) | set(new_map.keys())
 
     for apk in all_apks:
@@ -87,58 +78,80 @@ def compare_components(old_map, new_map, perm_levels, diff_summary):
             all_keys = set(old_entries) | set(new_entries)
 
             for comp_name in all_keys:
-                old_perms = get_permission_set(old_entries.get(comp_name, {}))
-                new_perms = get_permission_set(new_entries.get(comp_name, {}))
+                old_perms_dict = old_entries.get(comp_name, {})
+                new_perms_dict = new_entries.get(comp_name, {})
 
-                def total_score(perms):
-                    return sum(score_level(perm_levels.get(p, "normal")) for p in perms)
+                keys_union = set(old_perms_dict.keys()) | set(new_perms_dict.keys())
 
-                old_score = total_score(old_perms)
-                new_score = total_score(new_perms)
+                for key in keys_union:
+                    old_perm = old_perms_dict.get(key)
+                    new_perm = new_perms_dict.get(key)
 
-                if old_perms != new_perms:
-                    if new_score > old_score:
-                        result["increased"].append({
-                            "apk": apk,
-                            "component": comp_name,
-                            "type": comp_type,
-                            "change": f"score {old_score} -> {new_score}",
-                            "added_permissions": sorted(list(new_perms - old_perms)),
-                            "removed_permissions": sorted(list(old_perms - new_perms))
-                        })
-                    elif new_score < old_score:
-                        result["decreased"].append({
-                            "apk": apk,
-                            "component": comp_name,
-                            "type": comp_type,
-                            "change": f"score {old_score} -> {new_score}",
-                            "added_permissions": sorted(list(new_perms - old_perms)),
-                            "removed_permissions": sorted(list(old_perms - new_perms))
-                        })
-                else:
-                    for perm in new_perms:
-                        for direction in ["increased", "decreased"]:
-                            for entry in diff_summary[direction]:
-                                if entry["permission_name"] == perm:
-                                    old_score = score_level(entry["old_level"])
-                                    new_score = score_level(entry["new_level"])
-                                    if new_score > old_score:
-                                        result["increased"].append({
-                                            "apk": apk,
-                                            "component": comp_name,
-                                            "type": comp_type,
-                                            "permission": perm,
-                                            "change": f"score {old_score} -> {new_score}"
-                                        })
-                                    elif new_score < old_score:
-                                        result["decreased"].append({
-                                            "apk": apk,
-                                            "component": comp_name,
-                                            "type": comp_type,
-                                            "permission": perm,
-                                            "change": f"score {old_score} -> {new_score}"
-                                        })
-                                    break
+                    if old_perm != new_perm:
+                        old_score = score_level(perm_levels.get(old_perm, "normal")) if old_perm else 0
+                        new_score = score_level(perm_levels.get(new_perm, "normal")) if new_perm else 0
+
+                        if new_perm and not old_perm:
+                            result["increased"].append({
+                                "apk": apk,
+                                "component": comp_name,
+                                "type": comp_type,
+                                "permission_type": key,
+                                "permission": new_perm,
+                                "change": f"added with score {new_score}"
+                            })
+                        elif old_perm and not new_perm:
+                            result["decreased"].append({
+                                "apk": apk,
+                                "component": comp_name,
+                                "type": comp_type,
+                                "permission_type": key,
+                                "permission": old_perm,
+                                "change": f"removed with score {old_score}"
+                            })
+                        elif new_score > old_score:
+                            result["increased"].append({
+                                "apk": apk,
+                                "component": comp_name,
+                                "type": comp_type,
+                                "permission_type": key,
+                                "permission": new_perm,
+                                "change": f"score {old_score} -> {new_score}"
+                            })
+                        elif new_score < old_score:
+                            result["decreased"].append({
+                                "apk": apk,
+                                "component": comp_name,
+                                "type": comp_type,
+                                "permission_type": key,
+                                "permission": new_perm,
+                                "change": f"score {old_score} -> {new_score}"
+                            })
+
+                # Check unchanged permissions for protection level updates
+                for perm in set(new_perms_dict.values()):
+                    for direction in ["increased", "decreased"]:
+                        for entry in diff_summary[direction]:
+                            if entry["permission_name"] == perm:
+                                old_score = score_level(entry["old_level"])
+                                new_score = score_level(entry["new_level"])
+                                if new_score > old_score:
+                                    result["increased"].append({
+                                        "apk": apk,
+                                        "component": comp_name,
+                                        "type": comp_type,
+                                        "permission": perm,
+                                        "change": f"score {old_score} -> {new_score} (protection level change)"
+                                    })
+                                elif new_score < old_score:
+                                    result["decreased"].append({
+                                        "apk": apk,
+                                        "component": comp_name,
+                                        "type": comp_type,
+                                        "permission": perm,
+                                        "change": f"score {old_score} -> {new_score} (protection level change)"
+                                    })
+                                break
 
     return result
 

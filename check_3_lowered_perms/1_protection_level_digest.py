@@ -35,16 +35,23 @@ flag_weights = {
     "documenter": 1
 }
 
+
 def score_level(level_string):
-    parts = [p.strip() for p in level_string.split('|')]
-    if not parts:
-        return 0
+    if not level_string:
+        return base_score["normal"]  # Default to "normal" if unspecified
 
-    base = parts[0]
-    flags = parts[1:] if len(parts) > 1 else []
+    parts = [p.strip() for p in level_string.split('|') if p.strip()]
+    base = None
+    flags = []
 
-    base_val = base_score.get(base, 0)
-    flag_val = sum(flag_weights.get(f, 0) for f in flags)
+    for part in parts:
+        if part in base_score and base is None:
+            base = part
+        else:
+            flags.append(part)
+
+    base_val = base_score.get(base, base_score["normal"])
+    flag_val = sum(flag_weights.get(f, 1) for f in flags)
 
     return base_val + flag_val
 
@@ -85,7 +92,7 @@ for perm, old_level in old.items():
                 "new_level": new_level
             })
 
-with open("protection_diff_summary.json", "w") as f:
+with open("protection_diff_summary_2.json", "w") as f:
     json.dump(summary, f, indent=2)
 
-print("\nSummary written to protection_diff_summary.json")
+print("\nSummary written to protection_diff_summary_2.json")
