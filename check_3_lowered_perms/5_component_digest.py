@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import sys
 import json
+import os
 
 # Base protection levels (dominant scores)
 base_score = {
@@ -63,14 +64,26 @@ def load_protection_diff(path):
         "decreased": summary.get("decreased", [])
     }
 
+def normalize_apk_path(path):
+    # Normalize to just the relative path from /system/ or /vendor/
+    for anchor in ["/system/", "/vendor/"]:
+        idx = path.find(anchor)
+        if idx != -1:
+            return path[idx:]
+    return os.path.basename(path)  # fallback: just the APK filename
+
 def compare_components(old_map, new_map, perm_levels, diff_summary):
     result = {"increased": [], "decreased": []}
     component_types = ["activity", "service", "receiver", "provider"]
-    all_apks = set(old_map.keys()) | set(new_map.keys())
+
+    # Normalize APK paths
+    norm_old = {normalize_apk_path(k): v for k, v in old_map.items()}
+    norm_new = {normalize_apk_path(k): v for k, v in new_map.items()}
+    all_apks = set(norm_old) | set(norm_new)
 
     for apk in all_apks:
-        old_components = old_map.get(apk, {}).get("components", {})
-        new_components = new_map.get(apk, {}).get("components", {})
+        old_components = norm_old.get(apk, {}).get("components", {})
+        new_components = norm_new.get(apk, {}).get("components", {})
 
         for comp_type in component_types:
             old_entries = old_components.get(comp_type, {})
@@ -172,4 +185,4 @@ summary = compare_components(old_component_map, new_component_map, perm_levels, 
 with open(outfile, "w") as f:
     json.dump(summary, f, indent=2)
 
-print("Summary written to ", outfile)
+print("Summary written to", outfile)
