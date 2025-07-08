@@ -1,21 +1,20 @@
 #!/bin/bash
 
-if [ $# -eq 0 ]
-  then
-    echo "Usage: gid_extraction.sh <path to grep>"
+if [ $# -lt 2 ]; then
+    echo "Usage: gid_extraction.sh <path to grep> <output.json>"
     exit 1
 fi
 
 path_to_grep=$1
+output_json=$2
 
+file_list_xml=$(grep -rni "group gid" "$path_to_grep" | cut -d: -f1 | grep -E '\.xml$' | sort -u)
 
-file_list=$(grep -rni "group gid" $path_to_grep | cut -d: -f1 | sort -u)
-file_list_xml=$(grep -rni "group gid" $path_to_grep | cut -d: -f1 | grep -E '\.xml$' | sort -u)
-
-# Echo the list
-echo "$file_list"
+echo "Processing the following XML files:"
+printf "%s\n" "$file_list_xml"
 echo
-echo "File list xml:"
-echo $file_list_xml
 
-printf "%s\n" "$file_list_xml" | python3 2_gid_mapping.py
+# Feed each XML file to the updated Python script
+while IFS= read -r xml_file; do
+    python3 2_gid_mapping.py "$xml_file" "$output_json"
+done <<< "$file_list_xml"

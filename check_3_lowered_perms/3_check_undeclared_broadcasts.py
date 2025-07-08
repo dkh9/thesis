@@ -24,11 +24,11 @@ def parse_intents(path):
     return intents
 
 def main():
-    if len(sys.argv) != 5:
-        print("Usage: check_undeclared_broadcasts.py <protected_broadcasts_v1.txt> <intent_filters_v1.txt> <protected_broadcasts_v2.txt> <intent_filters_v2.txt>")
+    if len(sys.argv) != 6:
+        print("Usage: 3_check_undeclared_broadcasts.py <protected_broadcasts_v1.txt> <intent_filters_v1.txt> <protected_broadcasts_v2.txt> <intent_filters_v2.txt> <outfile>")
         sys.exit(1)
 
-    protected_path_1, intents_path_1, protected_path_2, intents_path_2 = sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4]
+    protected_path_1, intents_path_1, protected_path_2, intents_path_2, outfile = sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4], sys.argv[5]
 
     protected_v1 = parse_broadcasts(protected_path_1)
     intents_v1 = parse_intents(intents_path_1)
@@ -61,7 +61,11 @@ def main():
         "increased": increased_security
     }
 
-    print(json.dumps(output, indent=2))
-
+    #print(json.dumps(output, indent=2))
+    with open(outfile, "w") as f:
+        json.dump(output, f, indent=2)
+    
+    print("Summary written to ", outfile)
+    
 if __name__ == "__main__":
     main()

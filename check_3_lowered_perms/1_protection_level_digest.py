@@ -2,11 +2,11 @@
 import sys
 import json
 
-if len(sys.argv) != 3:
-    print("Usage: 1_protection_level_digest.py old.jsonl new.jsonl")
+if len(sys.argv) != 4:
+    print("Usage: 1_protection_level_digest.py old.jsonl new.jsonl output_file.json")
     sys.exit(1)
 
-old_file, new_file = sys.argv[1], sys.argv[2]
+old_file, new_file, output_file = sys.argv[1], sys.argv[2], sys.argv[3]
 
 # Base protection levels (dominant scores)
 base_score = {
@@ -92,7 +92,7 @@ for perm, old_level in old.items():
                 "new_level": new_level
             })
 
-with open("protection_diff_summary_2.json", "w") as f:
+with open(output_file, "w") as f:
     json.dump(summary, f, indent=2)
 
-print("\nSummary written to protection_diff_summary_2.json")
+print("\nSummary written to ", output_file)
