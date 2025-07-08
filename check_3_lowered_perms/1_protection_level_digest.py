@@ -13,8 +13,8 @@ base_score = {
     "normal": 10,
     "dangerous": 20,
     "signature": 30,
-    "signatureOrSystem": 30,  # Deprecated but same meaning
-    "internal": 40            # Rare and undocumented
+    "signatureOrSystem": 30,
+    "internal": 40
 }
 
 # Flag weights (minor modifiers)
@@ -55,6 +55,7 @@ def score_level(level_string):
 
     return base_val + flag_val
 
+
 def load_jsonl(filepath):
     result = {}
     with open(filepath) as f:
@@ -63,14 +64,18 @@ def load_jsonl(filepath):
             result[entry["permission_name"]] = entry["protection_level"]
     return result
 
+
 old = load_jsonl(old_file)
 new = load_jsonl(new_file)
 
 summary = {
     "increased": [],
-    "decreased": []
+    "decreased": [],
+    "added": [],
+    "removed": []
 }
 
+# Compare overlapping permissions
 for perm, old_level in old.items():
     if perm in new:
         new_level = new[perm]
@@ -92,7 +97,26 @@ for perm, old_level in old.items():
                 "new_level": new_level
             })
 
+# Detect removed permissions
+for perm in old:
+    if perm not in new:
+        summary["removed"].append({
+            "permission_name": perm,
+            "old_level": old[perm]
+        })
+        print(f"[REMOVED] {perm}")
+
+# Detect newly added permissions
+for perm in new:
+    if perm not in old:
+        summary["added"].append({
+            "permission_name": perm,
+            "new_level": new[perm]
+        })
+        print(f"[ADDED] {perm}: {new[perm]}")
+
+# Write to output file
 with open(output_file, "w") as f:
     json.dump(summary, f, indent=2)
 
-print("\nSummary written to ", output_file)
+print("\nSummary written to", output_file)
