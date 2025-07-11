@@ -13,10 +13,10 @@ vendor = "samsung"
 
 def periodic_status_message(stop_event, interval=10):
     while not stop_event.is_set():
-        print("⏳ Extraction in process...")
+        print("Extraction in process...")
         stop_event.wait(interval)
 
-def extract_fw(vendor, archive):
+def extract_fw(vendor, archive, child):
     cmd = f"sudo venv/bin/python extract.py --vendor {vendor} --user dcl {archive}"
 
     # Start background progress printer
@@ -25,7 +25,7 @@ def extract_fw(vendor, archive):
     printer_thread.start()
 
     try:
-        out = run_command(cmd, prompt=r"\(venv\).*?\$", timeout=720)
+        out = run_command(child, cmd, prompt=r"\(venv\).*?\$", timeout=720)
     finally:
         stop_event.set()         # Stop the printer
         printer_thread.join()    # Wait for thread to clean up
@@ -92,19 +92,18 @@ def main():
 
     operation, archive, vendor, outfile = sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4]
     
-    #if operation != "extract" or operation != "process":
-    #    print("Unsupported op:", operation)
-    #    sys.exit(1)
+    
+    if operation not in ("extract", "process"):
+        print("Unsupported op:", operation)
+        sys.exit(1)
 
     print("SPAWNING SHELL")
     child = pexpect.spawn(f"docker exec -it -u dcl {container} bash", encoding="utf-8")
     child.expect(r"\$")
     out = run_command(child, "cd /opt/BigMAC/BigMAC")
     out = run_command(child, "source venv/bin/activate", prompt=r"\(venv\).*?\$")
-    print("out3: ")
-    print(out)
-    out = extract_fw(vendor, archive)
-    print("OUT AFTER EXTRACTION: ")
+    out = extract_fw(vendor, archive, child)
+    print("AFTER EXTRACTION: ")
     print(out)
 
     if "INFO: Saving extracted information" in out:
@@ -112,30 +111,27 @@ def main():
 
         policy = os.path.splitext(os.path.basename(archive))[0]
         extract_path = f"extract/{vendor}/{policy}"
-        print("EXTRACT PATH: ", extract_path)
+        archive_path = os.path.abspath(archive)
+        cmd = f"sudo rm -rf {extract_path}"
+        out = run_command(child, cmd, prompt=r"\$", timeout=30)
 
-        # Remove extracted folder
-        #cmd = f"sudo rm -rf {extract_path}"
-        #out = run_command(cmd, prompt=r"\$", timeout=30)
+        if not os.path.exists(f"{extract_path}"):
+            print("Extract dir deleted: SUCCESS")
+        else:
+            print("Extract dir deleted: FAIL")
 
-        #if not os.path.exists(f"extract/{vendor}/{policy}"):
-        #    print("🗑️  Extract dir deleted: SUCCESS")
-        #else:
-        #    print("❌ Extract dir deleted: FAIL")
-
-        #archive_path = os.path.abspath(archive)
-        #print("ARCHIVE PATH:")
-        #TODO: delete the archive as well
-        #if not os.path.exists(archive_path):
-        #    print("Archive deleted: SUCCESS")
-        #else:
-        #    print("Archive deleted: FAIL (Still exists at:", archive_path, ")")
+        cmd = f"sudo rm -rf {archive}"
+        out = run_command(child, cmd, prompt=r"\$", timeout=30)
+        if not os.path.exists(archive_path):
+            print("Archive deleted: SUCCESS")
+        else:
+            print("Archive deleted: FAIL (Still exists at:", archive_path, ")")
 
 
     child.sendline("exit")
     child.close()
     print('done')
-    #venv/bin/python extract.py --vendor samsung --user dcl 20250526205751.zip
+    #venv/bin/python extract.py --vendor samsung --user dcl 20250526205751.zip'''
 
 if __name__ == "__main__":
     main()
