@@ -115,19 +115,28 @@ def main(rc_dir):
             filtered.append(actual_path)
 
     print(f"\nUsed ELF binaries in .rc files ({len(filtered)}):")
-    with open(args.out_file, "w") as f:
+    with open(args.out_file_simple, "w") as f:
         for bin_path in sorted(filtered):
             print(f"  {bin_path}")
             f.write(str(bin_path)+ "\n")
     
-    with open("bonjor.json", "w") as f:
-        json.dump(binary_metadata, f, indent=2)
+    enriched_metadata = {}
+    
+    for bin_path in filtered:
+        abs_path = str(bin_path)  # absolute
+        rc_style_path = "/" + "/".join(bin_path.relative_to(rc_dir).parts[1:])  # e.g., /vendor/bin/foo
+        if rc_style_path in binary_metadata:
+            enriched_metadata[abs_path] = binary_metadata[rc_style_path]
+    
+    with open(args.out_file_json, "w") as f:
+        json.dump(enriched_metadata, f, indent=2)
 
 
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser(description="Extract /system/bin/* binaries used during Android init")
     parser.add_argument("rc_dir", help="Directory containing .rc files (e.g., extracted system/etc/init/)")
-    parser.add_argument("out_file", help="Output file")
+    parser.add_argument("out_file_simple", help="Output file (plain)")
+    parser.add_argument("out_file_json", help="Output file (json)")
     args = parser.parse_args()
     main(args.rc_dir)
