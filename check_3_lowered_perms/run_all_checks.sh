@@ -11,7 +11,7 @@ path_2=$2
 
 mkdir intermediate_files
 mkdir result_digests
-------------------check 1: protection level mapping
+#------------------check 1: protection level mapping
 ./1_protection_level_extraction.sh $path_1 intermediate_files/v1_protection_level.jsonl
 ./1_protection_level_extraction.sh $path_2 intermediate_files/v2_protection_level.jsonl
 
@@ -38,7 +38,7 @@ echo "Check 3 done"
 
 
 ./4_generate_visibility.sh $path_1 > intermediate_files/v1_visibility.txt
-./4_generate_visibility.sh $path_2 > intermediate_files/v2_visibility.txt#
+./4_generate_visibility.sh $path_2 > intermediate_files/v2_visibility.txt
 
 python3 4_visibility_digest.py intermediate_files/v1_visibility.txt intermediate_files/v2_visibility.txt result_digests/4_visibility_digest.json
 echo "Check 4 done"

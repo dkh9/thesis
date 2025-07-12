@@ -9,6 +9,7 @@ HARDENING_CHECKER_PATH="/home/dasha/thesis/tools/kernel-hardening-checker/bin/ke
 SEC_1="hardening_1.txt"
 SEC_2="hardening_2.txt"
 KERNEL_DIGEST_FILE="kernel_digest.json"
+VMLINUX_TO_ELF="/home/dasha/vmlinux-to-elf/vmlinux-to-elf"
 
 if [ $# -lt 2 ]; then
     echo "Usage: check_kernel_config.sh <path to kernel 1> <path to kernel 2>"
@@ -18,8 +19,8 @@ fi
 kernel_1_path=$1
 kernel_2_path=$2
 
-vmlinux-to-elf "$kernel_1_path" "$(pwd)/$KERNEL_1_ELF"
-vmlinux-to-elf "$kernel_2_path" "$(pwd)/$KERNEL_2_ELF"
+$VMLINUX_TO_ELF "$kernel_1_path" "$(pwd)/$KERNEL_1_ELF"
+$VMLINUX_TO_ELF "$kernel_2_path" "$(pwd)/$KERNEL_2_ELF"
 "$EXTRACT_IKCONFIG_PATH" "$KERNEL_1_ELF" > "$CONFIG_1"
 "$EXTRACT_IKCONFIG_PATH" "$KERNEL_2_ELF" > "$CONFIG_2"
 
@@ -28,7 +29,7 @@ vmlinux-to-elf "$kernel_2_path" "$(pwd)/$KERNEL_2_ELF"
 
 
 
-python3 diff_kernel_hardening.py "$SEC_1" "$SEC_2" > "$KERNEL_DIGEST_FILE"
+python3 ./diff_kernel_hardening.py "$SEC_1" "$SEC_2" > "$KERNEL_DIGEST_FILE"
 
 
 

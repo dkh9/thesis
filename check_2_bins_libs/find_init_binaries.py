@@ -1,6 +1,7 @@
 import os
 import re
 from pathlib import Path
+import json
 
 def resolve_binary_path(binary, partition_root):
     """
@@ -23,33 +24,61 @@ def resolve_binary_path(binary, partition_root):
 def collect_rc_files(rc_root):
     return list(Path(rc_root).rglob("*.rc"))
 
-def parse_rc_file(path, service_map, found_binaries):
+def parse_rc_file(path, service_map, found_binaries, binary_metadata):
     with open(path, "r", encoding="utf-8", errors="ignore") as f:
+        current_service = None
+        current_binary = None
+        service_block = {}
+
         for line in f:
             line = line.strip()
             if not line or line.startswith("#"):
                 continue
 
+            # Match service blocks
             if line.startswith("service "):
+                # Save metadata from the previous block
+                if current_binary and service_block:
+                    binary_metadata.setdefault(current_binary, {}).update(service_block)
+
                 match = re.match(r"service\s+(\S+)\s+(\S+)", line)
                 if match:
-                    service_name, binary_path = match.groups()
-                    service_map[service_name] = binary_path
-                    found_binaries.add(binary_path)
+                    current_service, current_binary = match.groups()
+                    service_map[current_service] = current_binary
+                    found_binaries.add(current_binary)
+                    service_block = {}
 
+            # Parse inside service block
+            elif current_service and current_binary:
+                if line.startswith("user "):
+                    service_block["user"] = line.split()[1]
+                elif line.startswith("group "):
+                    service_block["group"] = line.split()[1]
+                elif line.startswith("capabilities "):
+                    service_block["capabilities"] = line.split()[1:]
+                elif line.startswith("critical"):
+                    service_block["critical"] = True
+
+            # Match standalone exec/exec_background
             elif line.startswith("exec") or line.startswith("exec_background"):
                 parts = line.split()
-                for i, token in enumerate(parts):
-                    if token.startswith("/") and not token.startswith("/dev"):  # crude heuristic
+                for token in parts:
+                    if token.startswith("/") and not token.startswith("/dev"):
                         found_binaries.add(token)
                         break
 
+            # Match exec_start
             elif line.startswith("exec_start "):
                 match = re.match(r"exec_start\s+(\S+)", line)
                 if match:
                     svc = match.group(1)
                     if svc in service_map:
                         found_binaries.add(service_map[svc])
+
+        # Save last service block
+        if current_binary and service_block:
+            binary_metadata.setdefault(current_binary, {}).update(service_block)
+
 
 def is_elf_binary(path):
     try:
@@ -66,12 +95,13 @@ def main(rc_dir):
 
     service_map = {}
     found_binaries = set()
+    binary_metadata = {}
 
     rc_files = collect_rc_files(rc_dir)
     print("RC FILES LIST:")
     for rc_file in rc_files:
         print(rc_file)
-        parse_rc_file(rc_file, service_map, found_binaries)
+        parse_rc_file(rc_file, service_map, found_binaries, binary_metadata)
 
     print("-------------")
 
@@ -89,6 +119,9 @@ def main(rc_dir):
         for bin_path in sorted(filtered):
             print(f"  {bin_path}")
             f.write(str(bin_path)+ "\n")
+    
+    with open("bonjor.json", "w") as f:
+        json.dump(binary_metadata, f, indent=2)
 
 
 if __name__ == "__main__":
