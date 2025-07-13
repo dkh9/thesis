@@ -111,26 +111,32 @@ def main(rc_dir):
         #actual_path = rc_dir / rel_path
         actual_path = resolve_binary_path(binary, rc_dir)
         print("Actual path: ", actual_path, " result: ", is_elf_binary(actual_path))
-        if is_elf_binary(actual_path):
-            filtered.append(actual_path)
+        #if is_elf_binary(actual_path):
+        #    filtered.append(actual_path)
+        #else:
+        #    print("IS NOT ELF BINARY: ", actual_path)
+        filtered.append(actual_path)
 
     print(f"\nUsed ELF binaries in .rc files ({len(filtered)}):")
     with open(args.out_file_simple, "w") as f:
         for bin_path in sorted(filtered):
             print(f"  {bin_path}")
             f.write(str(bin_path)+ "\n")
+
     
-    enriched_metadata = {}
-    
-    for bin_path in filtered:
-        abs_path = str(bin_path)  # absolute
-        rc_style_path = "/" + "/".join(bin_path.relative_to(rc_dir).parts[1:])  # e.g., /vendor/bin/foo
-        if rc_style_path in binary_metadata:
-            enriched_metadata[abs_path] = binary_metadata[rc_style_path]
+    # Invert binary_metadata: from rc_path → metadata  => resolved abs path → metadata
+    resolved_metadata = {}
+
+    for rc_path, metadata in binary_metadata.items():
+        abs_path = resolve_binary_path(rc_path, rc_dir)
+        print("abs_path: ", abs_path)
+        if abs_path in filtered:
+            resolved_metadata[str(abs_path)] = metadata
+        else: 
+            print("Not in filtered!")
     
     with open(args.out_file_json, "w") as f:
-        json.dump(enriched_metadata, f, indent=2)
-
+        json.dump(resolved_metadata, f, indent=2)
 
 if __name__ == "__main__":
     import argparse
