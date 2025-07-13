@@ -16,6 +16,11 @@ TIER_3_IGNORED_PREFIXES = (
     "META-INF/", "SEC-INF/", "META-INF/CERT.RSA", "META-INF/CERT.SF", "META-INF/MANIFEST.MF"
 )
 TIER_1_CRITICAL = ("classes", "AndroidManifest.xml")
+TIER_1_EXACT_MATCHES = (
+    "res/xml/backup_scheme.xml",
+    "res/xml/network_security_config.xml",
+    "res/xml/device_admin.xml",
+)
 TIER_2_MEANINGFUL = ("lib/", "assets/", "res/", "resources.arsc", "kotlin/", "smali/")
 
 APK_PREFIX_PATTERN = re.compile(r"apk[12]_[^/]+/")
@@ -25,18 +30,31 @@ def normalize_rel_path(rel_path: str) -> str:
     return APK_PREFIX_PATTERN.sub("", rel_path)
 
 def categorize_path(path: str) -> str:
-    # Normalize path: remove leading apk1_xxx/ or apk2_xxx/ prefix
-    path = APK_PREFIX_PATTERN.sub("", path)
+    # Normalize APK-specific prefix (like apk1_xxx/)
+    path = normalize_rel_path(path)
+
+    # Remove leading tmp/ or other scratch prefixes
     parts = path.split("/", 1)
     if len(parts) == 2:
         path = parts[1]
 
+    # Tier 3: Ignored auto-generated signing/build metadata
     if path.startswith(TIER_3_IGNORED_PREFIXES):
         return "tier_3"
+
+    # Tier 1: Special exact-match XMLs
+    if path in TIER_1_EXACT_MATCHES:
+        return "tier_1"
+
+    # Tier 1: Critical general patterns (e.g. classes.dex, AndroidManifest.xml)
     if any(key in path for key in TIER_1_CRITICAL):
         return "tier_1"
+
+    # Tier 2: Potentially meaningful file paths
     if any(key in path for key in TIER_2_MEANINGFUL):
         return "tier_2"
+
+    # Fallback: default to unclassified
     return "unclassified"
 
 def looks_encrypted(path):
@@ -226,21 +244,21 @@ def analyze_apk_diff(apk_path_1, apk_path_2):
             normalized_rel_path = normalize_rel_path(rel_path)
 
             #if "classes" in rel_path and rel_path.endswith(".dex"):
-            if "classes" in rel_path and rel_path.endswith(".dex") and change_type == "modified":
-                #print("WAnt to decompile")
-                dex_path1 = os.path.join(tmp_dir1, normalized_rel_path)
-                dex_path2 = os.path.join(tmp_dir2, normalized_rel_path)
-                #print("Dex path1: ", dex_path1)
-                #print("Dex path2: ", dex_path2)
-                #print("APK path1: ", apk_path_1)
-                #print("APK path2: ", apk_path_2)
-                if os.path.exists(dex_path1) and os.path.exists(dex_path2):
-                    try:
-                        print("Decompiling ", dex_path1, " and ", dex_path2)
-                        dex_diff_outputs[rel_path] = decompile_dex_and_diff(dex_path1, dex_path2)
-                    except subprocess.CalledProcessError as e:
-                        #pass
-                        dex_diff_outputs[rel_path] = f"Decompilation error: {str(e)}"
+            #if "classes" in rel_path and rel_path.endswith(".dex") and change_type == "modified":
+            #    #print("WAnt to decompile")
+            #    dex_path1 = os.path.join(tmp_dir1, normalized_rel_path)
+            #    dex_path2 = os.path.join(tmp_dir2, normalized_rel_path)
+            #    #print("Dex path1: ", dex_path1)
+            #    #print("Dex path2: ", dex_path2)
+            #    #print("APK path1: ", apk_path_1)
+            #    #print("APK path2: ", apk_path_2)
+            #    if os.path.exists(dex_path1) and os.path.exists(dex_path2):
+            #        try:
+            #            print("Decompiling ", dex_path1, " and ", dex_path2)
+            #            dex_diff_outputs[rel_path] = decompile_dex_and_diff(dex_path1, dex_path2)
+            #        except subprocess.CalledProcessError as e:
+            #            #pass
+            #            dex_diff_outputs[rel_path] = f"Decompilation error: {str(e)}"
             
             if tier != "tier_3":
                 tiered_changes[tier].append(change_entry)
@@ -269,57 +287,6 @@ def analyze_apk_diff(apk_path_1, apk_path_2):
     finally:
         shutil.rmtree(tmp_dir1)
         shutil.rmtree(tmp_dir2)
-
-#def analyze_shared_lib_or_bin(path, so_path_1, so_path_2, rc_bin_paths, rc_libs, so_match):
-#    is_shared_lib = so_match is not None
-#    lib_or_bin_name = basename(so_path_2)
-#
-#    checksec_props = radigest.compare_checksec_properties(so_path_1, so_path_2)
-#    similarity, distance = radigest.get_similarity_and_distance(so_path_1, so_path_2)
-#    summary = radigest.parse_function_diffs(so_path_1, so_path_2)
-#    total = summary["total_functions"]
-#    changed = summary["changed"]
-#
-#    digest = {
-#        "Similarity Score": round(similarity, 3),
-#        "Radiff2 Distance": distance,
-#        "Total Functions Analyzed": total,
-#        "Identical Functions": summary['identical'],
-#        "New Functions": summary['new'],
-#        "Changed Functions (sim < 1.0, excluding NEW)": changed,
-#        "Changed Matched Functions": summary['changed matched'],
-#        "Changed Unmatched Functions": summary['changed unmatched'],
-#        "Mentioned in .rc": lib_or_bin_name == "init",
-#        "TEE": False,
-#        "Hardening comparison": checksec_props
-#    }
-#
-#    mentioned_in_rc = "true" if lib_or_bin_name == "init" else "false"
-#    if is_shared_lib:
-#        if lib_or_bin_name in rc_libs:
-#            digest["Mentioned in .rc"] = True
-#            digest["Used By"] = [os.path.basename(p) for p in rc_libs[lib_or_bin_name]]
-#            mentioned_in_rc = "true"
-#    else:
-#        matched_rc_bin = any(p.endswith(so_path_2) for p in rc_bin_paths)
-#        if matched_rc_bin:
-#            digest["Mentioned in .rc"] = True
-#            mentioned_in_rc = "true"
-#
-#    formatted_summary = (
-#        f"Similarity Score: {similarity:.3f}\n"
-#        f"Radiff2 Distance: {distance}\n"
-#        f"Total functions analyzed: {total}\n"
-#        f"- Identical functions: {summary['identical']} ({summary['identical'] / total:.1%})\n"
-#        f"- New functions: {summary['new']} ({summary['new'] / total:.1%})\n"
-#        f"- Changed functions (sim < 1.0, excluding NEW): {changed} ({changed / total:.1%})\n"
-#        f"- Changed matched functions: {summary['changed matched']} ({summary['changed matched'] / total:.1%})\n"
-#        f"- Changed unmatched functions: {summary['changed unmatched']} ({summary['changed unmatched'] / total:.1%})"
-#        f"- TEE: False"
-#        f"- Hardening: {format_checksec_summary(checksec_props)}"
-#    )
-#
-#    return digest, formatted_summary + "\nMentioned in rc:" + mentioned_in_rc
 
 def analyze_shared_lib_or_bin(path, so_path_1, so_path_2, rc_bin_json, rc_libs, so_match):
     is_shared_lib = so_match is not None
@@ -521,9 +488,9 @@ def parse_diff_to_json(diff_text, rc_bin_paths=None, rc_libs=None):
                 so_path_1, so_path_2 = reconstruct_paths(path)
 
                 if apk_match:
+                    print("IS APK MATCH")
                     apk_path_1, apk_path_2 = reconstruct_paths(path)
-                    #extra_analysis, apk_digest = analyze_apk_diff(apk_path_1, apk_path_2) #TODO: bring back!!!
-                    apk_digest={}
+                    extra_analysis, apk_digest = analyze_apk_diff(apk_path_1, apk_path_2) #TODO: bring back!!!
                     if apk_digest != {}:
                         formatted_apk_digests[extract_tail_path(apk_path_1, 4)] = apk_digest
                 
@@ -543,7 +510,8 @@ def parse_diff_to_json(diff_text, rc_bin_paths=None, rc_libs=None):
 
 
                 elif so_match or radigest.is_executable_elf(so_path_2):
-                    digest, extra_analysis = analyze_shared_lib_or_bin(path, so_path_1, so_path_2, rc_bin_paths, rc_libs, so_match)
+                    #digest, extra_analysis = analyze_shared_lib_or_bin(path, so_path_1, so_path_2, rc_bin_paths, rc_libs, so_match) #TODO:take away!
+                    digest, extra_analysis = "", ""
                     formatted_digests[extract_tail_path(so_path_2, 4)] = digest
 
                 elif "security/cacerts" in path:
@@ -602,7 +570,7 @@ def parse_diff_to_json(diff_text, rc_bin_paths=None, rc_libs=None):
         path_parts = path.split("/")
         add_to_hierarchy(path_parts, (added, deleted), root, status, extra_analysis)
     
-    with open("shiba-oct-nov-23-bins.json", "w") as f:
+    with open("shiba-oct-nov-23-bins-empty.json", "w") as f:
         json.dump(formatted_digests, f, indent=2)
     
     with open("shiba-oct-nov-23-apks.json", "w") as f:
@@ -616,26 +584,14 @@ def dump_json(filename, bins_in_rc, elf_libs_file, topmost_key = None):
 
     full_rc_bin_paths = []
     rc_libs = {}
-    #with open(bins_in_rc, "r") as f:
-    #    for line in f:
-    #        binary_path = line.strip()
-    #        if not binary_path:
-    #            continue
-    #        full_rc_bin_paths.append(binary_path)
-    #print(full_rc_bin_paths)
-    #print("-------------------------------------------------")
 
     with open(bins_in_rc) as f:
         full_rc_bin_paths = json.load(f)
 
     with open(elf_libs_file) as f:
         rc_libs = json.load(f)
-    #print(rc_libs)
-    #print("-------------------------------------------------")
 
-    
     result = parse_diff_to_json(diff_text, full_rc_bin_paths, rc_libs)
-    #result = parse_diff_to_json(diff_text)
 
     if topmost_key is not None:
         result = wrap_json_with_topmost_key(result, topmost_key)
@@ -656,5 +612,5 @@ if __name__ == "__main__":
     args = parser.parse_args()
     res = dump_json(args.diff_file, args.bins_in_rc, args.elf_libs)
     #print(res)
-    with open("shiba-oct-nov2023.json", "w") as f:
+    with open("shiba-oct-nov2023-r2.json", "w") as f:
         f.write(res)
