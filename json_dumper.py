@@ -490,7 +490,8 @@ def parse_diff_to_json(diff_text, rc_bin_paths=None, rc_libs=None):
                 if apk_match:
                     print("IS APK MATCH")
                     apk_path_1, apk_path_2 = reconstruct_paths(path)
-                    extra_analysis, apk_digest = analyze_apk_diff(apk_path_1, apk_path_2) #TODO: bring back!!!
+                    #extra_analysis, apk_digest = analyze_apk_diff(apk_path_1, apk_path_2) #TODO: bring back!!!
+                    apk_digest={}
                     if apk_digest != {}:
                         formatted_apk_digests[extract_tail_path(apk_path_1, 4)] = apk_digest
                 
@@ -573,7 +574,7 @@ def parse_diff_to_json(diff_text, rc_bin_paths=None, rc_libs=None):
     with open("shiba-oct-nov-23-bins-empty.json", "w") as f:
         json.dump(formatted_digests, f, indent=2)
     
-    with open("shiba-oct-nov-23-apks.json", "w") as f:
+    with open("shiba-oct-nov-23-apks-empty.json", "w") as f:
         json.dump(formatted_apk_digests, f, indent=2)
 
     root["__renamed__"] = renamed_files
@@ -612,5 +613,5 @@ if __name__ == "__main__":
     args = parser.parse_args()
     res = dump_json(args.diff_file, args.bins_in_rc, args.elf_libs)
     #print(res)
-    with open("shiba-oct-nov2023-r2.json", "w") as f:
+    with open("shiba-apex.json", "w") as f:
         f.write(res)

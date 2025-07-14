@@ -46,6 +46,7 @@ def parse_rc_file(path, service_map, found_binaries, binary_metadata):
                     current_service, current_binary = match.groups()
                     service_map[current_service] = current_binary
                     found_binaries.add(current_binary)
+                    binary_metadata.setdefault(current_binary, {})["source"] = "service"
                     service_block = {}
 
             # Parse inside service block
@@ -65,6 +66,7 @@ def parse_rc_file(path, service_map, found_binaries, binary_metadata):
                 for token in parts:
                     if token.startswith("/") and not token.startswith("/dev"):
                         found_binaries.add(token)
+                        binary_metadata.setdefault(token, {})["source"] = "exec"
                         break
 
             # Match exec_start
@@ -73,11 +75,14 @@ def parse_rc_file(path, service_map, found_binaries, binary_metadata):
                 if match:
                     svc = match.group(1)
                     if svc in service_map:
-                        found_binaries.add(service_map[svc])
+                        binary_path = service_map[svc]
+                        found_binaries.add(binary_path)
+                        binary_metadata.setdefault(binary_path, {})["source"] = "exec_start"
 
-        # Save last service block
+        # Save final service block
         if current_binary and service_block:
             binary_metadata.setdefault(current_binary, {}).update(service_block)
+
 
 
 def is_elf_binary(path):
@@ -111,11 +116,11 @@ def main(rc_dir):
         #actual_path = rc_dir / rel_path
         actual_path = resolve_binary_path(binary, rc_dir)
         print("Actual path: ", actual_path, " result: ", is_elf_binary(actual_path))
-        #if is_elf_binary(actual_path):
-        #    filtered.append(actual_path)
-        #else:
-        #    print("IS NOT ELF BINARY: ", actual_path)
-        filtered.append(actual_path)
+        if is_elf_binary(actual_path):
+            filtered.append(actual_path)
+        else:
+            print("IS NOT ELF BINARY: ", actual_path)
+        #filtered.append(actual_path)
 
     print(f"\nUsed ELF binaries in .rc files ({len(filtered)}):")
     with open(args.out_file_simple, "w") as f:
