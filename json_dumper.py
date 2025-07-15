@@ -136,9 +136,9 @@ def analyze_tee_trusted_app(path, ta1_path, ta2_path, rc_bin_paths):
     
     ta2_path_str = os.path.abspath(str(ta2_path))
 
-    if ta2_path_str in rc_bin_json:
-        digest["Mentioned in .rc"] = True
-        digest["rc_metadata"] = rc_bin_json[ta2_path_str]
+    #if ta2_path_str in rc_bin_json:
+    #    digest["Mentioned in .rc"] = True
+    #    digest["rc_metadata"] = rc_bin_json[ta2_path_str]
 
     formatted_summary = (
         f"Similarity Score: {digest['Similarity Score']:.3f}\n"
@@ -157,23 +157,6 @@ def analyze_tee_trusted_app(path, ta1_path, ta2_path, rc_bin_paths):
     os.unlink(tmp2.name)
 
     return digest, formatted_summary
-
-def decompile_dex_and_diff(dex_path1, dex_path2):
-    print("AAAAA\n")
-    diff_result = subprocess.run(
-            ["git", "diff", "--no-index", "--numstat", dex_path1, dex_path2],
-            capture_output=True, text=True
-        )
-
-    #with tempfile.TemporaryDirectory() as d1, tempfile.TemporaryDirectory() as d2:
-    #    subprocess.run(["jadx", "-d", d1, dex_path1], check=True)
-    #    subprocess.run(["jadx", "-d", d2, dex_path2], check=True)
-#
-    #    diff_result = subprocess.run(
-    #        ["git", "diff", "--no-index", "--numstat", d1, d2],
-    #        capture_output=True, text=True
-    #    )
-    #    return diff_result.stdout.strip()
 
 def analyze_apk_diff(apk_path_1, apk_path_2):
     apk_diff_formatted_summary = {}
@@ -242,23 +225,6 @@ def analyze_apk_diff(apk_path_1, apk_path_2):
             }
 
             normalized_rel_path = normalize_rel_path(rel_path)
-
-            #if "classes" in rel_path and rel_path.endswith(".dex"):
-            #if "classes" in rel_path and rel_path.endswith(".dex") and change_type == "modified":
-            #    #print("WAnt to decompile")
-            #    dex_path1 = os.path.join(tmp_dir1, normalized_rel_path)
-            #    dex_path2 = os.path.join(tmp_dir2, normalized_rel_path)
-            #    #print("Dex path1: ", dex_path1)
-            #    #print("Dex path2: ", dex_path2)
-            #    #print("APK path1: ", apk_path_1)
-            #    #print("APK path2: ", apk_path_2)
-            #    if os.path.exists(dex_path1) and os.path.exists(dex_path2):
-            #        try:
-            #            print("Decompiling ", dex_path1, " and ", dex_path2)
-            #            dex_diff_outputs[rel_path] = decompile_dex_and_diff(dex_path1, dex_path2)
-            #        except subprocess.CalledProcessError as e:
-            #            #pass
-            #            dex_diff_outputs[rel_path] = f"Decompilation error: {str(e)}"
             
             if tier != "tier_3":
                 tiered_changes[tier].append(change_entry)
@@ -365,6 +331,32 @@ def analyze_shared_lib_or_bin(path, so_path_1, so_path_2, rc_bin_json, rc_libs, 
 
     return digest, formatted_summary
 
+def is_sepolicy_file(path):
+    try:
+        result = subprocess.run(
+            ["file", path],
+            capture_output=True,
+            text=True,
+            check=True
+        )
+        return "SE Linux policy" in result.stdout
+    except subprocess.CalledProcessError as e:
+        print(f"Error running file on {path}: {e}")
+        return False
+
+def analyze_sepolicies(sepath_1, sepath_2):
+    try:
+        result = subprocess.run(
+            ["sediff", "--stats", sepath_1, sepath_2],
+            capture_output=True,
+            text=True,
+            check=True
+        )
+        return result.stdout
+    except subprocess.CalledProcessError as e:
+        print(f"Error running analyzing sepolicies {sepath_1}, {sepath_2}")
+        return False
+
 
 def extract_tail_path(path, levels=3):
     p = Path(path)
@@ -423,7 +415,7 @@ def reconstruct_paths(diff_path):
     new_path = f"{before}{new_part}{after}"
     return old_path, new_path
 
-def parse_diff_to_json(diff_text, rc_bin_paths=None, rc_libs=None):
+def parse_diff_to_json(diff_text, bin_out, apk_out, se_out, rc_bin_paths=None, rc_libs=None):
     if rc_bin_paths is None:
         rc_bin_paths = []
     if rc_libs is None:
@@ -452,8 +444,9 @@ def parse_diff_to_json(diff_text, rc_bin_paths=None, rc_libs=None):
     apk_pattern = re.compile(r'([\w./-]+\.apk)')
 
     so_counter = 0
-    formatted_digests = {}
+    formatted_bin_digests = {}
     formatted_apk_digests = {}
+    formatted_sepolicy_digests = {}
 
     for line in lines:
         parts = line.split()
@@ -490,8 +483,8 @@ def parse_diff_to_json(diff_text, rc_bin_paths=None, rc_libs=None):
                 if apk_match:
                     print("IS APK MATCH")
                     apk_path_1, apk_path_2 = reconstruct_paths(path)
-                    #extra_analysis, apk_digest = analyze_apk_diff(apk_path_1, apk_path_2) #TODO: bring back!!!
-                    apk_digest={}
+                    extra_analysis, apk_digest = analyze_apk_diff(apk_path_1, apk_path_2) #TODO: bring back!!!
+                    #apk_digest={}
                     if apk_digest != {}:
                         formatted_apk_digests[extract_tail_path(apk_path_1, 4)] = apk_digest
                 
@@ -501,19 +494,27 @@ def parse_diff_to_json(diff_text, rc_bin_paths=None, rc_libs=None):
                     if is_tee_trusted_app(ta2_path):
                         print("Is trusted app!")
                         digest, formatted_summary = analyze_tee_trusted_app(path, ta1_path, ta2_path, rc_bin_paths)
-                        formatted_digests[extract_tail_path(ta2_path, 4)] = digest
+                        formatted_bin_digests[extract_tail_path(ta2_path, 4)] = digest
                         extra_analysis = formatted_summary
                     elif looks_encrypted(ta2_path):
                         print("Looks enctypted!")
                         digest = {"TEE" : True, "Obfuscated" : True }
-                        formatted_digests[extract_tail_path(ta2_path, 4)] = digest
+                        formatted_bin_digests[extract_tail_path(ta2_path, 4)] = digest
                         extra_analysis = "TEE: true;\n Obfuscated: true"
+                
+                elif "sepolicy" in path:
+                    sepath_1, sepath_2  = reconstruct_paths(path)
+                    print("sepath1: ", sepath_1, "sepath2: ", sepath_2)
+                    if is_sepolicy_file(sepath_2):
+                        print("Is sepolicy!")
+                        sepolicy_diff = analyze_sepolicies(sepath_1, sepath_2)
+                        formatted_sepolicy_digests[extract_tail_path(sepath_2, 4)] = sepolicy_diff
 
 
                 elif so_match or radigest.is_executable_elf(so_path_2):
-                    #digest, extra_analysis = analyze_shared_lib_or_bin(path, so_path_1, so_path_2, rc_bin_paths, rc_libs, so_match) #TODO:take away!
-                    digest, extra_analysis = "", ""
-                    formatted_digests[extract_tail_path(so_path_2, 4)] = digest
+                    digest, extra_analysis = analyze_shared_lib_or_bin(path, so_path_1, so_path_2, rc_bin_paths, rc_libs, so_match) #TODO:take away!
+                    #digest, extra_analysis = "", ""
+                    formatted_bin_digests[extract_tail_path(so_path_2, 4)] = digest
 
                 elif "security/cacerts" in path:
                     cert1, cert2 = reconstruct_paths(path)
@@ -571,16 +572,19 @@ def parse_diff_to_json(diff_text, rc_bin_paths=None, rc_libs=None):
         path_parts = path.split("/")
         add_to_hierarchy(path_parts, (added, deleted), root, status, extra_analysis)
     
-    with open("shiba-oct-nov-23-bins-empty.json", "w") as f:
-        json.dump(formatted_digests, f, indent=2)
+    with open(bin_out, "w") as f:
+        json.dump(formatted_bin_digests, f, indent=2)
     
-    with open("shiba-oct-nov-23-apks-empty.json", "w") as f:
+    with open(apk_out, "w") as f:
         json.dump(formatted_apk_digests, f, indent=2)
+
+    with open(se_out, "w") as f:
+        json.dump(formatted_sepolicy_digests, f, indent=2)
 
     root["__renamed__"] = renamed_files
     return root
 
-def dump_json(filename, bins_in_rc, elf_libs_file, topmost_key = None):
+def dump_json(filename, bins_in_rc, elf_libs_file, bin_out, apk_out, se_out, topmost_key = None):
     diff_text = open(filename, "r").read()
 
     full_rc_bin_paths = []
@@ -592,7 +596,7 @@ def dump_json(filename, bins_in_rc, elf_libs_file, topmost_key = None):
     with open(elf_libs_file) as f:
         rc_libs = json.load(f)
 
-    result = parse_diff_to_json(diff_text, full_rc_bin_paths, rc_libs)
+    result = parse_diff_to_json(diff_text, bin_out, apk_out, se_out, full_rc_bin_paths, rc_libs)
 
     if topmost_key is not None:
         result = wrap_json_with_topmost_key(result, topmost_key)
@@ -607,11 +611,15 @@ def dump_json(filename, bins_in_rc, elf_libs_file, topmost_key = None):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Dump json digest")
     parser.add_argument("diff_file", help="File containing git diff digest")
+    parser.add_argument("gen_output", help="Entire JSON mapping output")
     parser.add_argument("bins_in_rc", help="File containing a list of bins in .rc files")
     parser.add_argument("elf_libs", help="JSON file containing shared libs to bins from init.rc mapping")
+    parser.add_argument("bin_digest_output", help="Binary digest output (json)")
+    parser.add_argument("apk_digest_output", help="APK digest output (json)")
+    parser.add_argument("sepolicy_digest_output", help="SELinux policy digest output (json)")
     
     args = parser.parse_args()
-    res = dump_json(args.diff_file, args.bins_in_rc, args.elf_libs)
+    res = dump_json(args.diff_file, args.bins_in_rc, args.elf_libs, args.bin_digest_output, args.apk_digest_output, args.sepolicy_digest_output)
     #print(res)
-    with open("shiba-apex.json", "w") as f:
+    with open(args.gen_output, "w") as f:
         f.write(res)
