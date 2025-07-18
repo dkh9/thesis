@@ -13,6 +13,26 @@ vendor = "samsung"
 
 ipy_prompt = re.compile(r"In \[(\d+)\]:")  # Matches In [n]:
 
+def run_prolog_print(child, timeout=180):
+    child.sendline("print")
+    output_lines = []
+    start_time = time.time()
+
+    while True:
+        try:
+            idx = child.expect([r"query \[.*?\]>", r".+\r?\n"], timeout=5)
+            if idx == 0:
+                break  # We hit the prompt — done
+            line = child.match.group(0).strip()
+            if line != "print" and not re.match(r"query \[.*?\]>", line):
+                output_lines.append(line)
+        except pexpect.TIMEOUT:
+            if time.time() - start_time > timeout:
+                print("[!] Timeout while collecting 'print' output")
+                break
+
+    return "\n".join(output_lines)
+
 def dump_process_dict_to_jsonl(process_dict, output_path):
     with open(output_path, 'w') as f:
         for k, v in process_dict.items():
@@ -95,6 +115,25 @@ def extract_fw(vendor, archive, child):
 
     return out
 
+def get_paths(child, query):
+    print(f"[+] Running query: {query}")
+    child.sendline(query)
+    child.expect(r"query \[.*?\]>", timeout=360)
+    query_output = child.before.strip()
+    if "ERROR" in query_output:
+        print("ERROR! Going onto the next:")
+        return ""
+    else:
+        print("Query result:")
+        print(query_output)
+        print("-------------------")
+        time.sleep(3)
+        print("[+] Running print")
+        paths = run_prolog_print(child)
+        print("Extracted paths:")
+        print(paths)
+        return paths
+
 def run_command(child, cmd, prompt=r"\$", timeout=30):
     child.sendline(cmd)
     try:
@@ -116,7 +155,7 @@ def main():
     operation, archive, vendor, outfile = sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4]
     
     
-    if operation not in ("extract"):
+    if operation not in ("extract", "process"):
         print("Unsupported op:", operation)
         sys.exit(1)
 
@@ -125,12 +164,12 @@ def main():
     child.expect(r"\$")
     out = run_command(child, "cd /opt/BigMAC/BigMAC")
     out = run_command(child, "source venv/bin/activate", prompt=r"\(venv\).*?\$")
-    out = extract_fw(vendor, archive, child)
+    policy = os.path.splitext(os.path.basename(archive))[0]
+    '''out = extract_fw(vendor, archive, child)
 
     if "INFO: Saving extracted information" in out:
         print(" Finished extracting.")
 
-    policy = os.path.splitext(os.path.basename(archive))[0]
     extract_path = f"extract/{vendor}/{policy}"
     archive_path = os.path.abspath(archive)
     cmd = f"sudo rm -rf {extract_path}"
@@ -153,7 +192,7 @@ def main():
         print("Successfully saved the policy!")
     else:
         print("Failed at saving the policy!")
-        quit_docker(child)
+        quit_docker(child)'''
     
     out = run_command(child, f"venv/bin/python ./process.py --vendor {vendor} {policy} --load --debug", prompt=r"In \[\d+\]:", timeout=60)
     print("OUT AFTER WAITING FOR PROLOG:")
@@ -162,14 +201,64 @@ def main():
     out = run_ipy_command(child, "inst.processes")
     print("Extracted processes")
     process_dict = extract_process_dict(out)
+
     print("Quitting...")
-    out = run_command(child, "quit", prompt=r"\(venv\).*?\$", timeout=30)
+    out = run_command(child, "quit", prompt=r"\(venv\).*?\$", timeout=120)
+
+    uapps = []
+    sys_server = []
+    network_stack = []
+    for key in process_dict.keys():
+        if "untrusted_app" in key:
+            uapps.append(key)
+        elif "system_server" in key:
+            sys_server.append(key)
+        elif "network_stack" in key:
+            network_stack.append(key)
+
+#-------------------------------------------------------------------------------------------
+
+    print("Loading prolog prompt...")
+    out = run_command(child, f"venv/bin/python ./process.py --vendor {vendor} {policy} --load --prolog", prompt=r"query \[.*?\]>", timeout=480)
+    time.sleep(3)
+
+    server_out = ""
+    uapp_out = ""
+    network_out = ""
+
+    for server in sys_server:
+        query = f"query _ process:{server} 2"
+        paths = get_paths(child, query)
+        server_out += paths
+    
+    for uapp in uapps:
+        query = f"query process:{uapp} _ 2"
+        paths = get_paths(child, query)
+        uapp_out += paths
+
+    for ns in network_stack:
+        query = f"query _ process:{ns} 2"
+        paths = get_paths(child, query)
+        network_out += paths
+
+    out = run_command(child, "quit", prompt=r"\(venv\).*?\$", timeout=120)
     quit_docker(child)
 
-    print("KEYS: ", process_dict)
+    with open("server_paths.txt", "a") as f:
+        f.write(server_out)
+    
+    with open("uapp_paths.txt", "a") as f:
+        f.write(uapp_out)
+    
+    with open("network_paths.txt", "a") as f:
+        f.write(network_out)
+
+
     dump_process_dict_to_jsonl(process_dict, outfile)
 
-    #venv/bin/python extract.py --vendor samsung --user dcl 20250526205751.zip'''
+    print("UAPPS: ", uapps)
+    print("SYTEM SERVER: ", sys_server)
+    print("NETWORK STACK: ", network_stack)
 
 if __name__ == "__main__":
     main()
