@@ -1,0 +1,2640 @@
+{
+  "libprotobuf-cpp-lite.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/aconfigd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/idmap2d",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/incidentd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/lpdumpd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/odsign",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/simpleperf",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/storaged",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/surfaceflinger",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_engine",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_verifier"
+  ],
+  "libc++.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/aconfigd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/apexd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/app_process",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/app_process64",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/atrace",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/auditctl",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/blank_screen",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/bootanimation",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/bootstat",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/boringssl_self_test64",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/credstore",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/dmesgd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/drmserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/dumpstate",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/flags_health_check",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gatekeeperd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gpuservice",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gsid",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/heapprofd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/hw/android.system.suspend-service",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/idmap2d",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/incidentd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/installd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/keystore2",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/llkd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/lmkd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/logd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/lpdumpd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mdnsd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mediaextractor",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mediametrics",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mediaserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/misctrl",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mtectrl",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/netbpfload",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/netd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/odsign",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/perfetto",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/recovery-persist",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/recovery-refresh",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/rss_hwm_reset",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/servicemanager",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/simpleperf",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/storaged",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/surfaceflinger",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/tombstoned",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/traced",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/traced_perf",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/traced_probes",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/ueventd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/uncrypt",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_engine",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_verifier",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/uprobestats",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/usbd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/vold",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/wificond",
+    "/home/dasha/thesis/remote/shiba-sep24/system_ext/bin/gs_watchdogd",
+    "/home/dasha/thesis/remote/shiba-sep24/system_ext/bin/hw/vendor.google.edgetpu_app_service@1.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/aocd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/aocxd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/bipchmgr",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/boringssl_self_test64",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/cbd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/dmd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.audio.service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.authsecret-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.bluetooth-service.bcmbtlinux",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.boot-service.default-pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.composer.hwc3-service.pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.confirmationui-service.trusty.vendor",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.contexthub-service.generic",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.drm-service.clearkey",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.dumpstate-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.edgetpu.logging@service-edgetpu-logging",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.gatekeeper-service.trusty",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.gnss@2.1-service-brcm",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.graphics.allocator-V1-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.gxp.logging@service-gxp-logging",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.health-service.zuma",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.health.storage-service.default",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.identity@1.0-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.input.processor-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.memtrack-service.pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.neuralnetworks@service-darwinn-aidl",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.nfc-service.st",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.oemlock-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.power-service.pixel-libperfmgr",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.power.stats-service.pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.secure_element-service.thales",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.secure_element-service.uicc",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.security.keymint-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.sensors-service.multihal",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.thermal-service.pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.usb-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.usb.gadget-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.vibrator-service.cs40l26",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.weaver-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/battery_mitigation",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/citadeld",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/com.google.edgetpu.dba-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/com.google.edgetpu.tachyon-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/google.hardware.media.c2@2.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/gpsd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/hostapd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/lhd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/rild_exynos",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/samsung.hardware.media.c2@1.2-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/scd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.dolby.media.c2@1.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.audiometricext@1.0-service-vendor",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.edgetpu_vendor_service@1.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.google_battery-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.radioext@1.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.wireless_charger-default",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/wpa_supplicant",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/misc_writer",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/modem_logging_control",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/modem_ml_svc_sit",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/modem_svc_sit",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/pixelstats-vendor",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/rebalance_interrupts-vendor",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/rfsd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/securedpud.slider",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/sscoredump",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/storageproxyd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/trusty_apploader",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/trusty_metricsd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/twoshay",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/vndservicemanager"
+  ],
+  "libc.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/aconfigd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/apexd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/app_process",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/app_process64",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/atrace",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/auditctl",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/blank_screen",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/bootanimation",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/bootstat",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/boringssl_self_test64",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/credstore",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/dmesgd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/drmserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/dumpstate",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/flags_health_check",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gatekeeperd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gpuservice",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gsid",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/heapprofd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/hw/android.system.suspend-service",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/idmap2d",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/incidentd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/installd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/keystore2",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/killall",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/llkd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/lmkd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/logd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/lpdumpd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mdnsd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mediaextractor",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mediametrics",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mediaserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/misctrl",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mtectrl",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/netbpfload",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/netd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/odsign",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/perfetto",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/prng_seeder",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/recovery-persist",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/recovery-refresh",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/rss_hwm_reset",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/servicemanager",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/sh",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/simpleperf",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/storaged",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/surfaceflinger",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/tombstoned",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/traced",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/traced_perf",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/traced_probes",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/ueventd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/uncrypt",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_engine",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_verifier",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/uprobestats",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/usbd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/vold",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/wificond",
+    "/home/dasha/thesis/remote/shiba-sep24/system_ext/bin/gs_watchdogd",
+    "/home/dasha/thesis/remote/shiba-sep24/system_ext/bin/hw/vendor.google.edgetpu_app_service@1.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/aocd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/aocxd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/bipchmgr",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/boringssl_self_test64",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/cbd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/dmd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/gpu_probe",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.audio.service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.authsecret-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.bluetooth-service.bcmbtlinux",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.boot-service.default-pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.composer.hwc3-service.pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.confirmationui-service.trusty.vendor",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.contexthub-service.generic",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.drm-service.clearkey",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.dumpstate-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.edgetpu.logging@service-edgetpu-logging",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.gatekeeper-service.trusty",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.gnss@2.1-service-brcm",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.graphics.allocator-V1-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.gxp.logging@service-gxp-logging",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.health-service.zuma",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.health.storage-service.default",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.identity@1.0-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.input.processor-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.memtrack-service.pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.neuralnetworks@service-darwinn-aidl",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.nfc-service.st",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.oemlock-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.power-service.pixel-libperfmgr",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.power.stats-service.pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.secure_element-service.thales",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.secure_element-service.uicc",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.security.keymint-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.security.keymint-service.rust.trusty",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.sensors-service.multihal",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.thermal-service.pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.usb-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.usb.gadget-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.vibrator-service.cs40l26",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.weaver-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/battery_mitigation",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/citadeld",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/com.google.edgetpu.dba-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/com.google.edgetpu.tachyon-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/google.hardware.media.c2@2.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/gpsd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/hostapd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/lhd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/rild_exynos",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/samsung.hardware.media.c2@1.2-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/scd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.dolby.media.c2@1.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.audiometricext@1.0-service-vendor",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.edgetpu_vendor_service@1.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.google_battery-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.radioext@1.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.wireless_charger-default",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/wpa_supplicant",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/misc_writer",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/modem_logging_control",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/modem_ml_svc_sit",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/modem_svc_sit",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/pixelstats-vendor",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/rebalance_interrupts-vendor",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/rfsd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/securedpud.slider",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/sscoredump",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/storageproxyd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/trusty_apploader",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/trusty_metricsd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/twoshay",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/vndservicemanager"
+  ],
+  "libm.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/aconfigd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/apexd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/app_process",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/app_process64",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/atrace",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/auditctl",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/blank_screen",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/bootanimation",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/bootstat",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/boringssl_self_test64",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/credstore",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/dmesgd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/drmserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/dumpstate",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/flags_health_check",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gatekeeperd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gpuservice",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gsid",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/heapprofd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/hw/android.system.suspend-service",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/idmap2d",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/incidentd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/installd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/keystore2",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/killall",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/llkd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/lmkd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/logd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/lpdumpd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mdnsd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mediaextractor",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mediametrics",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mediaserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/misctrl",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mtectrl",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/netbpfload",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/netd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/odsign",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/perfetto",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/recovery-persist",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/recovery-refresh",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/rss_hwm_reset",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/servicemanager",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/simpleperf",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/storaged",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/surfaceflinger",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/tombstoned",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/traced",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/traced_perf",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/traced_probes",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/ueventd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/uncrypt",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_engine",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_verifier",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/uprobestats",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/usbd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/vold",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/wificond",
+    "/home/dasha/thesis/remote/shiba-sep24/system_ext/bin/gs_watchdogd",
+    "/home/dasha/thesis/remote/shiba-sep24/system_ext/bin/hw/vendor.google.edgetpu_app_service@1.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/aocd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/aocxd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/bipchmgr",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/boringssl_self_test64",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/cbd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/dmd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.audio.service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.authsecret-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.bluetooth-service.bcmbtlinux",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.boot-service.default-pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.composer.hwc3-service.pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.confirmationui-service.trusty.vendor",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.contexthub-service.generic",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.drm-service.clearkey",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.dumpstate-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.edgetpu.logging@service-edgetpu-logging",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.gatekeeper-service.trusty",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.gnss@2.1-service-brcm",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.graphics.allocator-V1-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.gxp.logging@service-gxp-logging",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.health-service.zuma",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.health.storage-service.default",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.identity@1.0-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.input.processor-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.memtrack-service.pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.neuralnetworks@service-darwinn-aidl",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.nfc-service.st",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.oemlock-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.power-service.pixel-libperfmgr",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.power.stats-service.pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.secure_element-service.thales",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.secure_element-service.uicc",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.security.keymint-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.sensors-service.multihal",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.thermal-service.pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.usb-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.usb.gadget-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.vibrator-service.cs40l26",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.weaver-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/battery_mitigation",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/citadeld",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/com.google.edgetpu.dba-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/com.google.edgetpu.tachyon-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/google.hardware.media.c2@2.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/gpsd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/hostapd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/lhd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/rild_exynos",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/samsung.hardware.media.c2@1.2-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/scd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.dolby.media.c2@1.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.audiometricext@1.0-service-vendor",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.edgetpu_vendor_service@1.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.google_battery-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.radioext@1.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.wireless_charger-default",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/wpa_supplicant",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/misc_writer",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/modem_logging_control",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/modem_ml_svc_sit",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/modem_svc_sit",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/pixelstats-vendor",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/rebalance_interrupts-vendor",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/rfsd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/securedpud.slider",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/sscoredump",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/storageproxyd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/trusty_apploader",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/trusty_metricsd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/twoshay",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/vndservicemanager"
+  ],
+  "libdl.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/aconfigd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/apexd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/app_process",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/app_process64",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/atrace",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/auditctl",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/blank_screen",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/bootanimation",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/bootstat",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/boringssl_self_test64",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/credstore",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/dmesgd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/drmserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/dumpstate",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/flags_health_check",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gatekeeperd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gpuservice",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gsid",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/heapprofd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/hw/android.system.suspend-service",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/idmap2d",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/incidentd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/installd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/killall",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/llkd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/lmkd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/logd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/lpdumpd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mdnsd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mediaextractor",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mediametrics",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mediaserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/misctrl",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mtectrl",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/netbpfload",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/netd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/odsign",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/perfetto",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/recovery-persist",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/recovery-refresh",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/rss_hwm_reset",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/servicemanager",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/simpleperf",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/storaged",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/surfaceflinger",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/tombstoned",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/traced",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/traced_perf",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/traced_probes",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/ueventd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/uncrypt",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_engine",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_verifier",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/uprobestats",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/usbd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/vold",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/wificond",
+    "/home/dasha/thesis/remote/shiba-sep24/system_ext/bin/gs_watchdogd",
+    "/home/dasha/thesis/remote/shiba-sep24/system_ext/bin/hw/vendor.google.edgetpu_app_service@1.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/aocd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/aocxd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/bipchmgr",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/boringssl_self_test64",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/cbd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/dmd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/gpu_probe",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.audio.service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.authsecret-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.bluetooth-service.bcmbtlinux",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.boot-service.default-pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.composer.hwc3-service.pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.confirmationui-service.trusty.vendor",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.contexthub-service.generic",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.drm-service.clearkey",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.dumpstate-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.edgetpu.logging@service-edgetpu-logging",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.gatekeeper-service.trusty",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.gnss@2.1-service-brcm",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.graphics.allocator-V1-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.gxp.logging@service-gxp-logging",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.health-service.zuma",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.health.storage-service.default",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.identity@1.0-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.input.processor-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.memtrack-service.pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.neuralnetworks@service-darwinn-aidl",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.nfc-service.st",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.oemlock-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.power-service.pixel-libperfmgr",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.power.stats-service.pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.secure_element-service.thales",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.secure_element-service.uicc",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.security.keymint-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.sensors-service.multihal",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.thermal-service.pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.usb-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.usb.gadget-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.vibrator-service.cs40l26",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.weaver-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/battery_mitigation",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/citadeld",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/com.google.edgetpu.dba-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/com.google.edgetpu.tachyon-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/google.hardware.media.c2@2.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/gpsd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/hostapd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/lhd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/rild_exynos",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/samsung.hardware.media.c2@1.2-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/scd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.dolby.media.c2@1.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.audiometricext@1.0-service-vendor",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.edgetpu_vendor_service@1.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.google_battery-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.radioext@1.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.wireless_charger-default",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/wpa_supplicant",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/misc_writer",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/modem_logging_control",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/modem_ml_svc_sit",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/modem_svc_sit",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/pixelstats-vendor",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/rebalance_interrupts-vendor",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/rfsd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/securedpud.slider",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/sscoredump",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/storageproxyd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/trusty_apploader",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/trusty_metricsd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/twoshay",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/vndservicemanager"
+  ],
+  "apex_aidl_interface-cpp.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/apexd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_engine"
+  ],
+  "libbinder.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/apexd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/app_process",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/app_process64",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/atrace",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/blank_screen",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/bootanimation",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/credstore",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/drmserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/dumpstate",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gatekeeperd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gpuservice",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gsid",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/hw/android.system.suspend-service",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/idmap2d",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/incidentd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/installd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/logd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/lpdumpd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mediaextractor",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mediametrics",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mediaserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/netd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/odsign",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/servicemanager",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/storaged",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/surfaceflinger",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_engine",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_verifier",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/vold",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/wificond",
+    "/home/dasha/thesis/remote/shiba-sep24/system_ext/bin/hw/vendor.google.edgetpu_app_service@1.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/aocxd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.audio.service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.composer.hwc3-service.pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.neuralnetworks@service-darwinn-aidl",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.usb-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/citadeld",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/com.google.edgetpu.dba-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/com.google.edgetpu.tachyon-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/google.hardware.media.c2@2.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/samsung.hardware.media.c2@1.2-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.dolby.media.c2@1.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.edgetpu_vendor_service@1.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/trusty_metricsd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/twoshay",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/vndservicemanager"
+  ],
+  "libutils.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/apexd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/app_process",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/app_process64",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/atrace",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/blank_screen",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/bootanimation",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/credstore",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/dmesgd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/drmserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/dumpstate",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gatekeeperd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gpuservice",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/hw/android.system.suspend-service",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/idmap2d",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/incidentd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/installd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/logd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/lpdumpd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mediaextractor",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mediametrics",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mediaserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/netd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/odsign",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/servicemanager",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/storaged",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/surfaceflinger",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/ueventd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_engine",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_verifier",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/usbd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/vold",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/wificond",
+    "/home/dasha/thesis/remote/shiba-sep24/system_ext/bin/hw/vendor.google.edgetpu_app_service@1.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/aocxd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/bipchmgr",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/dmd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.audio.service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.authsecret-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.bluetooth-service.bcmbtlinux",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.composer.hwc3-service.pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.confirmationui-service.trusty.vendor",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.contexthub-service.generic",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.drm-service.clearkey",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.dumpstate-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.edgetpu.logging@service-edgetpu-logging",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.gatekeeper-service.trusty",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.gnss@2.1-service-brcm",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.graphics.allocator-V1-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.gxp.logging@service-gxp-logging",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.health-service.zuma",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.identity@1.0-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.input.processor-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.neuralnetworks@service-darwinn-aidl",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.nfc-service.st",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.oemlock-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.power-service.pixel-libperfmgr",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.power.stats-service.pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.secure_element-service.thales",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.secure_element-service.uicc",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.security.keymint-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.sensors-service.multihal",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.thermal-service.pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.usb-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.usb.gadget-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.vibrator-service.cs40l26",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.weaver-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/battery_mitigation",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/citadeld",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/com.google.edgetpu.dba-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/com.google.edgetpu.tachyon-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/google.hardware.media.c2@2.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/gpsd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/hostapd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/lhd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/samsung.hardware.media.c2@1.2-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/scd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.dolby.media.c2@1.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.audiometricext@1.0-service-vendor",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.edgetpu_vendor_service@1.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.radioext@1.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.wireless_charger-default",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/wpa_supplicant",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/modem_logging_control",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/pixelstats-vendor",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/rfsd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/securedpud.slider",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/sscoredump",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/trusty_metricsd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/twoshay",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/vndservicemanager"
+  ],
+  "liblog.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/apexd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/app_process",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/app_process64",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/atrace",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/bootanimation",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/bootstat",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/credstore",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/dmesgd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/drmserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/dumpstate",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gatekeeperd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gpuservice",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gsid",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/heapprofd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/hw/android.system.suspend-service",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/incidentd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/installd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/keystore2",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/killall",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/llkd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/lmkd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/lpdumpd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mdnsd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mediaextractor",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mediametrics",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mediaserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/misctrl",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/netbpfload",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/netd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/perfetto",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/recovery-persist",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/recovery-refresh",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/rss_hwm_reset",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/servicemanager",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/simpleperf",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/storaged",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/surfaceflinger",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/traced",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/traced_perf",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/traced_probes",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/ueventd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_engine",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_verifier",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/uprobestats",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/usbd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/vold",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/aocd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/aocxd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/bipchmgr",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/cbd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/dmd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.audio.service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.authsecret-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.bluetooth-service.bcmbtlinux",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.boot-service.default-pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.composer.hwc3-service.pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.contexthub-service.generic",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.drm-service.clearkey",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.dumpstate-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.edgetpu.logging@service-edgetpu-logging",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.gatekeeper-service.trusty",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.gnss@2.1-service-brcm",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.graphics.allocator-V1-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.gxp.logging@service-gxp-logging",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.health-service.zuma",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.identity@1.0-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.input.processor-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.neuralnetworks@service-darwinn-aidl",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.nfc-service.st",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.oemlock-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.power-service.pixel-libperfmgr",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.power.stats-service.pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.secure_element-service.thales",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.secure_element-service.uicc",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.security.keymint-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.security.keymint-service.rust.trusty",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.sensors-service.multihal",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.usb-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.usb.gadget-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.vibrator-service.cs40l26",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/battery_mitigation",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/google.hardware.media.c2@2.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/gpsd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/hostapd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/lhd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/rild_exynos",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/samsung.hardware.media.c2@1.2-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/scd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.dolby.media.c2@1.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.audiometricext@1.0-service-vendor",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.radioext@1.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.wireless_charger-default",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/wpa_supplicant",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/modem_logging_control",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/modem_ml_svc_sit",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/modem_svc_sit",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/pixelstats-vendor",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/rebalance_interrupts-vendor",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/rfsd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/sscoredump",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/storageproxyd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/trusty_apploader",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/twoshay",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/vndservicemanager"
+  ],
+  "liblogwrap.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/apexd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/installd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/odsign",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/ueventd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/vold"
+  ],
+  "libvintf.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/apexd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/dumpstate",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/servicemanager"
+  ],
+  "libbase.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/apexd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/atrace",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/auditctl",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/blank_screen",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/bootanimation",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/bootstat",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/credstore",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/dmesgd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/dumpstate",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/flags_health_check",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gatekeeperd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gpuservice",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gsid",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/heapprofd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/hw/android.system.suspend-service",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/idmap2d",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/incidentd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/installd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/llkd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/logd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/lpdumpd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/misctrl",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mtectrl",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/netbpfload",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/netd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/odsign",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/recovery-persist",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/recovery-refresh",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/rss_hwm_reset",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/servicemanager",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/simpleperf",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/storaged",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/surfaceflinger",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/traced_perf",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/ueventd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/uncrypt",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_engine",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_verifier",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/uprobestats",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/usbd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/vold",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/wificond",
+    "/home/dasha/thesis/remote/shiba-sep24/system_ext/bin/gs_watchdogd",
+    "/home/dasha/thesis/remote/shiba-sep24/system_ext/bin/hw/vendor.google.edgetpu_app_service@1.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/aocd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/aocxd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.authsecret-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.bluetooth-service.bcmbtlinux",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.boot-service.default-pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.composer.hwc3-service.pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.confirmationui-service.trusty.vendor",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.contexthub-service.generic",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.drm-service.clearkey",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.dumpstate-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.edgetpu.logging@service-edgetpu-logging",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.gatekeeper-service.trusty",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.gnss@2.1-service-brcm",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.gxp.logging@service-gxp-logging",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.health-service.zuma",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.health.storage-service.default",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.identity@1.0-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.input.processor-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.memtrack-service.pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.neuralnetworks@service-darwinn-aidl",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.nfc-service.st",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.oemlock-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.power-service.pixel-libperfmgr",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.power.stats-service.pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.secure_element-service.thales",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.secure_element-service.uicc",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.security.keymint-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.sensors-service.multihal",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.thermal-service.pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.usb-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.usb.gadget-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.vibrator-service.cs40l26",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.weaver-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/battery_mitigation",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/citadeld",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/com.google.edgetpu.dba-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/com.google.edgetpu.tachyon-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/gpsd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/hostapd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.dolby.media.c2@1.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.audiometricext@1.0-service-vendor",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.edgetpu_vendor_service@1.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.google_battery-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.radioext@1.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.wireless_charger-default",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/wpa_supplicant",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/misc_writer",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/modem_logging_control",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/modem_ml_svc_sit",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/modem_svc_sit",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/pixelstats-vendor",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/rebalance_interrupts-vendor",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/securedpud.slider",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/sscoredump",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/storageproxyd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/trusty_apploader",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/trusty_metricsd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/twoshay",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/vndservicemanager"
+  ],
+  "libcrypto.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/apexd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/boringssl_self_test64",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/credstore",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/dumpstate",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gatekeeperd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gsid",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/installd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/keystore2",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/killall",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/odsign",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/prng_seeder",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_engine",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/vold",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/wificond",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/boringssl_self_test64",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.drm-service.clearkey",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.identity@1.0-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/gpsd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/hostapd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/scd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/wpa_supplicant",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/rfsd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/twoshay"
+  ],
+  "libcutils.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/apexd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/app_process",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/app_process64",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/atrace",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/bootanimation",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/bootstat",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/drmserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/dumpstate",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gpuservice",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/hw/android.system.suspend-service",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/idmap2d",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/installd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/llkd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/lmkd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/logd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mdnsd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/netd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/prng_seeder",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/servicemanager",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/simpleperf",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/storaged",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/surfaceflinger",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/ueventd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/uncrypt",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_engine",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_verifier",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/vold",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/wificond",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/bipchmgr",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/cbd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/dmd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.audio.service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.bluetooth-service.bcmbtlinux",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.boot-service.default-pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.composer.hwc3-service.pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.contexthub-service.generic",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.dumpstate-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.edgetpu.logging@service-edgetpu-logging",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.gatekeeper-service.trusty",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.gxp.logging@service-gxp-logging",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.health-service.zuma",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.input.processor-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.neuralnetworks@service-darwinn-aidl",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.power-service.pixel-libperfmgr",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.power.stats-service.pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.secure_element-service.thales",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.secure_element-service.uicc",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.sensors-service.multihal",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.thermal-service.pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.usb-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.usb.gadget-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.vibrator-service.cs40l26",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/battery_mitigation",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/com.google.edgetpu.dba-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/com.google.edgetpu.tachyon-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/gpsd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/hostapd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/rild_exynos",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.audiometricext@1.0-service-vendor",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.edgetpu_vendor_service@1.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.radioext@1.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.wireless_charger-default",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/wpa_supplicant",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/modem_logging_control",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/modem_ml_svc_sit",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/modem_svc_sit",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/rfsd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/sscoredump",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/storageproxyd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/twoshay",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/vndservicemanager"
+  ],
+  "libprotobuf-cpp-full.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/apexd"
+  ],
+  "libziparchive.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/apexd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/dumpstate",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/idmap2d",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/installd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/simpleperf",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_engine",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/dmd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/modem_logging_control"
+  ],
+  "libselinux.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/apexd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/drmserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/installd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/keystore2",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/killall",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/netd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/servicemanager",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/ueventd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/vold",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/vndservicemanager"
+  ],
+  "libandroid_runtime.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/app_process",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/app_process64"
+  ],
+  "libhidlbase.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/app_process",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/app_process64",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/atrace",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/blank_screen",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/credstore",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/dumpstate",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gatekeeperd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/hw/android.system.suspend-service",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/keystore2",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mediaserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/netd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/storaged",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/surfaceflinger",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_engine",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_verifier",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/usbd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/vold",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/wificond",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.audio.service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.authsecret-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.bluetooth-service.bcmbtlinux",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.confirmationui-service.trusty.vendor",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.health-service.zuma",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.identity@1.0-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.neuralnetworks@service-darwinn-aidl",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.oemlock-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.sensors-service.multihal",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.usb-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.weaver-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/google.hardware.media.c2@2.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/samsung.hardware.media.c2@1.2-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.dolby.media.c2@1.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.audiometricext@1.0-service-vendor",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.radioext@1.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/modem_logging_control",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/twoshay"
+  ],
+  "libnativeloader.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/app_process",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/app_process64"
+  ],
+  "libsigchain.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/app_process",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/app_process64"
+  ],
+  "libwilhelm.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/app_process",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/app_process64"
+  ],
+  "libz.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/atrace",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/killall",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/logd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/simpleperf",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/storaged",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/surfaceflinger",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.boot-service.default-pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/lhd"
+  ],
+  "libpdx_default_transport.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/atrace"
+  ],
+  "android.hardware.atrace@1.0.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/atrace"
+  ],
+  "android.hardware.audio.core.sounddose-V2-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver"
+  ],
+  "android.media.audio.common.types-V3-cpp.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver"
+  ],
+  "libaudiopolicy.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver"
+  ],
+  "libaudiopolicycomponents.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver"
+  ],
+  "libaudiopolicymanagerdefault.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver"
+  ],
+  "libaudiousecasevalidation.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver"
+  ],
+  "libhardware_legacy.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/dumpstate",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/vold",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.bluetooth-service.bcmbtlinux",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.composer.hwc3-service.pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/gpsd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/lhd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.radioext@1.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/storageproxyd"
+  ],
+  "libheadtracking.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver"
+  ],
+  "libheadtracking-binding.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver"
+  ],
+  "libPlatformProperties.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver"
+  ],
+  "libsensor.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver"
+  ],
+  "libsensorprivacy.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver"
+  ],
+  "libstagefright_foundation.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/drmserver"
+  ],
+  "libxml2.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver"
+  ],
+  "audiopolicy-aidl-cpp.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver"
+  ],
+  "audiopolicy-types-aidl-cpp.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver"
+  ],
+  "capture_state_listener-aidl-cpp.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver"
+  ],
+  "spatializer-aidl-cpp.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver"
+  ],
+  "audioflinger-aidl-cpp.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver"
+  ],
+  "audioclient-types-aidl-cpp.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver"
+  ],
+  "av-types-aidl-cpp.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver"
+  ],
+  "com.android.media.audio-aconfig-cc.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver"
+  ],
+  "effect-aidl-cpp.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver"
+  ],
+  "libactivitymanager_aidl.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver"
+  ],
+  "libaudioflinger_datapath.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver"
+  ],
+  "libaudioflinger_fastpath.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver"
+  ],
+  "libaudioflinger_timing.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver"
+  ],
+  "libaudioflinger_utils.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver"
+  ],
+  "libaudiofoundation.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver"
+  ],
+  "libaudiohal.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver"
+  ],
+  "libbinder_ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/credstore",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/dumpstate",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gatekeeperd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/hw/android.system.suspend-service",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/keystore2",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/netd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/storaged",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/surfaceflinger",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/usbd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/vold",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/wificond",
+    "/home/dasha/thesis/remote/shiba-sep24/system_ext/bin/hw/vendor.google.edgetpu_app_service@1.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.audio.service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.authsecret-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.bluetooth-service.bcmbtlinux",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.boot-service.default-pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.composer.hwc3-service.pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.confirmationui-service.trusty.vendor",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.contexthub-service.generic",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.drm-service.clearkey",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.dumpstate-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.gatekeeper-service.trusty",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.gnss@2.1-service-brcm",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.graphics.allocator-V1-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.health-service.zuma",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.health.storage-service.default",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.identity@1.0-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.input.processor-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.memtrack-service.pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.neuralnetworks@service-darwinn-aidl",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.nfc-service.st",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.oemlock-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.power-service.pixel-libperfmgr",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.power.stats-service.pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.secure_element-service.thales",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.secure_element-service.uicc",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.security.keymint-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.security.keymint-service.rust.trusty",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.sensors-service.multihal",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.thermal-service.pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.usb-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.usb.gadget-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.vibrator-service.cs40l26",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.weaver-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/battery_mitigation",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/citadeld",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/com.google.edgetpu.dba-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/com.google.edgetpu.tachyon-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/gpsd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/hostapd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/samsung.hardware.media.c2@1.2-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.edgetpu_vendor_service@1.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.google_battery-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.radioext@1.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.wireless_charger-default",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/wpa_supplicant",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/securedpud.slider",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/storageproxyd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/trusty_metricsd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/twoshay"
+  ],
+  "libaudiomanager.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver"
+  ],
+  "libnbaio.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver"
+  ],
+  "libpermission.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver"
+  ],
+  "libmemunreachable.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver"
+  ],
+  "libshmemcompat.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver"
+  ],
+  "libsounddose.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver"
+  ],
+  "libaaudio_internal.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver"
+  ],
+  "libaudioutils.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver"
+  ],
+  "libmedia_helper.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver"
+  ],
+  "libmediametrics.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/drmserver"
+  ],
+  "aaudio-aidl-cpp.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver"
+  ],
+  "framework-permission-aidl-cpp.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver"
+  ],
+  "libaudioclient_aidl_conversion.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver"
+  ],
+  "packagemanager_aidl-cpp.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/dumpstate",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mediametrics",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/storaged",
+    "/home/dasha/thesis/remote/shiba-sep24/system_ext/bin/hw/vendor.google.edgetpu_app_service@1.0-service"
+  ],
+  "com.android.media.aaudio-aconfig-cc.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver"
+  ],
+  "libaudioclient.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver"
+  ],
+  "libaudioprocessing.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver"
+  ],
+  "libmedia.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mediaextractor"
+  ],
+  "libmediautils.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/drmserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mediaextractor",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mediametrics"
+  ],
+  "libnblog.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver"
+  ],
+  "libpowermanager.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/surfaceflinger"
+  ],
+  "libvibrator.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/audioserver"
+  ],
+  "android.hardware.light@2.0.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/blank_screen"
+  ],
+  "libandroidfw.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/bootanimation",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/idmap2d"
+  ],
+  "libOpenSLES.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/bootanimation"
+  ],
+  "libbootanimation.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/bootanimation"
+  ],
+  "libstatslog.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/bootstat",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gpuservice"
+  ],
+  "android.hardware.graphics.common-V5-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver"
+  ],
+  "libutilscallstack.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/credstore"
+  ],
+  "libexif.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver"
+  ],
+  "libcamera_client.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver"
+  ],
+  "libcamera_metadata.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver"
+  ],
+  "libfmq.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mediaserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/surfaceflinger",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.composer.hwc3-service.pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.edgetpu.logging@service-edgetpu-logging",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.gxp.logging@service-gxp-logging",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.power-service.pixel-libperfmgr",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.sensors-service.multihal",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/com.google.edgetpu.tachyon-service"
+  ],
+  "libhardware.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/credstore",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gatekeeperd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_verifier",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/usbd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/vold",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.audio.service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.composer.hwc3-service.pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.gatekeeper-service.trusty",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.gnss@2.1-service-brcm",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.neuralnetworks@service-darwinn-aidl",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.power.stats-service.pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.secure_element-service.thales",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.usb-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.vibrator-service.cs40l26",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/battery_mitigation",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.radioext@1.0-service"
+  ],
+  "libimage_io.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver"
+  ],
+  "libjpeg.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver"
+  ],
+  "libultrahdr.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver"
+  ],
+  "libmedia_codeclist.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver"
+  ],
+  "libmedia_omx.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver"
+  ],
+  "libnativewindow.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/surfaceflinger",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.neuralnetworks@service-darwinn-aidl",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/com.google.edgetpu.dba-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/com.google.edgetpu.tachyon-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/modem_ml_svc_sit"
+  ],
+  "libprocessgroup.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gsid",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/installd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/killall",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/lmkd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/logd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/netd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/surfaceflinger",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/ueventd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.power-service.pixel-libperfmgr"
+  ],
+  "libprocinfo.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/heapprofd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/simpleperf",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/traced_perf"
+  ],
+  "libstagefright.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver"
+  ],
+  "libyuv.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver"
+  ],
+  "android.companion.virtualdevice.flags-aconfig-cc.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver"
+  ],
+  "android.hardware.camera.device@3.3.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver"
+  ],
+  "android.hardware.camera.device@3.5.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver"
+  ],
+  "android.hardware.camera.device@3.6.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver"
+  ],
+  "android.hardware.camera.device@3.7.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver"
+  ],
+  "android.hardware.common-V2-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/surfaceflinger",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/com.google.edgetpu.dba-service"
+  ],
+  "android.hardware.common.fmq-V1-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/surfaceflinger",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.power-service.pixel-libperfmgr",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/com.google.edgetpu.tachyon-service"
+  ],
+  "camera_platform_flags_c_lib.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver"
+  ],
+  "media_permission-aidl-cpp.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver"
+  ],
+  "libui.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/surfaceflinger",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.edgetpu.logging@service-edgetpu-logging",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.gxp.logging@service-gxp-logging",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.neuralnetworks@service-darwinn-aidl",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/samsung.hardware.media.c2@1.2-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/twoshay"
+  ],
+  "libgui.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/surfaceflinger"
+  ],
+  "android.hardware.camera.common@1.0.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver"
+  ],
+  "android.hardware.camera.device@1.0.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver"
+  ],
+  "android.hardware.camera.device@3.2.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver"
+  ],
+  "android.hardware.camera.device@3.4.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/cameraserver"
+  ],
+  "libcppcose_rkp.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/credstore"
+  ],
+  "libkeymaster_portable.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/credstore",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.security.keymint-service.citadel"
+  ],
+  "libsoft_attestation_cert.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/credstore"
+  ],
+  "libpuresoftkeymasterdevice.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/credstore"
+  ],
+  "android.hardware.security.keymint-V3-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/credstore",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gatekeeperd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.identity@1.0-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.security.keymint-service.citadel"
+  ],
+  "android.hardware.keymaster@4.0.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/credstore",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.identity@1.0-service.citadel"
+  ],
+  "android.security.authorization-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/credstore",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gatekeeperd"
+  ],
+  "libkeystore-attestation-application-id.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/credstore"
+  ],
+  "libevent.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/dmesgd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/simpleperf",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/aocd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/aocxd"
+  ],
+  "libservices.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/dmesgd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/incidentd"
+  ],
+  "libdrmframeworkcommon.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/drmserver"
+  ],
+  "android.hardware.dumpstate@1.0.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/dumpstate"
+  ],
+  "android.hardware.dumpstate@1.1.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/dumpstate"
+  ],
+  "android.hardware.dumpstate-V1-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/dumpstate",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.dumpstate-service"
+  ],
+  "libdebuggerd_client.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/dumpstate",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/incidentd"
+  ],
+  "libdumpstateaidl.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/dumpstate"
+  ],
+  "libdumpstateutil.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/dumpstate",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.dumpstate-service"
+  ],
+  "libdumputils.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/dumpstate",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/incidentd"
+  ],
+  "libbinderdebug.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/dumpstate"
+  ],
+  "server_configurable_flags.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/dumpstate",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/flags_health_check",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/installd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/surfaceflinger",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.bluetooth-service.bcmbtlinux",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.contexthub-service.generic",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.usb-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.dolby.media.c2@1.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/twoshay"
+  ],
+  "device_policy_aconfig_flags_c_lib.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/dumpstate"
+  ],
+  "libgatekeeper.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gatekeeperd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.gatekeeper-service.trusty"
+  ],
+  "libgsi.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gatekeeperd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/ueventd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/vold"
+  ],
+  "lib_android_keymaster_keymint_utils.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gatekeeperd"
+  ],
+  "android.hardware.gatekeeper-V1-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gatekeeperd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.gatekeeper-service.trusty"
+  ],
+  "android.hardware.gatekeeper@1.0.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gatekeeperd"
+  ],
+  "libgatekeeper_aidl.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gatekeeperd"
+  ],
+  "libjsoncpp.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gpuservice",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.contexthub-service.generic",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.thermal-service.pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/twoshay"
+  ],
+  "libvulkan.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gpuservice",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/surfaceflinger"
+  ],
+  "libbpf_bcc.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gpuservice"
+  ],
+  "libprotoutil.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gpuservice",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/incidentd"
+  ],
+  "libstatspull.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gpuservice",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/odsign"
+  ],
+  "libstatssocket.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gpuservice",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/odsign",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_engine"
+  ],
+  "libgpuwork.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gpuservice"
+  ],
+  "libgraphicsenv.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gpuservice"
+  ],
+  "libvndksupport.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/gsid",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/google.hardware.media.c2@2.0-service"
+  ],
+  "libunwindstack.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/heapprofd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/simpleperf",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/traced_perf",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/ueventd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/gpsd"
+  ],
+  "android.system.suspend-V1-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/hw/android.system.suspend-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/securedpud.slider"
+  ],
+  "libidmap2.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/idmap2d"
+  ],
+  "libincidentpriv.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/incidentd"
+  ],
+  "libkeystore2_aaid.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/keystore2"
+  ],
+  "libkeystore2_apc_compat.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/keystore2"
+  ],
+  "libkeystore2_crypto.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/keystore2"
+  ],
+  "libkm_compat_service.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/keystore2"
+  ],
+  "libsqlite.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/keystore2"
+  ],
+  "libpsi.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/lmkd"
+  ],
+  "libsysutils.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/logd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/netd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/vold"
+  ],
+  "libpackagelistparser.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/logd"
+  ],
+  "libcap.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/logd"
+  ],
+  "android.hardware.boot@1.0.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/lpdumpd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_engine",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_verifier",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/vold"
+  ],
+  "android.hardware.boot@1.1.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/lpdumpd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_engine",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.boot-service.default-pixel"
+  ],
+  "android.hardware.boot-V1-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/lpdumpd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_engine",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/vold",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.boot-service.default-pixel"
+  ],
+  "libboot_control_client.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/lpdumpd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_engine",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_verifier",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/vold"
+  ],
+  "libfs_mgr_binder.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/lpdumpd"
+  ],
+  "liblp.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/lpdumpd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/ueventd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_engine"
+  ],
+  "liblpdump.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/lpdumpd"
+  ],
+  "liblpdump_interface-cpp.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/lpdumpd"
+  ],
+  "libsnapshot.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/lpdumpd"
+  ],
+  "libmediaextractorservice.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mediaextractor"
+  ],
+  "libavservices_minijail.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mediaextractor",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/google.hardware.media.c2@2.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/samsung.hardware.media.c2@1.2-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.dolby.media.c2@1.0-service"
+  ],
+  "libmediametricsservice.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mediametrics"
+  ],
+  "mediametricsservice-aidl-cpp.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mediametrics"
+  ],
+  "android.hardware.media.omx@1.0.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mediaserver",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/samsung.hardware.media.c2@1.2-service"
+  ],
+  "libicu.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mediaserver"
+  ],
+  "libmediaplayerservice.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mediaserver"
+  ],
+  "libresourcemanagerservice.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mediaserver"
+  ],
+  "libbootloader_message.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/misctrl",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/mtectrl",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/uncrypt",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_engine"
+  ],
+  "netd_aidl_interface-V14-cpp.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/netd"
+  ],
+  "android.system.net.netd@1.0.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/netd"
+  ],
+  "android.system.net.netd@1.1.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/netd"
+  ],
+  "android.system.net.netd-V1-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/netd"
+  ],
+  "libnetd_updatable.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/netd"
+  ],
+  "libnetd_resolv.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/netd"
+  ],
+  "libnetdutils.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/netd"
+  ],
+  "libnetutils.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/netd"
+  ],
+  "libpcap.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/netd"
+  ],
+  "mdns_aidl_interface-V1-cpp.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/netd"
+  ],
+  "netd_event_listener_interface-V1-cpp.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/netd"
+  ],
+  "oemnetd_aidl_interface-cpp.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/netd"
+  ],
+  "android.system.keystore2-V1-cpp.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/odsign"
+  ],
+  "android.hardware.security.keymint-V1-cpp.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/odsign"
+  ],
+  "libcrypto_utils.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/odsign",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/vold"
+  ],
+  "libfsverity.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/odsign"
+  ],
+  "liblogger.dylib.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/prng_seeder"
+  ],
+  "libnix.dylib.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/prng_seeder"
+  ],
+  "libclap.dylib.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/prng_seeder"
+  ],
+  "libclap_lex.dylib.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/prng_seeder"
+  ],
+  "libtokio.dylib.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/prng_seeder"
+  ],
+  "libmio.dylib.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/prng_seeder"
+  ],
+  "liblog_rust.dylib.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/prng_seeder",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/gpu_probe"
+  ],
+  "libanyhow.dylib.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/prng_seeder"
+  ],
+  "libstd.dylib.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/prng_seeder",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/gpu_probe"
+  ],
+  "liblzma.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/simpleperf"
+  ],
+  "android.hardware.health@1.0.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/storaged"
+  ],
+  "android.hardware.health@2.0.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/storaged"
+  ],
+  "android.hardware.health-V3-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/storaged",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.health-service.zuma"
+  ],
+  "libtimestats_atoms_proto.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/surfaceflinger"
+  ],
+  "libpng.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/surfaceflinger",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.health-service.zuma"
+  ],
+  "android.hardware.power-V5-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/surfaceflinger",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.power-service.pixel-libperfmgr"
+  ],
+  "android.hardware.graphics.composer3-V3-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/surfaceflinger",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.composer.hwc3-service.pixel"
+  ],
+  "android.hardware.configstore@1.1.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/surfaceflinger"
+  ],
+  "android.hardware.graphics.common@1.2.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/surfaceflinger"
+  ],
+  "android.hardware.graphics.composer@2.1.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/surfaceflinger"
+  ],
+  "android.hardware.graphics.composer@2.2.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/surfaceflinger"
+  ],
+  "android.hardware.graphics.composer@2.3.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/surfaceflinger"
+  ],
+  "android.hardware.graphics.composer@2.4.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/surfaceflinger",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.composer.hwc3-service.pixel"
+  ],
+  "libGLESv1_CM.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/surfaceflinger"
+  ],
+  "libinput.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/surfaceflinger"
+  ],
+  "android.hardware.configstore-utils.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/surfaceflinger"
+  ],
+  "android.hardware.configstore@1.0.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/surfaceflinger"
+  ],
+  "android.hardware.graphics.allocator@2.0.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/surfaceflinger"
+  ],
+  "android.hardware.graphics.allocator@3.0.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/surfaceflinger"
+  ],
+  "libsync.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/surfaceflinger",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.composer.hwc3-service.pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/samsung.hardware.media.c2@1.2-service"
+  ],
+  "libSurfaceFlingerProp.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/surfaceflinger"
+  ],
+  "libEGL.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/surfaceflinger",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/samsung.hardware.media.c2@1.2-service"
+  ],
+  "libGLESv2.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/surfaceflinger",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/samsung.hardware.media.c2@1.2-service"
+  ],
+  "libperfetto.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/traced",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/traced_probes"
+  ],
+  "libext4_utils.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/ueventd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/vold"
+  ],
+  "libfs_mgr.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/ueventd",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/uncrypt"
+  ],
+  "libhidl-gen-utils.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/ueventd"
+  ],
+  "libprocessgroup_setup.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/ueventd"
+  ],
+  "libvendorsupport.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/ueventd"
+  ],
+  "libfec.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_engine"
+  ],
+  "liblz4.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_engine"
+  ],
+  "android.hardware.boot@1.2.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_engine"
+  ],
+  "libandroid_net.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_engine",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/gpsd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/scd"
+  ],
+  "libbinderwrapper.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_engine"
+  ],
+  "libbrillo-binder.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_engine"
+  ],
+  "libcurl.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_engine"
+  ],
+  "libupdate_engine_stable-V2-cpp.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_engine"
+  ],
+  "libssl.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_engine",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/wificond",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/gpsd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/hostapd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/scd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/wpa_supplicant"
+  ],
+  "libbrillo-stream.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_engine"
+  ],
+  "libbrillo.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_engine"
+  ],
+  "libchrome.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/update_engine"
+  ],
+  "android.hardware.usb.gadget@1.0.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/usbd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.usb-service"
+  ],
+  "android.hardware.usb.gadget-V1-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/usbd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.usb-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.usb.gadget-service"
+  ],
+  "android.system.keystore2-V4-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/vold",
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/wificond"
+  ],
+  "libf2fs_sparseblock.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/vold"
+  ],
+  "libincfs.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/vold"
+  ],
+  "libkeymint_support.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/vold"
+  ],
+  "libminijail.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/wificond"
+  ],
+  "libwifi-system-iface.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system/system/bin/wificond"
+  ],
+  "com.google.edgetpu_app_service-V3-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system_ext/bin/hw/vendor.google.edgetpu_app_service@1.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.neuralnetworks@service-darwinn-aidl",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/com.google.edgetpu.dba-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/com.google.edgetpu.tachyon-service"
+  ],
+  "com.google.edgetpu_vendor_service-V2-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system_ext/bin/hw/vendor.google.edgetpu_app_service@1.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.edgetpu_vendor_service@1.0-service"
+  ],
+  "libandroid.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/system_ext/bin/hw/vendor.google.edgetpu_app_service@1.0-service"
+  ],
+  "libaoc.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/aocd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/aocxd"
+  ],
+  "libjson.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/cbd"
+  ],
+  "liblibloading.dylib.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/gpu_probe"
+  ],
+  "libandroid_logger.dylib.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/gpu_probe"
+  ],
+  "libnos.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.authsecret-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.identity@1.0-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.oemlock-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.security.keymint-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.weaver-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/citadeld"
+  ],
+  "libnosprotos.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.authsecret-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.identity@1.0-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.oemlock-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.security.keymint-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.weaver-service.citadel"
+  ],
+  "android.hardware.authsecret-V1-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.authsecret-service.citadel"
+  ],
+  "android.hardware.authsecret-impl.nos.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.authsecret-service.citadel"
+  ],
+  "libnos_citadeld_proxy.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.authsecret-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.identity@1.0-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.oemlock-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.security.keymint-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.weaver-service.citadel"
+  ],
+  "android.hardware.bluetooth-V1-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.bluetooth-service.bcmbtlinux"
+  ],
+  "libusf.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.bluetooth-service.bcmbtlinux",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.contexthub-service.generic"
+  ],
+  "pixel_stateresidency_provider_aidl_interface-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.bluetooth-service.bcmbtlinux",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.power.stats-service.pixel"
+  ],
+  "vendor.google.bluetooth_ext-V1-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.bluetooth-service.bcmbtlinux"
+  ],
+  "libtrusty.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.boot-service.default-pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.gatekeeper-service.trusty",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/securedpud.slider",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/trusty_apploader",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/trusty_metricsd"
+  ],
+  "android.hardware.graphics.composer@2.1-resources.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.composer.hwc3-service.pixel"
+  ],
+  "android.hardware.graphics.composer@2.2-resources.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.composer.hwc3-service.pixel"
+  ],
+  "android.hardware.drm-V1-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.composer.hwc3-service.pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.drm-service.clearkey"
+  ],
+  "com.google.hardware.pixel.display-V10-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.composer.hwc3-service.pixel"
+  ],
+  "android.frameworks.stats-V2-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.composer.hwc3-service.pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.contexthub-service.generic",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.thermal-service.pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.usb-service"
+  ],
+  "libpixelatoms_defs.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.composer.hwc3-service.pixel"
+  ],
+  "pixelatoms-cpp.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.composer.hwc3-service.pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.contexthub-service.generic",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.thermal-service.pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.usb-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/citadeld"
+  ],
+  "libexynosdisplay.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.composer.hwc3-service.pixel"
+  ],
+  "libExynosHWCService.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.composer.hwc3-service.pixel"
+  ],
+  "android.hardware.confirmationui-V1-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.confirmationui-service.trusty.vendor"
+  ],
+  "android.hardware.confirmationui-lib.trusty.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.confirmationui-service.trusty.vendor"
+  ],
+  "android.hardware.confirmationui.secure_input_citadel.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.confirmationui-service.trusty.vendor"
+  ],
+  "android.hardware.contexthub-V3-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.contexthub-service.generic"
+  ],
+  "libpower.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.contexthub-service.generic",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.sensors-service.multihal"
+  ],
+  "libprotobuf-cpp-lite-21.12.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.contexthub-service.generic",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.drm-service.clearkey",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.usb-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.vibrator-service.cs40l26"
+  ],
+  "chre_atoms_log.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.contexthub-service.generic"
+  ],
+  "chre_metrics_reporter.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.contexthub-service.generic"
+  ],
+  "chremetrics-cpp.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.contexthub-service.generic"
+  ],
+  "vendor_chre_atoms_log.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.contexthub-service.generic"
+  ],
+  "vendor_chre_metrics-cpp.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.contexthub-service.generic"
+  ],
+  "libdump.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.dumpstate-service"
+  ],
+  "lib_reader.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.edgetpu.logging@service-edgetpu-logging"
+  ],
+  "android.hardware.gnss-V3-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.gnss@2.1-service-brcm"
+  ],
+  "android.hardware.graphics.allocator-V1-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.graphics.allocator-V1-service"
+  ],
+  "android.hardware.graphics.allocator-aidl-impl.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.graphics.allocator-V1-service"
+  ],
+  "gxp_telemetry_reader.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.gxp.logging@service-gxp-logging"
+  ],
+  "fake_gxp_telemetry_reader.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.gxp.logging@service-gxp-logging"
+  ],
+  "libpixelhealth.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.health-service.zuma"
+  ],
+  "android.hardware.health.storage-V1-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.health.storage-service.default"
+  ],
+  "libcppbor_external.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.identity@1.0-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.security.keymint-service.citadel"
+  ],
+  "libprotobuf-cpp-full-21.12.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.identity@1.0-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.neuralnetworks@service-darwinn-aidl",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.security.keymint-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/modem_ml_svc_sit",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/modem_svc_sit",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/twoshay"
+  ],
+  "nos_app_identity.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.identity@1.0-service.citadel"
+  ],
+  "nos_app_keymaster_ctdl.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.identity@1.0-service.citadel"
+  ],
+  "android.hardware.keymaster-V3-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.identity@1.0-service.citadel"
+  ],
+  "android.hardware.keymaster@4.1.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.identity@1.0-service.citadel"
+  ],
+  "android.hardware.keymaster@4.1-impl.nos.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.identity@1.0-service.citadel"
+  ],
+  "android.hardware.identity-support-lib.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.identity@1.0-service.citadel"
+  ],
+  "android.hardware.identity-V5-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.identity@1.0-service.citadel"
+  ],
+  "android.hardware.identity@1.0-impl.nos.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.identity@1.0-service.citadel"
+  ],
+  "android.hardware.security.rkp-V3-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.identity@1.0-service.citadel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.security.keymint-service.citadel"
+  ],
+  "android.hardware.security.secureclock-V1-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.identity@1.0-service.citadel"
+  ],
+  "android.hardware.input.common-V1-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.input.processor-service"
+  ],
+  "android.hardware.input.processor-V1-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.input.processor-service"
+  ],
+  "libdeeptouch.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.input.processor-service"
+  ],
+  "android.hardware.memtrack-V1-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.memtrack-service.pixel"
+  ],
+  "libmemtrack-pixel.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.memtrack-service.pixel"
+  ],
+  "libdarwinn_hal.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.neuralnetworks@service-darwinn-aidl"
+  ],
+  "libmetrics_logger.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.neuralnetworks@service-darwinn-aidl"
+  ],
+  "libhidlmemory.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.neuralnetworks@service-darwinn-aidl"
+  ],
+  "android.hardware.neuralnetworks-V4-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.neuralnetworks@service-darwinn-aidl"
+  ],
+  "android.hardware.neuralnetworks@1.0.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.neuralnetworks@service-darwinn-aidl"
+  ],
+  "android.hardware.neuralnetworks@1.1.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.neuralnetworks@service-darwinn-aidl"
+  ],
+  "android.hardware.neuralnetworks@1.2.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.neuralnetworks@service-darwinn-aidl"
+  ],
+  "android.hardware.neuralnetworks@1.3.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.neuralnetworks@service-darwinn-aidl"
+  ],
+  "android.hardware.power-V2-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.neuralnetworks@service-darwinn-aidl",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/com.google.edgetpu.dba-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/com.google.edgetpu.tachyon-service"
+  ],
+  "android.hardware.nfc-V1-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.nfc-service.st"
+  ],
+  "nfc_nci.st21nfc.default.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.nfc-service.st"
+  ],
+  "android.hardware.oemlock-V1-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.oemlock-service.citadel"
+  ],
+  "android.hardware.oemlock-impl.nos.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.oemlock-service.citadel"
+  ],
+  "nos_app_avb.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.oemlock-service.citadel"
+  ],
+  "libdisppower-pixel.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.power-service.pixel-libperfmgr"
+  ],
+  "libperfmgr.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.power-service.pixel-libperfmgr"
+  ],
+  "pixel-power-ext-V1-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.power-service.pixel-libperfmgr",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.thermal-service.pixel"
+  ],
+  "android.hardware.power.stats-V2-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.power.stats-service.pixel"
+  ],
+  "android.hardware.power.stats-impl.pixel.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.power.stats-service.pixel"
+  ],
+  "android.hardware.power.stats-impl.zuma.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.power.stats-service.pixel"
+  ],
+  "android.hardware.secure_element-V1-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.secure_element-service.thales",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.secure_element-service.uicc"
+  ],
+  "android.hardware.secure_element.thales.libse.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.secure_element-service.thales"
+  ],
+  "libkeymint.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.security.keymint-service.citadel"
+  ],
+  "android.hardware.security.sharedsecret-V1-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.security.keymint-service.citadel"
+  ],
+  "android.hardware.security.keymint-impl.nos.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.security.keymint-service.citadel"
+  ],
+  "nos_app_keymaster.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.security.keymint-service.citadel"
+  ],
+  "android.hardware.sensors@2.0-ScopedWakelock.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.sensors-service.multihal"
+  ],
+  "android.hardware.sensors@2.0.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.sensors-service.multihal"
+  ],
+  "android.hardware.sensors@2.1.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.sensors-service.multihal"
+  ],
+  "android.hardware.sensors-V2-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.sensors-service.multihal",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/gpsd"
+  ],
+  "libnl.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.thermal-service.pixel",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/hostapd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/wpa_supplicant"
+  ],
+  "android.hardware.power-V1-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.thermal-service.pixel"
+  ],
+  "android.hardware.thermal-V2-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.thermal-service.pixel"
+  ],
+  "android.hardware.thermal@1.0.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.usb-service"
+  ],
+  "android.hardware.thermal@2.0.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.usb-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/battery_mitigation"
+  ],
+  "android.hardware.thermal-V1-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.usb-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/battery_mitigation"
+  ],
+  "android.hardware.usb-V3-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.usb-service"
+  ],
+  "android.frameworks.stats-V1-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.usb.gadget-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/citadeld",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/trusty_metricsd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/twoshay"
+  ],
+  "android.hardware.vibrator-V2-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.vibrator-service.cs40l26"
+  ],
+  "libtinyalsa.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.vibrator-service.cs40l26"
+  ],
+  "android.hardware.vibrator-impl.cs40l26.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.vibrator-service.cs40l26"
+  ],
+  "PixelVibratorStats.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.vibrator-service.cs40l26"
+  ],
+  "android.hardware.weaver-V2-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.weaver-service.citadel"
+  ],
+  "android.hardware.weaver-bridge.nos.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.weaver-service.citadel"
+  ],
+  "android.hardware.weaver-impl.nos.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.weaver-service.citadel"
+  ],
+  "android.hardware.weaver2-impl.nos.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.weaver-service.citadel"
+  ],
+  "libnos_feature.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.weaver-service.citadel"
+  ],
+  "nos_app_weaver.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/android.hardware.weaver-service.citadel"
+  ],
+  "vendor.google.battery_mitigation-V1-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/battery_mitigation"
+  ],
+  "pixelpowerstats_provider_aidl_interface-cpp.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/citadeld"
+  ],
+  "libnos_client_citadel.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/citadeld"
+  ],
+  "libnos_transport.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/citadeld"
+  ],
+  "com.google.edgetpu.dba-V1-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/com.google.edgetpu.dba-service"
+  ],
+  "libdarwinn_dba_hal_runtime.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/com.google.edgetpu.dba-service"
+  ],
+  "com.google.edgetpu.tachyon-V1-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/com.google.edgetpu.tachyon-service"
+  ],
+  "libtachyon_core.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/com.google.edgetpu.tachyon-service"
+  ],
+  "android.hardware.media.c2@1.2.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/google.hardware.media.c2@2.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/samsung.hardware.media.c2@1.2-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.dolby.media.c2@1.0-service"
+  ],
+  "libcodec2_vndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/google.hardware.media.c2@2.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/samsung.hardware.media.c2@1.2-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.dolby.media.c2@1.0-service"
+  ],
+  "libcodec2_hidl@1.2.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/google.hardware.media.c2@2.0-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/samsung.hardware.media.c2@1.2-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.dolby.media.c2@1.0-service"
+  ],
+  "libgc2_bw_store.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/google.hardware.media.c2@2.0-service"
+  ],
+  "libgc2_bw_log.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/google.hardware.media.c2@2.0-service"
+  ],
+  "libsitril-gps.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/gpsd"
+  ],
+  "libsensorndkbridge.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/gpsd"
+  ],
+  "android.frameworks.sensorservice-V1-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/gpsd"
+  ],
+  "android.hardware.wifi.hostapd-V2-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/hostapd"
+  ],
+  "android.hardware.wifi.common-V1-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/hostapd"
+  ],
+  "libril_sitril.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/rild_exynos"
+  ],
+  "libhidltransport.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/samsung.hardware.media.c2@1.2-service",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.radioext@1.0-service"
+  ],
+  "libhwbinder.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/samsung.hardware.media.c2@1.2-service"
+  ],
+  "libstagefright_omx.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/samsung.hardware.media.c2@1.2-service"
+  ],
+  "libstagefright_xmlparser.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/samsung.hardware.media.c2@1.2-service"
+  ],
+  "libExynosC2ComponentStore.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/samsung.hardware.media.c2@1.2-service"
+  ],
+  "libion_google.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/samsung.hardware.media.c2@1.2-service"
+  ],
+  "libmedia_ecoservice.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/samsung.hardware.media.c2@1.2-service"
+  ],
+  "libvendorgraphicbuffer.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/samsung.hardware.media.c2@1.2-service"
+  ],
+  "libGLESv3.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/samsung.hardware.media.c2@1.2-service"
+  ],
+  "libcodec2.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.dolby.media.c2@1.0-service"
+  ],
+  "libcodec2_hal_common.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.dolby.media.c2@1.0-service"
+  ],
+  "android.hardware.media.c2@1.0.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.dolby.media.c2@1.0-service"
+  ],
+  "android.hardware.media.c2@1.1.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.dolby.media.c2@1.0-service"
+  ],
+  "libcodec2_hidl@1.0.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.dolby.media.c2@1.0-service"
+  ],
+  "libcodec2_hidl@1.1.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.dolby.media.c2@1.0-service"
+  ],
+  "libcodec2_soft_ddpdec.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.dolby.media.c2@1.0-service"
+  ],
+  "libcodec2_store_dolby.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.dolby.media.c2@1.0-service"
+  ],
+  "vendor.google.audiometricext@1.0.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.audiometricext@1.0-service-vendor"
+  ],
+  "libedgetpu_tflite_compiler.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.edgetpu_vendor_service@1.0-service"
+  ],
+  "vendor.google.google_battery-V3-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.google_battery-service"
+  ],
+  "com.google.input-V2-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.radioext@1.0-service"
+  ],
+  "libgril_oem-google.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.radioext@1.0-service"
+  ],
+  "libwlcproto_aidl-default.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.wireless_charger-default"
+  ],
+  "librtxproto_aidl-default.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.wireless_charger-default"
+  ],
+  "vendor.google.wireless_charger-V2-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/vendor.google.wireless_charger-default"
+  ],
+  "libkeystore-engine-wifi-hidl.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/wpa_supplicant"
+  ],
+  "android.hardware.wifi.supplicant-V3-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/wpa_supplicant"
+  ],
+  "android.system.keystore2-V1-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/hw/wpa_supplicant"
+  ],
+  "vendor.samsung_slsi.telephony.hardware.oemservice@1.0.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/modem_logging_control"
+  ],
+  "libtinyxml2.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/modem_logging_control"
+  ],
+  "libmodem_ml_svc_proto.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/modem_ml_svc_sit"
+  ],
+  "libneuralnetworks.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/modem_ml_svc_sit"
+  ],
+  "modem_ml_pw_rpc_gen.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/modem_ml_svc_sit"
+  ],
+  "libmodem_svc_proto_legacy.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/modem_svc_sit"
+  ],
+  "libpixelstats.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/pixelstats-vendor"
+  ],
+  "libdmabufheap.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/securedpud.slider",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/trusty_apploader"
+  ],
+  "libtrusty_metrics.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/trusty_metricsd"
+  ],
+  "vendor-pixelatoms-cpp.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/trusty_metricsd",
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/twoshay"
+  ],
+  "libbinder_trusty.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/trusty_metricsd"
+  ],
+  "android.frameworks.stats-V1-cpp.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/trusty_metricsd"
+  ],
+  "android.trusty.stats.nw.setter-cpp.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/trusty_metricsd"
+  ],
+  "com.google.input-V3-ndk.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/twoshay"
+  ],
+  "libtouchflow.so": [
+    "/home/dasha/thesis/remote/shiba-sep24/vendor/bin/twoshay"
+  ]
+}

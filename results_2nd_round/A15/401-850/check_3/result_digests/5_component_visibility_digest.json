@@ -1,0 +1,21 @@
+{
+  "increased": [
+    {
+      "apk": "/system/system/framework/framework-res.apk",
+      "component": "com.samsung.android.server.notification.NotificationHistoryImageProvider",
+      "type": "provider",
+      "permission_type": "writePermission",
+      "permission": "android.permission.ACCESS_NOTIFICATIONS",
+      "change": "added with score 37"
+    },
+    {
+      "apk": "/system/system/framework/framework-res.apk",
+      "component": "com.samsung.android.server.notification.NotificationHistoryImageProvider",
+      "type": "provider",
+      "permission_type": "readPermission",
+      "permission": "android.permission.ACCESS_NOTIFICATIONS",
+      "change": "added with score 37"
+    }
+  ],
+  "decreased": []
+}

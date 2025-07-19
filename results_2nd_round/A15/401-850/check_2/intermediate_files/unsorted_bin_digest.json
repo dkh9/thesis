@@ -1,0 +1,1484 @@
+{
+  "a15-850-u/vendor/tee/00000000-0000-0000-0000-505256544545": {
+    "TEE": true,
+    "Obfuscated": true
+  },
+  "a15-850-u/vendor/tee/00000000-0000-0000-0000-000000010081": {
+    "Similarity Score": 0.996,
+    "Radiff2 Distance": 416,
+    "Total Functions Analyzed": 45,
+    "Identical Functions": 45,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 0,
+    "Changed Matched Functions": 0,
+    "Changed Unmatched Functions": 0,
+    "TEE": true,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Obfuscated": false
+  },
+  "a15-850-u/vendor/tee/00000000-0000-0000-0000-000000020081": {
+    "Similarity Score": 0.998,
+    "Radiff2 Distance": 424,
+    "Total Functions Analyzed": 30,
+    "Identical Functions": 30,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 0,
+    "Changed Matched Functions": 0,
+    "Changed Unmatched Functions": 0,
+    "TEE": true,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Obfuscated": false
+  },
+  "a15-850-u/vendor/tee/00000000-0000-0000-0000-000000534b4d": {
+    "Similarity Score": 0.999,
+    "Radiff2 Distance": 436,
+    "Total Functions Analyzed": 41,
+    "Identical Functions": 41,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 0,
+    "Changed Matched Functions": 0,
+    "Changed Unmatched Functions": 0,
+    "TEE": true,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Obfuscated": false
+  },
+  "a15-850-u/vendor/tee/00000000-0000-0000-0000-42494f535542": {
+    "Similarity Score": 0.999,
+    "Radiff2 Distance": 128,
+    "Total Functions Analyzed": 30,
+    "Identical Functions": 30,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 0,
+    "Changed Matched Functions": 0,
+    "Changed Unmatched Functions": 0,
+    "TEE": true,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Obfuscated": false
+  },
+  "a15-850-u/vendor/tee/00000000-0000-0000-0000-4662436b6d52": {
+    "Similarity Score": 0.998,
+    "Radiff2 Distance": 445,
+    "Total Functions Analyzed": 97,
+    "Identical Functions": 97,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 0,
+    "Changed Matched Functions": 0,
+    "Changed Unmatched Functions": 0,
+    "TEE": true,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Obfuscated": false
+  },
+  "a15-850-u/vendor/tee/00000000-0000-0000-0000-000048444350": {
+    "Similarity Score": 0.966,
+    "Radiff2 Distance": 10133,
+    "Total Functions Analyzed": 60,
+    "Identical Functions": 1,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 59,
+    "Changed Matched Functions": 56,
+    "Changed Unmatched Functions": 3,
+    "TEE": true,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Obfuscated": false
+  },
+  "a15-850-u/vendor/tee/00000000-0000-0000-0000-0000534b504d": {
+    "Similarity Score": 0.984,
+    "Radiff2 Distance": 5977,
+    "Total Functions Analyzed": 137,
+    "Identical Functions": 0,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 137,
+    "Changed Matched Functions": 132,
+    "Changed Unmatched Functions": 5,
+    "TEE": true,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Obfuscated": false
+  },
+  "a15-850-u/vendor/tee/00000000-0000-0000-0000-487641557457": {
+    "Similarity Score": 0.998,
+    "Radiff2 Distance": 422,
+    "Total Functions Analyzed": 47,
+    "Identical Functions": 47,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 0,
+    "Changed Matched Functions": 0,
+    "Changed Unmatched Functions": 0,
+    "TEE": true,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Obfuscated": false
+  },
+  "a15-850-u/vendor/tee/00000000-0000-0000-0000-46494e474502": {
+    "Similarity Score": 1.0,
+    "Radiff2 Distance": 122,
+    "Total Functions Analyzed": 67,
+    "Identical Functions": 67,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 0,
+    "Changed Matched Functions": 0,
+    "Changed Unmatched Functions": 0,
+    "TEE": true,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Obfuscated": false
+  },
+  "a15-850-u/vendor/tee/00000000-0000-0000-0000-474154454b45": {
+    "Similarity Score": 0.909,
+    "Radiff2 Distance": 6457,
+    "Total Functions Analyzed": 41,
+    "Identical Functions": 0,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 41,
+    "Changed Matched Functions": 37,
+    "Changed Unmatched Functions": 4,
+    "TEE": true,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Obfuscated": false
+  },
+  "a15-850-u/vendor/tee/00000000-0000-0000-0000-564c544b5052": {
+    "Similarity Score": 0.999,
+    "Radiff2 Distance": 442,
+    "Total Functions Analyzed": 89,
+    "Identical Functions": 89,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 0,
+    "Changed Matched Functions": 0,
+    "Changed Unmatched Functions": 0,
+    "TEE": true,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Obfuscated": false
+  },
+  "a15-850-u/vendor/tee/00000000-0000-0000-0000-656e676d6f64": {
+    "Similarity Score": 0.999,
+    "Radiff2 Distance": 444,
+    "Total Functions Analyzed": 82,
+    "Identical Functions": 82,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 0,
+    "Changed Matched Functions": 0,
+    "Changed Unmatched Functions": 0,
+    "TEE": true,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Obfuscated": false
+  },
+  "a15-850-u/vendor/tee/00000000-0000-0000-0000-6d73745f5441": {
+    "Similarity Score": 0.99,
+    "Radiff2 Distance": 452,
+    "Total Functions Analyzed": 15,
+    "Identical Functions": 15,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 0,
+    "Changed Matched Functions": 0,
+    "Changed Unmatched Functions": 0,
+    "TEE": true,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Obfuscated": false
+  },
+  "a15-850-u/vendor/tee/00000000-4d54-4b5f-4246-444150437461": {
+    "Similarity Score": 0.992,
+    "Radiff2 Distance": 420,
+    "Total Functions Analyzed": 24,
+    "Identical Functions": 24,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 0,
+    "Changed Matched Functions": 0,
+    "Changed Unmatched Functions": 0,
+    "TEE": true,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Obfuscated": false
+  },
+  "a15-850-u/vendor/tee/00000000-4d54-4b5f-4246-534d454d5441": {
+    "Similarity Score": 0.995,
+    "Radiff2 Distance": 430,
+    "Total Functions Analyzed": 22,
+    "Identical Functions": 22,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 0,
+    "Changed Matched Functions": 0,
+    "Changed Unmatched Functions": 0,
+    "TEE": true,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Obfuscated": false
+  },
+  "vendor/tee/driver/00000000-0000-0000-0000-494363447256": {
+    "Similarity Score": 0.991,
+    "Radiff2 Distance": 416,
+    "Total Functions Analyzed": 18,
+    "Identical Functions": 18,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 0,
+    "Changed Matched Functions": 0,
+    "Changed Unmatched Functions": 0,
+    "TEE": true,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Obfuscated": false
+  },
+  "a15-850-u/vendor/tee/00000000-4d54-4b5f-4246-72706d627461": {
+    "Similarity Score": 0.995,
+    "Radiff2 Distance": 434,
+    "Total Functions Analyzed": 41,
+    "Identical Functions": 41,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 0,
+    "Changed Matched Functions": 0,
+    "Changed Unmatched Functions": 0,
+    "TEE": true,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Obfuscated": false
+  },
+  "a15-850-u/vendor/tee/00000000-4d54-4b5f-4246-44524d4b5052": {
+    "Similarity Score": 0.998,
+    "Radiff2 Distance": 432,
+    "Total Functions Analyzed": 40,
+    "Identical Functions": 40,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 0,
+    "Changed Matched Functions": 0,
+    "Changed Unmatched Functions": 0,
+    "TEE": true,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Obfuscated": false
+  },
+  "a15-850-u/vendor/tee/00000000-4d54-4b5f-4246-57564e544100": {
+    "Similarity Score": 1.0,
+    "Radiff2 Distance": 440,
+    "Total Functions Analyzed": 72,
+    "Identical Functions": 72,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 0,
+    "Changed Matched Functions": 0,
+    "Changed Unmatched Functions": 0,
+    "TEE": true,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Obfuscated": false
+  },
+  "vendor/tee/driver/00000000-0000-0000-0000-4d53546d7374": {
+    "Similarity Score": 0.993,
+    "Radiff2 Distance": 423,
+    "Total Functions Analyzed": 26,
+    "Identical Functions": 26,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 0,
+    "Changed Matched Functions": 0,
+    "Changed Unmatched Functions": 0,
+    "TEE": true,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Obfuscated": false
+  },
+  "vendor/tee/driver/00000000-0000-0000-0000-564c544b4456": {
+    "Similarity Score": 0.991,
+    "Radiff2 Distance": 416,
+    "Total Functions Analyzed": 18,
+    "Identical Functions": 18,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 0,
+    "Changed Matched Functions": 0,
+    "Changed Unmatched Functions": 0,
+    "TEE": true,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Obfuscated": false
+  },
+  "vendor/tee/driver/00000000-4d54-4b5f-4246-44524d4b5044": {
+    "Similarity Score": 0.986,
+    "Radiff2 Distance": 416,
+    "Total Functions Analyzed": 3,
+    "Identical Functions": 3,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 0,
+    "Changed Matched Functions": 0,
+    "Changed Unmatched Functions": 0,
+    "TEE": true,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Obfuscated": false
+  },
+  "vendor/tee/driver/00000000-4d54-4b5f-4246-444150436472": {
+    "Similarity Score": 0.994,
+    "Radiff2 Distance": 432,
+    "Total Functions Analyzed": 33,
+    "Identical Functions": 33,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 0,
+    "Changed Matched Functions": 0,
+    "Changed Unmatched Functions": 0,
+    "TEE": true,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Obfuscated": false
+  },
+  "vendor/tee/driver/00000000-4d54-4b5f-4246-445248444350": {
+    "Similarity Score": 0.995,
+    "Radiff2 Distance": 418,
+    "Total Functions Analyzed": 33,
+    "Identical Functions": 33,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 0,
+    "Changed Matched Functions": 0,
+    "Changed Unmatched Functions": 0,
+    "TEE": true,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Obfuscated": false
+  },
+  "vendor/tee/driver/00000000-4d54-4b5f-4246-534d45647276": {
+    "Similarity Score": 0.996,
+    "Radiff2 Distance": 436,
+    "Total Functions Analyzed": 39,
+    "Identical Functions": 39,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 0,
+    "Changed Matched Functions": 0,
+    "Changed Unmatched Functions": 0,
+    "TEE": true,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Obfuscated": false
+  },
+  "vendor/tee/driver/00000000-4d54-4b5f-4246-57564e647276": {
+    "Similarity Score": 0.995,
+    "Radiff2 Distance": 425,
+    "Total Functions Analyzed": 43,
+    "Identical Functions": 43,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 0,
+    "Changed Matched Functions": 0,
+    "Changed Unmatched Functions": 0,
+    "TEE": true,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Obfuscated": false
+  },
+  "a15-850-u/vendor/tee/00000000-0000-0000-0000-0050524f4341": {
+    "Similarity Score": 0.931,
+    "Radiff2 Distance": 23480,
+    "Total Functions Analyzed": 47,
+    "Identical Functions": 41,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 6,
+    "Changed Matched Functions": 6,
+    "Changed Unmatched Functions": 0,
+    "TEE": true,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Obfuscated": false
+  },
+  "a15-850-u/vendor/tee/00000000-0000-0000-0000-0053545354ab": {
+    "Similarity Score": 0.798,
+    "Radiff2 Distance": 24193,
+    "Total Functions Analyzed": 31,
+    "Identical Functions": 18,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 13,
+    "Changed Matched Functions": 12,
+    "Changed Unmatched Functions": 1,
+    "TEE": true,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Obfuscated": false
+  },
+  "system/system/bin/gatekeeperd": {
+    "Similarity Score": 0.919,
+    "Radiff2 Distance": 15612,
+    "Total Functions Analyzed": 141,
+    "Identical Functions": 5,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 136,
+    "Changed Matched Functions": 132,
+    "Changed Unmatched Functions": 4,
+    "Mentioned in .rc": true,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "rc_metadata": {
+      "source": "service",
+      "user": "system",
+      "group": "system"
+    }
+  },
+  "a15-850-u/vendor/tee/00000000-0000-0000-0000-6b6e78677564": {
+    "Similarity Score": 0.946,
+    "Radiff2 Distance": 24653,
+    "Total Functions Analyzed": 97,
+    "Identical Functions": 1,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 96,
+    "Changed Matched Functions": 91,
+    "Changed Unmatched Functions": 5,
+    "TEE": true,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Obfuscated": false
+  },
+  "system/system/lib/libft2.so": {
+    "Similarity Score": 0.995,
+    "Radiff2 Distance": 6264,
+    "Total Functions Analyzed": 272,
+    "Identical Functions": 272,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 0,
+    "Changed Matched Functions": 0,
+    "Changed Unmatched Functions": 0,
+    "Mentioned in .rc": false,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    }
+  },
+  "system/system/bin/init": {
+    "Similarity Score": 1.0,
+    "Radiff2 Distance": 32,
+    "Total Functions Analyzed": 1051,
+    "Identical Functions": 1051,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 0,
+    "Changed Matched Functions": 0,
+    "Changed Unmatched Functions": 0,
+    "Mentioned in .rc": true,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    }
+  },
+  "system/system/lib/libhwui.so": {
+    "Similarity Score": 0.998,
+    "Radiff2 Distance": 27626,
+    "Total Functions Analyzed": 1149,
+    "Identical Functions": 1148,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 1,
+    "Changed Matched Functions": 0,
+    "Changed Unmatched Functions": 1,
+    "Mentioned in .rc": true,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Used By": [
+      "bootanimation"
+    ]
+  },
+  "system/system/lib/libsavsac.so": {
+    "Similarity Score": 0.986,
+    "Radiff2 Distance": 13312,
+    "Total Functions Analyzed": 318,
+    "Identical Functions": 226,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 92,
+    "Changed Matched Functions": 19,
+    "Changed Unmatched Functions": 73,
+    "Mentioned in .rc": false,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    }
+  },
+  "system/system/lib/libdng_sdk.so": {
+    "Similarity Score": 0.972,
+    "Radiff2 Distance": 30952,
+    "Total Functions Analyzed": 1667,
+    "Identical Functions": 1056,
+    "New Functions": 15,
+    "Changed Functions (sim < 1.0, excluding NEW)": 596,
+    "Changed Matched Functions": 406,
+    "Changed Unmatched Functions": 190,
+    "Mentioned in .rc": false,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    }
+  },
+  "system/system/lib/libinputflinger.so": {
+    "Similarity Score": 0.972,
+    "Radiff2 Distance": 42948,
+    "Total Functions Analyzed": 1368,
+    "Identical Functions": 869,
+    "New Functions": 10,
+    "Changed Functions (sim < 1.0, excluding NEW)": 489,
+    "Changed Matched Functions": 174,
+    "Changed Unmatched Functions": 315,
+    "Mentioned in .rc": false,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    }
+  },
+  "a15-850-u/vendor/tee/00000000-0000-0000-0000-5345435f4652": {
+    "Similarity Score": 0.997,
+    "Radiff2 Distance": 65845,
+    "Total Functions Analyzed": 67,
+    "Identical Functions": 0,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 67,
+    "Changed Matched Functions": 62,
+    "Changed Unmatched Functions": 5,
+    "TEE": true,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Obfuscated": false
+  },
+  "system/system/lib/libsavsvc.so": {
+    "Similarity Score": 0.984,
+    "Radiff2 Distance": 38302,
+    "Total Functions Analyzed": 1182,
+    "Identical Functions": 891,
+    "New Functions": 15,
+    "Changed Functions (sim < 1.0, excluding NEW)": 276,
+    "Changed Matched Functions": 86,
+    "Changed Unmatched Functions": 190,
+    "Mentioned in .rc": false,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    }
+  },
+  "a15-850-u/vendor/tee/00000000-0000-0000-0000-4b45594d5354": {
+    "Similarity Score": 0.912,
+    "Radiff2 Distance": 94492,
+    "Total Functions Analyzed": 318,
+    "Identical Functions": 0,
+    "New Functions": 7,
+    "Changed Functions (sim < 1.0, excluding NEW)": 311,
+    "Changed Matched Functions": 306,
+    "Changed Unmatched Functions": 5,
+    "TEE": true,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Obfuscated": false
+  },
+  "system/system/lib64/libSamsungAPVoiceEngine.so": {
+    "Similarity Score": 0.978,
+    "Radiff2 Distance": 20322,
+    "Total Functions Analyzed": 958,
+    "Identical Functions": 447,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 511,
+    "Changed Matched Functions": 91,
+    "Changed Unmatched Functions": 420,
+    "Mentioned in .rc": false,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    }
+  },
+  "com.android.vndk.current.apex.unzipped/apex_payload_contents/lib/libsqlite.so": {
+    "Similarity Score": 0.941,
+    "Radiff2 Distance": 128134,
+    "Total Functions Analyzed": 491,
+    "Identical Functions": 222,
+    "New Functions": 4,
+    "Changed Functions (sim < 1.0, excluding NEW)": 265,
+    "Changed Matched Functions": 99,
+    "Changed Unmatched Functions": 166,
+    "Mentioned in .rc": true,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Used By": [
+      "installd",
+      "keystore2",
+      "pageboostd"
+    ]
+  },
+  "com.android.vndk.current.apex.unzipped/apex_payload_contents/lib64/libsqlite.so": {
+    "Similarity Score": 0.952,
+    "Radiff2 Distance": 154468,
+    "Total Functions Analyzed": 444,
+    "Identical Functions": 154,
+    "New Functions": 1,
+    "Changed Functions (sim < 1.0, excluding NEW)": 289,
+    "Changed Matched Functions": 122,
+    "Changed Unmatched Functions": 167,
+    "Mentioned in .rc": true,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Used By": [
+      "installd",
+      "keystore2",
+      "pageboostd"
+    ]
+  },
+  "system/system/bin/surfaceflinger": {
+    "Similarity Score": 0.991,
+    "Radiff2 Distance": 136034,
+    "Total Functions Analyzed": 1338,
+    "Identical Functions": 1044,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 294,
+    "Changed Matched Functions": 82,
+    "Changed Unmatched Functions": 212,
+    "Mentioned in .rc": true,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "rc_metadata": {
+      "source": "service",
+      "user": "system",
+      "group": "graphics",
+      "capabilities": [
+        "SYS_NICE"
+      ]
+    }
+  },
+  "system/system/lib64/libft2.so": {
+    "Similarity Score": 0.995,
+    "Radiff2 Distance": 7154,
+    "Total Functions Analyzed": 258,
+    "Identical Functions": 179,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 79,
+    "Changed Matched Functions": 31,
+    "Changed Unmatched Functions": 48,
+    "Mentioned in .rc": false,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    }
+  },
+  "system/system/lib/libsqlite.so": {
+    "Similarity Score": 0.94,
+    "Radiff2 Distance": 130308,
+    "Total Functions Analyzed": 619,
+    "Identical Functions": 247,
+    "New Functions": 35,
+    "Changed Functions (sim < 1.0, excluding NEW)": 337,
+    "Changed Matched Functions": 111,
+    "Changed Unmatched Functions": 226,
+    "Mentioned in .rc": true,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Used By": [
+      "installd",
+      "keystore2",
+      "pageboostd"
+    ]
+  },
+  "system/system/lib64/libgatekeeper_aidl.so": {
+    "Similarity Score": 0.882,
+    "Radiff2 Distance": 9964,
+    "Total Functions Analyzed": 100,
+    "Identical Functions": 7,
+    "New Functions": 1,
+    "Changed Functions (sim < 1.0, excluding NEW)": 92,
+    "Changed Matched Functions": 81,
+    "Changed Unmatched Functions": 11,
+    "Mentioned in .rc": true,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Used By": [
+      "gatekeeperd"
+    ]
+  },
+  "system/system/lib64/libhwui.so": {
+    "Similarity Score": 1.0,
+    "Radiff2 Distance": 9654,
+    "Total Functions Analyzed": 1144,
+    "Identical Functions": 1144,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 0,
+    "Changed Matched Functions": 0,
+    "Changed Unmatched Functions": 0,
+    "Mentioned in .rc": true,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Used By": [
+      "bootanimation"
+    ]
+  },
+  "system/system/lib64/libdng_sdk.so": {
+    "Similarity Score": 0.991,
+    "Radiff2 Distance": 16152,
+    "Total Functions Analyzed": 1500,
+    "Identical Functions": 1018,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 482,
+    "Changed Matched Functions": 181,
+    "Changed Unmatched Functions": 301,
+    "Mentioned in .rc": false,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    }
+  },
+  "system/system/lib/libSFEffect.fonteffect.samsung.so": {
+    "Similarity Score": 0.995,
+    "Radiff2 Distance": 63932,
+    "Total Functions Analyzed": 14050,
+    "Identical Functions": 14025,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 25,
+    "Changed Matched Functions": 3,
+    "Changed Unmatched Functions": 22,
+    "Mentioned in .rc": false,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    }
+  },
+  "system/system/lib64/libnfc-nxpsn.so": {
+    "Similarity Score": 1.0,
+    "Radiff2 Distance": 30,
+    "Total Functions Analyzed": 1373,
+    "Identical Functions": 1373,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 0,
+    "Changed Matched Functions": 0,
+    "Changed Unmatched Functions": 0,
+    "Mentioned in .rc": false,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    }
+  },
+  "system/system/lib64/libsavsac.so": {
+    "Similarity Score": 0.991,
+    "Radiff2 Distance": 10744,
+    "Total Functions Analyzed": 332,
+    "Identical Functions": 188,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 144,
+    "Changed Matched Functions": 15,
+    "Changed Unmatched Functions": 129,
+    "Mentioned in .rc": false,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    }
+  },
+  "system/system/lib64/libinputflinger.so": {
+    "Similarity Score": 0.984,
+    "Radiff2 Distance": 31284,
+    "Total Functions Analyzed": 1274,
+    "Identical Functions": 755,
+    "New Functions": 2,
+    "Changed Functions (sim < 1.0, excluding NEW)": 517,
+    "Changed Matched Functions": 126,
+    "Changed Unmatched Functions": 391,
+    "Mentioned in .rc": false,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    }
+  },
+  "system/system/lib64/libSFEffect.fonteffect.samsung.so": {
+    "Similarity Score": 1.0,
+    "Radiff2 Distance": 138,
+    "Total Functions Analyzed": 12552,
+    "Identical Functions": 12551,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 1,
+    "Changed Matched Functions": 0,
+    "Changed Unmatched Functions": 1,
+    "Mentioned in .rc": false,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    }
+  },
+  "system/system/lib64/libsavsvc.so": {
+    "Similarity Score": 0.99,
+    "Radiff2 Distance": 28086,
+    "Total Functions Analyzed": 1026,
+    "Identical Functions": 571,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 455,
+    "Changed Matched Functions": 97,
+    "Changed Unmatched Functions": 358,
+    "Mentioned in .rc": false,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    }
+  },
+  "system/system/lib/libimagecodec.quram.so": {
+    "Similarity Score": 0.965,
+    "Radiff2 Distance": 163264,
+    "Total Functions Analyzed": 2954,
+    "Identical Functions": 1121,
+    "New Functions": 16,
+    "Changed Functions (sim < 1.0, excluding NEW)": 1817,
+    "Changed Matched Functions": 582,
+    "Changed Unmatched Functions": 1235,
+    "Mentioned in .rc": false,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    }
+  },
+  "a15-850-u/vendor/bin/hermesd": {
+    "Similarity Score": 0.824,
+    "Radiff2 Distance": 60996,
+    "Total Functions Analyzed": 195,
+    "Identical Functions": 4,
+    "New Functions": 6,
+    "Changed Functions (sim < 1.0, excluding NEW)": 185,
+    "Changed Matched Functions": 178,
+    "Changed Unmatched Functions": 7,
+    "Mentioned in .rc": true,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "rc_metadata": {
+      "source": "service",
+      "user": "system",
+      "group": "system",
+      "capabilities": [
+        "WAKE_ALARM"
+      ]
+    }
+  },
+  "vendor/lib/hw/gatekeeper.mt6835.so": {
+    "Similarity Score": 0.997,
+    "Radiff2 Distance": 44,
+    "Total Functions Analyzed": 26,
+    "Identical Functions": 26,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 0,
+    "Changed Matched Functions": 0,
+    "Changed Unmatched Functions": 0,
+    "Mentioned in .rc": false,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    }
+  },
+  "a15-850-u/vendor/lib/libFaceService.so": {
+    "Similarity Score": 1.0,
+    "Radiff2 Distance": 30,
+    "Total Functions Analyzed": 1055,
+    "Identical Functions": 1055,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 0,
+    "Changed Matched Functions": 0,
+    "Changed Unmatched Functions": 0,
+    "Mentioned in .rc": false,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    }
+  },
+  "a15-850-u/vendor/lib/libsavsac.so": {
+    "Similarity Score": 0.987,
+    "Radiff2 Distance": 12310,
+    "Total Functions Analyzed": 316,
+    "Identical Functions": 224,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 92,
+    "Changed Matched Functions": 19,
+    "Changed Unmatched Functions": 73,
+    "Mentioned in .rc": false,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    }
+  },
+  "a15-850-u/vendor/lib/libsavsvc.so": {
+    "Similarity Score": 0.985,
+    "Radiff2 Distance": 35668,
+    "Total Functions Analyzed": 1184,
+    "Identical Functions": 870,
+    "New Functions": 14,
+    "Changed Functions (sim < 1.0, excluding NEW)": 300,
+    "Changed Matched Functions": 98,
+    "Changed Unmatched Functions": 202,
+    "Mentioned in .rc": false,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    }
+  },
+  "a15-850-u/vendor/lib/libsecfr_engine.so": {
+    "Similarity Score": 1.0,
+    "Radiff2 Distance": 32,
+    "Total Functions Analyzed": 243,
+    "Identical Functions": 243,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 0,
+    "Changed Matched Functions": 0,
+    "Changed Unmatched Functions": 0,
+    "Mentioned in .rc": false,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    }
+  },
+  "vendor/lib64/hw/gatekeeper.mt6835.so": {
+    "Similarity Score": 0.984,
+    "Radiff2 Distance": 480,
+    "Total Functions Analyzed": 25,
+    "Identical Functions": 24,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 1,
+    "Changed Matched Functions": 1,
+    "Changed Unmatched Functions": 0,
+    "Mentioned in .rc": false,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    }
+  },
+  "system/system/lib/libskcodec.so": {
+    "Similarity Score": 0.993,
+    "Radiff2 Distance": 114142,
+    "Total Functions Analyzed": 12140,
+    "Identical Functions": 11978,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 162,
+    "Changed Matched Functions": 34,
+    "Changed Unmatched Functions": 128,
+    "Mentioned in .rc": false,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    }
+  },
+  "a15-850-u/vendor/lib64/libese-grdg.so": {
+    "Similarity Score": 0.825,
+    "Radiff2 Distance": 16408,
+    "Total Functions Analyzed": 85,
+    "Identical Functions": 43,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 42,
+    "Changed Matched Functions": 27,
+    "Changed Unmatched Functions": 15,
+    "Mentioned in .rc": true,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Used By": [
+      "hermesd"
+    ]
+  },
+  "a15-850-u/vendor/lib64/libhermes_bdbridge.so": {
+    "Similarity Score": 0.845,
+    "Radiff2 Distance": 7984,
+    "Total Functions Analyzed": 57,
+    "Identical Functions": 26,
+    "New Functions": 7,
+    "Changed Functions (sim < 1.0, excluding NEW)": 24,
+    "Changed Matched Functions": 11,
+    "Changed Unmatched Functions": 13,
+    "Mentioned in .rc": true,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": false,
+      "differences": [
+        {
+          "option": "fortify-able",
+          "old": "1",
+          "new": "3",
+          "change": "informational",
+          "extra_info": "delta: +2"
+        }
+      ]
+    },
+    "Used By": [
+      "hermesd"
+    ]
+  },
+  "a15-850-u/vendor/lib64/libFaceService.so": {
+    "Similarity Score": 1.0,
+    "Radiff2 Distance": 32,
+    "Total Functions Analyzed": 999,
+    "Identical Functions": 999,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 0,
+    "Changed Matched Functions": 0,
+    "Changed Unmatched Functions": 0,
+    "Mentioned in .rc": false,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    }
+  },
+  "a15-850-u/vendor/lib64/libisosechw.so": {
+    "Similarity Score": 0.941,
+    "Radiff2 Distance": 6824,
+    "Total Functions Analyzed": 150,
+    "Identical Functions": 31,
+    "New Functions": 1,
+    "Changed Functions (sim < 1.0, excluding NEW)": 118,
+    "Changed Matched Functions": 52,
+    "Changed Unmatched Functions": 66,
+    "Mentioned in .rc": true,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Used By": [
+      "vendor.samsung.hardware.security.hermes-service"
+    ]
+  },
+  "system/system/lib/libskandroidcodec.so": {
+    "Similarity Score": 0.993,
+    "Radiff2 Distance": 119690,
+    "Total Functions Analyzed": 12170,
+    "Identical Functions": 12002,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 168,
+    "Changed Matched Functions": 37,
+    "Changed Unmatched Functions": 131,
+    "Mentioned in .rc": false,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    }
+  },
+  "system/system/lib64/libkumihodecoderservice.so": {
+    "Similarity Score": 1.0,
+    "Radiff2 Distance": 134,
+    "Total Functions Analyzed": 13512,
+    "Identical Functions": 13500,
+    "New Functions": 11,
+    "Changed Functions (sim < 1.0, excluding NEW)": 1,
+    "Changed Matched Functions": 0,
+    "Changed Unmatched Functions": 1,
+    "Mentioned in .rc": true,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Used By": [
+      "kumihodecoder"
+    ]
+  },
+  "a15-850-u/vendor/lib64/libsavsac.so": {
+    "Similarity Score": 0.994,
+    "Radiff2 Distance": 7700,
+    "Total Functions Analyzed": 331,
+    "Identical Functions": 227,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 104,
+    "Changed Matched Functions": 14,
+    "Changed Unmatched Functions": 90,
+    "Mentioned in .rc": false,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    }
+  },
+  "a15-850-u/vendor/lib64/libsecfr_engine.so": {
+    "Similarity Score": 1.0,
+    "Radiff2 Distance": 32,
+    "Total Functions Analyzed": 224,
+    "Identical Functions": 224,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 0,
+    "Changed Matched Functions": 0,
+    "Changed Unmatched Functions": 0,
+    "Mentioned in .rc": false,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    }
+  },
+  "a15-850-u/vendor/lib64/libskeymint10device.so": {
+    "Similarity Score": 0.994,
+    "Radiff2 Distance": 1552,
+    "Total Functions Analyzed": 310,
+    "Identical Functions": 257,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 53,
+    "Changed Matched Functions": 1,
+    "Changed Unmatched Functions": 52,
+    "Mentioned in .rc": true,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Used By": [
+      "android.hardware.security.keymint-service"
+    ]
+  },
+  "vendor/lib64/mt6835/libSonyIMX519PdafLibraryWrapper.so": {
+    "Similarity Score": 0.959,
+    "Radiff2 Distance": 2930,
+    "Total Functions Analyzed": 39,
+    "Identical Functions": 25,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 14,
+    "Changed Matched Functions": 13,
+    "Changed Unmatched Functions": 1,
+    "Mentioned in .rc": false,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    }
+  },
+  "a15-850-u/vendor/lib64/libskeymint_cli.so": {
+    "Similarity Score": 0.998,
+    "Radiff2 Distance": 618,
+    "Total Functions Analyzed": 326,
+    "Identical Functions": 273,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 53,
+    "Changed Matched Functions": 0,
+    "Changed Unmatched Functions": 53,
+    "Mentioned in .rc": false,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    }
+  },
+  "a15-850-u/vendor/lib64/libsavsvc.so": {
+    "Similarity Score": 0.991,
+    "Radiff2 Distance": 23398,
+    "Total Functions Analyzed": 1048,
+    "Identical Functions": 775,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 273,
+    "Changed Matched Functions": 79,
+    "Changed Unmatched Functions": 194,
+    "Mentioned in .rc": false,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    }
+  },
+  "system/system/lib64/libcameraservice.so": {
+    "Similarity Score": 0.977,
+    "Radiff2 Distance": 171220,
+    "Total Functions Analyzed": 4051,
+    "Identical Functions": 1445,
+    "New Functions": 3,
+    "Changed Functions (sim < 1.0, excluding NEW)": 2603,
+    "Changed Matched Functions": 765,
+    "Changed Unmatched Functions": 1838,
+    "Mentioned in .rc": true,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Used By": [
+      "cameraserver"
+    ]
+  },
+  "system/system/lib64/libskandroidcodec.so": {
+    "Similarity Score": 1.0,
+    "Radiff2 Distance": 164,
+    "Total Functions Analyzed": 11308,
+    "Identical Functions": 11307,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 1,
+    "Changed Matched Functions": 0,
+    "Changed Unmatched Functions": 1,
+    "Mentioned in .rc": false,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    }
+  },
+  "system/system/lib64/libskcodec.so": {
+    "Similarity Score": 1.0,
+    "Radiff2 Distance": 162,
+    "Total Functions Analyzed": 11265,
+    "Identical Functions": 11264,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 1,
+    "Changed Matched Functions": 0,
+    "Changed Unmatched Functions": 1,
+    "Mentioned in .rc": false,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    }
+  },
+  "vendor/lib64/mt6835/libcamera.custom.pd_buf_mgr.so": {
+    "Similarity Score": 0.68,
+    "Radiff2 Distance": 86922,
+    "Total Functions Analyzed": 303,
+    "Identical Functions": 46,
+    "New Functions": 2,
+    "Changed Functions (sim < 1.0, excluding NEW)": 255,
+    "Changed Matched Functions": 186,
+    "Changed Unmatched Functions": 69,
+    "Mentioned in .rc": false,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    }
+  },
+  "system/system/lib64/libsqlite.so": {
+    "Similarity Score": 0.952,
+    "Radiff2 Distance": 155794,
+    "Total Functions Analyzed": 474,
+    "Identical Functions": 169,
+    "New Functions": 1,
+    "Changed Functions (sim < 1.0, excluding NEW)": 304,
+    "Changed Matched Functions": 130,
+    "Changed Unmatched Functions": 174,
+    "Mentioned in .rc": true,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Used By": [
+      "installd",
+      "keystore2",
+      "pageboostd"
+    ]
+  },
+  "system/system/lib64/libimagecodec.quram.so": {
+    "Similarity Score": 0.958,
+    "Radiff2 Distance": 187956,
+    "Total Functions Analyzed": 2773,
+    "Identical Functions": 591,
+    "New Functions": 6,
+    "Changed Functions (sim < 1.0, excluding NEW)": 2176,
+    "Changed Matched Functions": 1138,
+    "Changed Unmatched Functions": 1038,
+    "Mentioned in .rc": false,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    }
+  },
+  "system/system/lib/libandroid_runtime.so": {
+    "Similarity Score": 0.903,
+    "Radiff2 Distance": 337670,
+    "Total Functions Analyzed": 4052,
+    "Identical Functions": 1000,
+    "New Functions": 43,
+    "Changed Functions (sim < 1.0, excluding NEW)": 3009,
+    "Changed Matched Functions": 1116,
+    "Changed Unmatched Functions": 1893,
+    "Mentioned in .rc": true,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Used By": [
+      "app_process",
+      "app_process32",
+      "app_process64"
+    ]
+  },
+  "system/system/lib64/libandroid_runtime.so": {
+    "Similarity Score": 0.933,
+    "Radiff2 Distance": 349794,
+    "Total Functions Analyzed": 3930,
+    "Identical Functions": 283,
+    "New Functions": 6,
+    "Changed Functions (sim < 1.0, excluding NEW)": 3641,
+    "Changed Matched Functions": 2836,
+    "Changed Unmatched Functions": 805,
+    "Mentioned in .rc": true,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Used By": [
+      "app_process",
+      "app_process32",
+      "app_process64"
+    ]
+  },
+  "vendor/lib64/mt6835/libmtkcam_metastore.so": {
+    "Similarity Score": 0.797,
+    "Radiff2 Distance": 345432,
+    "Total Functions Analyzed": 599,
+    "Identical Functions": 340,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 259,
+    "Changed Matched Functions": 204,
+    "Changed Unmatched Functions": 55,
+    "Mentioned in .rc": false,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    }
+  },
+  "vendor/lib64/mt6835/libmtkcam.logicalmodule.so": {
+    "Similarity Score": 0.816,
+    "Radiff2 Distance": 383468,
+    "Total Functions Analyzed": 645,
+    "Identical Functions": 371,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 274,
+    "Changed Matched Functions": 250,
+    "Changed Unmatched Functions": 24,
+    "Mentioned in .rc": false,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    }
+  },
+  "vendor/lib64/mt6835/libcam.halsensor.so": {
+    "Similarity Score": 0.82,
+    "Radiff2 Distance": 390428,
+    "Total Functions Analyzed": 688,
+    "Identical Functions": 416,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 272,
+    "Changed Matched Functions": 246,
+    "Changed Unmatched Functions": 26,
+    "Mentioned in .rc": false,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    }
+  },
+  "com.android.btservices.apex.unzipped/apex_payload_contents/lib64/libbluetooth_jni.so": {
+    "Similarity Score": 0.976,
+    "Radiff2 Distance": 702502,
+    "Total Functions Analyzed": 12867,
+    "Identical Functions": 5800,
+    "New Functions": 11,
+    "Changed Functions (sim < 1.0, excluding NEW)": 7056,
+    "Changed Matched Functions": 2001,
+    "Changed Unmatched Functions": 5055,
+    "Mentioned in .rc": false,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    }
+  }
+}

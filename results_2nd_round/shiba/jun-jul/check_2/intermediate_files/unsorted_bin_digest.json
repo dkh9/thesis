@@ -1,0 +1,148 @@
+{
+  "vendor/bin/hw/android.hardware.composer.hwc3-service.pixel": {
+    "Similarity Score": 0.976,
+    "Radiff2 Distance": 9842,
+    "Total Functions Analyzed": 198,
+    "Identical Functions": 188,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 10,
+    "Changed Matched Functions": 5,
+    "Changed Unmatched Functions": 5,
+    "Mentioned in .rc": true,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "rc_metadata": {
+      "source": "service",
+      "user": "system",
+      "group": "graphics",
+      "capabilities": [
+        "SYS_NICE"
+      ]
+    }
+  },
+  "apex_payload_contents/bin/hw/android.hardware.camera.provider@2.7-service-google": {
+    "Similarity Score": 1.0,
+    "Radiff2 Distance": 114,
+    "Total Functions Analyzed": 294,
+    "Identical Functions": 293,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 1,
+    "Changed Matched Functions": 0,
+    "Changed Unmatched Functions": 1,
+    "Mentioned in .rc": false,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    }
+  },
+  "shiba-jul24/vendor/lib64/libExynosHWCService.so": {
+    "Similarity Score": 0.975,
+    "Radiff2 Distance": 5434,
+    "Total Functions Analyzed": 185,
+    "Identical Functions": 159,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 26,
+    "Changed Matched Functions": 15,
+    "Changed Unmatched Functions": 11,
+    "Mentioned in .rc": true,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Used By": [
+      "android.hardware.composer.hwc3-service.pixel"
+    ]
+  },
+  "shiba-jul24/vendor/lib64/vendor.radio.base.so": {
+    "Similarity Score": 1.0,
+    "Radiff2 Distance": 42,
+    "Total Functions Analyzed": 1201,
+    "Identical Functions": 1201,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 0,
+    "Changed Matched Functions": 0,
+    "Changed Unmatched Functions": 0,
+    "Mentioned in .rc": false,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    }
+  },
+  "com.google.pixel.camera.hal.apex.unzipped/apex_payload_contents/lib64/libg3a.so": {
+    "Similarity Score": 0.988,
+    "Radiff2 Distance": 232280,
+    "Total Functions Analyzed": 867,
+    "Identical Functions": 667,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 200,
+    "Changed Matched Functions": 116,
+    "Changed Unmatched Functions": 84,
+    "Mentioned in .rc": false,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    }
+  },
+  "shiba-jul24/vendor/lib64/libexynosdisplay.so": {
+    "Similarity Score": 0.923,
+    "Radiff2 Distance": 256778,
+    "Total Functions Analyzed": 2667,
+    "Identical Functions": 762,
+    "New Functions": 3,
+    "Changed Functions (sim < 1.0, excluding NEW)": 1902,
+    "Changed Matched Functions": 1082,
+    "Changed Unmatched Functions": 820,
+    "Mentioned in .rc": true,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Used By": [
+      "android.hardware.composer.hwc3-service.pixel"
+    ]
+  },
+  "system/system/lib64/libandroid_runtime.so": {
+    "Similarity Score": 0.942,
+    "Radiff2 Distance": 301622,
+    "Total Functions Analyzed": 3605,
+    "Identical Functions": 294,
+    "New Functions": 6,
+    "Changed Functions (sim < 1.0, excluding NEW)": 3305,
+    "Changed Matched Functions": 2708,
+    "Changed Unmatched Functions": 597,
+    "Mentioned in .rc": true,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Used By": [
+      "app_process",
+      "app_process64"
+    ]
+  },
+  "system/system/lib64/libhwui.so": {
+    "Similarity Score": 0.976,
+    "Radiff2 Distance": 435286,
+    "Total Functions Analyzed": 972,
+    "Identical Functions": 794,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 178,
+    "Changed Matched Functions": 131,
+    "Changed Unmatched Functions": 47,
+    "Mentioned in .rc": false,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    }
+  }
+}

@@ -1,0 +1,234 @@
+{
+  "increased": [],
+  "decreased": [
+    {
+      "permission_name": "android.permission.READ_PRIVILEGED_PHONE_STATE",
+      "old_level": "privileged|role|signature",
+      "new_level": "privileged|signature"
+    }
+  ],
+  "added": [
+    {
+      "permission_name": "com.sec.unifiedwfc.permission.SEND_WAP_PUSH_SL",
+      "new_level": "signatureOrSystem"
+    },
+    {
+      "permission_name": "com.sec.android.app.samsungapps.accesspermission.CONTENT_ACTIVITY",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.sec.android.app.samsungapps.accesspermission.GENERNAL_ACTIVITY",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.sec.android.app.samsungapps.accesspermission.BILLING_ACTIVITY",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.sec.android.app.samsungapps.accesspermission.ACCOUNT_ACTIVITY",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.sec.android.provider.samsungapps.permission.READ",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.sec.android.provider.samsungapps.permission.WRITE",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.sec.android.app.samsungapps.accesspermission.HUN_EVENT",
+      "new_level": "signatureOrSystem"
+    },
+    {
+      "permission_name": "com.sec.android.app.samsungapps.accesspermission.COUNTRYSERACHEX_SERVICE",
+      "new_level": "normal"
+    },
+    {
+      "permission_name": "com.sec.android.app.samsungapps.accesspermission.PURCHASE_PROTECTION_SERVICE",
+      "new_level": "normal"
+    },
+    {
+      "permission_name": "com.sec.android.app.samsungapps.accesspermission.UPDATE_EXISTS",
+      "new_level": "normal"
+    },
+    {
+      "permission_name": "com.sec.android.app.samsungapps.permission.DDI",
+      "new_level": "normal"
+    },
+    {
+      "permission_name": "com.sec.android.app.samsungapps.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.samsung.android.iap.permission.BILLING",
+      "new_level": "normal"
+    },
+    {
+      "permission_name": "com.samsung.systemui.POPUP_UI_PERMISSION",
+      "new_level": "signatureOrSystem"
+    },
+    {
+      "permission_name": "com.android.systemui.permission.SELF",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.android.systemui.permission.PLUGIN",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.samsung.systemui.permission.SPLUGIN",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.samsung.systemui.permission.AIRPLANE_STATE_CHANGE",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.samsung.systemui.permission.WIFI_STATE_CHANGE",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.samsung.systemui.permission.BLUETOOTH_STATE_CHANGE",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.samsung.systemui.permission.KEYGUARD_IMAGE",
+      "new_level": "signatureOrSystem"
+    },
+    {
+      "permission_name": "com.android.systemui.permission.FLAGS",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "android.permission.CUSTOMIZE_SYSTEM_UI",
+      "new_level": "privileged|signature"
+    },
+    {
+      "permission_name": "com.samsung.systemui.permission.SEC_UPDATE_CUSTOMTILE_VISIBILITY",
+      "new_level": "privileged|signature"
+    },
+    {
+      "permission_name": "com.samsung.systemui.SEC_MEDIA_PLAYER_MEDIA_OUTPUT",
+      "new_level": "signatureOrSystem"
+    },
+    {
+      "permission_name": "com.samsung.keyguard.SHORTCUT_PERMISSION",
+      "new_level": "signatureOrSystem"
+    },
+    {
+      "permission_name": "com.samsung.android.permission.ADD_PAIR_APP_SHORTCUT",
+      "new_level": "signatureOrSystem"
+    },
+    {
+      "permission_name": "com.samsung.android.permission.SET_FESTIVAL_WALLPAPER",
+      "new_level": "signatureOrSystem"
+    },
+    {
+      "permission_name": "com.samsung.android.permission.ACCESS_EDGE_LIGHTING",
+      "new_level": "signatureOrSystem"
+    },
+    {
+      "permission_name": "com.samsung.android.permission.EDGE_LIGHTING_HOST",
+      "new_level": "signatureOrSystem"
+    },
+    {
+      "permission_name": "com.samsung.android.permission.EDGELIGHTING_RESTORE",
+      "new_level": "signatureOrSystem"
+    },
+    {
+      "permission_name": "com.android.wm.shell.pip.PIP_MENU_CONTROL_PERMISSION",
+      "new_level": "signatureOrSystem"
+    },
+    {
+      "permission_name": "com.samsung.android.permission.REQUEST_REMOTE_INPUT",
+      "new_level": "signatureOrSystem"
+    },
+    {
+      "permission_name": "com.samsung.android.permission.RETURN_REMOTE_INPUT",
+      "new_level": "signatureOrSystem"
+    },
+    {
+      "permission_name": "com.samsung.android.permission.SEND_SPLIT_STATE_CHANGED",
+      "new_level": "signatureOrSystem"
+    },
+    {
+      "permission_name": "com.android.systemui.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.android.wm.shell.controlpanel.ControlPanelService",
+      "new_level": "signatureOrSystem"
+    },
+    {
+      "permission_name": "com.android.vending.BIOAUTH_CONSENT",
+      "new_level": "signature"
+    }
+  ],
+  "removed": [
+    {
+      "permission_name": "com.android.vending.setup.PLAY_PROGRESS_BIND",
+      "old_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.voicesearch.AUDIO_FILE_ACCESS",
+      "old_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.googlequicksearchbox.permission.FINISH_GEL_ACTIVITY",
+      "old_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.apps.now.CURRENT_ACCOUNT_ACCESS",
+      "old_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.googlequicksearchbox.LAUNCH_WITH_RECORDED_AUDIO",
+      "old_level": "signatureOrSystem"
+    },
+    {
+      "permission_name": "com.google.android.googlequicksearchbox.LAUNCH_FROM_DSP_HOTWORD",
+      "old_level": "signatureOrSystem"
+    },
+    {
+      "permission_name": "com.google.android.googlequicksearchbox.permission.LAUNCH_FROM_GMM",
+      "old_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.apps.now.OPT_IN_WIZARD",
+      "old_level": "signatureOrSystem"
+    },
+    {
+      "permission_name": "com.google.android.googlequicksearchbox.permission.PAUSE_HOTWORD",
+      "old_level": "signatureOrSystem"
+    },
+    {
+      "permission_name": "com.google.android.googlequicksearchbox.permission.REGISTER_SMARTSPACE",
+      "old_level": "signatureOrSystem"
+    },
+    {
+      "permission_name": "com.google.android.googlequicksearchbox.permission.C2D_MESSAGE",
+      "old_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.googlequicksearchbox.permission.FLUSH_LOGS",
+      "old_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.googlequicksearchbox.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+      "old_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.apps.gsa.nga.permissions.EDIT_PREFERENCES",
+      "old_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.apps.search.assistant.verticals.snapshot.widgets.weather.permission.WEATHER_WIDGET_UPDATE",
+      "old_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.googlequicksearchbox.permission.LENS_SERVICE",
+      "old_level": "normal"
+    }
+  ]
+}

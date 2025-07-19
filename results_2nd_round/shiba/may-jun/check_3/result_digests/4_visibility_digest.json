@@ -1,0 +1,23 @@
+{
+  "increased_visibility": [
+    {
+      "app": "SettingsGoogle.apk",
+      "component": {
+        "type": "activity",
+        "name": "com.android.settings.FRAGMENT_CLASS"
+      },
+      "from": "false",
+      "to": "true"
+    },
+    {
+      "app": "Velvet.apk",
+      "component": {
+        "type": "activity",
+        "name": "com.google.android.apps.search.weather.WeatherExportedActivity"
+      },
+      "from": "false",
+      "to": "true"
+    }
+  ],
+  "decreased_visibility": []
+}

@@ -1,0 +1,223 @@
+{
+  "product/priv-app/DCMO/DCMO.apk": {
+    "apk": "DCMO.apk",
+    "priv-app": true,
+    "changes": {
+      "tier_1": [
+        {
+          "file": "tmp/apk2_back03eh/classes.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_2": [],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "etc/security/fsverity/BuildManifest.apk": {
+    "apk": "BuildManifest.apk",
+    "priv-app": false,
+    "changes": {
+      "tier_1": [],
+      "tier_2": [
+        {
+          "file": "tmp/apk2_mmel83kk/assets/build_manifest.pb",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "etc/security/fsverity/BuildManifest.apk.idsig": {
+    "apk": "BuildManifest.apk.idsig",
+    "priv-app": false,
+    "error": "Error processing APK diff: Command '['unzip', '-q', 'shiba-jul24/system/system/etc/security/fsverity/BuildManifest.apk.idsig', '-d', '/tmp/apk1_8aiadvzb']' returned non-zero exit status 9."
+  },
+  "etc/security/fsverity/BuildManifestSystemExt.apk": {
+    "apk": "BuildManifestSystemExt.apk",
+    "priv-app": false,
+    "changes": {
+      "tier_1": [],
+      "tier_2": [
+        {
+          "file": "tmp/apk2_5pc9f51m/assets/build_manifest.pb",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "etc/security/fsverity/BuildManifestSystemExt.apk.idsig": {
+    "apk": "BuildManifestSystemExt.apk.idsig",
+    "priv-app": false,
+    "error": "Error processing APK diff: Command '['unzip', '-q', 'shiba-jul24/system_ext/etc/security/fsverity/BuildManifestSystemExt.apk.idsig', '-d', '/tmp/apk1_mx0_v35p']' returned non-zero exit status 9."
+  },
+  "system_ext/priv-app/ConnectivityThermalPowerManager/ConnectivityThermalPowerManager.apk": {
+    "apk": "ConnectivityThermalPowerManager.apk",
+    "priv-app": true,
+    "changes": {
+      "tier_1": [
+        {
+          "file": "tmp/apk2_p0g2r2db/classes.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_2": [],
+      "tier_3": [],
+      "unclassified": [
+        {
+          "file": "tmp/apk2_p0g2r2db/com/android/server/wm/ActivityClientController_compat_config.xml",
+          "added": "1",
+          "removed": "1",
+          "change_type": "modified"
+        }
+      ]
+    },
+    "dex_diffs": {}
+  },
+  "system_ext/priv-app/NexusLauncherRelease/NexusLauncherRelease.apk": {
+    "apk": "NexusLauncherRelease.apk",
+    "priv-app": true,
+    "changes": {
+      "tier_1": [
+        {
+          "file": "tmp/apk2_kbi47ufq/classes.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_2": [],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "system_ext/priv-app/SystemUIGoogle/SystemUIGoogle.apk": {
+    "apk": "SystemUIGoogle.apk",
+    "priv-app": true,
+    "changes": {
+      "tier_1": [
+        {
+          "file": "tmp/apk2_1lnn3rem/classes.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_1lnn3rem/classes2.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_2": [],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "system_ext/priv-app/SettingsGoogle/SettingsGoogle.apk": {
+    "apk": "SettingsGoogle.apk",
+    "priv-app": true,
+    "changes": {
+      "tier_1": [
+        {
+          "file": "tmp/apk2__zb0zrp0/classes.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2__zb0zrp0/classes2.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2__zb0zrp0/classes3.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_2": [],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "product/priv-app/PrebuiltGmsCore/PrebuiltGmsCoreSc.apk": {
+    "apk": "PrebuiltGmsCoreSc.apk",
+    "priv-app": true,
+    "changes": {
+      "tier_1": [],
+      "tier_2": [
+        {
+          "file": "tmp/apk2_df0nsexa/assets/chimera-modules/AdsDynamite.apk",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_df0nsexa/assets/chimera-modules/CronetDynamite.apk",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_df0nsexa/assets/chimera-modules/DynamiteLoader.apk",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_df0nsexa/assets/chimera-modules/DynamiteModulesA.apk",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_df0nsexa/assets/chimera-modules/DynamiteModulesC.apk",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_df0nsexa/assets/chimera-modules/GoogleCertificates.apk",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_df0nsexa/assets/chimera-modules/MapsDynamite.apk",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_df0nsexa/assets/chimera-modules/MeasurementDynamite.apk",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  }
+}

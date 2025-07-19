@@ -1,0 +1,590 @@
+{
+  "increased": [
+    {
+      "permission_name": "android.permission.INTERACT_ACROSS_USERS_FULL",
+      "old_level": "installer|role|signature",
+      "new_level": "installer|module|role|signature"
+    },
+    {
+      "permission_name": "android.permission.BIND_NFC_SERVICE",
+      "old_level": "signature",
+      "new_level": "module|signature"
+    },
+    {
+      "permission_name": "android.permission.SUBSCRIBE_TO_KEYGUARD_LOCKED_STATE",
+      "old_level": "role|signature",
+      "new_level": "module|role|signature"
+    },
+    {
+      "permission_name": "android.permission.MANAGE_ROLE_HOLDERS",
+      "old_level": "installer|signature",
+      "new_level": "installer|module|signature"
+    },
+    {
+      "permission_name": "android.permission.OBSERVE_ROLE_HOLDERS",
+      "old_level": "installer|signature",
+      "new_level": "installer|module|signature"
+    },
+    {
+      "permission_name": "android.permission.MANAGE_CONTENT_SUGGESTIONS",
+      "old_level": "signature",
+      "new_level": "role|signature"
+    },
+    {
+      "permission_name": "android.permission.GET_APP_METADATA",
+      "old_level": "installer|signature",
+      "new_level": "installer|signature|verifier"
+    }
+  ],
+  "decreased": [
+    {
+      "permission_name": "android.permission.USE_COMPANION_TRANSPORTS",
+      "old_level": "module|signature",
+      "new_level": "signature"
+    }
+  ],
+  "added": [
+    {
+      "permission_name": "android.permission.CAMERA_PRIVACY_ALLOWLIST",
+      "new_level": "privileged|signature"
+    },
+    {
+      "permission_name": "android.permission.CONFIGURE_FACTORY_RESET_PROTECTION",
+      "new_level": "privileged|signature"
+    },
+    {
+      "permission_name": "android.permission.BIND_DOMAIN_SELECTION_SERVICE",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "android.permission.ACCESS_LAST_KNOWN_CELL_ID",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "android.permission.ACCESS_HIDDEN_PROFILES",
+      "new_level": "normal"
+    },
+    {
+      "permission_name": "android.permission.ACCESS_HIDDEN_PROFILES_FULL",
+      "new_level": "privileged|signature"
+    },
+    {
+      "permission_name": "android.permission.MANAGE_DEVICE_POLICY_THREAD_NETWORK",
+      "new_level": "internal|role"
+    },
+    {
+      "permission_name": "android.permission.MANAGE_DEVICE_POLICY_ASSIST_CONTENT",
+      "new_level": "internal|role"
+    },
+    {
+      "permission_name": "android.permission.MANAGE_DEVICE_POLICY_AUDIT_LOGGING",
+      "new_level": "internal|role"
+    },
+    {
+      "permission_name": "android.permission.MANAGE_DEVICE_POLICY_THEFT_DETECTION",
+      "new_level": "internal|role"
+    },
+    {
+      "permission_name": "android.permission.MANAGE_DEVICE_POLICY_CONTENT_PROTECTION",
+      "new_level": "internal|role"
+    },
+    {
+      "permission_name": "android.permission.MANAGE_DEVICE_POLICY_MANAGED_SUBSCRIPTIONS",
+      "new_level": "internal|role"
+    },
+    {
+      "permission_name": "android.permission.MANAGE_DEVICE_POLICY_BLOCK_UNINSTALL",
+      "new_level": "internal|role"
+    },
+    {
+      "permission_name": "android.permission.MANAGE_DEVICE_POLICY_CAMERA_TOGGLE",
+      "new_level": "internal|role"
+    },
+    {
+      "permission_name": "android.permission.MANAGE_DEVICE_POLICY_MICROPHONE_TOGGLE",
+      "new_level": "internal|role"
+    },
+    {
+      "permission_name": "android.permission.MANAGE_ENHANCED_CONFIRMATION_STATES",
+      "new_level": "installer|signature"
+    },
+    {
+      "permission_name": "android.permission.EMBED_ANY_APP_IN_UNTRUSTED_MODE",
+      "new_level": "internal|role"
+    },
+    {
+      "permission_name": "android.permission.BIND_TV_AD_SERVICE",
+      "new_level": "privileged|signature"
+    },
+    {
+      "permission_name": "android.permission.REQUEST_OBSERVE_DEVICE_UUID_PRESENCE",
+      "new_level": "privileged|signature"
+    },
+    {
+      "permission_name": "android.permission.SET_BIOMETRIC_DIALOG_LOGO",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "android.permission.FOREGROUND_SERVICE_MEDIA_PROCESSING",
+      "new_level": "instant"
+    },
+    {
+      "permission_name": "android.permission.SET_THEME_OVERLAY_CONTROLLER_READY",
+      "new_level": "setup|signature"
+    },
+    {
+      "permission_name": "android.permission.MONITOR_STICKY_MODIFIER_STATE",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "android.permission.USE_ON_DEVICE_INTELLIGENCE",
+      "new_level": "privileged|signature"
+    },
+    {
+      "permission_name": "android.permission.BIND_ON_DEVICE_INTELLIGENCE_SERVICE",
+      "new_level": "privileged|signature"
+    },
+    {
+      "permission_name": "android.permission.BIND_ON_DEVICE_TRUSTED_SERVICE",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "android.permission.RUN_BACKUP_JOBS",
+      "new_level": "appop|privileged|signature"
+    },
+    {
+      "permission_name": "android.permission.RECEIVE_SENSITIVE_NOTIFICATIONS",
+      "new_level": "role|signature"
+    },
+    {
+      "permission_name": "android.permission.GET_BACKGROUND_INSTALLED_PACKAGES",
+      "new_level": "role|signature"
+    },
+    {
+      "permission_name": "android.permission.READ_SYSTEM_GRAMMATICAL_GENDER",
+      "new_level": "privileged|signature"
+    },
+    {
+      "permission_name": "android.permission.EMERGENCY_INSTALL_PACKAGES",
+      "new_level": "privileged|signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.permission.INTERNAL_BROADCAST",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.common.internal.SHARED_PREFERENCES_PERMISSION",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.permission.ACCESS_MULTIPACKAGE_COMPONENT",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.permission.CHECKIN_NOW",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.permission.AD_ID_NOTIFICATION",
+      "new_level": "normal"
+    },
+    {
+      "permission_name": "com.google.android.gms.permission.AD_ID",
+      "new_level": "normal"
+    },
+    {
+      "permission_name": "com.google.android.gms.auth.permission.GOOGLE_ACCOUNT_CHANGE",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.auth.permission.POST_SIGN_IN_ACCOUNT",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.auth.permission.FACE_UNLOCK",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.permission.GRANT_WALLPAPER_PERMISSIONS",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.trustagent.permission.TRUSTAGENT_STATE",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.auth.cryptauth.permission.CABLEV2_SERVER_LINK",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.permission.REQUEST_SCREEN_LOCK_COMPLEXITY",
+      "new_level": "normal"
+    },
+    {
+      "permission_name": "com.google.android.gms.chromesync.permission.CONTENT_PROVIDER_ACCESS",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.chromesync.permission.METADATA_UPDATED",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.trustagent.framework.model.DATA_ACCESS",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.trustagent.framework.model.DATA_CHANGE_NOTIFICATION",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.auth.api.phone.permission.SEND",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.permission.GOOGLE_PAY",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.permission.APPINDEXING",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.time.permission.SEND_TRUSTED_TIME_SIGNAL",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.permission.NEARBY_START_DISCOVERER",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.permission.ACCESS_NEARBY_SHARE_API",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.nearby.exposurenotification.EXPOSURE_CALLBACK",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.auth.cryptauth.permission.KEY_CHANGE",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.auth.proximity.permission.SMS_CONNECT_SETUP_REQUESTED",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.magictether.permission.CLIENT_TETHERING_PREFERENCE_CHANGED",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.magictether.permission.CONNECTED_HOST_CHANGED",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.magictether.permission.DISABLE_SOFT_AP",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.magictether.permission.SCANNED_DEVICE",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.permission.CONTACTS_SYNC_DELEGATION",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.people.permission.contactssync.BACKUP_SYNC_STATE_UPDATE_BROADCAST",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.permission.SAFETY_NET",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.vehicle.permission.SHARED_AUTO_SENSOR_DATA",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.permission.CAR",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.carsetup.DRIVING_MODE_MANAGER",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.googlehelp.LAUNCH_SUPPORT_SCREENSHARE",
+      "new_level": "signatureOrSystem"
+    },
+    {
+      "permission_name": "com.google.android.gms.cloudsave.BIND_EVENT_BROADCAST",
+      "new_level": "signatureOrSystem"
+    },
+    {
+      "permission_name": "com.google.android.gms.smartdevice.permission.NOTIFY_QUICK_START_STATUS",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.chimera.permission.QUERY_MODULES",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.contextmanager.CONTEXT_MANAGER_RESTARTED_BROADCAST",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.permission.PHENOTYPE_UPDATE_BROADCAST",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.permission.PHENOTYPE_OVERRIDE_FLAGS",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.permission.GROWTH",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.locationsharingreporter.periodic.STATUS_UPDATE",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.findmydevice.spot.permission.DEVICE_CHANGES",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.dck.permission.DIGITAL_KEY_PRIVILEGED",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.dck.permission.DIGITAL_KEY_READ",
+      "new_level": "normal"
+    },
+    {
+      "permission_name": "com.google.android.gms.dck.permission.DIGITAL_KEY_WRITE",
+      "new_level": "normal"
+    },
+    {
+      "permission_name": "com.google.android.gms.dck.permission.SE_APPLET_NOTIFICATION",
+      "new_level": "privileged|signature"
+    },
+    {
+      "permission_name": "com.android.vending.APP_ERRORS_SERVICE",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.home.matter.BIND_MATTER_COMMISSIONING_SERVICE",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.presencemanager.permission.PRESENCE_MANAGER_UPDATE_BROADCAST",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.auth.authzen.permission.DEVICE_SYNC_FINISHED",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.auth.authzen.permission.GCM_DEVICE_PROXIMITY",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.auth.authzen.permission.KEY_REGISTRATION_FINISHED",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.learning.permission.LAUNCH_IN_APP_PROXY",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.permission.CAR_FUEL",
+      "new_level": "dangerous"
+    },
+    {
+      "permission_name": "com.google.android.gms.permission.CAR_MILEAGE",
+      "new_level": "dangerous"
+    },
+    {
+      "permission_name": "com.google.android.gms.permission.CAR_SPEED",
+      "new_level": "dangerous"
+    },
+    {
+      "permission_name": "com.google.android.gms.permission.CAR_VENDOR_EXTENSION",
+      "new_level": "dangerous"
+    },
+    {
+      "permission_name": "com.google.android.gms.chimera.permission.CONFIG_CHANGE",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.DRIVE",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.firebase.auth.api.gms.permission.LAUNCH_FEDERATED_SIGN_IN",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.permission.C2D_MESSAGE",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.permission.BIND_NETWORK_TASK_SERVICE",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.permission.BROADCAST_TO_GOOGLEHELP",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.permission.ACTIVITY_RECOGNITION",
+      "new_level": "normal"
+    },
+    {
+      "permission_name": "com.google.android.gms.matchstick.permission.BROADCAST_LIGHTER_WEB_INFO",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.WRITE_VERIFY_APPS_CONSENT",
+      "new_level": "signatureOrSystem"
+    },
+    {
+      "permission_name": "com.google.android.gms.permission.SEND_ANDROID_PAY_DATA",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.permission.SHOW_TRANSACTION_RECEIPT",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.permission.REPORT_TAP",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.permission.SHOW_PAYMENT_CARD_DETAILS",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.permission.READ_VALUABLES_IMAGES",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.permission.SHOW_WARM_WELCOME_TAPANDPAY_APP",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gms.permission.BIND_PAYMENTS_CALLBACK_SERVICE",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.c2dm.permission.RECEIVE",
+      "new_level": "normal"
+    },
+    {
+      "permission_name": "com.google.android.providers.settings.permission.WRITE_GSETTINGS",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.gtalkservice.permission.GTALK_SERVICE",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.providers.gsf.permission.READ_GSERVICES",
+      "new_level": "normal"
+    },
+    {
+      "permission_name": "com.google.android.providers.gsf.permission.WRITE_GSERVICES",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.android.vending.INTENT_VENDING_ONLY",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.voicesearch.AUDIO_FILE_ACCESS",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.googlequicksearchbox.permission.FINISH_GEL_ACTIVITY",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.apps.now.CURRENT_ACCOUNT_ACCESS",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.googlequicksearchbox.LAUNCH_WITH_RECORDED_AUDIO",
+      "new_level": "signatureOrSystem"
+    },
+    {
+      "permission_name": "com.google.android.googlequicksearchbox.LAUNCH_FROM_DSP_HOTWORD",
+      "new_level": "signatureOrSystem"
+    },
+    {
+      "permission_name": "com.google.android.googlequicksearchbox.permission.LAUNCH_FROM_GMM",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.apps.now.OPT_IN_WIZARD",
+      "new_level": "signatureOrSystem"
+    },
+    {
+      "permission_name": "com.google.android.googlequicksearchbox.permission.PAUSE_HOTWORD",
+      "new_level": "signatureOrSystem"
+    },
+    {
+      "permission_name": "com.google.android.googlequicksearchbox.permission.C2D_MESSAGE",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.googlequicksearchbox.permission.FLUSH_LOGS",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.googlequicksearchbox.permission.NGA_SURVEY",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.googlequicksearchbox.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.apps.gsa.nga.permissions.EDIT_PREFERENCES",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.apps.search.assistant.verticals.snapshot.widgets.weather.permission.WEATHER_WIDGET_UPDATE",
+      "new_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.googlequicksearchbox.permission.LENS_SERVICE",
+      "new_level": "normal"
+    }
+  ],
+  "removed": [
+    {
+      "permission_name": "android.permission.CAMERA_HEADLESS_SYSTEM_USER",
+      "old_level": "signature"
+    },
+    {
+      "permission_name": "android.permission.REGISTER_NSD_OFFLOAD_ENGINE",
+      "old_level": "signature"
+    },
+    {
+      "permission_name": "android.permission.QUARANTINE_APPS",
+      "old_level": "signature|verifier"
+    },
+    {
+      "permission_name": "android.permission.RESET_HOTWORD_TRAINING_DATA_EGRESS_COUNT",
+      "old_level": "signature"
+    }
+  ]
+}
