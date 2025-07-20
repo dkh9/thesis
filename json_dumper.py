@@ -11,6 +11,12 @@ import argparse
 from os.path import basename
 import os
 from pathlib import Path
+from concurrent.futures import ProcessPoolExecutor, as_completed
+from collections import namedtuple
+import time
+import traceback
+
+Task = namedtuple("Task", ["task_type", "args", "output_key"])
 
 TIER_3_IGNORED_PREFIXES = (
     "META-INF/", "SEC-INF/", "META-INF/CERT.RSA", "META-INF/CERT.SF", "META-INF/MANIFEST.MF"
@@ -25,6 +31,39 @@ TIER_2_MEANINGFUL = ("lib/", "assets/", "res/", "resources.arsc", "kotlin/", "sm
 
 APK_PREFIX_PATTERN = re.compile(r"apk[12]_[^/]+/")
 #APK_PREFIX_PATTERN = re.compile(r"^(tmp/)?apk[12]_[^/]+/")
+
+def execute_task(task):
+    print(f"[{time.strftime('%H:%M:%S')}] [PID {os.getpid()}] Running {task.task_type.upper()} task: {task.output_key}", flush=True)
+
+    try:
+        if task.task_type == "bin":
+            digest, summary = analyze_shared_lib_or_bin(*task.args)
+            return ("bin", task.output_key, digest)
+
+        elif task.task_type == "apk":
+            diff_text, apk_digest = analyze_apk_diff(*task.args)
+            return ("apk", task.output_key, apk_digest)
+
+        elif task.task_type == "tee":
+            digest, summary = analyze_tee_trusted_app(*task.args)
+            return ("bin", task.output_key, digest)
+
+        elif task.task_type == "se":
+            se_diff = analyze_sepolicies(*task.args)
+            return ("se", task.output_key, se_diff)
+
+        else:
+            print(f"[ERROR] Unknown task type: {task.task_type}", flush=True)
+            return None
+
+    except subprocess.TimeoutExpired:
+        print(f"[TIMEOUT] Task {task.task_type.upper()} ({task.output_key}) timed out", flush=True)
+        # Return a stub object depending on type
+        return (task.task_type, task.output_key, {"timeout": True})
+
+    except Exception as e:
+        print(f"[CRASH] Task {task.task_type.upper()} ({task.output_key}) failed with exception:\n{traceback.format_exc()}", flush=True)
+        return (task.task_type, task.output_key, {"error": str(e)})
 
 def normalize_rel_path(rel_path: str) -> str:
     return APK_PREFIX_PATTERN.sub("", rel_path)
@@ -254,16 +293,21 @@ def analyze_apk_diff(apk_path_1, apk_path_2):
         shutil.rmtree(tmp_dir1)
         shutil.rmtree(tmp_dir2)
 
-def analyze_shared_lib_or_bin(path, so_path_1, so_path_2, rc_bin_json, rc_libs, so_match):
-    is_shared_lib = so_match is not None
+def analyze_shared_lib_or_bin(path, so_path_1, so_path_2, rc_bin_json, rc_libs, is_shared_lib):
+    #is_shared_lib = so_match is not None
     lib_or_bin_name = basename(so_path_2)
     #print(rc_bin_json)
 
+    print(f"{so_path_2}: b4 checksec")
     checksec_props = radigest.compare_checksec_properties(so_path_1, so_path_2)
+    print(f"{so_path_2}: b4 similarity + distance")
     similarity, distance = radigest.get_similarity_and_distance(so_path_1, so_path_2)
+    print(f"{so_path_2}: b4 parsing func diffs")
     summary = radigest.parse_function_diffs(so_path_1, so_path_2)
     total = summary["total_functions"]
     changed = summary["changed"]
+
+    print(f"{so_path_2}: DONE WITH ALL CHECKS")
 
     digest = {
         "Similarity Score": round(similarity, 3),
@@ -299,18 +343,18 @@ def analyze_shared_lib_or_bin(path, so_path_1, so_path_2, rc_bin_json, rc_libs, 
             mentioned_in_rc = True
 
     # Start summary
-    formatted_summary = (
-        f"Similarity Score: {similarity:.3f}\n"
-        f"Radiff2 Distance: {distance}\n"
-        f"Total functions analyzed: {total}\n"
-        f"- Identical functions: {summary['identical']} ({summary['identical'] / total:.1%})\n"
-        f"- New functions: {summary['new']} ({summary['new'] / total:.1%})\n"
-        f"- Changed functions (sim < 1.0, excluding NEW): {changed} ({changed / total:.1%})\n"
-        f"- Changed matched functions: {summary['changed matched']} ({summary['changed matched'] / total:.1%})\n"
-        f"- Changed unmatched functions: {summary['changed unmatched']} ({summary['changed unmatched'] / total:.1%})\n"
-        f"- TEE: False\n"
-    )
-
+    #formatted_summary = (
+    #    f"Similarity Score: {similarity:.3f}\n"
+    #    f"Radiff2 Distance: {distance}\n"
+    #    f"Total functions analyzed: {total}\n"
+    #    f"- Identical functions: {summary['identical']} ({summary['identical'] / total:.1%})\n"
+    #    f"- New functions: {summary['new']} ({summary['new'] / total:.1%})\n"
+    #    f"- Changed functions (sim < 1.0, excluding NEW): {changed} ({changed / total:.1%})\n"
+    #    f"- Changed matched functions: {summary['changed matched']} ({summary['changed matched'] / total:.1%})\n"
+    #    f"- Changed unmatched functions: {summary['changed unmatched']} ({summary['changed unmatched'] / total:.1%})\n"
+    #    f"- TEE: False\n"
+    #)
+    formatted_summary = ""
     # Add .rc metadata if available
     if mentioned_in_rc:
         if rc_metadata:
@@ -436,20 +480,24 @@ def parse_diff_to_json(diff_text, bin_out, apk_out, se_out, rc_bin_paths=None, r
             add_to_hierarchy(path_parts[1:], stats, current_dict[dir_name], status_string, extra_analysis_info)
 
     root = {}
-    lines = diff_text.strip().split("\n")
     renamed_files = {}
+    tasks = []
+
+    formatted_bin_digests = {}
+    formatted_apk_digests = {}
+    formatted_sepolicy_digests = {}
+
+    lines = diff_text.strip().split("\n")
 
     brace_rename_pattern = re.compile(r'\{([^{}]+) => ([^{}]+)\}(/.+)')
     so_pattern = re.compile(r'\{([^{}]+)\s*=>\s*([^{}]+)\}[^{}]*\/([\w.-]+\.so)')
     apk_pattern = re.compile(r'([\w./-]+\.apk)')
 
-    so_counter = 0
-    formatted_bin_digests = {}
-    formatted_apk_digests = {}
-    formatted_sepolicy_digests = {}
-
     for line in lines:
         parts = line.split()
+        if len(parts) < 3:
+            continue
+
         added, deleted = parts[:2]
         path = parts[2]
         status = ""
@@ -457,14 +505,12 @@ def parse_diff_to_json(diff_text, bin_out, apk_out, se_out, rc_bin_paths=None, r
 
         if "=>" in line:
             if parts[2].startswith("{") and parts[3] == "=>":
-
                 match = brace_rename_pattern.search(line)
                 if match:
                     if "/" in match.group(1) or "/" in match.group(2):
                         old_prefix, new_prefix, suffix = match.groups()
                         old_path = old_prefix + suffix
                         new_path = new_prefix + suffix
-
                         status = "renamed"
                         renamed_files[new_path] = {
                             "old_path": old_path,
@@ -481,40 +527,24 @@ def parse_diff_to_json(diff_text, bin_out, apk_out, se_out, rc_bin_paths=None, r
                 so_path_1, so_path_2 = reconstruct_paths(path)
 
                 if apk_match:
-                    print("IS APK MATCH")
                     apk_path_1, apk_path_2 = reconstruct_paths(path)
-                    extra_analysis, apk_digest = analyze_apk_diff(apk_path_1, apk_path_2) #TODO: bring back!!!
-                    #apk_digest={}
-                    if apk_digest != {}:
-                        formatted_apk_digests[extract_tail_path(apk_path_1, 4)] = apk_digest
-                
+                    tasks.append(Task("apk", (apk_path_1, apk_path_2), extract_tail_path(apk_path_1, 4)))
+
                 elif "tee" in path:
                     ta1_path, ta2_path = reconstruct_paths(path)
-                    print("TEE1: ", ta1_path, "TEE2: ", ta2_path)
                     if is_tee_trusted_app(ta2_path):
-                        print("Is trusted app!")
-                        digest, formatted_summary = analyze_tee_trusted_app(path, ta1_path, ta2_path, rc_bin_paths)
-                        formatted_bin_digests[extract_tail_path(ta2_path, 4)] = digest
-                        extra_analysis = formatted_summary
+                        tasks.append(Task("tee", (path, ta1_path, ta2_path, rc_bin_paths), extract_tail_path(ta2_path, 4)))
                     elif looks_encrypted(ta2_path):
-                        print("Looks enctypted!")
-                        digest = {"TEE" : True, "Obfuscated" : True }
-                        formatted_bin_digests[extract_tail_path(ta2_path, 4)] = digest
-                        extra_analysis = "TEE: true;\n Obfuscated: true"
-                
-                elif "sepolicy" in path:
-                    sepath_1, sepath_2  = reconstruct_paths(path)
-                    print("sepath1: ", sepath_1, "sepath2: ", sepath_2)
-                    if is_sepolicy_file(sepath_2):
-                        print("Is sepolicy!")
-                        sepolicy_diff = analyze_sepolicies(sepath_1, sepath_2)
-                        formatted_sepolicy_digests[extract_tail_path(sepath_2, 4)] = sepolicy_diff
+                        formatted_bin_digests[extract_tail_path(ta2_path, 4)] = {"TEE": True, "Obfuscated": True}
+                        extra_analysis = "TEE: true;\nObfuscated: true"
 
+                elif "sepolicy" in path:
+                    sepath_1, sepath_2 = reconstruct_paths(path)
+                    if is_sepolicy_file(sepath_2):
+                        tasks.append(Task("se", (sepath_1, sepath_2), extract_tail_path(sepath_2, 4)))
 
                 elif so_match or radigest.is_executable_elf(so_path_2):
-                    digest, extra_analysis = analyze_shared_lib_or_bin(path, so_path_1, so_path_2, rc_bin_paths, rc_libs, so_match) #TODO:take away!
-                    #digest, extra_analysis = "", ""
-                    formatted_bin_digests[extract_tail_path(so_path_2, 4)] = digest
+                    tasks.append(Task("bin", (path, so_path_1, so_path_2, rc_bin_paths, rc_libs, so_match is not None), extract_tail_path(so_path_2, 4)))
 
                 elif "security/cacerts" in path:
                     cert1, cert2 = reconstruct_paths(path)
@@ -531,25 +561,20 @@ def parse_diff_to_json(diff_text, bin_out, apk_out, se_out, rc_bin_paths=None, r
                 path = parts[4]
                 status = "added"
                 if "security/cacerts" in path:
-                    f = open(path)
-                    extra_analysis = f.read()
-                    f.close()
+                    with open(path) as f:
+                        extra_analysis = f.read()
 
             elif parts[4] == "/dev/null" and parts[3] == "=>":
                 path = parts[2]
                 status = "deleted"
                 if "security/cacerts" in path:
-                    f = open(path)
-                    extra_analysis = f.read()
-                    f.close()
-            
-            #true rename
+                    with open(path) as f:
+                        extra_analysis = f.read()
+
             elif parts[3] == "=>":
                 old_path = parts[2]
                 path = parts[4]
-
                 status = "renamed"
-
                 renamed_files[path] = {
                     "old_path": old_path,
                     "added": added,
@@ -558,23 +583,42 @@ def parse_diff_to_json(diff_text, bin_out, apk_out, se_out, rc_bin_paths=None, r
                     "analysis": ""
                 }
                 continue
-
             else:
-                # Fallback, shouldn't really occur
                 path = parts[4]
                 status = "modified"
-
         else:
             path = parts[2]
             status = "modified"
 
-        path_parts = []
         path_parts = path.split("/")
         add_to_hierarchy(path_parts, (added, deleted), root, status, extra_analysis)
-    
+
+    # Sort to help small tasks finish earlier (optional)
+    tasks.sort(key=lambda t: {"apk": 0, "se": 1, "tee": 2, "bin": 3}[t.task_type])
+
+    # Run all analysis tasks in parallel
+    with ProcessPoolExecutor(max_workers=12) as executor:
+        futures = [executor.submit(execute_task, task) for task in tasks]
+        for future in as_completed(futures):
+            result = future.result()
+            if not result:
+                continue
+            category, key, value = result
+
+            if category == "bin":
+                formatted_bin_digests[key] = value
+            elif category == "tee":
+                formatted_bin_digests[key] = value
+            elif category == "apk":
+                if value:
+                    formatted_apk_digests[key] = value
+            elif category == "se":
+                formatted_sepolicy_digests[key] = value
+
+    # Output results
     with open(bin_out, "w") as f:
         json.dump(formatted_bin_digests, f, indent=2)
-    
+
     with open(apk_out, "w") as f:
         json.dump(formatted_apk_digests, f, indent=2)
 
@@ -582,6 +626,7 @@ def parse_diff_to_json(diff_text, bin_out, apk_out, se_out, rc_bin_paths=None, r
         json.dump(formatted_sepolicy_digests, f, indent=2)
 
     root["__renamed__"] = renamed_files
+    print("ABOUT TO RETURN FROM JSON DUMPER")
     return root
 
 def dump_json(filename, bins_in_rc, elf_libs_file, bin_out, apk_out, se_out, topmost_key = None):
@@ -609,6 +654,8 @@ def dump_json(filename, bins_in_rc, elf_libs_file, bin_out, apk_out, se_out, top
 
 
 if __name__ == "__main__":
+    import multiprocessing
+    multiprocessing.set_start_method("fork")
     parser = argparse.ArgumentParser(description="Dump json digest")
     parser.add_argument("diff_file", help="File containing git diff digest")
     parser.add_argument("gen_output", help="Entire JSON mapping output")

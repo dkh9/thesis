@@ -11,14 +11,14 @@ def is_executable_elf(path):
     except subprocess.CalledProcessError:
         return False
 
-def get_similarity_and_distance(file1, file2):
+def get_similarity_and_distance(file1, file2, timeout_sec=2700):
     cmd = [
-        "radiff2", "-s",
+        "radiff2", "-n", "-s",
         "-e", "bin.relocs.apply=true",
         file1, file2
     ]
     try:
-        output = subprocess.check_output(cmd, text=True)
+        output = subprocess.check_output(cmd, text=True, timeout=timeout_sec, stderr=subprocess.DEVNULL)
         match = re.search(r"similarity:\s+([0-9.]+)\s+distance:\s+(\d+)", output)
         if match:
             similarity = float(match.group(1))
@@ -26,19 +26,40 @@ def get_similarity_and_distance(file1, file2):
             return similarity, distance
     except subprocess.CalledProcessError as e:
         print("Error running radiff2 -s:", e)
-    return None, None
+    except subprocess.TimeoutExpired:
+        print(f"Timeout in get_similarity_and_distance for {file1} {file2}")
+    return 0.0, -1
 
-def parse_function_diffs(file1, file2):
+def parse_function_diffs(file1, file2, timeout_sec=3600):
     cmd = [
-        "radiff2", "-AC",
+        "radiff2", "-n", "-AC",
         "-e", "bin.relocs.apply=true",
         file1, file2
     ]
     try:
-        output = subprocess.check_output(cmd, text=True)
+        output = subprocess.check_output(cmd, text=True, timeout=timeout_sec, stderr=subprocess.DEVNULL)
     except subprocess.CalledProcessError as e:
         print("Error running radiff2 -AC:", e)
-        return None
+        return {
+            "total_functions": -1,
+            "identical": -1,
+            "changed": -1,
+            "changed matched": -1,
+            "changed unmatched": -1,
+            "new": -1,
+            "error": "radiff2 failed"
+        }
+    except subprocess.TimeoutExpired:
+        print(f"Timeout in parse_function_diffs! {file1} {file2}")
+        summary = {
+            "total_functions": -1,
+            "identical": -1,
+            "changed": -1,  # Any non-NEW function with sim < 1.0
+            "changed matched": -1,
+            "changed unmatched": -1,
+            "new": -1,
+        }
+        return summary
 
     func_lines = [line for line in output.splitlines() if re.search(r'\b(MATCH|UNMATCH|NEW)\b', line)]
 
