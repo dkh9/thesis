@@ -148,11 +148,11 @@ def run_command(child, cmd, prompt=r"\$", timeout=30):
         return None
 
 def main():
-    if len(sys.argv) != 5:
-        print("Usage: docker_automation.py [extract|process] <zip> <vendor> <outfile>")
+    if len(sys.argv) != 8:
+        print("Usage: docker_automation.py [extract|process] <zip> <vendor> <outfile> <sys_serv> <uapps> <network_stack>")
         sys.exit(1)
 
-    operation, archive, vendor, outfile = sys.argv[1], sys.argv[2], sys.argv[3], sys.argv[4]
+    operation, archive, vendor, outfile, ssfile, uapps_file, ns_file = sys.argv[1:]
     
     
     if operation not in ("extract", "process"):
@@ -165,36 +165,41 @@ def main():
     out = run_command(child, "cd /opt/BigMAC/BigMAC")
     out = run_command(child, "source venv/bin/activate", prompt=r"\(venv\).*?\$")
     policy = os.path.splitext(os.path.basename(archive))[0]
-    '''out = extract_fw(vendor, archive, child)
+    out = extract_fw(vendor, archive, child)
 
     if "INFO: Saving extracted information" in out:
         print(" Finished extracting.")
-
+    else:
+        print("SOmething is wrong: ", out)
+    
     extract_path = f"extract/{vendor}/{policy}"
     archive_path = os.path.abspath(archive)
-    cmd = f"sudo rm -rf {extract_path}"
-    out = run_command(child, cmd, prompt=r"\$", timeout=30)
-    if not os.path.exists(f"{extract_path}"):
-        print("Extract dir deleted: SUCCESS")
-    else:
-        print("Extract dir deleted: FAIL")
-    cmd = f"sudo rm -rf {archive}"
-    out = run_command(child, cmd, prompt=r"\$", timeout=30)
-    if not os.path.exists(archive_path):
-        print("Archive deleted: SUCCESS")
-    else:
-        print("Archive deleted: FAIL (Still exists at:", archive_path, ")")
+
     
     print("Saving the policy...")
     cmd = f"venv/bin/python ./process.py --vendor {vendor} {policy} --save"
     out = run_command(child, cmd, prompt=r"\(venv\).*?\$", timeout=720)
     if "Finished instantiating SEPolicy" in out:
         print("Successfully saved the policy!")
+        cmd = f"sudo rm -rf {extract_path}"
+        out = run_command(child, cmd, prompt=r"\$", timeout=30)
+        if not os.path.exists(f"{extract_path}"):
+            print("Extract dir deleted: SUCCESS")
+        else:
+            print("Extract dir deleted: FAIL")
+        cmd = f"sudo rm -rf {archive}"
+        out = run_command(child, cmd, prompt=r"\$", timeout=30)
+        if not os.path.exists(archive_path):
+            print("Archive deleted: SUCCESS")
+        else:
+            print("Archive deleted: FAIL (Still exists at:", archive_path, ")")
     else:
         print("Failed at saving the policy!")
-        quit_docker(child)'''
+        quit_docker(child)
+
+    time.sleep(3)
     
-    out = run_command(child, f"venv/bin/python ./process.py --vendor {vendor} {policy} --load --debug", prompt=r"In \[\d+\]:", timeout=60)
+    out = run_command(child, f"venv/bin/python ./process.py --vendor {vendor} {policy} --load --debug", prompt=r"In \[\d+\]:", timeout=180)
     print("OUT AFTER WAITING FOR PROLOG:")
     print(out)
 
@@ -215,12 +220,18 @@ def main():
             sys_server.append(key)
         elif "network_stack" in key:
             network_stack.append(key)
+    
+    print("UAPPS: ", uapps)
+    print("SYTEM SERVER: ", sys_server)
+    print("NETWORK STACK: ", network_stack)
 
 #-------------------------------------------------------------------------------------------
 
     print("Loading prolog prompt...")
-    out = run_command(child, f"venv/bin/python ./process.py --vendor {vendor} {policy} --load --prolog", prompt=r"query \[.*?\]>", timeout=480)
+    out = run_command(child, f"sudo venv/bin/python ./process.py --vendor {vendor} {policy} --load --prolog", prompt=r"query \[.*?\]>", timeout=480)
+    print("B4 sleep")
     time.sleep(3)
+    print("Going into server")
 
     server_out = ""
     uapp_out = ""
@@ -244,21 +255,17 @@ def main():
     out = run_command(child, "quit", prompt=r"\(venv\).*?\$", timeout=120)
     quit_docker(child)
 
-    with open("server_paths.txt", "a") as f:
+    with open(ssfile, "w") as f:
         f.write(server_out)
     
-    with open("uapp_paths.txt", "a") as f:
+    with open(uapps_file, "w") as f:
         f.write(uapp_out)
     
-    with open("network_paths.txt", "a") as f:
+    with open(ns_file, "w") as f:
         f.write(network_out)
 
-
+#ssfile, uapps_file, ns_file
     dump_process_dict_to_jsonl(process_dict, outfile)
-
-    print("UAPPS: ", uapps)
-    print("SYTEM SERVER: ", sys_server)
-    print("NETWORK STACK: ", network_stack)
 
 if __name__ == "__main__":
     main()
