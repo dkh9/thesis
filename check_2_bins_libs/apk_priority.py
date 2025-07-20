@@ -1,7 +1,16 @@
+#!/usr/bin/env python3
 import json
+import sys
+
+if len(sys.argv) != 3:
+    print("Usage: script.py <input_json> <output_json>")
+    sys.exit(1)
+
+input_path = sys.argv[1]
+output_path = sys.argv[2]
 
 # Load JSON
-with open("../shiba-oct-nov-23-apks.json") as f:
+with open(input_path) as f:
     data = json.load(f)
 
 filtered_entries = {
@@ -10,6 +19,7 @@ filtered_entries = {
 
 tier1_entries = []
 non_tier1_entries = []
+total_count = 0
 
 for k, v in filtered_entries.items():
     changes = v.get("changes", {})
@@ -20,6 +30,7 @@ for k, v in filtered_entries.items():
         tier1_entries.append((k, v, len(tier_1)))
     else:
         non_tier1_entries.append((k, v, len(tier_2)))
+    total_count += 1
 
 # Sort both lists by count descending
 tier1_entries.sort(key=lambda x: -x[2])
@@ -29,7 +40,9 @@ non_tier1_entries.sort(key=lambda x: -x[2])
 sorted_result = {k: v for k, v, _ in tier1_entries + non_tier1_entries}
 
 # Output to JSON
-with open("sorted_apk_diffs.json", "w") as f:
+with open(output_path, "w") as f:
     json.dump(sorted_result, f, indent=2)
 
-print("Sorted output written to sorted_apk_diffs.json")
+print(f"Sorted output written to {output_path}")
+print("With tier_1 entries: ", len(tier1_entries))
+print("Total: ", total_count)

@@ -1,4 +1,6 @@
+#!/usr/bin/env python3
 import json
+import sys
 
 def is_fully_identical(entry):
     return entry.get("Identical Functions") == entry.get("Total Functions Analyzed")
@@ -10,8 +12,15 @@ def is_root_user_or_group(entry):
     rc = entry.get("rc_metadata", {})
     return rc.get("user") == "root" or rc.get("group") == "root"
 
+if len(sys.argv) != 3:
+    print("Usage: script.py <input_json> <output_json>")
+    sys.exit(1)
+
+input_path = sys.argv[1]
+output_path = sys.argv[2]
+
 # Load JSON file
-with open("../shiba-oct-nov-23-bins.json") as f:
+with open(input_path) as f:
     data = json.load(f)
 
 # Separate fully identical entries
@@ -43,7 +52,7 @@ non_identical_entries.sort(key=lambda kv: not is_root_user_or_group(kv[1]))
 sorted_combined = {k: v for k, v in non_identical_entries + list(identical_entries.items())}
 
 # Write output
-with open("sorted_bin_output.json", "w") as f:
+with open(output_path, "w") as f:
     json.dump(sorted_combined, f, indent=2)
 
-print("Sorted JSON written to sorted_bin_output.json")
+print(f"Sorted JSON written to {output_path}")
