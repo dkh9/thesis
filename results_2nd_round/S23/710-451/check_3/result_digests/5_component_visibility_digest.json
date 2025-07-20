@@ -1,0 +1,30 @@
+{
+  "increased": [
+    {
+      "apk": "Velvet.apk",
+      "component": "com.google.firebase.iid.FirebaseInstanceIdReceiver",
+      "type": "receiver",
+      "permission_type": "permission",
+      "permission": "com.google.android.c2dm.permission.SEND",
+      "change": "added with score 10"
+    }
+  ],
+  "decreased": [
+    {
+      "apk": "Velvet.apk",
+      "component": "com.google.android.apps.search.assistant.surfaces.bisto.interactor.broadcasts.BistoGrpcDeviceBroadcastReceiver_Receiver",
+      "type": "receiver",
+      "permission_type": "permission",
+      "permission": "android.permission.MANAGE_WEARABLE_SENSING_SERVICE",
+      "change": "score 41 -> 35"
+    },
+    {
+      "apk": "Velvet.apk",
+      "component": "com.google.android.libraries.notifications.platform.entrypoints.push.PushReceiver",
+      "type": "receiver",
+      "permission_type": "permission",
+      "permission": "com.google.android.c2dm.permission.SEND",
+      "change": "removed with score 10"
+    }
+  ]
+}

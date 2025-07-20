@@ -1,0 +1,2393 @@
+{
+  "system/priv-app/SecSettings/SecSettings.apk": {
+    "apk": "SecSettings.apk",
+    "priv-app": true,
+    "changes": {
+      "tier_1": [
+        {
+          "file": "tmp/apk2_urioe49i/classes.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_urioe49i/classes2.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_urioe49i/classes3.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_urioe49i/classes4.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_2": [],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "system/priv-app/DressRoom/DressRoom.apk": {
+    "apk": "DressRoom.apk",
+    "priv-app": true,
+    "changes": {
+      "tier_1": [
+        {
+          "file": "tmp/apk2_09puvtqp/AndroidManifest.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_09puvtqp/classes.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_09puvtqp/classes2.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_2": [
+        {
+          "file": "tmp/apk2_09puvtqp/assets/SettingsBnRDTD_U_OS.xml",
+          "added": "1",
+          "removed": "0",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_09puvtqp/assets/SettingsBnRDTD_V_OS.xml",
+          "added": "15",
+          "removed": "12",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_09puvtqp/assets/dexopt/baseline.prof",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_09puvtqp/assets/dexopt/baseline.profm",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "system_ext/priv-app/SystemUI/SystemUI.apk": {
+    "apk": "SystemUI.apk",
+    "priv-app": true,
+    "changes": {
+      "tier_1": [
+        {
+          "file": "tmp/apk2_zjo7t4bz/classes.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_zjo7t4bz/classes2.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_zjo7t4bz/classes3.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_2": [],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "system/app/FilterProvider/FilterProvider.apk": {
+    "apk": "FilterProvider.apk",
+    "priv-app": false,
+    "changes": {
+      "tier_1": [
+        {
+          "file": "tmp/apk2_o6_zsypv/AndroidManifest.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_o6_zsypv/classes.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_2": [],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "system/app/SmartSwitchAgent/SmartSwitchAgent.apk": {
+    "apk": "SmartSwitchAgent.apk",
+    "priv-app": false,
+    "changes": {
+      "tier_1": [
+        {
+          "file": "tmp/apk2_mmted7b3/AndroidManifest.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/classes.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_2": [
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.af.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.am.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.ar.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.as.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.az.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.be.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.bg.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.bn.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.bo.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.bs.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.ca.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.cs.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.da.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.de.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.el.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.en.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.es.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.et.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.eu.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.fa.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.fi.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.fr.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.ga.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.gl.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.gu.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.he.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.hi.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.hr.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.hu.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.hy.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.id.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.in.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.is.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.it.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.iw.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.ja.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.ka.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.kk.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.km.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.kn.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.ko.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.ky.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.lo.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.lt.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.lv.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.mg.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.mk.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.ml.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.mn.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.mr.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.ms.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.my.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.nb.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.ne.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.nl.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.or.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.pa.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.pl.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.pt.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.ro.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.ru.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.si.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.sk.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.sl.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.sq.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.sr.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.sv.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.sw.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.ta.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.te.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.tg.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.th.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.tk.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.tl.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.tr.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.ug.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.uk.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.ur.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.uz.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.vi.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.xh.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.zh.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/assets/localeapks_zipped/com.sec.android.easyMover.Agent.zu.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/-D.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/0R.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/0V.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/1C.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/1k.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/1q.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/1s.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/22.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/2J.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/2L.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/2i.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/2x.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/3C.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/3Y.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/3t.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/40.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/43.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/4H.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/4K.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/4W.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/4b.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk1_mofx8poq/res/4c.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "deleted"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/5d.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/5p.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/64.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/6X.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/74.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/7N.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/7k1.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/80.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/8V.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/9V.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/9Y.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk1_mofx8poq/res/A1.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "deleted"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/As.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/C7.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/CF.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/CH.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/DB.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/DQ.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/DR.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/DS.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/F2.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/F8.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/Fn.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/G-.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk1_mofx8poq/res/GQ.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "deleted"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/GR.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/Gk.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/HZ.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/Hm.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/Iv.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/NA.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/NW.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/Nx.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/PX.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/PY.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/Q9.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/Qo.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/R6.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/S-.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/SH.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/SS.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/SZ.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/St.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/TF.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/TZ.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/Tb.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/Ur.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/Us.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/VB.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/V_.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/Vn.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/WB.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk1_mofx8poq/res/XB.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "deleted"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/YE.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/YO.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/YO1.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/Yb.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/Yy.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/Zu.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/_r.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/bA.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/bi.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/cB.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/cH.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk1_mofx8poq/res/cH1.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "deleted"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/cK.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/cg1.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/color/sesl_action_menu_text_dark.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/color/sesl_action_menu_text_light.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/color/sesl_background_cache_hint_selector.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/color/sesl_btn_default_color_dark.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/color/sesl_btn_default_color_light.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/color/sesl_btn_text_color_dark.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/color/sesl_btn_text_color_light.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/color/sesl_edit_text_dark.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/color/sesl_edit_text_light.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/color/sesl_popup_menu_item_text_dark.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/color/sesl_popup_menu_item_text_light.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/color/sesl_primary_text_dark.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/color/sesl_primary_text_light.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/color/sesl_search_url_text.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/color/sesl_secondary_text_dark.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/color/sesl_secondary_text_light.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/color/sesl_select_dialog_list_item_text_dark.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/color/sesl_select_dialog_list_item_text_light.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/color/sesl_spinner_dropdown_text_color_dark.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/color/sesl_spinner_dropdown_text_color_light.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/color/sesl_spinner_item_text_dark.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/color/sesl_spinner_item_text_light.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/color-v23/suc_customization_button_highlight_ripple.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/cw.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/d7.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/dI.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/df.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/dp.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/eI.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/eJ.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/eK.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/el.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/f0.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/fB1.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/fI.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/fX.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/ff.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/g2.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/g3.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk1_mofx8poq/res/gW.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "deleted"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/hN.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/hS.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/h_.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/i0.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/i8.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/iL.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/iT.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/ip.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/j8.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/jS.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/jj.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/k9.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk1_mofx8poq/res/kI.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "deleted"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/kK.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk1_mofx8poq/res/kM.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "deleted"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/kQ.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/ko.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/kx.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/m8.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/mB1.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/mY.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/n7.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/p2.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/p21.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/q0.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/qi.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/r-.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/rL.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/rU.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/rY.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/u5.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/uG.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/uu.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/vl.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/wE.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/wF.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/wT.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/wd.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/x7.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/xV.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/xk.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/xx.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/yN.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk1_mofx8poq/res/ya.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "deleted"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/yg.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/z2.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/zB.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/zD.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/zQ.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/zT.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/res/zs.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mmted7b3/resources.arsc",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "system/priv-app/DesktopSystemUI/DesktopSystemUI.apk": {
+    "apk": "DesktopSystemUI.apk",
+    "priv-app": true,
+    "changes": {
+      "tier_1": [
+        {
+          "file": "tmp/apk2_did8r_9w/AndroidManifest.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/classes.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_2": [
+        {
+          "file": "tmp/apk2_did8r_9w/assets/dexopt/baseline.prof",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/dexopt/baseline.profm",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.af.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.am.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.ar.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.as.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.az.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.be.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.bg.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.bn.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.bo.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.bs.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.ca.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.cs.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.da.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.de.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.el.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.en.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.es.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.et.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.eu.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.fa.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.fi.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.fr.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.ga.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.gl.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.gu.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.hi.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.hr.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.hu.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.hy.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.in.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.is.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.it.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.iw.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.ja.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.ka.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.kk.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.km.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.kn.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.ko.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.ky.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.lo.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.lt.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.lv.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.mk.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.ml.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.mn.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.mr.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.ms.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.my.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.nb.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.ne.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.nl.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.or.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.pa.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.pl.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.pt.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.ro.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.ru.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.si.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.sk.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.sl.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.sq.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.sr.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.sv.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.sw.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.ta.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.te.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.tg.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.th.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.tk.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.tl.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.tr.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.ug.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.uk.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.ur.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.uz.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.vi.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.zh.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_did8r_9w/assets/localeapks_zipped/com.sec.android.dexsystemui.zu.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "system/priv-app/CallBGProvider/CallBGProvider.apk": {
+    "apk": "CallBGProvider.apk",
+    "priv-app": true,
+    "changes": {
+      "tier_1": [
+        {
+          "file": "tmp/apk2_hetk3cj2/AndroidManifest.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_hetk3cj2/classes.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_2": [],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "system/app/EasterEgg/EasterEgg.apk": {
+    "apk": "EasterEgg.apk",
+    "priv-app": false,
+    "changes": {
+      "tier_1": [
+        {
+          "file": "tmp/apk2_bhscznq0/classes.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_2": [],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "system/priv-app/IAFDManagerService/IAFDManagerService.apk": {
+    "apk": "IAFDManagerService.apk",
+    "priv-app": true,
+    "changes": {
+      "tier_1": [
+        {
+          "file": "tmp/apk2_3a6pggkc/classes.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_2": [],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "system/priv-app/ThemeCenter/ThemeCenter.apk": {
+    "apk": "ThemeCenter.apk",
+    "priv-app": true,
+    "changes": {
+      "tier_1": [
+        {
+          "file": "tmp/apk2_sf5dalpb/classes.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_2": [],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "system_ext/priv-app/AccessibilityMenu/AccessibilityMenu.apk": {
+    "apk": "AccessibilityMenu.apk",
+    "priv-app": true,
+    "changes": {
+      "tier_1": [
+        {
+          "file": "tmp/apk2_9uh9j7t1/classes.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_2": [],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "system/priv-app/FactoryTestProvider/FactoryTestProvider.apk": {
+    "apk": "FactoryTestProvider.apk",
+    "priv-app": true,
+    "changes": {
+      "tier_1": [],
+      "tier_2": [
+        {
+          "file": "tmp/apk2_kog6x0v7/assets/DB_Version.txt",
+          "added": "1",
+          "removed": "1",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_kog6x0v7/assets/fac_model.dat",
+          "added": "1",
+          "removed": "1",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_kog6x0v7/assets/factoryproviderdb.db",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  }
+}

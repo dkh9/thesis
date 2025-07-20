@@ -1,0 +1,15 @@
+{
+  "increased": [],
+  "decreased": [],
+  "added": [],
+  "removed": [
+    {
+      "permission_name": "com.customermobile.preload.StartOnBoot.PERMISSION",
+      "old_level": "signature"
+    },
+    {
+      "permission_name": "com.customermobile.preload.vzw.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+      "old_level": "signature"
+    }
+  ]
+}

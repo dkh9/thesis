@@ -1,0 +1,73 @@
+{
+  "secure_element": [
+    "com.google.euiccpixel.permission.SECURE_ELEMENT"
+  ],
+  "net_bt_admin": [
+    "android.permission.BLUETOOTH_ADMIN"
+  ],
+  "net_bt": [
+    "android.permission.BLUETOOTH"
+  ],
+  "bluetooth": [
+    "android.permission.BLUETOOTH_STACK"
+  ],
+  "wakelock": [
+    "android.permission.BLUETOOTH_STACK"
+  ],
+  "uhid": [
+    "android.permission.BLUETOOTH_STACK",
+    "android.permission.VIRTUAL_INPUT_DEVICE"
+  ],
+  "vpn": [
+    "android.permission.NET_TUNNELING"
+  ],
+  "inet": [
+    "android.permission.INTERNET"
+  ],
+  "log": [
+    "android.permission.READ_LOGS"
+  ],
+  "mtp": [
+    "android.permission.ACCESS_MTP"
+  ],
+  "net_admin": [
+    "android.permission.MAINLINE_NETWORK_STACK",
+    "android.permission.NET_ADMIN"
+  ],
+  "net_raw": [
+    "android.permission.MAINLINE_NETWORK_STACK"
+  ],
+  "cache": [
+    "android.permission.ACCESS_CACHE_FILESYSTEM"
+  ],
+  "input": [
+    "android.permission.DIAGNOSTIC"
+  ],
+  "diag": [
+    "android.permission.DIAGNOSTIC"
+  ],
+  "net_bw_stats": [
+    "android.permission.READ_NETWORK_USAGE_HISTORY"
+  ],
+  "net_bw_acct": [
+    "android.permission.UPDATE_DEVICE_STATS"
+  ],
+  "loop_radio": [
+    "android.permission.LOOP_RADIO"
+  ],
+  "audio": [
+    "android.permission.MANAGE_VOICE_KEYPHRASES"
+  ],
+  "media": [
+    "android.permission.ACCESS_BROADCAST_RADIO"
+  ],
+  "reserved_disk": [
+    "android.permission.USE_RESERVED_DISK"
+  ],
+  "security_log_writer": [
+    "android.permission.WRITE_SECURITY_LOG"
+  ],
+  "virtualmachine": [
+    "android.permission.MANAGE_VIRTUAL_MACHINE"
+  ]
+}
