@@ -1,0 +1,803 @@
+{"kernel_0": "<ProcessNode god->kernel /kernel <Cred u=root g=root sid=u:r:kernel:s0 cap=EVERYTHING>"}
+{"init_1": "<ProcessNode kernel->init /system/bin/init <Cred u=root g=root sid=u:r:init:s0 groups=readproc cap=EVERYTHING>"}
+{"zygote_2": "<ProcessNode init->zygote /system/bin/app_process32 <Cred u=root g=root sid=u:r:zygote:s0 groups=reserved_disk,readproc cap=EVERYTHING>"}
+{"zygote_3": "<ProcessNode init->zygote /system/bin/app_process64 <Cred u=root g=root sid=u:r:zygote:s0 groups=reserved_disk,readproc cap=EVERYTHING>"}
+{"webview_zygote_4": "<ProcessNode zygote->webview_zygote /system/bin/app_process64 <Cred u=None g=None>"}
+{"isolated_app_5": "<ProcessNode webview_zygote->isolated_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"simpleperf_6": "<ProcessNode isolated_app->simpleperf /system/bin/simpleperf <Cred u=None g=None>"}
+{"simpleperf_7": "<ProcessNode simpleperf->simpleperf /system/bin/simpleperf <Cred u=None g=None>"}
+{"rs_8": "<ProcessNode simpleperf->rs /system/bin/bcc <Cred u=None g=None>"}
+{"rs_9": "<ProcessNode simpleperf->rs /system/bin/ld.mc <Cred u=None g=None>"}
+{"rs_10": "<ProcessNode simpleperf->rs /system/bin/bcc <Cred u=None g=None>"}
+{"rs_11": "<ProcessNode simpleperf->rs /system/bin/ld.mc <Cred u=None g=None>"}
+{"vzwomatrigger_app_12": "<ProcessNode zygote->vzwomatrigger_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vzwomatrigger_app_13": "<ProcessNode zygote->vzwomatrigger_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vzwfiltered_untrusted_app_14": "<ProcessNode zygote->vzwfiltered_untrusted_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vzwfiltered_untrusted_app_15": "<ProcessNode zygote->vzwfiltered_untrusted_app /system/bin/app_process64 <Cred u=app_10007 g=app_10007 sid=u:r:vzwfiltered_untrusted_app:s0 groups=inet,everybody,shared_gid_50007>"}
+{"vendor_xrcb_app_16": "<ProcessNode zygote->vendor_xrcb_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_xrcb_app_17": "<ProcessNode zygote->vendor_xrcb_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_wlc_app_18": "<ProcessNode zygote->vendor_wlc_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_wlc_app_19": "<ProcessNode zygote->vendor_wlc_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_wfd_app_20": "<ProcessNode zygote->vendor_wfd_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_wfd_app_21": "<ProcessNode zygote->vendor_wfd_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_voiceui_app_22": "<ProcessNode zygote->vendor_voiceui_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_voiceui_app_23": "<ProcessNode zygote->vendor_voiceui_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_tzas_app_24": "<ProcessNode zygote->vendor_tzas_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_tzas_app_25": "<ProcessNode zygote->vendor_tzas_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_trustedui_app_26": "<ProcessNode zygote->vendor_trustedui_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_trustedui_app_27": "<ProcessNode zygote->vendor_trustedui_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_timeservice_app_28": "<ProcessNode zygote->vendor_timeservice_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_timeservice_app_29": "<ProcessNode zygote->vendor_timeservice_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_systemhelper_app_30": "<ProcessNode zygote->vendor_systemhelper_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_systemhelper_app_31": "<ProcessNode zygote->vendor_systemhelper_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_seccam_app_32": "<ProcessNode zygote->vendor_seccam_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_seccam_app_33": "<ProcessNode zygote->vendor_seccam_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_qtidataservices_app_34": "<ProcessNode zygote->vendor_qtidataservices_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_qtidataservices_app_35": "<ProcessNode zygote->vendor_qtidataservices_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_qtelephony_36": "<ProcessNode zygote->vendor_qtelephony /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_qtelephony_37": "<ProcessNode zygote->vendor_qtelephony /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_qms_app_38": "<ProcessNode zygote->vendor_qms_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_qms_app_39": "<ProcessNode zygote->vendor_qms_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_qesdk_app_40": "<ProcessNode zygote->vendor_qesdk_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_qesdk_app_41": "<ProcessNode zygote->vendor_qesdk_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_qcc_utils_app_42": "<ProcessNode zygote->vendor_qcc_utils_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_qcc_utils_app_43": "<ProcessNode zygote->vendor_qcc_utils_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_qcc_netstat_app_44": "<ProcessNode zygote->vendor_qcc_netstat_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_qcc_netstat_app_45": "<ProcessNode zygote->vendor_qcc_netstat_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_qcc_authmgr_app_46": "<ProcessNode zygote->vendor_qcc_authmgr_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_qcc_authmgr_app_47": "<ProcessNode zygote->vendor_qcc_authmgr_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_qcc_app_48": "<ProcessNode zygote->vendor_qcc_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_qcc_app_49": "<ProcessNode zygote->vendor_qcc_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_powerservice_app_50": "<ProcessNode zygote->vendor_powerservice_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_powerservice_app_51": "<ProcessNode zygote->vendor_powerservice_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_poweroffalarm_app_52": "<ProcessNode zygote->vendor_poweroffalarm_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_poweroffalarm_app_53": "<ProcessNode zygote->vendor_poweroffalarm_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_powermodule_app_54": "<ProcessNode zygote->vendor_powermodule_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_powermodule_app_55": "<ProcessNode zygote->vendor_powermodule_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_perfdump_app_56": "<ProcessNode zygote->vendor_perfdump_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_perfdump_app_57": "<ProcessNode zygote->vendor_perfdump_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_mstatservice_app_58": "<ProcessNode zygote->vendor_mstatservice_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_mstatservice_app_59": "<ProcessNode zygote->vendor_mstatservice_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_location_app_60": "<ProcessNode zygote->vendor_location_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_location_app_61": "<ProcessNode zygote->vendor_location_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_imshelper_app_62": "<ProcessNode zygote->vendor_imshelper_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_imshelper_app_63": "<ProcessNode zygote->vendor_imshelper_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_fm_app_64": "<ProcessNode zygote->vendor_fm_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_fm_app_65": "<ProcessNode zygote->vendor_fm_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_embmssl_app_66": "<ProcessNode zygote->vendor_embmssl_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_embmssl_app_67": "<ProcessNode zygote->vendor_embmssl_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_dataservice_app_68": "<ProcessNode zygote->vendor_dataservice_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_dataservice_app_69": "<ProcessNode zygote->vendor_dataservice_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_cs_app_70": "<ProcessNode zygote->vendor_cs_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_cs_app_71": "<ProcessNode zygote->vendor_cs_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"untrusted_app_30_72": "<ProcessNode zygote->untrusted_app_30 /system/bin/app_process32 <Cred u=None g=None>"}
+{"untrusted_app_30_73": "<ProcessNode zygote->untrusted_app_30 /system/bin/app_process64 <Cred u=app_10006 g=app_10006 sid=u:r:untrusted_app_30:s0 groups=inet,everybody,shared_gid_50006>"}
+{"simpleperf_74": "<ProcessNode untrusted_app_30->simpleperf /system/bin/simpleperf <Cred u=None g=None>"}
+{"rs_75": "<ProcessNode untrusted_app_30->rs /system/bin/bcc <Cred u=None g=None>"}
+{"rs_76": "<ProcessNode untrusted_app_30->rs /system/bin/ld.mc <Cred u=None g=None>"}
+{"simpleperf_77": "<ProcessNode untrusted_app_30->simpleperf /system/bin/simpleperf <Cred u=None g=None>"}
+{"rs_78": "<ProcessNode untrusted_app_30->rs /system/bin/bcc <Cred u=None g=None>"}
+{"rs_79": "<ProcessNode untrusted_app_30->rs /system/bin/ld.mc <Cred u=None g=None>"}
+{"untrusted_app_29_80": "<ProcessNode zygote->untrusted_app_29 /system/bin/app_process32 <Cred u=None g=None>"}
+{"untrusted_app_29_81": "<ProcessNode zygote->untrusted_app_29 /system/bin/app_process64 <Cred u=app_10005 g=app_10005 sid=u:r:untrusted_app_29:s0 groups=inet,everybody,shared_gid_50005>"}
+{"simpleperf_82": "<ProcessNode untrusted_app_29->simpleperf /system/bin/simpleperf <Cred u=None g=None>"}
+{"rs_83": "<ProcessNode untrusted_app_29->rs /system/bin/bcc <Cred u=None g=None>"}
+{"rs_84": "<ProcessNode untrusted_app_29->rs /system/bin/ld.mc <Cred u=None g=None>"}
+{"simpleperf_85": "<ProcessNode untrusted_app_29->simpleperf /system/bin/simpleperf <Cred u=None g=None>"}
+{"rs_86": "<ProcessNode untrusted_app_29->rs /system/bin/bcc <Cred u=None g=None>"}
+{"rs_87": "<ProcessNode untrusted_app_29->rs /system/bin/ld.mc <Cred u=None g=None>"}
+{"untrusted_app_27_88": "<ProcessNode zygote->untrusted_app_27 /system/bin/app_process32 <Cred u=None g=None>"}
+{"untrusted_app_27_89": "<ProcessNode zygote->untrusted_app_27 /system/bin/app_process64 <Cred u=app_10004 g=app_10004 sid=u:r:untrusted_app_27:s0 groups=inet,everybody,shared_gid_50004>"}
+{"simpleperf_90": "<ProcessNode untrusted_app_27->simpleperf /system/bin/simpleperf <Cred u=None g=None>"}
+{"rs_91": "<ProcessNode untrusted_app_27->rs /system/bin/bcc <Cred u=None g=None>"}
+{"rs_92": "<ProcessNode untrusted_app_27->rs /system/bin/ld.mc <Cred u=None g=None>"}
+{"simpleperf_93": "<ProcessNode untrusted_app_27->simpleperf /system/bin/simpleperf <Cred u=None g=None>"}
+{"rs_94": "<ProcessNode untrusted_app_27->rs /system/bin/bcc <Cred u=None g=None>"}
+{"rs_95": "<ProcessNode untrusted_app_27->rs /system/bin/ld.mc <Cred u=None g=None>"}
+{"untrusted_app_25_96": "<ProcessNode zygote->untrusted_app_25 /system/bin/app_process32 <Cred u=None g=None>"}
+{"untrusted_app_25_97": "<ProcessNode zygote->untrusted_app_25 /system/bin/app_process64 <Cred u=app_10003 g=app_10003 sid=u:r:untrusted_app_25:s0 groups=inet,everybody,shared_gid_50003>"}
+{"simpleperf_98": "<ProcessNode untrusted_app_25->simpleperf /system/bin/simpleperf <Cred u=None g=None>"}
+{"rs_99": "<ProcessNode untrusted_app_25->rs /system/bin/bcc <Cred u=None g=None>"}
+{"rs_100": "<ProcessNode untrusted_app_25->rs /system/bin/ld.mc <Cred u=None g=None>"}
+{"simpleperf_101": "<ProcessNode untrusted_app_25->simpleperf /system/bin/simpleperf <Cred u=None g=None>"}
+{"rs_102": "<ProcessNode untrusted_app_25->rs /system/bin/bcc <Cred u=None g=None>"}
+{"rs_103": "<ProcessNode untrusted_app_25->rs /system/bin/ld.mc <Cred u=None g=None>"}
+{"untrusted_app_104": "<ProcessNode zygote->untrusted_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"untrusted_app_105": "<ProcessNode zygote->untrusted_app /system/bin/app_process64 <Cred u=app_10002 g=app_10002 sid=u:r:untrusted_app:s0 groups=inet,everybody,shared_gid_50002>"}
+{"simpleperf_106": "<ProcessNode untrusted_app->simpleperf /system/bin/simpleperf <Cred u=None g=None>"}
+{"rs_107": "<ProcessNode untrusted_app->rs /system/bin/bcc <Cred u=None g=None>"}
+{"rs_108": "<ProcessNode untrusted_app->rs /system/bin/ld.mc <Cred u=None g=None>"}
+{"simpleperf_109": "<ProcessNode untrusted_app->simpleperf /system/bin/simpleperf <Cred u=None g=None>"}
+{"rs_110": "<ProcessNode untrusted_app->rs /system/bin/bcc <Cred u=None g=None>"}
+{"rs_111": "<ProcessNode untrusted_app->rs /system/bin/ld.mc <Cred u=None g=None>"}
+{"trustonicpartner_app_112": "<ProcessNode zygote->trustonicpartner_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"trustonicpartner_app_113": "<ProcessNode zygote->trustonicpartner_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"traceur_app_114": "<ProcessNode zygote->traceur_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"traceur_app_115": "<ProcessNode zygote->traceur_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"thales_iuicc_app_116": "<ProcessNode zygote->thales_iuicc_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"thales_iuicc_app_117": "<ProcessNode zygote->thales_iuicc_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"teeregistryd_app_118": "<ProcessNode zygote->teeregistryd_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"teeregistryd_app_119": "<ProcessNode zygote->teeregistryd_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"teed_app_120": "<ProcessNode zygote->teed_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"teed_app_121": "<ProcessNode zygote->teed_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"system_server_startup_122": "<ProcessNode zygote->system_server_startup /system/bin/app_process64 <Cred u=None g=None>"}
+{"system_server_123": "<ProcessNode system_server_startup->system_server /system/bin/app_process64 <Cred u=system g=system sid=u:r:system_server:s0 groups=radio,bluetooth,graphics,input,audio,camera,log,compass,mount,wifi,usb,gps,media_rw,package_info,net_bt_admin,net_bt,inet,net_bw_stats,net_bw_acct,readproc,wakelock cap=CAP_SYS_MODULE,CAP_WAKE_ALARM,CAP_SYS_TIME,CAP_NET_BIND_SERVICE,CAP_KILL,CAP_NET_RAW,CAP_NET_BROADCAST,CAP_SYS_NICE,CAP_SYS_PTRACE,CAP_SYS_TTY_CONFIG,CAP_IPC_LOCK,CAP_NET_ADMIN>"}
+{"system_app_124": "<ProcessNode zygote->system_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"system_app_125": "<ProcessNode zygote->system_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"spu_app_126": "<ProcessNode zygote->spu_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"spu_app_127": "<ProcessNode zygote->spu_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"simpleperf_128": "<ProcessNode zygote->simpleperf /system/bin/simpleperf <Cred u=None g=None>"}
+{"shell_129": "<ProcessNode zygote->shell /system/bin/sh <Cred u=None g=None>"}
+{"vendor_shell_130": "<ProcessNode shell->vendor_shell /vendor/bin/sh <Cred u=None g=None>"}
+{"netutils_wrapper_131": "<ProcessNode vendor_shell->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"simpleperf_app_runner_132": "<ProcessNode shell->simpleperf_app_runner /system/bin/simpleperf_app_runner <Cred u=None g=None>"}
+{"untrusted_app_30_133": "<ProcessNode simpleperf_app_runner->untrusted_app_30 /system/bin/app_process32 <Cred u=None g=None>"}
+{"untrusted_app_30_134": "<ProcessNode simpleperf_app_runner->untrusted_app_30 /system/bin/app_process64 <Cred u=None g=None>"}
+{"untrusted_app_29_135": "<ProcessNode simpleperf_app_runner->untrusted_app_29 /system/bin/app_process32 <Cred u=None g=None>"}
+{"untrusted_app_29_136": "<ProcessNode simpleperf_app_runner->untrusted_app_29 /system/bin/app_process64 <Cred u=None g=None>"}
+{"untrusted_app_27_137": "<ProcessNode simpleperf_app_runner->untrusted_app_27 /system/bin/app_process32 <Cred u=None g=None>"}
+{"untrusted_app_27_138": "<ProcessNode simpleperf_app_runner->untrusted_app_27 /system/bin/app_process64 <Cred u=None g=None>"}
+{"untrusted_app_25_139": "<ProcessNode simpleperf_app_runner->untrusted_app_25 /system/bin/app_process32 <Cred u=None g=None>"}
+{"untrusted_app_25_140": "<ProcessNode simpleperf_app_runner->untrusted_app_25 /system/bin/app_process64 <Cred u=None g=None>"}
+{"untrusted_app_141": "<ProcessNode simpleperf_app_runner->untrusted_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"untrusted_app_142": "<ProcessNode simpleperf_app_runner->untrusted_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"simpleperf_143": "<ProcessNode simpleperf_app_runner->simpleperf /system/bin/simpleperf <Cred u=None g=None>"}
+{"runas_app_144": "<ProcessNode simpleperf_app_runner->runas_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"runas_app_145": "<ProcessNode simpleperf_app_runner->runas_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"rs_146": "<ProcessNode runas_app->rs /system/bin/bcc <Cred u=None g=None>"}
+{"rs_147": "<ProcessNode runas_app->rs /system/bin/ld.mc <Cred u=None g=None>"}
+{"rs_148": "<ProcessNode runas_app->rs /system/bin/bcc <Cred u=None g=None>"}
+{"rs_149": "<ProcessNode runas_app->rs /system/bin/ld.mc <Cred u=None g=None>"}
+{"sec_system_init_shell_150": "<ProcessNode shell->sec_system_init_shell /system/bin/sh <Cred u=None g=None>"}
+{"runas_151": "<ProcessNode shell->runas /system/bin/run-as <Cred u=None g=None>"}
+{"shell_152": "<ProcessNode runas->shell /system/bin/sh <Cred u=None g=None>"}
+{"perfetto_153": "<ProcessNode shell->perfetto /system/bin/perfetto <Cred u=None g=None>"}
+{"incident_154": "<ProcessNode shell->incident /system/bin/incident <Cred u=None g=None>"}
+{"perfetto_155": "<ProcessNode shell->perfetto /system/bin/perfetto <Cred u=None g=None>"}
+{"incident_156": "<ProcessNode shell->incident /system/bin/incident <Cred u=None g=None>"}
+{"shared_relro_157": "<ProcessNode zygote->shared_relro /system/bin/app_process32 <Cred u=None g=None>"}
+{"shared_relro_158": "<ProcessNode zygote->shared_relro /system/bin/app_process64 <Cred u=None g=None>"}
+{"secure_element_159": "<ProcessNode zygote->secure_element /system/bin/app_process32 <Cred u=None g=None>"}
+{"secure_element_160": "<ProcessNode zygote->secure_element /system/bin/app_process64 <Cred u=None g=None>"}
+{"sec_untrusted_app_161": "<ProcessNode zygote->sec_untrusted_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"sec_untrusted_app_162": "<ProcessNode zygote->sec_untrusted_app /system/bin/app_process64 <Cred u=app_10001 g=app_10001 sid=u:r:sec_untrusted_app:s0 groups=inet,everybody,shared_gid_50001>"}
+{"sec_standard_app_163": "<ProcessNode zygote->sec_standard_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"sec_standard_app_164": "<ProcessNode zygote->sec_standard_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"sdk_sandbox_165": "<ProcessNode zygote->sdk_sandbox /system/bin/app_process32 <Cred u=None g=None>"}
+{"sdk_sandbox_166": "<ProcessNode zygote->sdk_sandbox /system/bin/app_process64 <Cred u=None g=None>"}
+{"runas_app_167": "<ProcessNode zygote->runas_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"runas_app_168": "<ProcessNode zygote->runas_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"remote_prov_app_169": "<ProcessNode zygote->remote_prov_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"remote_prov_app_170": "<ProcessNode zygote->remote_prov_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"radio_171": "<ProcessNode zygote->radio /system/bin/app_process32 <Cred u=None g=None>"}
+{"radio_172": "<ProcessNode zygote->radio /system/bin/app_process64 <Cred u=None g=None>"}
+{"priv_app_173": "<ProcessNode zygote->priv_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"priv_app_174": "<ProcessNode zygote->priv_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"simpleperf_175": "<ProcessNode priv_app->simpleperf /system/bin/simpleperf <Cred u=None g=None>"}
+{"rs_176": "<ProcessNode priv_app->rs /system/bin/bcc <Cred u=None g=None>"}
+{"rs_177": "<ProcessNode priv_app->rs /system/bin/ld.mc <Cred u=None g=None>"}
+{"simpleperf_178": "<ProcessNode priv_app->simpleperf /system/bin/simpleperf <Cred u=None g=None>"}
+{"rs_179": "<ProcessNode priv_app->rs /system/bin/bcc <Cred u=None g=None>"}
+{"rs_180": "<ProcessNode priv_app->rs /system/bin/ld.mc <Cred u=None g=None>"}
+{"policyloader_app_181": "<ProcessNode zygote->policyloader_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"policyloader_app_182": "<ProcessNode zygote->policyloader_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"platform_app_183": "<ProcessNode zygote->platform_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"platform_app_184": "<ProcessNode zygote->platform_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"simpleperf_185": "<ProcessNode platform_app->simpleperf /system/bin/simpleperf <Cred u=None g=None>"}
+{"simpleperf_186": "<ProcessNode platform_app->simpleperf /system/bin/simpleperf <Cred u=None g=None>"}
+{"permissioncontroller_app_187": "<ProcessNode zygote->permissioncontroller_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"permissioncontroller_app_188": "<ProcessNode zygote->permissioncontroller_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"oneseg_apk_189": "<ProcessNode zygote->oneseg_apk /system/bin/app_process32 <Cred u=None g=None>"}
+{"oneseg_apk_190": "<ProcessNode zygote->oneseg_apk /system/bin/app_process64 <Cred u=None g=None>"}
+{"nfc_191": "<ProcessNode zygote->nfc /system/bin/app_process32 <Cred u=None g=None>"}
+{"nfc_192": "<ProcessNode zygote->nfc /system/bin/app_process64 <Cred u=None g=None>"}
+{"network_stack_193": "<ProcessNode zygote->network_stack /system/bin/app_process32 <Cred u=None g=None>"}
+{"network_stack_194": "<ProcessNode zygote->network_stack /system/bin/app_process64 <Cred u=None g=None>"}
+{"mobicore_app_195": "<ProcessNode zygote->mobicore_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"mobicore_app_196": "<ProcessNode zygote->mobicore_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"mediaprovider_app_197": "<ProcessNode zygote->mediaprovider_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"mediaprovider_app_198": "<ProcessNode zygote->mediaprovider_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"mediaprovider_199": "<ProcessNode zygote->mediaprovider /system/bin/app_process32 <Cred u=None g=None>"}
+{"mediaprovider_200": "<ProcessNode zygote->mediaprovider /system/bin/app_process64 <Cred u=None g=None>"}
+{"kfa_app_201": "<ProcessNode zygote->kfa_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"kfa_app_202": "<ProcessNode zygote->kfa_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"isolated_app_203": "<ProcessNode zygote->isolated_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"isolated_app_204": "<ProcessNode zygote->isolated_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"simpleperf_205": "<ProcessNode isolated_app->simpleperf /system/bin/simpleperf <Cred u=None g=None>"}
+{"gmscore_app_206": "<ProcessNode zygote->gmscore_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"gmscore_app_207": "<ProcessNode zygote->gmscore_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"filtered_untrusted_app_208": "<ProcessNode zygote->filtered_untrusted_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"filtered_untrusted_app_209": "<ProcessNode zygote->filtered_untrusted_app /system/bin/app_process64 <Cred u=app_10000 g=app_10000 sid=u:r:filtered_untrusted_app:s0 groups=inet,everybody,shared_gid_50000>"}
+{"felica_app_210": "<ProcessNode zygote->felica_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"felica_app_211": "<ProcessNode zygote->felica_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"ephemeral_app_212": "<ProcessNode zygote->ephemeral_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"ephemeral_app_213": "<ProcessNode zygote->ephemeral_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"simpleperf_214": "<ProcessNode ephemeral_app->simpleperf /system/bin/simpleperf <Cred u=None g=None>"}
+{"rs_215": "<ProcessNode ephemeral_app->rs /system/bin/bcc <Cred u=None g=None>"}
+{"rs_216": "<ProcessNode ephemeral_app->rs /system/bin/ld.mc <Cred u=None g=None>"}
+{"simpleperf_217": "<ProcessNode ephemeral_app->simpleperf /system/bin/simpleperf <Cred u=None g=None>"}
+{"rs_218": "<ProcessNode ephemeral_app->rs /system/bin/bcc <Cred u=None g=None>"}
+{"rs_219": "<ProcessNode ephemeral_app->rs /system/bin/ld.mc <Cred u=None g=None>"}
+{"dualdar_app_220": "<ProcessNode zygote->dualdar_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"dualdar_app_221": "<ProcessNode zygote->dualdar_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"dsms_app_222": "<ProcessNode zygote->dsms_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"dsms_app_223": "<ProcessNode zygote->dsms_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"bluetooth_224": "<ProcessNode zygote->bluetooth /system/bin/app_process32 <Cred u=None g=None>"}
+{"bluetooth_225": "<ProcessNode zygote->bluetooth /system/bin/app_process64 <Cred u=None g=None>"}
+{"attiqi_app_226": "<ProcessNode zygote->attiqi_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"attiqi_app_227": "<ProcessNode zygote->attiqi_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"app_zygote_228": "<ProcessNode zygote->app_zygote /system/bin/app_process64 <Cred u=None g=None>"}
+{"isolated_app_229": "<ProcessNode app_zygote->isolated_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"aasa_service_app_230": "<ProcessNode zygote->aasa_service_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"aasa_service_app_231": "<ProcessNode zygote->aasa_service_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"aasa_platform_app_232": "<ProcessNode zygote->aasa_platform_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"aasa_platform_app_233": "<ProcessNode zygote->aasa_platform_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"webview_zygote_234": "<ProcessNode zygote->webview_zygote /system/bin/app_process32 <Cred u=None g=None>"}
+{"isolated_app_235": "<ProcessNode webview_zygote->isolated_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vzwomatrigger_app_236": "<ProcessNode zygote->vzwomatrigger_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vzwomatrigger_app_237": "<ProcessNode zygote->vzwomatrigger_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vzwfiltered_untrusted_app_238": "<ProcessNode zygote->vzwfiltered_untrusted_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vzwfiltered_untrusted_app_239": "<ProcessNode zygote->vzwfiltered_untrusted_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_xrcb_app_240": "<ProcessNode zygote->vendor_xrcb_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_xrcb_app_241": "<ProcessNode zygote->vendor_xrcb_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_wlc_app_242": "<ProcessNode zygote->vendor_wlc_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_wlc_app_243": "<ProcessNode zygote->vendor_wlc_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_wfd_app_244": "<ProcessNode zygote->vendor_wfd_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_wfd_app_245": "<ProcessNode zygote->vendor_wfd_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_voiceui_app_246": "<ProcessNode zygote->vendor_voiceui_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_voiceui_app_247": "<ProcessNode zygote->vendor_voiceui_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_tzas_app_248": "<ProcessNode zygote->vendor_tzas_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_tzas_app_249": "<ProcessNode zygote->vendor_tzas_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_trustedui_app_250": "<ProcessNode zygote->vendor_trustedui_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_trustedui_app_251": "<ProcessNode zygote->vendor_trustedui_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_timeservice_app_252": "<ProcessNode zygote->vendor_timeservice_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_timeservice_app_253": "<ProcessNode zygote->vendor_timeservice_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_systemhelper_app_254": "<ProcessNode zygote->vendor_systemhelper_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_systemhelper_app_255": "<ProcessNode zygote->vendor_systemhelper_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_seccam_app_256": "<ProcessNode zygote->vendor_seccam_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_seccam_app_257": "<ProcessNode zygote->vendor_seccam_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_qtidataservices_app_258": "<ProcessNode zygote->vendor_qtidataservices_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_qtidataservices_app_259": "<ProcessNode zygote->vendor_qtidataservices_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_qtelephony_260": "<ProcessNode zygote->vendor_qtelephony /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_qtelephony_261": "<ProcessNode zygote->vendor_qtelephony /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_qms_app_262": "<ProcessNode zygote->vendor_qms_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_qms_app_263": "<ProcessNode zygote->vendor_qms_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_qesdk_app_264": "<ProcessNode zygote->vendor_qesdk_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_qesdk_app_265": "<ProcessNode zygote->vendor_qesdk_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_qcc_utils_app_266": "<ProcessNode zygote->vendor_qcc_utils_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_qcc_utils_app_267": "<ProcessNode zygote->vendor_qcc_utils_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_qcc_netstat_app_268": "<ProcessNode zygote->vendor_qcc_netstat_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_qcc_netstat_app_269": "<ProcessNode zygote->vendor_qcc_netstat_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_qcc_authmgr_app_270": "<ProcessNode zygote->vendor_qcc_authmgr_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_qcc_authmgr_app_271": "<ProcessNode zygote->vendor_qcc_authmgr_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_qcc_app_272": "<ProcessNode zygote->vendor_qcc_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_qcc_app_273": "<ProcessNode zygote->vendor_qcc_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_powerservice_app_274": "<ProcessNode zygote->vendor_powerservice_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_powerservice_app_275": "<ProcessNode zygote->vendor_powerservice_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_poweroffalarm_app_276": "<ProcessNode zygote->vendor_poweroffalarm_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_poweroffalarm_app_277": "<ProcessNode zygote->vendor_poweroffalarm_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_powermodule_app_278": "<ProcessNode zygote->vendor_powermodule_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_powermodule_app_279": "<ProcessNode zygote->vendor_powermodule_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_perfdump_app_280": "<ProcessNode zygote->vendor_perfdump_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_perfdump_app_281": "<ProcessNode zygote->vendor_perfdump_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_mstatservice_app_282": "<ProcessNode zygote->vendor_mstatservice_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_mstatservice_app_283": "<ProcessNode zygote->vendor_mstatservice_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_location_app_284": "<ProcessNode zygote->vendor_location_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_location_app_285": "<ProcessNode zygote->vendor_location_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_imshelper_app_286": "<ProcessNode zygote->vendor_imshelper_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_imshelper_app_287": "<ProcessNode zygote->vendor_imshelper_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_fm_app_288": "<ProcessNode zygote->vendor_fm_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_fm_app_289": "<ProcessNode zygote->vendor_fm_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_embmssl_app_290": "<ProcessNode zygote->vendor_embmssl_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_embmssl_app_291": "<ProcessNode zygote->vendor_embmssl_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_dataservice_app_292": "<ProcessNode zygote->vendor_dataservice_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_dataservice_app_293": "<ProcessNode zygote->vendor_dataservice_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"vendor_cs_app_294": "<ProcessNode zygote->vendor_cs_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"vendor_cs_app_295": "<ProcessNode zygote->vendor_cs_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"untrusted_app_30_296": "<ProcessNode zygote->untrusted_app_30 /system/bin/app_process32 <Cred u=None g=None>"}
+{"untrusted_app_30_297": "<ProcessNode zygote->untrusted_app_30 /system/bin/app_process64 <Cred u=None g=None>"}
+{"untrusted_app_29_298": "<ProcessNode zygote->untrusted_app_29 /system/bin/app_process32 <Cred u=None g=None>"}
+{"untrusted_app_29_299": "<ProcessNode zygote->untrusted_app_29 /system/bin/app_process64 <Cred u=None g=None>"}
+{"untrusted_app_27_300": "<ProcessNode zygote->untrusted_app_27 /system/bin/app_process32 <Cred u=None g=None>"}
+{"untrusted_app_27_301": "<ProcessNode zygote->untrusted_app_27 /system/bin/app_process64 <Cred u=None g=None>"}
+{"untrusted_app_25_302": "<ProcessNode zygote->untrusted_app_25 /system/bin/app_process32 <Cred u=None g=None>"}
+{"untrusted_app_25_303": "<ProcessNode zygote->untrusted_app_25 /system/bin/app_process64 <Cred u=None g=None>"}
+{"untrusted_app_304": "<ProcessNode zygote->untrusted_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"untrusted_app_305": "<ProcessNode zygote->untrusted_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"trustonicpartner_app_306": "<ProcessNode zygote->trustonicpartner_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"trustonicpartner_app_307": "<ProcessNode zygote->trustonicpartner_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"traceur_app_308": "<ProcessNode zygote->traceur_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"traceur_app_309": "<ProcessNode zygote->traceur_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"thales_iuicc_app_310": "<ProcessNode zygote->thales_iuicc_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"thales_iuicc_app_311": "<ProcessNode zygote->thales_iuicc_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"teeregistryd_app_312": "<ProcessNode zygote->teeregistryd_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"teeregistryd_app_313": "<ProcessNode zygote->teeregistryd_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"teed_app_314": "<ProcessNode zygote->teed_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"teed_app_315": "<ProcessNode zygote->teed_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"system_server_startup_316": "<ProcessNode zygote->system_server_startup /system/bin/app_process32 <Cred u=None g=None>"}
+{"system_server_317": "<ProcessNode system_server_startup->system_server /system/bin/app_process32 <Cred u=None g=None>"}
+{"system_app_318": "<ProcessNode zygote->system_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"system_app_319": "<ProcessNode zygote->system_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"spu_app_320": "<ProcessNode zygote->spu_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"spu_app_321": "<ProcessNode zygote->spu_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"simpleperf_322": "<ProcessNode zygote->simpleperf /system/bin/simpleperf <Cred u=None g=None>"}
+{"shell_323": "<ProcessNode zygote->shell /system/bin/sh <Cred u=None g=None>"}
+{"shared_relro_324": "<ProcessNode zygote->shared_relro /system/bin/app_process32 <Cred u=None g=None>"}
+{"shared_relro_325": "<ProcessNode zygote->shared_relro /system/bin/app_process64 <Cred u=None g=None>"}
+{"secure_element_326": "<ProcessNode zygote->secure_element /system/bin/app_process32 <Cred u=None g=None>"}
+{"secure_element_327": "<ProcessNode zygote->secure_element /system/bin/app_process64 <Cred u=None g=None>"}
+{"sec_untrusted_app_328": "<ProcessNode zygote->sec_untrusted_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"sec_untrusted_app_329": "<ProcessNode zygote->sec_untrusted_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"sec_standard_app_330": "<ProcessNode zygote->sec_standard_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"sec_standard_app_331": "<ProcessNode zygote->sec_standard_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"sdk_sandbox_332": "<ProcessNode zygote->sdk_sandbox /system/bin/app_process32 <Cred u=None g=None>"}
+{"sdk_sandbox_333": "<ProcessNode zygote->sdk_sandbox /system/bin/app_process64 <Cred u=None g=None>"}
+{"runas_app_334": "<ProcessNode zygote->runas_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"runas_app_335": "<ProcessNode zygote->runas_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"remote_prov_app_336": "<ProcessNode zygote->remote_prov_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"remote_prov_app_337": "<ProcessNode zygote->remote_prov_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"radio_338": "<ProcessNode zygote->radio /system/bin/app_process32 <Cred u=None g=None>"}
+{"radio_339": "<ProcessNode zygote->radio /system/bin/app_process64 <Cred u=None g=None>"}
+{"priv_app_340": "<ProcessNode zygote->priv_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"priv_app_341": "<ProcessNode zygote->priv_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"policyloader_app_342": "<ProcessNode zygote->policyloader_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"policyloader_app_343": "<ProcessNode zygote->policyloader_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"platform_app_344": "<ProcessNode zygote->platform_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"platform_app_345": "<ProcessNode zygote->platform_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"permissioncontroller_app_346": "<ProcessNode zygote->permissioncontroller_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"permissioncontroller_app_347": "<ProcessNode zygote->permissioncontroller_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"oneseg_apk_348": "<ProcessNode zygote->oneseg_apk /system/bin/app_process32 <Cred u=None g=None>"}
+{"oneseg_apk_349": "<ProcessNode zygote->oneseg_apk /system/bin/app_process64 <Cred u=None g=None>"}
+{"nfc_350": "<ProcessNode zygote->nfc /system/bin/app_process32 <Cred u=None g=None>"}
+{"nfc_351": "<ProcessNode zygote->nfc /system/bin/app_process64 <Cred u=None g=None>"}
+{"network_stack_352": "<ProcessNode zygote->network_stack /system/bin/app_process32 <Cred u=None g=None>"}
+{"network_stack_353": "<ProcessNode zygote->network_stack /system/bin/app_process64 <Cred u=None g=None>"}
+{"mobicore_app_354": "<ProcessNode zygote->mobicore_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"mobicore_app_355": "<ProcessNode zygote->mobicore_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"mediaprovider_app_356": "<ProcessNode zygote->mediaprovider_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"mediaprovider_app_357": "<ProcessNode zygote->mediaprovider_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"mediaprovider_358": "<ProcessNode zygote->mediaprovider /system/bin/app_process32 <Cred u=None g=None>"}
+{"mediaprovider_359": "<ProcessNode zygote->mediaprovider /system/bin/app_process64 <Cred u=None g=None>"}
+{"kfa_app_360": "<ProcessNode zygote->kfa_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"kfa_app_361": "<ProcessNode zygote->kfa_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"isolated_app_362": "<ProcessNode zygote->isolated_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"isolated_app_363": "<ProcessNode zygote->isolated_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"gmscore_app_364": "<ProcessNode zygote->gmscore_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"gmscore_app_365": "<ProcessNode zygote->gmscore_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"filtered_untrusted_app_366": "<ProcessNode zygote->filtered_untrusted_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"filtered_untrusted_app_367": "<ProcessNode zygote->filtered_untrusted_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"felica_app_368": "<ProcessNode zygote->felica_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"felica_app_369": "<ProcessNode zygote->felica_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"ephemeral_app_370": "<ProcessNode zygote->ephemeral_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"ephemeral_app_371": "<ProcessNode zygote->ephemeral_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"dualdar_app_372": "<ProcessNode zygote->dualdar_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"dualdar_app_373": "<ProcessNode zygote->dualdar_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"dsms_app_374": "<ProcessNode zygote->dsms_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"dsms_app_375": "<ProcessNode zygote->dsms_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"bluetooth_376": "<ProcessNode zygote->bluetooth /system/bin/app_process32 <Cred u=None g=None>"}
+{"bluetooth_377": "<ProcessNode zygote->bluetooth /system/bin/app_process64 <Cred u=None g=None>"}
+{"attiqi_app_378": "<ProcessNode zygote->attiqi_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"attiqi_app_379": "<ProcessNode zygote->attiqi_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"app_zygote_380": "<ProcessNode zygote->app_zygote /system/bin/app_process32 <Cred u=None g=None>"}
+{"isolated_app_381": "<ProcessNode app_zygote->isolated_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"aasa_service_app_382": "<ProcessNode zygote->aasa_service_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"aasa_service_app_383": "<ProcessNode zygote->aasa_service_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"aasa_platform_app_384": "<ProcessNode zygote->aasa_platform_app /system/bin/app_process32 <Cred u=None g=None>"}
+{"aasa_platform_app_385": "<ProcessNode zygote->aasa_platform_app /system/bin/app_process64 <Cred u=None g=None>"}
+{"wificond_386": "<ProcessNode init->wificond /system/bin/wificond <Cred u=wifi g=wifi sid=u:r:wificond:s0 groups=net_raw,net_admin cap=CAP_NET_RAW,CAP_NET_ADMIN>"}
+{"watchdogd_387": "<ProcessNode init->watchdogd /system/bin/watchdogd <Cred u=root g=root sid=u:r:watchdogd:s0 cap=EVERYTHING>"}
+{"vold_388": "<ProcessNode init->vold /system/bin/vold <Cred u=root g=root sid=u:r:vold:s0 groups=reserved_disk cap=EVERYTHING>"}
+{"vold_prepare_subdirs_389": "<ProcessNode vold->vold_prepare_subdirs /system/bin/vold_prepare_subdirs <Cred u=None g=None>"}
+{"sgdisk_390": "<ProcessNode vold->sgdisk /system/bin/sgdisk <Cred u=None g=None>"}
+{"sdcardd_391": "<ProcessNode vold->sdcardd /system/bin/sdcard <Cred u=None g=None>"}
+{"fsck_392": "<ProcessNode vold->fsck /system/bin/e2fsck <Cred u=None g=None>"}
+{"fsck_393": "<ProcessNode vold->fsck /system/bin/fsck.exfat <Cred u=None g=None>"}
+{"fsck_394": "<ProcessNode vold->fsck /system/bin/fsck.f2fs <Cred u=None g=None>"}
+{"fsck_395": "<ProcessNode vold->fsck /system/bin/fsck_msdos <Cred u=None g=None>"}
+{"fsck_396": "<ProcessNode vold->fsck /system/bin/newfs_msdos <Cred u=None g=None>"}
+{"fsck_397": "<ProcessNode vold->fsck /system/bin/resize2fs <Cred u=None g=None>"}
+{"fsck_398": "<ProcessNode vold->fsck /system/bin/tune2fs <Cred u=None g=None>"}
+{"dumpstate_399": "<ProcessNode vold->dumpstate /system/bin/dumpstate <Cred u=None g=None>"}
+{"vdc_400": "<ProcessNode dumpstate->vdc /system/bin/vdc <Cred u=None g=None>"}
+{"perfetto_401": "<ProcessNode dumpstate->perfetto /system/bin/perfetto <Cred u=None g=None>"}
+{"incident_402": "<ProcessNode dumpstate->incident /system/bin/incident <Cred u=None g=None>"}
+{"blkid_403": "<ProcessNode vold->blkid /system/bin/blkid <Cred u=None g=None>"}
+{"vndservicemanager_404": "<ProcessNode init->vndservicemanager /vendor/bin/vndservicemanager <Cred u=system g=system sid=u:r:vndservicemanager:s0 groups=readproc>"}
+{"netutils_wrapper_405": "<ProcessNode vndservicemanager->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_wcnss_service_406": "<ProcessNode init->vendor_wcnss_service /vendor/bin/cnss-daemon <Cred u=root g=root sid=u:r:vendor_wcnss_service:s0 cap=EVERYTHING>"}
+{"vendor_wcnss_service_407": "<ProcessNode init->vendor_wcnss_service /vendor/bin/cnss_diag <Cred u=root g=root sid=u:r:vendor_wcnss_service:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_408": "<ProcessNode vendor_wcnss_service->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"netutils_wrapper_409": "<ProcessNode vendor_wcnss_service->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_vm_mgr_410": "<ProcessNode init->vendor_vm_mgr /vendor/bin/vmmgr <Cred u=root g=root sid=u:r:vendor_vm_mgr:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_411": "<ProcessNode vendor_vm_mgr->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_trusteduilistener_412": "<ProcessNode init->vendor_trusteduilistener /vendor/bin/trusteduilistener <Cred u=system g=system sid=u:r:vendor_trusteduilistener:s0>"}
+{"netutils_wrapper_413": "<ProcessNode vendor_trusteduilistener->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_time_daemon_414": "<ProcessNode init->vendor_time_daemon /vendor/bin/time_daemon <Cred u=system g=system sid=u:r:vendor_time_daemon:s0 groups=readproc cap=CAP_SYS_TIME>"}
+{"netutils_wrapper_415": "<ProcessNode vendor_time_daemon->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_thermal-engine_416": "<ProcessNode init->vendor_thermal-engine /vendor/bin/thermal-engine-v2 <Cred u=root g=root sid=u:r:vendor_thermal-engine:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_417": "<ProcessNode vendor_thermal-engine->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_ssr_setup_418": "<ProcessNode init->vendor_ssr_setup /vendor/bin/ssr_setup <Cred u=root g=root sid=u:r:vendor_ssr_setup:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_419": "<ProcessNode vendor_ssr_setup->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_ssr_diag_420": "<ProcessNode init->vendor_ssr_diag /vendor/bin/ssr_diag <Cred u=root g=root sid=u:r:vendor_ssr_diag:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_421": "<ProcessNode vendor_ssr_diag->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_ssgtzd_422": "<ProcessNode init->vendor_ssgtzd /vendor/bin/ssgtzd <Cred u=system g=system sid=u:r:vendor_ssgtzd:s0>"}
+{"netutils_wrapper_423": "<ProcessNode vendor_ssgtzd->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_spdaemon_424": "<ProcessNode init->vendor_spdaemon /vendor/bin/spdaemon <Cred u=system g=system sid=u:r:vendor_spdaemon:s0>"}
+{"netutils_wrapper_425": "<ProcessNode vendor_spdaemon->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_shsusrd_426": "<ProcessNode init->vendor_shsusrd /vendor/bin/shsusrd <Cred u=radio g=radio sid=u:r:vendor_shsusrd:s0 cap=CAP_NET_ADMIN>"}
+{"netutils_wrapper_427": "<ProcessNode vendor_shsusrd->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_sensors_qti_428": "<ProcessNode init->vendor_sensors_qti /vendor/bin/sensors.qti <Cred u=root g=root sid=u:r:vendor_sensors_qti:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_429": "<ProcessNode vendor_sensors_qti->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_sensors_430": "<ProcessNode init->vendor_sensors /vendor/bin/sscrpcd <Cred u=system g=system sid=u:r:vendor_sensors:s0 groups=wakelock cap=CAP_BLOCK_SUSPEND>"}
+{"netutils_wrapper_431": "<ProcessNode vendor_sensors->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_sensordebug_432": "<ProcessNode init->vendor_sensordebug /vendor/bin/init.vendor.sensordebug.sh <Cred u=root g=root sid=u:r:vendor_sensordebug:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_433": "<ProcessNode vendor_sensordebug->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_secril_config_svc_434": "<ProcessNode init->vendor_secril_config_svc /vendor/bin/secril_config_svc <Cred u=root g=root sid=u:r:vendor_secril_config_svc:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_435": "<ProcessNode vendor_secril_config_svc->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_sec_nvm_436": "<ProcessNode init->vendor_sec_nvm /vendor/bin/sec_nvm <Cred u=system g=system sid=u:r:vendor_sec_nvm:s0>"}
+{"netutils_wrapper_437": "<ProcessNode vendor_sec_nvm->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_rmt_storage_438": "<ProcessNode init->vendor_rmt_storage /vendor/bin/rmt_storage <Cred u=root g=root sid=u:r:vendor_rmt_storage:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_439": "<ProcessNode vendor_rmt_storage->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_rfs_access_440": "<ProcessNode init->vendor_rfs_access /vendor/bin/tftp_server <Cred u=root g=root sid=u:r:vendor_rfs_access:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_441": "<ProcessNode vendor_rfs_access->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_qwesd_442": "<ProcessNode init->vendor_qwesd /vendor/bin/qwesd <Cred u=system g=system sid=u:r:vendor_qwesd:s0 groups=inet>"}
+{"netutils_wrapper_443": "<ProcessNode vendor_qwesd->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_qti_media_444": "<ProcessNode init->vendor_qti_media /vendor/bin/init.qti.media.sh <Cred u=root g=root sid=u:r:vendor_qti_media:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_445": "<ProcessNode vendor_qti_media->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_qti_init_shell_bg_446": "<ProcessNode init->vendor_qti_init_shell_bg /vendor/bin/init.qti.write.sh <Cred u=root g=root sid=u:r:vendor_qti_init_shell_bg:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_447": "<ProcessNode vendor_qti_init_shell_bg->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_qti_init_shell_448": "<ProcessNode init->vendor_qti_init_shell /vendor/bin/init.class_main.sh <Cred u=root g=root sid=u:r:vendor_qti_init_shell:s0 cap=EVERYTHING>"}
+{"vendor_qti_init_shell_449": "<ProcessNode init->vendor_qti_init_shell /vendor/bin/init.crda.sh <Cred u=root g=root sid=u:r:vendor_qti_init_shell:s0 cap=EVERYTHING>"}
+{"vendor_qti_init_shell_450": "<ProcessNode init->vendor_qti_init_shell /vendor/bin/init.kernel.post_boot.sh <Cred u=root g=root sid=u:r:vendor_qti_init_shell:s0 cap=EVERYTHING>"}
+{"vendor_qti_init_shell_451": "<ProcessNode init->vendor_qti_init_shell /vendor/bin/init.mdm.sh <Cred u=root g=root sid=u:r:vendor_qti_init_shell:s0 cap=EVERYTHING>"}
+{"vendor_qti_init_shell_452": "<ProcessNode init->vendor_qti_init_shell /vendor/bin/init.qcom.class_core.sh <Cred u=root g=root sid=u:r:vendor_qti_init_shell:s0 cap=EVERYTHING>"}
+{"vendor_qti_init_shell_453": "<ProcessNode init->vendor_qti_init_shell /vendor/bin/init.qcom.coex.sh <Cred u=root g=root sid=u:r:vendor_qti_init_shell:s0 cap=EVERYTHING>"}
+{"vendor_qti_init_shell_454": "<ProcessNode init->vendor_qti_init_shell /vendor/bin/init.qcom.early_boot.sh <Cred u=root g=root sid=u:r:vendor_qti_init_shell:s0 cap=EVERYTHING>"}
+{"vendor_qti_init_shell_455": "<ProcessNode init->vendor_qti_init_shell /vendor/bin/init.qcom.efs.sync.sh <Cred u=root g=root sid=u:r:vendor_qti_init_shell:s0 cap=EVERYTHING>"}
+{"vendor_qti_init_shell_456": "<ProcessNode init->vendor_qti_init_shell /vendor/bin/init.qcom.post_boot.sh <Cred u=root g=root sid=u:r:vendor_qti_init_shell:s0 cap=EVERYTHING>"}
+{"vendor_qti_init_shell_457": "<ProcessNode init->vendor_qti_init_shell /vendor/bin/init.qcom.sdio.sh <Cred u=root g=root sid=u:r:vendor_qti_init_shell:s0 cap=EVERYTHING>"}
+{"vendor_qti_init_shell_458": "<ProcessNode init->vendor_qti_init_shell /vendor/bin/init.qcom.sh <Cred u=root g=root sid=u:r:vendor_qti_init_shell:s0 cap=EVERYTHING>"}
+{"vendor_qti_init_shell_459": "<ProcessNode init->vendor_qti_init_shell /vendor/bin/init.qcom.usb.sh <Cred u=root g=root sid=u:r:vendor_qti_init_shell:s0 cap=EVERYTHING>"}
+{"vendor_qti_init_shell_460": "<ProcessNode init->vendor_qti_init_shell /vendor/bin/init.qti.kernel.sh <Cred u=root g=root sid=u:r:vendor_qti_init_shell:s0 cap=EVERYTHING>"}
+{"vendor_qti_init_shell_461": "<ProcessNode init->vendor_qti_init_shell /vendor/bin/init.qti.qcv.sh <Cred u=root g=root sid=u:r:vendor_qti_init_shell:s0 cap=EVERYTHING>"}
+{"vendor_qti_init_shell_462": "<ProcessNode init->vendor_qti_init_shell /vendor/bin/qca6234-service.sh <Cred u=root g=root sid=u:r:vendor_qti_init_shell:s0 cap=EVERYTHING>"}
+{"vendor_qti_init_shell_463": "<ProcessNode init->vendor_qti_init_shell /vendor/bin/sh <Cred u=root g=root sid=u:r:vendor_qti_init_shell:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_464": "<ProcessNode vendor_qti_init_shell->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"netutils_wrapper_465": "<ProcessNode vendor_qti_init_shell->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"netutils_wrapper_466": "<ProcessNode vendor_qti_init_shell->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"netutils_wrapper_467": "<ProcessNode vendor_qti_init_shell->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"netutils_wrapper_468": "<ProcessNode vendor_qti_init_shell->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"netutils_wrapper_469": "<ProcessNode vendor_qti_init_shell->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"netutils_wrapper_470": "<ProcessNode vendor_qti_init_shell->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"netutils_wrapper_471": "<ProcessNode vendor_qti_init_shell->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"netutils_wrapper_472": "<ProcessNode vendor_qti_init_shell->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"netutils_wrapper_473": "<ProcessNode vendor_qti_init_shell->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"netutils_wrapper_474": "<ProcessNode vendor_qti_init_shell->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"netutils_wrapper_475": "<ProcessNode vendor_qti_init_shell->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"netutils_wrapper_476": "<ProcessNode vendor_qti_init_shell->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"netutils_wrapper_477": "<ProcessNode vendor_qti_init_shell->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"netutils_wrapper_478": "<ProcessNode vendor_qti_init_shell->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"netutils_wrapper_479": "<ProcessNode vendor_qti_init_shell->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_qti_480": "<ProcessNode init->vendor_qti /vendor/bin/qti <Cred u=radio g=radio sid=u:r:vendor_qti:s0 groups=usb,diag,inet>"}
+{"netutils_wrapper_481": "<ProcessNode vendor_qti->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_qrtr_482": "<ProcessNode init->vendor_qrtr /vendor/bin/qrtr-ns <Cred u=root g=root sid=u:r:vendor_qrtr:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_483": "<ProcessNode vendor_qrtr->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_qms_484": "<ProcessNode init->vendor_qms /vendor/bin/qms <Cred u=radio g=radio sid=u:r:vendor_qms:s0 groups=wifi,inet,net_admin,wakelock cap=CAP_BLOCK_SUSPEND,CAP_NET_ADMIN>"}
+{"netutils_wrapper_485": "<ProcessNode vendor_qms->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_qdcm-ss_486": "<ProcessNode init->vendor_qdcm-ss /vendor/bin/qdcmss <Cred u=system g=system sid=u:r:vendor_qdcm-ss:s0 groups=graphics>"}
+{"netutils_wrapper_487": "<ProcessNode vendor_qdcm-ss->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_qcomsysd_488": "<ProcessNode init->vendor_qcomsysd /vendor/bin/qcom-system-daemon <Cred u=root g=root sid=u:r:vendor_qcomsysd:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_489": "<ProcessNode vendor_qcomsysd->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_qccvendor_490": "<ProcessNode init->vendor_qccvendor /vendor/bin/qcc-vendor <Cred u=system g=nobody sid=u:r:vendor_qccvendor:s0 groups=system,radio,sdcard_rw,media_rw,sdcard_r,readproc>"}
+{"netutils_wrapper_491": "<ProcessNode vendor_qccvendor->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_per_proxy_492": "<ProcessNode init->vendor_per_proxy /vendor/bin/pm-proxy <Cred u=root g=root sid=u:r:vendor_per_proxy:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_493": "<ProcessNode vendor_per_proxy->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_per_mgr_494": "<ProcessNode init->vendor_per_mgr /vendor/bin/pm-service <Cred u=root g=root sid=u:r:vendor_per_mgr:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_495": "<ProcessNode vendor_per_mgr->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_pd_mapper_496": "<ProcessNode init->vendor_pd_mapper /vendor/bin/pd-mapper <Cred u=root g=root sid=u:r:vendor_pd_mapper:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_497": "<ProcessNode vendor_pd_mapper->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_netmgrd_498": "<ProcessNode init->vendor_netmgrd /vendor/bin/netmgrd <Cred u=root g=root sid=u:r:vendor_netmgrd:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_499": "<ProcessNode vendor_netmgrd->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_mdm_helper_500": "<ProcessNode init->vendor_mdm_helper /vendor/bin/ks <Cred u=root g=root sid=u:r:vendor_mdm_helper:s0 cap=EVERYTHING>"}
+{"vendor_mdm_helper_501": "<ProcessNode init->vendor_mdm_helper /vendor/bin/mdm_helper <Cred u=root g=root sid=u:r:vendor_mdm_helper:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_502": "<ProcessNode vendor_mdm_helper->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"netutils_wrapper_503": "<ProcessNode vendor_mdm_helper->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_location_504": "<ProcessNode init->vendor_location /vendor/bin/loc_launcher <Cred u=gps g=gps sid=u:r:vendor_location:s0>"}
+{"vendor_location_xtra_daemon_505": "<ProcessNode vendor_location->vendor_location_xtra_daemon /vendor/bin/xtra-daemon <Cred u=None g=None>"}
+{"netutils_wrapper_506": "<ProcessNode vendor_location_xtra_daemon->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_location_lowi_server_507": "<ProcessNode vendor_location->vendor_location_lowi_server /vendor/bin/lowi-server <Cred u=None g=None>"}
+{"netutils_wrapper_508": "<ProcessNode vendor_location_lowi_server->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"netutils_wrapper_509": "<ProcessNode vendor_location->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_irsc_util_510": "<ProcessNode init->vendor_irsc_util /vendor/bin/irsc_util <Cred u=root g=root sid=u:r:vendor_irsc_util:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_511": "<ProcessNode vendor_irsc_util->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_iod_512": "<ProcessNode init->vendor_iod /vendor/bin/iod <Cred u=root g=root sid=u:r:vendor_iod:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_513": "<ProcessNode vendor_iod->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_install_recovery_514": "<ProcessNode init->vendor_install_recovery /vendor/bin/install-recovery.sh <Cred u=root g=root sid=u:r:vendor_install_recovery:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_515": "<ProcessNode vendor_install_recovery->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_init-qcom-sensors-sh_516": "<ProcessNode init->vendor_init-qcom-sensors-sh /vendor/bin/init.qcom.sensors.sh <Cred u=root g=root sid=u:r:vendor_init-qcom-sensors-sh:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_517": "<ProcessNode vendor_init-qcom-sensors-sh->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_hal_trustedui_qti_518": "<ProcessNode init->vendor_hal_trustedui_qti /vendor/bin/hw/vendor.qti.hardware.trustedui@1.0-service-qti <Cred u=system g=system sid=u:r:vendor_hal_trustedui_qti:s0>"}
+{"netutils_wrapper_519": "<ProcessNode vendor_hal_trustedui_qti->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_hal_secureprocessor_qti_520": "<ProcessNode init->vendor_hal_secureprocessor_qti /vendor/bin/hw/vendor.qti.hardware.secureprocessor@1.0 <Cred u=system g=system sid=u:r:vendor_hal_secureprocessor_qti:s0>"}
+{"netutils_wrapper_521": "<ProcessNode vendor_hal_secureprocessor_qti->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_hal_qseecom_default_522": "<ProcessNode init->vendor_hal_qseecom_default /vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service <Cred u=system g=system sid=u:r:vendor_hal_qseecom_default:s0 groups=drmrpc>"}
+{"netutils_wrapper_523": "<ProcessNode vendor_hal_qseecom_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_hal_perf_default_524": "<ProcessNode init->vendor_hal_perf_default /vendor/bin/hw/vendor.qti.hardware.perf-hal-service <Cred u=root g=root sid=u:r:vendor_hal_perf_default:s0 groups=system,readproc cap=EVERYTHING>"}
+{"netutils_wrapper_525": "<ProcessNode vendor_hal_perf_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_hal_keymaster_qti_526": "<ProcessNode init->vendor_hal_keymaster_qti /vendor/bin/hw/android.hardware.keymaster@4.0-strongbox-service-qti <Cred u=system g=system sid=u:r:vendor_hal_keymaster_qti:s0 groups=drmrpc>"}
+{"netutils_wrapper_527": "<ProcessNode vendor_hal_keymaster_qti->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_hal_gnss_qti_528": "<ProcessNode init->vendor_hal_gnss_qti /vendor/bin/hw/android.hardware.gnss-aidl-service-qti <Cred u=gps g=system sid=u:r:vendor_hal_gnss_qti:s0 groups=radio,gps>"}
+{"netutils_wrapper_529": "<ProcessNode vendor_hal_gnss_qti->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_hal_capabilityconfigstore_qti_default_530": "<ProcessNode init->vendor_hal_capabilityconfigstore_qti_default /vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service <Cred u=system g=system sid=u:r:vendor_hal_capabilityconfigstore_qti_default:s0>"}
+{"netutils_wrapper_531": "<ProcessNode vendor_hal_capabilityconfigstore_qti_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_dspservice_532": "<ProcessNode init->vendor_dspservice /vendor/bin/dspservice <Cred u=system g=system sid=u:r:vendor_dspservice:s0 groups=wakelock cap=CAP_BLOCK_SUSPEND>"}
+{"netutils_wrapper_533": "<ProcessNode vendor_dspservice->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_diag-router_534": "<ProcessNode init->vendor_diag-router /vendor/bin/diag-router <Cred u=system g=system sid=u:r:vendor_diag-router:s0 cap=CAP_KILL>"}
+{"netutils_wrapper_535": "<ProcessNode vendor_diag-router->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_cdsprpcd_536": "<ProcessNode init->vendor_cdsprpcd /vendor/bin/cdsprpcd <Cred u=system g=system sid=u:r:vendor_cdsprpcd:s0>"}
+{"netutils_wrapper_537": "<ProcessNode vendor_cdsprpcd->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_boringssl_self_test_538": "<ProcessNode init->vendor_boringssl_self_test /vendor/bin/boringssl_self_test32 <Cred u=root g=root sid=u:r:vendor_boringssl_self_test:s0 cap=EVERYTHING>"}
+{"vendor_boringssl_self_test_539": "<ProcessNode init->vendor_boringssl_self_test /vendor/bin/boringssl_self_test64 <Cred u=root g=root sid=u:r:vendor_boringssl_self_test:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_540": "<ProcessNode vendor_boringssl_self_test->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"netutils_wrapper_541": "<ProcessNode vendor_boringssl_self_test->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_audioadsprpcd_542": "<ProcessNode init->vendor_audioadsprpcd /vendor/bin/audioadsprpcd <Cred u=media g=media sid=u:r:vendor_audioadsprpcd:s0>"}
+{"netutils_wrapper_543": "<ProcessNode vendor_audioadsprpcd->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_atfwd_544": "<ProcessNode init->vendor_atfwd /vendor/bin/ATFWD-daemon <Cred u=system g=system sid=u:r:vendor_atfwd:s0 groups=radio>"}
+{"netutils_wrapper_545": "<ProcessNode vendor_atfwd->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_adsprpcd_546": "<ProcessNode init->vendor_adsprpcd /vendor/bin/adsprpcd <Cred u=system g=media sid=u:r:vendor_adsprpcd:s0>"}
+{"netutils_wrapper_547": "<ProcessNode vendor_adsprpcd->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vendor_adpl_548": "<ProcessNode init->vendor_adpl /vendor/bin/adpl <Cred u=radio g=radio sid=u:r:vendor_adpl:s0 groups=usb,diag,inet>"}
+{"netutils_wrapper_549": "<ProcessNode vendor_adpl->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"vdc_550": "<ProcessNode init->vdc /system/bin/vdc <Cred u=root g=root sid=u:r:vdc:s0 cap=EVERYTHING>"}
+{"vaultkeeperd_551": "<ProcessNode init->vaultkeeperd /vendor/bin/vaultkeeperd <Cred u=system g=system sid=u:r:vaultkeeperd:s0>"}
+{"vaultkeeperd_552": "<ProcessNode init->vaultkeeperd /vendor/bin/vendor.samsung.hardware.security.vaultkeeper@2.0-service <Cred u=system g=system sid=u:r:vaultkeeperd:s0>"}
+{"netutils_wrapper_553": "<ProcessNode vaultkeeperd->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"netutils_wrapper_554": "<ProcessNode vaultkeeperd->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"usbd_555": "<ProcessNode init->usbd /system/bin/usbd <Cred u=root g=root sid=u:r:usbd:s0 cap=EVERYTHING>"}
+{"uncrypt_556": "<ProcessNode init->uncrypt /system/bin/uncrypt <Cred u=root g=root sid=u:r:uncrypt:s0 cap=EVERYTHING>"}
+{"ueventd_557": "<ProcessNode init->ueventd init <Cred u=root g=root sid=u:r:ueventd:s0 cap=EVERYTHING>"}
+{"vendor_vm_mgr_558": "<ProcessNode ueventd->vendor_vm_mgr /vendor/bin/vmmgr <Cred u=None g=None>"}
+{"tztsd_559": "<ProcessNode init->tztsd /vendor/bin/tzts_daemon <Cred u=system g=system sid=u:r:tztsd:s0>"}
+{"netutils_wrapper_560": "<ProcessNode tztsd->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"tzdaemon_561": "<ProcessNode init->tzdaemon /vendor/bin/tifs <Cred u=system g=system sid=u:r:tzdaemon:s0>"}
+{"tzdaemon_562": "<ProcessNode init->tzdaemon /vendor/bin/tzdaemon <Cred u=system g=system sid=u:r:tzdaemon:s0 groups=readproc>"}
+{"netutils_wrapper_563": "<ProcessNode tzdaemon->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"netutils_wrapper_564": "<ProcessNode tzdaemon->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"traced_probes_565": "<ProcessNode init->traced_probes /system/bin/traced_probes <Cred u=nobody g=nobody sid=u:r:traced_probes:s0 groups=log,readproc cap=CAP_DAC_READ_SEARCH>"}
+{"atrace_566": "<ProcessNode traced_probes->atrace /system/bin/atrace <Cred u=None g=None>"}
+{"traced_perf_567": "<ProcessNode init->traced_perf /system/bin/traced_perf <Cred u=nobody g=nobody sid=u:r:traced_perf:s0 groups=readproc cap=CAP_DAC_READ_SEARCH,CAP_KILL>"}
+{"traced_568": "<ProcessNode init->traced /system/bin/traced <Cred u=nobody g=nobody sid=u:r:traced:s0>"}
+{"toolbox_569": "<ProcessNode init->toolbox /system/bin/mini-keyctl <Cred u=root g=root sid=u:r:toolbox:s0 cap=EVERYTHING>"}
+{"toolbox_570": "<ProcessNode init->toolbox /system/bin/toolbox <Cred u=root g=root sid=u:r:toolbox:s0 cap=EVERYTHING>"}
+{"toolbox_571": "<ProcessNode init->toolbox /system/bin/toybox <Cred u=root g=root sid=u:r:toolbox:s0 cap=EVERYTHING>"}
+{"tombstoned_572": "<ProcessNode init->tombstoned /system/bin/tombstoned <Cred u=tombstoned g=system sid=u:r:tombstoned:s0>"}
+{"time_client_573": "<ProcessNode init->time_client /vendor/bin/time_client <Cred u=root g=root sid=u:r:time_client:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_574": "<ProcessNode time_client->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"tee_575": "<ProcessNode init->tee /vendor/bin/qseecomd <Cred u=root g=root sid=u:r:tee:s0 groups=drmrpc cap=EVERYTHING>"}
+{"netutils_wrapper_576": "<ProcessNode tee->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"system_suspend_577": "<ProcessNode init->system_suspend /system/bin/hw/android.system.suspend-service <Cred u=system g=system sid=u:r:system_suspend:s0 groups=wakelock cap=CAP_BLOCK_SUSPEND>"}
+{"surfaceflinger_578": "<ProcessNode init->surfaceflinger /system/bin/surfaceflinger <Cred u=system g=graphics sid=u:r:surfaceflinger:s0 groups=drmrpc,readproc cap=CAP_SYS_NICE,CAP_SYS_RESOURCE>"}
+{"storaged_579": "<ProcessNode init->storaged /system/bin/storaged <Cred u=root g=package_info sid=u:r:storaged:s0 cap=CAP_DAC_READ_SEARCH>"}
+{"snapuserd_580": "<ProcessNode init->snapuserd /system/bin/snapuserd <Cred u=root g=root sid=u:r:snapuserd:s0 cap=EVERYTHING>"}
+{"snapshotctl_581": "<ProcessNode init->snapshotctl /system/bin/snapshotctl <Cred u=root g=root sid=u:r:snapshotctl:s0 cap=EVERYTHING>"}
+{"snap_utility_582": "<ProcessNode init->snap_utility /vendor/bin/snap_utility_64 <Cred u=root g=root sid=u:r:snap_utility:s0 cap=EVERYTHING>"}
+{"snap_utility_583": "<ProcessNode init->snap_utility /vendor/bin/snaplite_utility_64 <Cred u=root g=root sid=u:r:snap_utility:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_584": "<ProcessNode snap_utility->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"netutils_wrapper_585": "<ProcessNode snap_utility->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"snap_hidl_586": "<ProcessNode init->snap_hidl /vendor/bin/hw/vendor.samsung.hardware.snap-service <Cred u=root g=root sid=u:r:snap_hidl:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_587": "<ProcessNode snap_hidl->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"shell_588": "<ProcessNode init->shell /system/bin/sh <Cred u=shell g=shell sid=u:r:shell:s0 groups=log,readproc>"}
+{"servicemanager_589": "<ProcessNode init->servicemanager /system/bin/servicemanager <Cred u=system g=system sid=u:r:servicemanager:s0 groups=readproc>"}
+{"sec_system_init_shell_590": "<ProcessNode init->sec_system_init_shell /system/bin/sh <Cred u=shell g=shell sid=u:r:sec_system_init_shell:s0 groups=log,readproc>"}
+{"rss_hwm_reset_591": "<ProcessNode init->rss_hwm_reset /system/bin/rss_hwm_reset <Cred u=root g=root sid=u:r:rss_hwm_reset:s0 cap=EVERYTHING>"}
+{"rild_592": "<ProcessNode init->rild /vendor/bin/hw/rild <Cred u=radio g=radio sid=u:r:rild:s0 groups=system,audio,log,vpn,drmrpc,cache,inet,net_admin,readproc,wakelock,misc cap=CAP_BLOCK_SUSPEND,CAP_SYS_TIME,CAP_CHOWN,CAP_NET_RAW,CAP_SYS_ADMIN,CAP_NET_ADMIN>"}
+{"netutils_wrapper_593": "<ProcessNode rild->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"recovery_persist_594": "<ProcessNode init->recovery_persist /system/bin/recovery-persist <Cred u=root g=root sid=u:r:recovery_persist:s0 cap=EVERYTHING>"}
+{"racoon_595": "<ProcessNode init->racoon /system/bin/racoon <Cred u=root g=root sid=u:r:racoon:s0 cap=EVERYTHING>"}
+{"qti_display_boot_596": "<ProcessNode init->qti_display_boot /vendor/bin/init.qti.display_boot.sh <Cred u=root g=root sid=u:r:qti_display_boot:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_597": "<ProcessNode qti_display_boot->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"perfetto_598": "<ProcessNode init->perfetto /system/bin/perfetto <Cred u=root g=root sid=u:r:perfetto:s0 cap=EVERYTHING>"}
+{"odsign_599": "<ProcessNode init->odsign /system/bin/odsign <Cred u=root g=system sid=u:r:odsign:s0 cap=EVERYTHING>"}
+{"fsverity_init_600": "<ProcessNode odsign->fsverity_init /system/bin/fsverity_init <Cred u=None g=None>"}
+{"netd_601": "<ProcessNode init->netd /system/bin/netd <Cred u=root g=root sid=u:r:netd:s0 groups=net_admin cap=CAP_CHOWN,CAP_KILL,CAP_NET_BIND_SERVICE,CAP_DAC_READ_SEARCH,CAP_SETUID,CAP_NET_RAW,CAP_FOWNER,CAP_DAC_OVERRIDE,CAP_SETGID,CAP_IPC_LOCK,CAP_NET_ADMIN>"}
+{"dnsmasq_602": "<ProcessNode netd->dnsmasq /system/bin/dnsmasq <Cred u=None g=None>"}
+{"mtp_603": "<ProcessNode init->mtp /system/bin/mtpd <Cred u=root g=root sid=u:r:mtp:s0 cap=EVERYTHING>"}
+{"ppp_604": "<ProcessNode mtp->ppp /system/bin/pppd <Cred u=None g=None>"}
+{"mtectrl_605": "<ProcessNode init->mtectrl /system/bin/mtectrl <Cred u=root g=root sid=u:r:mtectrl:s0 cap=EVERYTHING>"}
+{"mm_events_606": "<ProcessNode init->mm_events /system/bin/mm_events <Cred u=root g=root sid=u:r:mm_events:s0 cap=EVERYTHING>"}
+{"perfetto_607": "<ProcessNode mm_events->perfetto /system/bin/perfetto <Cred u=None g=None>"}
+{"mfgloader_608": "<ProcessNode init->mfgloader /vendor/bin/hw/mfgloader <Cred u=root g=root sid=u:r:mfgloader:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_609": "<ProcessNode mfgloader->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"mediaserver_610": "<ProcessNode init->mediaserver /system/bin/mediaserver <Cred u=media g=audio sid=u:r:mediaserver:s0 groups=camera,drmrpc,mediadrm,net_bt_admin,net_bt,inet,net_bw_acct>"}
+{"mediametrics_611": "<ProcessNode init->mediametrics /system/bin/mediametrics <Cred u=media g=media sid=u:r:mediametrics:s0>"}
+{"mediaextractor_612": "<ProcessNode init->mediaextractor /system/bin/mediaextractor <Cred u=mediaex g=drmrpc sid=u:r:mediaextractor:s0 groups=mediadrm>"}
+{"mediacodec_613": "<ProcessNode init->mediacodec /vendor/bin/hw/android.hardware.media.omx@1.0-service <Cred u=mediacodec g=camera sid=u:r:mediacodec:s0 groups=drmrpc,mediadrm>"}
+{"mediacodec_614": "<ProcessNode init->mediacodec /vendor/bin/hw/samsung.software.media.c2@1.0-service <Cred u=mediacodec g=camera sid=u:r:mediacodec:s0 groups=drmrpc,mediadrm>"}
+{"mediacodec_615": "<ProcessNode init->mediacodec /vendor/bin/hw/vendor.qti.media.c2@1.0-service <Cred u=mediacodec g=mediadrm sid=u:r:mediacodec:s0 groups=system,camera,drmrpc>"}
+{"mediacodec_616": "<ProcessNode init->mediacodec /vendor/bin/hw/vendor.qti.media.c2audio@1.0-service <Cred u=mediacodec g=mediadrm sid=u:r:mediacodec:s0 groups=system,camera,drmrpc>"}
+{"netutils_wrapper_617": "<ProcessNode mediacodec->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"netutils_wrapper_618": "<ProcessNode mediacodec->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"netutils_wrapper_619": "<ProcessNode mediacodec->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"netutils_wrapper_620": "<ProcessNode mediacodec->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"mdnsd_621": "<ProcessNode init->mdnsd /system/bin/mdnsd <Cred u=root g=root sid=u:r:mdnsd:s0 cap=EVERYTHING>"}
+{"macloader_622": "<ProcessNode init->macloader /vendor/bin/hw/macloader <Cred u=root g=root sid=u:r:macloader:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_623": "<ProcessNode macloader->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"lpdumpd_624": "<ProcessNode init->lpdumpd /system/bin/lpdumpd <Cred u=root g=root sid=u:r:lpdumpd:s0 cap=EVERYTHING>"}
+{"logd_625": "<ProcessNode init->logd /system/bin/logd <Cred u=logd g=logd sid=u:r:logd:s0 groups=system,package_info,readproc cap=CAP_SYSLOG,CAP_AUDIT_CONTROL>"}
+{"lmkd_626": "<ProcessNode init->lmkd /system/bin/lmkd <Cred u=nobody g=nobody sid=u:r:lmkd:s0 groups=system,readproc cap=CAP_KILL,CAP_SYS_NICE,CAP_DAC_OVERRIDE,CAP_IPC_LOCK,CAP_SYS_RESOURCE>"}
+{"keystore_627": "<ProcessNode init->keystore /system/bin/keystore2 <Cred u=keystore g=keystore sid=u:r:keystore:s0 groups=log,readproc>"}
+{"installd_628": "<ProcessNode init->installd /system/bin/installd <Cred u=root g=root sid=u:r:installd:s0 cap=CAP_CHOWN,CAP_KILL,CAP_DAC_READ_SEARCH,CAP_SETUID,CAP_FSETID,CAP_FOWNER,CAP_DAC_OVERRIDE,CAP_SYS_ADMIN,CAP_SETGID>"}
+{"viewcompiler_629": "<ProcessNode installd->viewcompiler /system/bin/viewcompiler <Cred u=None g=None>"}
+{"migrate_legacy_obb_data_630": "<ProcessNode installd->migrate_legacy_obb_data /system/bin/migrate_legacy_obb_data <Cred u=None g=None>"}
+{"idmap_631": "<ProcessNode installd->idmap /system/bin/idmap2 <Cred u=None g=None>"}
+{"idmap_632": "<ProcessNode installd->idmap /system/bin/idmap2d <Cred u=None g=None>"}
+{"incidentd_633": "<ProcessNode init->incidentd /system/bin/incidentd <Cred u=incidentd g=incidentd sid=u:r:incidentd:s0 groups=log,readproc cap=CAP_SYS_PTRACE,CAP_KILL>"}
+{"incident_helper_634": "<ProcessNode incidentd->incident_helper /system/bin/incident_helper <Cred u=None g=None>"}
+{"idmap_635": "<ProcessNode idmap->idmap /system/bin/idmap2 <Cred u=system g=system sid=u:r:idmap:s0>"}
+{"idmap_636": "<ProcessNode init->idmap /system/bin/idmap2d <Cred u=system g=system sid=u:r:idmap:s0>"}
+{"hwservicemanager_637": "<ProcessNode init->hwservicemanager /system/bin/hwservicemanager <Cred u=system g=system sid=u:r:hwservicemanager:s0 groups=readproc>"}
+{"hermesd_638": "<ProcessNode init->hermesd /vendor/bin/hermesd <Cred u=system g=system sid=u:r:hermesd:s0 cap=CAP_WAKE_ALARM>"}
+{"netutils_wrapper_639": "<ProcessNode hermesd->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"heapprofd_640": "<ProcessNode init->heapprofd /system/bin/heapprofd <Cred u=nobody g=nobody sid=u:r:heapprofd:s0 groups=readproc cap=CAP_DAC_READ_SEARCH,CAP_KILL>"}
+{"hal_wvkprov_default_641": "<ProcessNode init->hal_wvkprov_default /vendor/bin/hw/vendor.samsung.hardware.security.widevine.keyprov-service <Cred u=root g=root sid=u:r:hal_wvkprov_default:s0 cap=EVERYTHING>"}
+{"vendor_shell_642": "<ProcessNode hal_wvkprov_default->vendor_shell /vendor/bin/sh <Cred u=None g=None>"}
+{"netutils_wrapper_643": "<ProcessNode hal_wvkprov_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_wsm_default_644": "<ProcessNode init->hal_wsm_default /vendor/bin/hw/vendor.samsung.hardware.security.wsm-service <Cred u=root g=root sid=u:r:hal_wsm_default:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_645": "<ProcessNode hal_wsm_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_wifi_supplicant_default_646": "<ProcessNode init->hal_wifi_supplicant_default /vendor/bin/hw/wpa_supplicant <Cred u=root g=root sid=u:r:hal_wifi_supplicant_default:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_647": "<ProcessNode hal_wifi_supplicant_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_wifi_hostapd_default_648": "<ProcessNode init->hal_wifi_hostapd_default /vendor/bin/hw/hostapd <Cred u=root g=root sid=u:r:hal_wifi_hostapd_default:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_649": "<ProcessNode hal_wifi_hostapd_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_wifi_default_650": "<ProcessNode init->hal_wifi_default /vendor/bin/hw/android.hardware.wifi@1.0-service <Cred u=wifi g=wifi sid=u:r:hal_wifi_default:s0 groups=gps cap=CAP_NET_RAW,CAP_SYS_MODULE,CAP_NET_ADMIN>"}
+{"hal_wifi_default_651": "<ProcessNode init->hal_wifi_default /vendor/bin/hw/vendor.samsung.hardware.wifi@2.0-service <Cred u=wifi g=wifi sid=u:r:hal_wifi_default:s0 groups=gps cap=CAP_NET_RAW,CAP_SYS_MODULE,CAP_NET_ADMIN>"}
+{"netutils_wrapper_652": "<ProcessNode hal_wifi_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"netutils_wrapper_653": "<ProcessNode hal_wifi_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_vibrator_default_654": "<ProcessNode init->hal_vibrator_default /vendor/bin/hw/vendor.samsung.hardware.vibrator-service <Cred u=system g=system sid=u:r:hal_vibrator_default:s0>"}
+{"netutils_wrapper_655": "<ProcessNode hal_vibrator_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_usb_default_656": "<ProcessNode init->hal_usb_default /vendor/bin/hw/android.hardware.usb@1.3-service.coral <Cred u=root g=root sid=u:r:hal_usb_default:s0 groups=system,mtp,shell cap=EVERYTHING>"}
+{"netutils_wrapper_657": "<ProcessNode hal_usb_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_ucmtlc_default_658": "<ProcessNode init->hal_ucmtlc_default /vendor/bin/hw/vendor.samsung.hardware.tlc.ucm@2.0-service <Cred u=system g=system sid=u:r:hal_ucmtlc_default:s0>"}
+{"netutils_wrapper_659": "<ProcessNode hal_ucmtlc_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_thermal_default_660": "<ProcessNode init->hal_thermal_default /vendor/bin/hw/vendor.samsung.hardware.thermal@1.0-service <Cred u=system g=system sid=u:r:hal_thermal_default:s0>"}
+{"netutils_wrapper_661": "<ProcessNode hal_thermal_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_tetheroffload_default_662": "<ProcessNode init->hal_tetheroffload_default /vendor/bin/ipacm <Cred u=radio g=radio sid=u:r:hal_tetheroffload_default:s0 groups=inet>"}
+{"hal_tetheroffload_default_663": "<ProcessNode init->hal_tetheroffload_default /vendor/bin/ipacm-diag <Cred u=radio g=radio sid=u:r:hal_tetheroffload_default:s0 groups=diag>"}
+{"netutils_wrapper_664": "<ProcessNode hal_tetheroffload_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"netutils_wrapper_665": "<ProcessNode hal_tetheroffload_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_snapsec_default_666": "<ProcessNode init->hal_snapsec_default /vendor/bin/hw/vendor.samsung.hardware.tlc.snap@1.0-service <Cred u=root g=root sid=u:r:hal_snapsec_default:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_667": "<ProcessNode hal_snapsec_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_skpm_default_668": "<ProcessNode init->hal_skpm_default /vendor/bin/hw/vendor.samsung.hardware.security.skpm@1.0-service <Cred u=root g=root sid=u:r:hal_skpm_default:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_669": "<ProcessNode hal_skpm_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_sensors_default_670": "<ProcessNode init->hal_sensors_default /vendor/bin/hw/android.hardware.sensors-service.multihal <Cred u=system g=system sid=u:r:hal_sensors_default:s0 groups=wakelock cap=CAP_BLOCK_SUSPEND>"}
+{"netutils_wrapper_671": "<ProcessNode hal_sensors_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_sem_default_672": "<ProcessNode init->hal_sem_default /vendor/bin/hw/vendor.samsung.hardware.security.sem@1.0-service <Cred u=root g=root sid=u:r:hal_sem_default:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_673": "<ProcessNode hal_sem_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_securesnap_default_674": "<ProcessNode init->hal_securesnap_default /vendor/bin/hw/vendor.samsung.hardware.securesnap-service <Cred u=root g=root sid=u:r:hal_securesnap_default:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_675": "<ProcessNode hal_securesnap_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_secure_element_default_676": "<ProcessNode init->hal_secure_element_default /vendor/bin/hw/android.hardware.secure_element@1.2-service <Cred u=system g=system sid=u:r:hal_secure_element_default:s0>"}
+{"netutils_wrapper_677": "<ProcessNode hal_secure_element_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_sec_inputdev_default_678": "<ProcessNode init->hal_sec_inputdev_default /vendor/bin/hw/vendor.samsung.hardware.sysinput@1.3-service <Cred u=system g=system sid=u:r:hal_sec_inputdev_default:s0>"}
+{"netutils_wrapper_679": "<ProcessNode hal_sec_inputdev_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_qchdcpkprov_default_680": "<ProcessNode init->hal_qchdcpkprov_default /vendor/bin/hw/vendor.samsung.hardware.security.hdcp.keyprovisioning@1.0-service <Cred u=root g=root sid=u:r:hal_qchdcpkprov_default:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_681": "<ProcessNode hal_qchdcpkprov_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_proca_default_682": "<ProcessNode init->hal_proca_default /vendor/bin/vendor.samsung.hardware.security.proca@2.0-service <Cred u=system g=system sid=u:r:hal_proca_default:s0>"}
+{"netutils_wrapper_683": "<ProcessNode hal_proca_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_power_default_684": "<ProcessNode init->hal_power_default /vendor/bin/hw/android.hardware.power.samsung-service <Cred u=system g=system sid=u:r:hal_power_default:s0>"}
+{"netutils_wrapper_685": "<ProcessNode hal_power_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_payment_default_686": "<ProcessNode init->hal_payment_default /vendor/bin/hw/vendor.samsung.hardware.tlc.payment@1.0-service <Cred u=system g=system sid=u:r:hal_payment_default:s0>"}
+{"netutils_wrapper_687": "<ProcessNode hal_payment_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_nfc_default_688": "<ProcessNode init->hal_nfc_default /vendor/bin/hw/nxp.android.hardware.nfc@1.2-service <Cred u=root g=root sid=u:r:hal_nfc_default:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_689": "<ProcessNode hal_nfc_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_mpp_default_690": "<ProcessNode init->hal_mpp_default /vendor/bin/hw/mppserver <Cred u=root g=root sid=u:r:hal_mpp_default:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_691": "<ProcessNode hal_mpp_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_mpostui_default_692": "<ProcessNode init->hal_mpostui_default /vendor/bin/hw/vendor.samsung.hardware.tlc.mpos_tui@1.0-service <Cred u=root g=root sid=u:r:hal_mpostui_default:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_693": "<ProcessNode hal_mpostui_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_memtrack_default_694": "<ProcessNode init->hal_memtrack_default /vendor/bin/hw/vendor.qti.hardware.memtrack-service <Cred u=nobody g=system sid=u:r:hal_memtrack_default:s0>"}
+{"netutils_wrapper_695": "<ProcessNode hal_memtrack_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_light_default_696": "<ProcessNode init->hal_light_default /vendor/bin/hw/vendor.samsung.hardware.light-service <Cred u=system g=system sid=u:r:hal_light_default:s0>"}
+{"netutils_wrapper_697": "<ProcessNode hal_light_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_kgta_default_698": "<ProcessNode init->hal_kgta_default /vendor/bin/hw/vendor.samsung.hardware.tlc.kg@1.1-service <Cred u=root g=root sid=u:r:hal_kgta_default:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_699": "<ProcessNode hal_kgta_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_keymint_default_700": "<ProcessNode init->hal_keymint_default /vendor/bin/hw/android.hardware.security.keymint-service <Cred u=system g=system sid=u:r:hal_keymint_default:s0 groups=drmrpc>"}
+{"netutils_wrapper_701": "<ProcessNode hal_keymint_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_iccc_default_702": "<ProcessNode init->hal_iccc_default /vendor/bin/hw/vendor.samsung.hardware.tlc.iccc@1.0-service <Cred u=root g=root sid=u:r:hal_iccc_default:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_703": "<ProcessNode hal_iccc_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_hyper_default_704": "<ProcessNode init->hal_hyper_default /vendor/bin/hw/vendor.samsung.hardware.hyper-service <Cred u=system g=system sid=u:r:hal_hyper_default:s0>"}
+{"netutils_wrapper_705": "<ProcessNode hal_hyper_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_health_default_706": "<ProcessNode init->hal_health_default /vendor/bin/hw/vendor.samsung.hardware.health-service <Cred u=system g=system sid=u:r:hal_health_default:s0 cap=CAP_BLOCK_SUSPEND,CAP_WAKE_ALARM>"}
+{"netutils_wrapper_707": "<ProcessNode hal_health_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_hdm_default_708": "<ProcessNode init->hal_hdm_default /vendor/bin/hw/vendor.samsung.hardware.tlc.hdm@1.1-service <Cred u=root g=root sid=u:r:hal_hdm_default:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_709": "<ProcessNode hal_hdm_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_hdcp_default_710": "<ProcessNode init->hal_hdcp_default /vendor/bin/vendor.samsung.hardware.security.hdcp.wifidisplay-service <Cred u=system g=system sid=u:r:hal_hdcp_default:s0>"}
+{"netutils_wrapper_711": "<ProcessNode hal_hdcp_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_graphics_composer_default_712": "<ProcessNode init->hal_graphics_composer_default /vendor/bin/hw/vendor.qti.hardware.display.composer-service <Cred u=system g=graphics sid=u:r:hal_graphics_composer_default:s0 groups=drmrpc cap=CAP_SYS_NICE,CAP_SYS_RESOURCE>"}
+{"netutils_wrapper_713": "<ProcessNode hal_graphics_composer_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_graphics_allocator_default_714": "<ProcessNode init->hal_graphics_allocator_default /vendor/bin/hw/vendor.qti.hardware.display.allocator-service <Cred u=system g=graphics sid=u:r:hal_graphics_allocator_default:s0 groups=drmrpc cap=CAP_SYS_NICE>"}
+{"netutils_wrapper_715": "<ProcessNode hal_graphics_allocator_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_gatekeeper_default_716": "<ProcessNode init->hal_gatekeeper_default /vendor/bin/hw/android.hardware.gatekeeper@1.0-service <Cred u=system g=system sid=u:r:hal_gatekeeper_default:s0>"}
+{"netutils_wrapper_717": "<ProcessNode hal_gatekeeper_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_frcmc_default_718": "<ProcessNode init->hal_frcmc_default /vendor/bin/hw/vendor.samsung.hardware.frcmc-service <Cred u=root g=root sid=u:r:hal_frcmc_default:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_719": "<ProcessNode hal_frcmc_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_fkey_default_720": "<ProcessNode init->hal_fkey_default /vendor/bin/vendor.samsung.hardware.security.fkeymaster-service <Cred u=system g=system sid=u:r:hal_fkey_default:s0>"}
+{"netutils_wrapper_721": "<ProcessNode hal_fkey_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_fingerprint_default_722": "<ProcessNode init->hal_fingerprint_default /vendor/bin/hw/vendor.samsung.hardware.biometrics.fingerprint-service <Cred u=system g=system sid=u:r:hal_fingerprint_default:s0 groups=input>"}
+{"netutils_wrapper_723": "<ProcessNode hal_fingerprint_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_face_default_724": "<ProcessNode init->hal_face_default /vendor/bin/hw/vendor.samsung.hardware.biometrics.face-service <Cred u=system g=system sid=u:r:hal_face_default:s0 groups=input,uhid>"}
+{"netutils_wrapper_725": "<ProcessNode hal_face_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_engmode_default_726": "<ProcessNode init->hal_engmode_default /vendor/bin/vendor.samsung.hardware.security.engmode@1.0-service <Cred u=system g=system sid=u:r:hal_engmode_default:s0>"}
+{"netutils_wrapper_727": "<ProcessNode hal_engmode_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_dumpstate_default_728": "<ProcessNode init->hal_dumpstate_default /vendor/bin/hw/android.hardware.dumpstate-service <Cred u=root g=root sid=u:r:hal_dumpstate_default:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_729": "<ProcessNode hal_dumpstate_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_drm_widevine_730": "<ProcessNode init->hal_drm_widevine /vendor/bin/hw/android.hardware.drm-service.widevine <Cred u=media g=media sid=u:r:hal_drm_widevine:s0 groups=system,drmrpc,mediadrm>"}
+{"netutils_wrapper_731": "<ProcessNode hal_drm_widevine->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_drm_clearkey_aidl_732": "<ProcessNode init->hal_drm_clearkey_aidl /vendor/bin/hw/android.hardware.drm-service.clearkey <Cred u=media g=mediadrm sid=u:r:hal_drm_clearkey_aidl:s0 groups=drmrpc>"}
+{"netutils_wrapper_733": "<ProcessNode hal_drm_clearkey_aidl->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_drk_default_734": "<ProcessNode init->hal_drk_default /vendor/bin/hw/vendor.samsung.hardware.security.drk@2.0-service <Cred u=root g=root sid=u:r:hal_drk_default:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_735": "<ProcessNode hal_drk_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_display_demura_default_736": "<ProcessNode init->hal_display_demura_default /vendor/bin/hw/vendor.qti.hardware.display.demura-service <Cred u=root g=root sid=u:r:hal_display_demura_default:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_737": "<ProcessNode hal_display_demura_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_ddar_default_738": "<ProcessNode init->hal_ddar_default /vendor/bin/hw/vendor.samsung.hardware.tlc.ddar@1.0-service <Cred u=root g=root sid=u:r:hal_ddar_default:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_739": "<ProcessNode hal_ddar_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_converter_default_740": "<ProcessNode init->hal_converter_default /vendor/bin/hw/vendor.samsung.hardware.media.converter@1.0-service <Cred u=system g=system sid=u:r:hal_converter_default:s0>"}
+{"netutils_wrapper_741": "<ProcessNode hal_converter_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_cas_default_742": "<ProcessNode init->hal_cas_default /vendor/bin/hw/android.hardware.cas@1.2-service-lazy <Cred u=root g=root sid=u:r:hal_cas_default:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_743": "<ProcessNode hal_cas_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_camera_default_744": "<ProcessNode init->hal_camera_default /vendor/bin/hw/android.hardware.camera.provider@2.7-external-service <Cred u=cameraserver g=audio sid=u:r:hal_camera_default:s0 groups=input,camera,usb,drmrpc cap=CAP_SYS_NICE>"}
+{"hal_camera_default_745": "<ProcessNode init->hal_camera_default /vendor/bin/hw/vendor.samsung.hardware.camera.provider-service_64 <Cred u=cameraserver g=audio sid=u:r:hal_camera_default:s0 groups=system,input,camera,media,sdcard_rw,media_rw,drmrpc cap=CAP_SYS_NICE>"}
+{"netutils_wrapper_746": "<ProcessNode hal_camera_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"netutils_wrapper_747": "<ProcessNode hal_camera_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_bluetooth_default_748": "<ProcessNode init->hal_bluetooth_default /vendor/bin/hw/android.hardware.bluetooth@1.1-service-qti <Cred u=bluetooth g=bluetooth sid=u:r:hal_bluetooth_default:s0 groups=system,net_raw,wakelock cap=CAP_BLOCK_SUSPEND,CAP_NET_ADMIN>"}
+{"netutils_wrapper_749": "<ProcessNode hal_bluetooth_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_blockchain_default_750": "<ProcessNode init->hal_blockchain_default /vendor/bin/hw/vendor.samsung.hardware.tlc.blockchain@1.0-service <Cred u=system g=system sid=u:r:hal_blockchain_default:s0>"}
+{"netutils_wrapper_751": "<ProcessNode hal_blockchain_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_authfw_default_752": "<ProcessNode init->hal_authfw_default /vendor/bin/hw/vendor.samsung.hardware.authfw@1.0-service <Cred u=root g=root sid=u:r:hal_authfw_default:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_753": "<ProcessNode hal_authfw_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_audio_default_754": "<ProcessNode init->hal_audio_default /vendor/bin/hw/android.hardware.audio.service <Cred u=audioserver g=audio sid=u:r:hal_audio_default:s0 groups=camera,media,drmrpc,mediadrm,net_bt_admin,net_bt,inet,net_bw_acct,wakelock cap=CAP_BLOCK_SUSPEND,CAP_SYS_NICE>"}
+{"hal_audio_default_755": "<ProcessNode hal_audio_default->hal_audio_default /vendor/bin/hw/android.hardware.audio.service_64 <Cred u=audioserver g=audio sid=u:r:hal_audio_default:s0 groups=camera,media,drmrpc,mediadrm,net_bt_admin,net_bt,inet,net_bw_acct,wakelock>"}
+{"netutils_wrapper_756": "<ProcessNode hal_audio_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"netutils_wrapper_757": "<ProcessNode hal_audio_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_atrace_default_758": "<ProcessNode init->hal_atrace_default /vendor/bin/hw/android.hardware.atrace@1.0-service <Cred u=system g=system sid=u:r:hal_atrace_default:s0>"}
+{"netutils_wrapper_759": "<ProcessNode hal_atrace_default->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"hal_allocator_default_760": "<ProcessNode init->hal_allocator_default /system/bin/hw/android.hidl.allocator@1.0-service <Cred u=system g=system sid=u:r:hal_allocator_default:s0>"}
+{"gsid_761": "<ProcessNode init->gsid /system/bin/gsid <Cred u=root g=root sid=u:r:gsid:s0 cap=EVERYTHING>"}
+{"gpuservice_762": "<ProcessNode init->gpuservice /system/bin/gpuservice <Cred u=nobody g=graphics sid=u:r:gpuservice:s0>"}
+{"gatekeeperd_763": "<ProcessNode init->gatekeeperd /system/bin/gatekeeperd <Cred u=system g=system sid=u:r:gatekeeperd:s0>"}
+{"fsverity_init_764": "<ProcessNode init->fsverity_init /system/bin/fsverity_init <Cred u=root g=root sid=u:r:fsverity_init:s0 cap=EVERYTHING>"}
+{"fsck_765": "<ProcessNode init->fsck /system/bin/e2fsck <Cred u=root g=root sid=u:r:fsck:s0 cap=EVERYTHING>"}
+{"fsck_766": "<ProcessNode init->fsck /system/bin/fsck.exfat <Cred u=root g=root sid=u:r:fsck:s0 cap=EVERYTHING>"}
+{"fsck_767": "<ProcessNode init->fsck /system/bin/fsck.f2fs <Cred u=root g=root sid=u:r:fsck:s0 cap=EVERYTHING>"}
+{"fsck_768": "<ProcessNode init->fsck /system/bin/fsck_msdos <Cred u=root g=root sid=u:r:fsck:s0 cap=EVERYTHING>"}
+{"fsck_769": "<ProcessNode init->fsck /system/bin/newfs_msdos <Cred u=root g=root sid=u:r:fsck:s0 cap=EVERYTHING>"}
+{"fsck_770": "<ProcessNode init->fsck /system/bin/resize2fs <Cred u=root g=root sid=u:r:fsck:s0 cap=EVERYTHING>"}
+{"fsck_771": "<ProcessNode init->fsck /system/bin/tune2fs <Cred u=root g=root sid=u:r:fsck:s0 cap=EVERYTHING>"}
+{"flags_health_check_772": "<ProcessNode init->flags_health_check /system/bin/flags_health_check <Cred u=root g=root sid=u:r:flags_health_check:s0 cap=EVERYTHING>"}
+{"factory_ssc_773": "<ProcessNode init->factory_ssc /vendor/bin/factory.ssc <Cred u=root g=root sid=u:r:factory_ssc:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_774": "<ProcessNode factory_ssc->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"extra_free_kbytes_775": "<ProcessNode init->extra_free_kbytes /system/bin/extra_free_kbytes.sh <Cred u=root g=root sid=u:r:extra_free_kbytes:s0 cap=EVERYTHING>"}
+{"emservice_776": "<ProcessNode init->emservice /vendor/bin/emservice <Cred u=system g=system sid=u:r:emservice:s0>"}
+{"netutils_wrapper_777": "<ProcessNode emservice->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"e2fs_778": "<ProcessNode init->e2fs /system/bin/e2fsdroid <Cred u=root g=root sid=u:r:e2fs:s0 cap=EVERYTHING>"}
+{"e2fs_779": "<ProcessNode init->e2fs /system/bin/make_f2fs <Cred u=root g=root sid=u:r:e2fs:s0 cap=EVERYTHING>"}
+{"e2fs_780": "<ProcessNode init->e2fs /system/bin/mke2fs <Cred u=root g=root sid=u:r:e2fs:s0 cap=EVERYTHING>"}
+{"e2fs_781": "<ProcessNode init->e2fs /system/bin/sload_f2fs <Cred u=root g=root sid=u:r:e2fs:s0 cap=EVERYTHING>"}
+{"dumpstate_782": "<ProcessNode init->dumpstate /system/bin/dumpstate <Cred u=root g=root sid=u:r:dumpstate:s0 cap=EVERYTHING>"}
+{"drmserver_783": "<ProcessNode init->drmserver /system/bin/drmserver <Cred u=drm g=drm sid=u:r:drmserver:s0 groups=system,drmrpc,inet,readproc>"}
+{"dmesgd_784": "<ProcessNode init->dmesgd /system/bin/dmesgd <Cred u=root g=root sid=u:r:dmesgd:s0 cap=EVERYTHING>"}
+{"credstore_785": "<ProcessNode init->credstore /system/bin/credstore <Cred u=nobody g=nobody sid=u:r:credstore:s0>"}
+{"cnss_dumpcollector_786": "<ProcessNode init->cnss_dumpcollector /vendor/bin/cnss_dumpcollector <Cred u=root g=root sid=u:r:cnss_dumpcollector:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_787": "<ProcessNode cnss_dumpcollector->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"cassd_788": "<ProcessNode init->cassd /vendor/bin/cass <Cred u=system g=radio sid=u:r:cassd:s0 groups=system,wakelock cap=CAP_BLOCK_SUSPEND>"}
+{"netutils_wrapper_789": "<ProcessNode cassd->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"cameraserver_790": "<ProcessNode init->cameraserver /system/bin/cameraserver <Cred u=cameraserver g=audio sid=u:r:cameraserver:s0 groups=input,camera,drmrpc>"}
+{"btcoex_cont_791": "<ProcessNode init->btcoex_cont /vendor/bin/btcoex_cont_config <Cred u=root g=root sid=u:r:btcoex_cont:s0 cap=EVERYTHING>"}
+{"netutils_wrapper_792": "<ProcessNode btcoex_cont->netutils_wrapper /system/bin/netutils-wrapper-1.0 <Cred u=None g=None>"}
+{"bpfloader_793": "<ProcessNode init->bpfloader /system/bin/bpfloader <Cred u=root g=root sid=u:r:bpfloader:s0 cap=EVERYTHING>"}
+{"bpfloader_794": "<ProcessNode init->bpfloader /system/bin/btfloader <Cred u=root g=root sid=u:r:bpfloader:s0 cap=EVERYTHING>"}
+{"boringssl_self_test_795": "<ProcessNode init->boringssl_self_test /system/bin/boringssl_self_test32 <Cred u=nobody g=root sid=u:r:boringssl_self_test:s0>"}
+{"boringssl_self_test_796": "<ProcessNode init->boringssl_self_test /system/bin/boringssl_self_test64 <Cred u=nobody g=root sid=u:r:boringssl_self_test:s0>"}
+{"bootstat_797": "<ProcessNode init->bootstat /system/bin/bootstat <Cred u=root g=root sid=u:r:bootstat:s0 cap=EVERYTHING>"}
+{"bootanim_798": "<ProcessNode init->bootanim /system/bin/bootanimation <Cred u=root g=root sid=u:r:bootanim:s0 cap=EVERYTHING>"}
+{"blank_screen_799": "<ProcessNode init->blank_screen /system/bin/blank_screen <Cred u=root g=root sid=u:r:blank_screen:s0 cap=EVERYTHING>"}
+{"auditctl_800": "<ProcessNode init->auditctl /system/bin/auditctl <Cred u=root g=root sid=u:r:auditctl:s0 cap=EVERYTHING>"}
+{"audioserver_801": "<ProcessNode init->audioserver /system/bin/audioserver <Cred u=audioserver g=audio sid=u:r:audioserver:s0 groups=camera,log,media,drmrpc,mediadrm,net_bt_admin,net_bt,net_bw_acct,wakelock cap=CAP_BLOCK_SUSPEND>"}
+{"apexd_802": "<ProcessNode init->apexd /system/bin/apexd <Cred u=root g=root sid=u:r:apexd:s0 cap=EVERYTHING>"}

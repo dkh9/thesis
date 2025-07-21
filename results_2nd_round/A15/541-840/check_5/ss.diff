@@ -1,0 +1,8 @@
+{
+  "left": [
+    "file:vendor_configs_file_vendor_etc_secnvm_k250a_41000004_c.img -> process:system_server_65"
+  ],
+  "right": [
+    "file:vendor_configs_file_vendor_etc_secnvm_k250a_41000005_c.img -> process:system_server_65"
+  ]
+}
