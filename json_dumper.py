@@ -21,13 +21,13 @@ Task = namedtuple("Task", ["task_type", "args", "output_key"])
 TIER_3_IGNORED_PREFIXES = (
     "META-INF/", "SEC-INF/", "META-INF/CERT.RSA", "META-INF/CERT.SF", "META-INF/MANIFEST.MF"
 )
-TIER_1_CRITICAL = ("classes", "AndroidManifest.xml")
+TIER_1_CRITICAL = ("lib/", "classes", "AndroidManifest.xml")
 TIER_1_EXACT_MATCHES = (
     "res/xml/backup_scheme.xml",
     "res/xml/network_security_config.xml",
     "res/xml/device_admin.xml",
 )
-TIER_2_MEANINGFUL = ("lib/", "assets/", "res/", "resources.arsc", "kotlin/", "smali/")
+TIER_2_MEANINGFUL = ( "assets/", "res/", "resources.arsc", "kotlin/", "smali/")
 
 APK_PREFIX_PATTERN = re.compile(r"apk[12]_[^/]+/")
 #APK_PREFIX_PATTERN = re.compile(r"^(tmp/)?apk[12]_[^/]+/")
