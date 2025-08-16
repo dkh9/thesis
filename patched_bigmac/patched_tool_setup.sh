@@ -1,5 +1,5 @@
 #!/bin/bash
-
+sudo git clone https://android.googlesource.com/platform/system/tools/mkbootimg/
 PATH_RECORD=path_record.txt
 #rm -rf android-simg2img/
 #git clone https://github.com/anestisb/android-simg2img.git

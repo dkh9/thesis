@@ -100,7 +100,7 @@ def periodic_status_message(stop_event, interval=10):
         stop_event.wait(interval)
 
 def extract_fw(vendor, archive, child):
-    cmd = f"sudo venv/bin/python extract.py --vendor {vendor} --user dcl {archive}"
+    cmd = f"sudo venv/bin/python extract.py --vendor {vendor} --user hexhive {archive}"
 
     # Start background progress printer
     stop_event = threading.Event()
