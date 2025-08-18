@@ -79,7 +79,7 @@ def compare_components(old_map, new_map, perm_levels, diff_summary):
     # Normalize APK paths
     norm_old = {normalize_apk_path(k): v for k, v in old_map.items()}
     norm_new = {normalize_apk_path(k): v for k, v in new_map.items()}
-    all_apks = set(norm_old) | set(norm_new)
+    all_apks = set(norm_old) & set(norm_new)
 
     for apk in all_apks:
         old_components = norm_old.get(apk, {}).get("components", {})
@@ -88,7 +88,7 @@ def compare_components(old_map, new_map, perm_levels, diff_summary):
         for comp_type in component_types:
             old_entries = old_components.get(comp_type, {})
             new_entries = new_components.get(comp_type, {})
-            all_keys = set(old_entries) | set(new_entries)
+            all_keys = set(old_entries) & set(new_entries)
 
             for comp_name in all_keys:
                 old_perms_dict = old_entries.get(comp_name, {})
