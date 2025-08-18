@@ -537,6 +537,11 @@ def parse_diff_to_json(diff_text, bin_out, apk_out, se_out, rc_bin_paths=None, r
                     elif looks_encrypted(ta2_path):
                         formatted_bin_digests[extract_tail_path(ta2_path, 4)] = {"TEE": True, "Obfuscated": True}
                         extra_analysis = "TEE: true;\nObfuscated: true"
+                
+                elif "trusty" in path:
+                    ta1_path, ta2_path = reconstruct_paths(path)
+                    tasks.append(Task("tee", (path, ta1_path, ta2_path, rc_bin_paths), extract_tail_path(ta2_path, 4)))
+
 
                 elif "sepolicy" in path:
                     sepath_1, sepath_2 = reconstruct_paths(path)
