@@ -23,7 +23,8 @@ Then, call the ./dump_partitions.sh
 ./dump_partitions.sh <fw_archive> [output_dir]
 ```
 
-After unpacking, the userspace_partitions/ and boot_partition/ will be in the extracted folder
+After unpacking, the userspace_partitions/ and boot_partition/ will be in the extracted folder. These are the folders to use 
+in the following stages of the analysis
 
 ## 1. Kernel
 ```
@@ -56,6 +57,24 @@ We also need sediff to check whether the precompiled SELinux policy has changed
 yay -S setools
 ```
 
+In order to run the binary and apk diffing, do:
+
+```
+./full_bin_check.sh userspace_partitions_1/ userspace_partitions_2/
+```
+Preferably, have the folders containing userspace partitions on the same level as the full_bin_checks.sh script
+The process can take a while (from tenths of minutes to several hours), depending on how much timeout was set for radiff (search for timeout_sec in summarize_radiff.py), max_workers in json_dumper.py (amount of cores allocated for the parallel diffing tasks) and how much diff there is actually in between the versions.
+
+After running the ./full_bin_check.sh, you will get an intermediate_files/ folder. Over there, there will be unsorted_apk_digest.json and unsorted_bin_digest.json. To sort these results according to the priority of changes, run:
+
+```
+python3 binary_priority.py intermediate_files/unsorted_bin_digest.json sorted_bins.json
+```
+
+```
+python3 apk_priority.py intermediate_files/unsorted_apk_digest.json sorted_apks.json
+```
+
 ## 3. Permissions checks
 
 ```
@@ -68,6 +87,7 @@ Unfortunately, the apktool was only available through AUR, as well as android-sd
 yay -S android-apktool-bin android-sdk-build-tools android-sdk-cmdline-tools
 ```
 
+Great page in general: https://wiki.archlinux.org/title/Android
 In order to run the analysis, do:
 
 ```
@@ -76,12 +96,14 @@ In order to run the analysis, do:
 result_digests/ and intermediate_files/ will have the corresponding contents with the final results and additional info respectively.
 
 
-Great page in general btw: https://wiki.archlinux.org/title/Android
+
 
 ## 4. CA cert
 Does not require extra setup, run:
 ```
+./4_check_certs.sh userspace_partitions_1/ userspace_partitions_2/
 ```
+The output will be stored in the newly created analysis_results/ folder
 
 ## 5. BigMAC
 Prerequisites: install the filesystem support tools
