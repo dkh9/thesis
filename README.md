@@ -1,4 +1,5 @@
 # Installation prerequisites
+This installation guide is applicable to Arch-based systems btw
 ## 0. Unpacking
 
 ```
@@ -28,25 +29,27 @@ After unpacking, the userspace_partitions/ and boot_partition/ will be in the ex
 ```
 git clone https://github.com/a13xp0p0v/kernel-hardening-checker
 ```
-Set the HARDENING_CHECKER_PATH accordingly
+Set the HARDENING_CHECKER_PATH accordingly (path to the binary of the checker)
 Make sure to copy over https://github.com/torvalds/linux/blob/master/scripts/extract-ikconfig, set it to executable and set EXTRACT_IKCONFIG_PATH accordingly
 
-Make sure to install vmlinux-to-elf as well, set VMLINUX_TO_ELF variable accordingly
+Make sure to install vmlinux-to-elf as well, set VMLINUX_TO_ELF variable accordingly (symlink to vmlinux_to_elf/main.py)
 ```
 git clone https://github.com/marin-m/vmlinux-to-elf
 ```
 
-Then, provide 2 folders with boot.img for comparison. The expected structure is boot_img_folder_1/boot.img, boot_img_folder_2/boot.img
+Then, provide 2 paths to boot.img for comparison
 
 ```
-./check_kernel_config.sh boot_img_folder_1 boot_img_folder_2
+./check_kernel_config.sh path/to/boot_1.img path/to/boot_2.img
 ```
+
+The output will be provided as kernel_diget.json in the check_1_kernel/ folder.
 
 ## 2. Bins/libs
 
 
 ```
-pacman -S radare2 zip unzip 
+pacman -S radare2 zip unzip checksec
 ```
 We also need sediff to check whether the precompiled SELinux policy has changed
 ```
@@ -65,7 +68,21 @@ Unfortunately, the apktool was only available through AUR, as well as android-sd
 yay -S android-apktool-bin android-sdk-build-tools android-sdk-cmdline-tools
 ```
 
+In order to run the analysis, do:
+
+```
+./run_all_checks.sh userspace_partitions_1/ userspace_partitions_2/
+```
+result_digests/ and intermediate_files/ will have the corresponding contents with the final results and additional info respectively.
+
+
 Great page in general btw: https://wiki.archlinux.org/title/Android
+
+## 4. CA cert
+Does not require extra setup, run:
+```
+```
+
 ## 5. BigMAC
 Prerequisites: install the filesystem support tools
 ```
