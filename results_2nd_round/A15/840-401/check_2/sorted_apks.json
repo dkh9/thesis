@@ -27,6 +27,12 @@
           "added": "-",
           "removed": "-",
           "change_type": "added"
+        },
+        {
+          "file": "tmp/apk2_t6o9fcky/lib/arm64-v8a/libDiagMonKey.so",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
         }
       ],
       "tier_2": [
@@ -44,12 +50,6 @@
         },
         {
           "file": "tmp/apk2_t6o9fcky/assets/dexopt/baseline.profm",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_t6o9fcky/lib/arm64-v8a/libDiagMonKey.so",
           "added": "-",
           "removed": "-",
           "change_type": "modified"

@@ -1,35 +1,522 @@
 {
-  "system/priv-app/SecSettings/SecSettings.apk": {
-    "apk": "SecSettings.apk",
+  "system/priv-app/SecSoundPicker/SecSoundPicker.apk": {
+    "apk": "SecSoundPicker.apk",
     "priv-app": true,
     "changes": {
       "tier_1": [
         {
-          "file": "tmp/apk2_a3x__9wv/classes.dex",
+          "file": "tmp/apk2_w31oqoqi/AndroidManifest.xml",
           "added": "-",
           "removed": "-",
           "change_type": "modified"
         },
         {
-          "file": "tmp/apk2_a3x__9wv/classes2.dex",
+          "file": "tmp/apk2_w31oqoqi/classes.dex",
           "added": "-",
           "removed": "-",
           "change_type": "modified"
         },
         {
-          "file": "tmp/apk2_a3x__9wv/classes3.dex",
+          "file": "tmp/apk2_w31oqoqi/lib/arm64-v8a/libDiagMonKey.so",
           "added": "-",
           "removed": "-",
           "change_type": "modified"
         },
         {
-          "file": "tmp/apk2_a3x__9wv/classes4.dex",
+          "file": "tmp/apk2_w31oqoqi/lib/armeabi-v7a/libDiagMonKey.so",
           "added": "-",
           "removed": "-",
           "change_type": "modified"
         }
       ],
-      "tier_2": [],
+      "tier_2": [
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/dexopt/baseline.prof",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/dexopt/baseline.profm",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.af.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.am.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.ar.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.as.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.az.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.be.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.bg.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.bn.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.bo.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.bs.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.ca.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.cs.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.da.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.de.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.el.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.en.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.es.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.et.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.eu.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.fa.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.fi.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.fr.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.ga.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.gl.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.gu.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.hi.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.hr.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.hu.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.hy.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.in.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.is.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.it.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.iw.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.ja.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.ka.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.kk.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.km.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.kn.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.ko.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.ky.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.lo.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.lt.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.lv.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.mk.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.ml.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.mn.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.mr.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.ms.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.my.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.nb.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.ne.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.nl.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.or.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.pa.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.pl.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.pt.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.ro.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.ru.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.si.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.sk.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.sl.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.sq.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.sr.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.sv.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.sw.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.ta.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.te.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.tg.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.th.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.tk.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.tl.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.tr.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.ug.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.uk.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.ur.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.uz.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.vi.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.zh.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.zu.7z",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
       "tier_3": [],
       "unclassified": []
     },
@@ -57,6 +544,12 @@
           "added": "-",
           "removed": "-",
           "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_aabd0k1b/lib/arm64-v8a/libmediaconverter.so",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
         }
       ],
       "tier_2": [
@@ -68,12 +561,6 @@
         },
         {
           "file": "tmp/apk2_aabd0k1b/assets/dexopt/baseline.profm",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_aabd0k1b/lib/arm64-v8a/libmediaconverter.so",
           "added": "-",
           "removed": "-",
           "change_type": "modified"
@@ -5958,6 +6445,42 @@
     },
     "dex_diffs": {}
   },
+  "system/priv-app/SecSettings/SecSettings.apk": {
+    "apk": "SecSettings.apk",
+    "priv-app": true,
+    "changes": {
+      "tier_1": [
+        {
+          "file": "tmp/apk2_a3x__9wv/classes.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_a3x__9wv/classes2.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_a3x__9wv/classes3.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_a3x__9wv/classes4.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_2": [],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
   "system_ext/priv-app/SystemUI/SystemUI.apk": {
     "apk": "SystemUI.apk",
     "priv-app": true,
@@ -6053,529 +6576,6 @@
           "file": "tmp/apk2_rgry1url/assets/eternalPolicy.json",
           "added": "47",
           "removed": "1",
-          "change_type": "modified"
-        }
-      ],
-      "tier_3": [],
-      "unclassified": []
-    },
-    "dex_diffs": {}
-  },
-  "system/priv-app/SecSoundPicker/SecSoundPicker.apk": {
-    "apk": "SecSoundPicker.apk",
-    "priv-app": true,
-    "changes": {
-      "tier_1": [
-        {
-          "file": "tmp/apk2_w31oqoqi/AndroidManifest.xml",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/classes.dex",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        }
-      ],
-      "tier_2": [
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/dexopt/baseline.prof",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/dexopt/baseline.profm",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.af.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.am.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.ar.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.as.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.az.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.be.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.bg.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.bn.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.bo.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.bs.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.ca.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.cs.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.da.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.de.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.el.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.en.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.es.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.et.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.eu.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.fa.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.fi.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.fr.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.ga.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.gl.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.gu.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.hi.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.hr.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.hu.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.hy.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.in.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.is.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.it.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.iw.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.ja.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.ka.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.kk.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.km.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.kn.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.ko.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.ky.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.lo.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.lt.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.lv.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.mk.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.ml.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.mn.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.mr.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.ms.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.my.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.nb.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.ne.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.nl.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.or.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.pa.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.pl.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.pt.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.ro.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.ru.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.si.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.sk.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.sl.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.sq.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.sr.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.sv.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.sw.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.ta.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.te.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.tg.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.th.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.tk.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.tl.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.tr.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.ug.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.uk.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.ur.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.uz.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.vi.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.zh.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/assets/localeapks_zipped/com.samsung.android.secsoundpicker.zu.7z",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/lib/arm64-v8a/libDiagMonKey.so",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_w31oqoqi/lib/armeabi-v7a/libDiagMonKey.so",
-          "added": "-",
-          "removed": "-",
           "change_type": "modified"
         }
       ],

@@ -12777,6 +12777,18 @@
           "added": "-",
           "removed": "-",
           "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_440bywbg/lib/arm64-v8a/libDiagMonKey.so",
+          "added": "-",
+          "removed": "-",
+          "change_type": "added"
+        },
+        {
+          "file": "tmp/apk2_440bywbg/lib/armeabi-v7a/libDiagMonKey.so",
+          "added": "-",
+          "removed": "-",
+          "change_type": "added"
         }
       ],
       "tier_2": [
@@ -13265,18 +13277,6 @@
           "added": "-",
           "removed": "-",
           "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_440bywbg/lib/arm64-v8a/libDiagMonKey.so",
-          "added": "-",
-          "removed": "-",
-          "change_type": "added"
-        },
-        {
-          "file": "tmp/apk2_440bywbg/lib/armeabi-v7a/libDiagMonKey.so",
-          "added": "-",
-          "removed": "-",
-          "change_type": "added"
         },
         {
           "file": "tmp/apk2_440bywbg/res/0V.xml",

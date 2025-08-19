@@ -1,4 +1,58 @@
 {
+  "system/priv-app/SumeNNService/SumeNNService.apk": {
+    "apk": "SumeNNService.apk",
+    "priv-app": true,
+    "changes": {
+      "tier_1": [
+        {
+          "file": "tmp/apk2_0qq6tqvb/AndroidManifest.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_0qq6tqvb/classes.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk1_qq2c8bql/lib/arm64-v8a/libc++.so",
+          "added": "-",
+          "removed": "-",
+          "change_type": "deleted"
+        },
+        {
+          "file": "tmp/apk1_qq2c8bql/lib/arm64-v8a/libdng_sdk.so",
+          "added": "-",
+          "removed": "-",
+          "change_type": "deleted"
+        },
+        {
+          "file": "tmp/apk1_qq2c8bql/lib/arm64-v8a/libjni-wrapper.so",
+          "added": "-",
+          "removed": "-",
+          "change_type": "deleted"
+        },
+        {
+          "file": "tmp/apk1_qq2c8bql/lib/arm64-v8a/libjpeg.so",
+          "added": "-",
+          "removed": "-",
+          "change_type": "deleted"
+        },
+        {
+          "file": "tmp/apk1_qq2c8bql/lib/arm64-v8a/libmastering_net.so",
+          "added": "-",
+          "removed": "-",
+          "change_type": "deleted"
+        }
+      ],
+      "tier_2": [],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
   "system/priv-app/SecSettings/SecSettings.apk": {
     "apk": "SecSettings.apk",
     "priv-app": true,
@@ -2286,61 +2340,6 @@
         }
       ],
       "tier_2": [],
-      "tier_3": [],
-      "unclassified": []
-    },
-    "dex_diffs": {}
-  },
-  "system/priv-app/SumeNNService/SumeNNService.apk": {
-    "apk": "SumeNNService.apk",
-    "priv-app": true,
-    "changes": {
-      "tier_1": [
-        {
-          "file": "tmp/apk2_0qq6tqvb/AndroidManifest.xml",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        },
-        {
-          "file": "tmp/apk2_0qq6tqvb/classes.dex",
-          "added": "-",
-          "removed": "-",
-          "change_type": "modified"
-        }
-      ],
-      "tier_2": [
-        {
-          "file": "tmp/apk1_qq2c8bql/lib/arm64-v8a/libc++.so",
-          "added": "-",
-          "removed": "-",
-          "change_type": "deleted"
-        },
-        {
-          "file": "tmp/apk1_qq2c8bql/lib/arm64-v8a/libdng_sdk.so",
-          "added": "-",
-          "removed": "-",
-          "change_type": "deleted"
-        },
-        {
-          "file": "tmp/apk1_qq2c8bql/lib/arm64-v8a/libjni-wrapper.so",
-          "added": "-",
-          "removed": "-",
-          "change_type": "deleted"
-        },
-        {
-          "file": "tmp/apk1_qq2c8bql/lib/arm64-v8a/libjpeg.so",
-          "added": "-",
-          "removed": "-",
-          "change_type": "deleted"
-        },
-        {
-          "file": "tmp/apk1_qq2c8bql/lib/arm64-v8a/libmastering_net.so",
-          "added": "-",
-          "removed": "-",
-          "change_type": "deleted"
-        }
-      ],
       "tier_3": [],
       "unclassified": []
     },

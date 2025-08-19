@@ -3178,9 +3178,7 @@
           "added": "-",
           "removed": "-",
           "change_type": "modified"
-        }
-      ],
-      "tier_2": [
+        },
         {
           "file": "tmp/apk1_qq2c8bql/lib/arm64-v8a/libc++.so",
           "added": "-",
@@ -3212,6 +3210,7 @@
           "change_type": "deleted"
         }
       ],
+      "tier_2": [],
       "tier_3": [],
       "unclassified": []
     },
