@@ -15,5 +15,5 @@ echo "vendor: $vendor"
 
 mkdir "${RESULTS_DIR}"
 
-python3 .docker_automation.py all $fw1 $vendor analysis_results/mac_fw1.txt
-python3 ./docker_automation.py all $fw2 $vendor analysis_results/mac_fw2.txt
+python3 ./docker_automation.py extract $fw1 $vendor analysis_results/ss1.paths analysis_results/uapps1.paths  analysis_results/ns1.paths
+python3 ./docker_automation.py extract $fw2 $vendor analysis_results/ss2.paths analysis_results/uapps2.paths  analysis_results/ns2.paths

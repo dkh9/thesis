@@ -160,7 +160,7 @@ def main():
         sys.exit(1)
 
     print("SPAWNING SHELL")
-    child = pexpect.spawn(f"docker exec -it -u dcl {container} bash", encoding="utf-8")
+    child = pexpect.spawn(f"docker exec -it -u hexhive {container} bash", encoding="utf-8")
     child.expect(r"\$")
     out = run_command(child, "cd /opt/BigMAC/BigMAC")
     out = run_command(child, "source venv/bin/activate", prompt=r"\(venv\).*?\$")
@@ -177,7 +177,7 @@ def main():
 
     
     print("Saving the policy...")
-    cmd = f"venv/bin/python ./process.py --vendor {vendor} {policy} --save"
+    cmd = f"sudo venv/bin/python ./process.py --vendor {vendor} {policy} --save"
     out = run_command(child, cmd, prompt=r"\(venv\).*?\$", timeout=720)
     if "Finished instantiating SEPolicy" in out:
         print("Successfully saved the policy!")
@@ -199,6 +199,7 @@ def main():
 
     time.sleep(3)
     
+    #if having issues, try to add sudo before venv/bin/python
     out = run_command(child, f"venv/bin/python ./process.py --vendor {vendor} {policy} --load --debug", prompt=r"In \[\d+\]:", timeout=180)
     print("OUT AFTER WAITING FOR PROLOG:")
     print(out)

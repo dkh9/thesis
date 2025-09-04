@@ -152,3 +152,12 @@ sudo ./setup_bigmac.sh
 ```
 Make sure that on your host you have a pexpect package for python, feel free to have it either system-wide through AUR or in venv
 
+Now, with the docker running, back to the host machine
+Run 
+```
+./run_bigmac.sh <fw1.zip> <fw2.zip> <vendor>
+```
+Then, with the compare_sets.py check whether the attach graph paths sets differ:
+```
+python3 compare_sets.py <file1.txt> <file2.txt> <outfile>
+```
