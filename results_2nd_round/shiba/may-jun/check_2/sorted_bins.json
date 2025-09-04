@@ -645,7 +645,7 @@
           "option": "fortify_source",
           "old": "no",
           "new": "partial",
-          "change": "no \u2192 partial"
+          "change": "no -> partial"
         }
       ]
     },
@@ -730,7 +730,7 @@
           "option": "fortify_source",
           "old": "no",
           "new": "partial",
-          "change": "no \u2192 partial"
+          "change": "no -> partial"
         }
       ]
     },
@@ -1478,7 +1478,7 @@
           "option": "fortify_source",
           "old": "partial",
           "new": "no",
-          "change": "partial \u2192 no"
+          "change": "partial -> no"
         }
       ]
     },
@@ -12886,7 +12886,7 @@
           "option": "fortify_source",
           "old": "no",
           "new": "partial",
-          "change": "no \u2192 partial"
+          "change": "no -> partial"
         }
       ]
     }
@@ -13057,7 +13057,7 @@
           "option": "fortify_source",
           "old": "partial",
           "new": "no",
-          "change": "partial \u2192 no"
+          "change": "partial -> no"
         }
       ]
     }
@@ -13094,7 +13094,7 @@
           "option": "fortify_source",
           "old": "partial",
           "new": "no",
-          "change": "partial \u2192 no"
+          "change": "partial -> no"
         }
       ]
     }
@@ -13131,7 +13131,7 @@
           "option": "fortify_source",
           "old": "partial",
           "new": "no",
-          "change": "partial \u2192 no"
+          "change": "partial -> no"
         }
       ]
     }
@@ -13168,7 +13168,7 @@
           "option": "fortify_source",
           "old": "partial",
           "new": "no",
-          "change": "partial \u2192 no"
+          "change": "partial -> no"
         }
       ]
     }
@@ -13205,7 +13205,7 @@
           "option": "fortify_source",
           "old": "partial",
           "new": "no",
-          "change": "partial \u2192 no"
+          "change": "partial -> no"
         }
       ]
     }
@@ -13242,7 +13242,7 @@
           "option": "fortify_source",
           "old": "partial",
           "new": "no",
-          "change": "partial \u2192 no"
+          "change": "partial -> no"
         }
       ]
     }
@@ -13279,7 +13279,7 @@
           "option": "fortify_source",
           "old": "partial",
           "new": "no",
-          "change": "partial \u2192 no"
+          "change": "partial -> no"
         }
       ]
     }
@@ -13316,7 +13316,7 @@
           "option": "fortify_source",
           "old": "partial",
           "new": "no",
-          "change": "partial \u2192 no"
+          "change": "partial -> no"
         }
       ]
     }
@@ -13353,7 +13353,7 @@
           "option": "fortify_source",
           "old": "partial",
           "new": "no",
-          "change": "partial \u2192 no"
+          "change": "partial -> no"
         }
       ]
     }
@@ -13421,7 +13421,7 @@
           "option": "fortify_source",
           "old": "partial",
           "new": "no",
-          "change": "partial \u2192 no"
+          "change": "partial -> no"
         }
       ]
     }
@@ -13458,7 +13458,7 @@
           "option": "fortify_source",
           "old": "partial",
           "new": "no",
-          "change": "partial \u2192 no"
+          "change": "partial -> no"
         }
       ]
     }
@@ -13536,7 +13536,7 @@
           "option": "fortify_source",
           "old": "no",
           "new": "n/a",
-          "change": "no \u2192 n/a"
+          "change": "no -> n/a"
         }
       ]
     }
@@ -13566,7 +13566,7 @@
           "option": "fortify_source",
           "old": "no",
           "new": "n/a",
-          "change": "no \u2192 n/a"
+          "change": "no -> n/a"
         }
       ]
     }
@@ -13589,7 +13589,7 @@
           "option": "canary",
           "old": "yes",
           "new": "no",
-          "change": "OK \u2192 FAIL"
+          "change": "OK -> FAIL"
         }
       ]
     }
@@ -13612,7 +13612,7 @@
           "option": "canary",
           "old": "yes",
           "new": "no",
-          "change": "OK \u2192 FAIL"
+          "change": "OK -> FAIL"
         }
       ]
     }
@@ -13752,7 +13752,7 @@
           "option": "fortify_source",
           "old": "no",
           "new": "partial",
-          "change": "no \u2192 partial"
+          "change": "no -> partial"
         }
       ]
     }

@@ -110,7 +110,7 @@
       "app_process64"
     ]
   },
-  "a23-040-u/vendor/bin/factory.ssc": {
+  "s23-040-u/vendor/bin/factory.ssc": {
     "Similarity Score": 0.997,
     "Radiff2 Distance": 394,
     "Total Functions Analyzed": 58,
@@ -131,7 +131,7 @@
       "group": "system"
     }
   },
-  "a23-040-u/vendor/firmware/CAMERA_ICP.mbn": {
+  "s23-040-u/vendor/firmware/CAMERA_ICP.mbn": {
     "Similarity Score": 1.0,
     "Radiff2 Distance": 178,
     "Total Functions Analyzed": 2,
@@ -147,7 +147,7 @@
       "differences": []
     }
   },
-  "a23-040-u/vendor/firmware/CAMERA_ICP.mdt": {
+  "s23-040-u/vendor/firmware/CAMERA_ICP.mdt": {
     "Similarity Score": 0.984,
     "Radiff2 Distance": 178,
     "Total Functions Analyzed": 2,
@@ -163,7 +163,7 @@
       "differences": []
     }
   },
-  "a23-040-u/vendor/firmware/a740_zap.mbn": {
+  "s23-040-u/vendor/firmware/a740_zap.mbn": {
     "Similarity Score": 0.993,
     "Radiff2 Distance": 178,
     "Total Functions Analyzed": 0,
@@ -179,7 +179,7 @@
       "differences": []
     }
   },
-  "a23-040-u/vendor/firmware/a740_zap.mdt": {
+  "s23-040-u/vendor/firmware/a740_zap.mdt": {
     "Similarity Score": 0.978,
     "Radiff2 Distance": 178,
     "Total Functions Analyzed": 0,
@@ -195,7 +195,7 @@
       "differences": []
     }
   },
-  "a23-040-u/vendor/firmware/evass.mbn": {
+  "s23-040-u/vendor/firmware/evass.mbn": {
     "Similarity Score": 1.0,
     "Radiff2 Distance": 180,
     "Total Functions Analyzed": 0,
@@ -211,7 +211,7 @@
       "differences": []
     }
   },
-  "a23-040-u/vendor/firmware/evass.mdt": {
+  "s23-040-u/vendor/firmware/evass.mdt": {
     "Similarity Score": 0.983,
     "Radiff2 Distance": 180,
     "Total Functions Analyzed": 0,
@@ -227,7 +227,7 @@
       "differences": []
     }
   },
-  "a23-040-u/vendor/firmware/vpu30_4v.mbn": {
+  "s23-040-u/vendor/firmware/vpu30_4v.mbn": {
     "Similarity Score": 1.0,
     "Radiff2 Distance": 180,
     "Total Functions Analyzed": 0,
@@ -243,7 +243,7 @@
       "differences": []
     }
   },
-  "a23-040-u/vendor/lib/com.qti.chiusecaseselector.so": {
+  "s23-040-u/vendor/lib/com.qti.chiusecaseselector.so": {
     "Similarity Score": 1.0,
     "Radiff2 Distance": 28,
     "Total Functions Analyzed": 109,
@@ -322,7 +322,7 @@
       ]
     }
   },
-  "a23-040-u/vendor/lib/libsaped.so": {
+  "s23-040-u/vendor/lib/libsaped.so": {
     "Similarity Score": 0.752,
     "Radiff2 Distance": 10308,
     "Total Functions Analyzed": 70,
@@ -370,7 +370,7 @@
       "differences": []
     }
   },
-  "a23-040-u/vendor/lib64/com.qti.chiusecaseselector.so": {
+  "s23-040-u/vendor/lib64/com.qti.chiusecaseselector.so": {
     "Similarity Score": 1.0,
     "Radiff2 Distance": 32,
     "Total Functions Analyzed": 118,
@@ -418,7 +418,7 @@
       "differences": []
     }
   },
-  "a23-040-u/vendor/lib64/libsaped.so": {
+  "s23-040-u/vendor/lib64/libsaped.so": {
     "Similarity Score": 0.799,
     "Radiff2 Distance": 12592,
     "Total Functions Analyzed": 68,
@@ -469,7 +469,7 @@
       "differences": []
     }
   },
-  "a23-040-u/vendor/lib/vendor.qti.gnss-service.so": {
+  "s23-040-u/vendor/lib/vendor.qti.gnss-service.so": {
     "Similarity Score": 0.837,
     "Radiff2 Distance": 112624,
     "Total Functions Analyzed": 634,
@@ -501,7 +501,7 @@
       "differences": []
     }
   },
-  "a23-040-u/vendor/lib64/vendor.qti.gnss-service.so": {
+  "s23-040-u/vendor/lib64/vendor.qti.gnss-service.so": {
     "Similarity Score": 0.874,
     "Radiff2 Distance": 120108,
     "Total Functions Analyzed": 680,
@@ -565,7 +565,7 @@
       "differences": []
     }
   },
-  "a23-040-u/vendor/lib/libchifeature2.so": {
+  "s23-040-u/vendor/lib/libchifeature2.so": {
     "Similarity Score": 0.0,
     "Radiff2 Distance": -1,
     "Total Functions Analyzed": 2589,
@@ -613,7 +613,7 @@
       "differences": []
     }
   },
-  "a23-040-u/vendor/lib64/libchifeature2.so": {
+  "s23-040-u/vendor/lib64/libchifeature2.so": {
     "Similarity Score": 0.0,
     "Radiff2 Distance": -1,
     "Total Functions Analyzed": 2432,

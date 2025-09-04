@@ -615,7 +615,7 @@
           "option": "fortify_source",
           "old": "n/a",
           "new": "partial",
-          "change": "n/a \u2192 partial"
+          "change": "n/a -> partial"
         }
       ]
     }
