@@ -1,0 +1,16 @@
+{
+  "increased": [],
+  "decreased": [],
+  "added": [
+    {
+      "permission_name": "com.google.android.engage.REQUEST_ENGAGE_DATA",
+      "new_level": "signature"
+    }
+  ],
+  "removed": [
+    {
+      "permission_name": "com.google.android.apps.search.assistant.verticals.snapshot.widgets.weather.permission.WEATHER_WIDGET_UPDATE",
+      "old_level": "signature"
+    }
+  ]
+}

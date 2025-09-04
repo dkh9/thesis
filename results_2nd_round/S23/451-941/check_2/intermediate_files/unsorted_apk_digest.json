@@ -1,0 +1,302 @@
+{
+  "apex_payload_contents/app/Bluetooth@UP1A.231005.007/Bluetooth.apk": {
+    "apk": "Bluetooth.apk",
+    "priv-app": false,
+    "changes": {
+      "tier_1": [
+        {
+          "file": "tmp/apk2_e7lopc0j/classes.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_2": [],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "system/app/EasterEgg/EasterEgg.apk": {
+    "apk": "EasterEgg.apk",
+    "priv-app": false,
+    "changes": {
+      "tier_1": [
+        {
+          "file": "tmp/apk2_o4mir6m9/classes.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_2": [],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "system/priv-app/DynamicLockscreen/DynamicLockscreen.apk": {
+    "apk": "DynamicLockscreen.apk",
+    "priv-app": true,
+    "changes": {
+      "tier_1": [
+        {
+          "file": "tmp/apk2_mjsx22lc/AndroidManifest.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mjsx22lc/classes.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_2": [
+        {
+          "file": "tmp/apk2_mjsx22lc/assets/SettingsBnRDTD_V_OS.xml",
+          "added": "9",
+          "removed": "0",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mjsx22lc/assets/dexopt/baseline.prof",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_mjsx22lc/assets/eternalPolicy.json",
+          "added": "12",
+          "removed": "1",
+          "change_type": "modified"
+        }
+      ],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "system/priv-app/FactoryTestProvider/FactoryTestProvider.apk": {
+    "apk": "FactoryTestProvider.apk",
+    "priv-app": true,
+    "changes": {
+      "tier_1": [],
+      "tier_2": [
+        {
+          "file": "tmp/apk2_ww7qrabc/assets/DB_Version.txt",
+          "added": "1",
+          "removed": "1",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_ww7qrabc/assets/fac_model.dat",
+          "added": "1",
+          "removed": "1",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_ww7qrabc/assets/factoryproviderdb.db",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "system/priv-app/GooglePackageInstaller/GooglePackageInstaller.apk": {
+    "apk": "GooglePackageInstaller.apk",
+    "priv-app": true,
+    "changes": {
+      "tier_1": [
+        {
+          "file": "tmp/apk2_3l0jlz0m/AndroidManifest.xml",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_3l0jlz0m/classes.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_2": [],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "system/priv-app/SamsungCoreServices/SamsungCoreServices.apk.gz": {
+    "apk": "SamsungCoreServices.apk.gz",
+    "priv-app": true,
+    "error": "Error processing APK diff: Command '['unzip', '-q', 's23-451-u/system/system/priv-app/SamsungCoreServices/SamsungCoreServices.apk.gz', '-d', '/tmp/apk1_03ozov38']' returned non-zero exit status 9."
+  },
+  "system/priv-app/SecDownloadProvider/SecDownloadProvider.apk": {
+    "apk": "SecDownloadProvider.apk",
+    "priv-app": true,
+    "changes": {
+      "tier_1": [
+        {
+          "file": "tmp/apk2_9c_w5ybc/classes.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_2": [],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "system/priv-app/SecSettingsIntelligence/SecSettingsIntelligence.apk": {
+    "apk": "SecSettingsIntelligence.apk",
+    "priv-app": true,
+    "changes": {
+      "tier_1": [
+        {
+          "file": "tmp/apk2_rsbiavcl/classes.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_rsbiavcl/classes2.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_2": [],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "system/priv-app/TeleService/TeleService.apk": {
+    "apk": "TeleService.apk",
+    "priv-app": true,
+    "changes": {
+      "tier_1": [
+        {
+          "file": "tmp/apk2_fqxxe8m3/classes.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_2": [],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "system_ext/priv-app/AccessibilityMenu/AccessibilityMenu.apk": {
+    "apk": "AccessibilityMenu.apk",
+    "priv-app": true,
+    "changes": {
+      "tier_1": [
+        {
+          "file": "tmp/apk2_lwv8nez7/classes.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_2": [],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "system/priv-app/Telecom/Telecom.apk": {
+    "apk": "Telecom.apk",
+    "priv-app": true,
+    "changes": {
+      "tier_1": [
+        {
+          "file": "tmp/apk2_vwshm3xm/classes.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_2": [],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "system/priv-app/SecSettings/SecSettings.apk": {
+    "apk": "SecSettings.apk",
+    "priv-app": true,
+    "changes": {
+      "tier_1": [
+        {
+          "file": "tmp/apk2_yip9w1r5/classes.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_yip9w1r5/classes2.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_yip9w1r5/classes3.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_yip9w1r5/classes4.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_2": [],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "system_ext/priv-app/SystemUI/SystemUI.apk": {
+    "apk": "SystemUI.apk",
+    "priv-app": true,
+    "changes": {
+      "tier_1": [
+        {
+          "file": "tmp/apk2_1hxi4hgd/classes.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_1hxi4hgd/classes2.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_1hxi4hgd/classes3.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_2": [],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  }
+}

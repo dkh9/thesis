@@ -1,0 +1,117 @@
+{
+  "system/system/bin/surfaceflinger": {
+    "Similarity Score": 0.93,
+    "Radiff2 Distance": 1107722,
+    "Total Functions Analyzed": 1332,
+    "Identical Functions": 843,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 489,
+    "Changed Matched Functions": 410,
+    "Changed Unmatched Functions": 79,
+    "Mentioned in .rc": true,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "rc_metadata": {
+      "source": "service",
+      "user": "system",
+      "group": "graphics",
+      "capabilities": [
+        "SYS_NICE"
+      ]
+    }
+  },
+  "system/system/lib64/libkeystore2_apc_compat.so": {
+    "Similarity Score": 0.837,
+    "Radiff2 Distance": 14404,
+    "Total Functions Analyzed": 86,
+    "Identical Functions": 3,
+    "New Functions": 3,
+    "Changed Functions (sim < 1.0, excluding NEW)": 80,
+    "Changed Matched Functions": 74,
+    "Changed Unmatched Functions": 6,
+    "Mentioned in .rc": true,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Used By": [
+      "keystore2"
+    ]
+  },
+  "system/system/lib64/libmediaplayerservice.so": {
+    "Similarity Score": 0.915,
+    "Radiff2 Distance": 250842,
+    "Total Functions Analyzed": 1876,
+    "Identical Functions": 72,
+    "New Functions": 4,
+    "Changed Functions (sim < 1.0, excluding NEW)": 1800,
+    "Changed Matched Functions": 1236,
+    "Changed Unmatched Functions": 564,
+    "Mentioned in .rc": true,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "Used By": [
+      "mediaserver"
+    ]
+  },
+  "vendor/bin/hw/vendor.google.radioext@1.0-service": {
+    "Similarity Score": 0.959,
+    "Radiff2 Distance": 52504,
+    "Total Functions Analyzed": 395,
+    "Identical Functions": 354,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 41,
+    "Changed Matched Functions": 14,
+    "Changed Unmatched Functions": 27,
+    "Mentioned in .rc": true,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    },
+    "rc_metadata": {
+      "source": "service",
+      "user": "radio",
+      "group": "radio"
+    }
+  },
+  "system/system/lib64/libnfc_nci_jni.so": {
+    "Similarity Score": 0.953,
+    "Radiff2 Distance": 223932,
+    "Total Functions Analyzed": 3195,
+    "Identical Functions": 595,
+    "New Functions": 2,
+    "Changed Functions (sim < 1.0, excluding NEW)": 2598,
+    "Changed Matched Functions": 1096,
+    "Changed Unmatched Functions": 1502,
+    "Mentioned in .rc": false,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    }
+  },
+  "apex_payload_contents/bin/hw/android.hardware.camera.provider@2.7-service-google": {
+    "Similarity Score": 0.999,
+    "Radiff2 Distance": 302,
+    "Total Functions Analyzed": 294,
+    "Identical Functions": 291,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 3,
+    "Changed Matched Functions": 0,
+    "Changed Unmatched Functions": 3,
+    "Mentioned in .rc": false,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    }
+  }
+}

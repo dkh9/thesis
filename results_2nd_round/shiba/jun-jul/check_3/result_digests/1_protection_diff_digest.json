@@ -1,0 +1,67 @@
+{
+  "increased": [],
+  "decreased": [],
+  "added": [],
+  "removed": [
+    {
+      "permission_name": "com.google.android.voicesearch.AUDIO_FILE_ACCESS",
+      "old_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.googlequicksearchbox.permission.FINISH_GEL_ACTIVITY",
+      "old_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.apps.now.CURRENT_ACCOUNT_ACCESS",
+      "old_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.googlequicksearchbox.LAUNCH_WITH_RECORDED_AUDIO",
+      "old_level": "signatureOrSystem"
+    },
+    {
+      "permission_name": "com.google.android.googlequicksearchbox.LAUNCH_FROM_DSP_HOTWORD",
+      "old_level": "signatureOrSystem"
+    },
+    {
+      "permission_name": "com.google.android.googlequicksearchbox.permission.LAUNCH_FROM_GMM",
+      "old_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.apps.now.OPT_IN_WIZARD",
+      "old_level": "signatureOrSystem"
+    },
+    {
+      "permission_name": "com.google.android.googlequicksearchbox.permission.PAUSE_HOTWORD",
+      "old_level": "signatureOrSystem"
+    },
+    {
+      "permission_name": "com.google.android.googlequicksearchbox.permission.C2D_MESSAGE",
+      "old_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.googlequicksearchbox.permission.FLUSH_LOGS",
+      "old_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.googlequicksearchbox.permission.NGA_SURVEY",
+      "old_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.googlequicksearchbox.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+      "old_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.apps.gsa.nga.permissions.EDIT_PREFERENCES",
+      "old_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.apps.search.assistant.verticals.snapshot.widgets.weather.permission.WEATHER_WIDGET_UPDATE",
+      "old_level": "signature"
+    },
+    {
+      "permission_name": "com.google.android.googlequicksearchbox.permission.LENS_SERVICE",
+      "old_level": "normal"
+    }
+  ]
+}

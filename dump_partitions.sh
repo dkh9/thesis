@@ -4,6 +4,7 @@ ANDSCANNER_PATH=/home/dasha/thesis/tools/AndScanner
 USER_PARTITIONS="userspace_partitions"
 SAM_PATTERN="AP_*.tar.md5.extracted*"
 F2FS_POINT="/mnt/f2fs-point/"
+KERNEL_PARTITION="boot_partition"
 
 if [ $# -eq 0 ]
   then
@@ -41,7 +42,7 @@ for img in super*.img
             simg2img "$img" "$raw" 
         else
             echo "SKIPPING: $img not sparse!"
-            exit 1 
+            #exit 1 
         fi  
     done
 
@@ -128,6 +129,15 @@ unpack_user_partitions() {
         
         done
     
+}
+
+unpack_boot_partition() {
+    echo "$pwd"
+    if [[ -f "./boot.img" ]]; then
+        echo "Found boot.img"
+    fi
+
+    mv boot.img $KERNEL_PARTITION
 
 }
 
@@ -167,5 +177,9 @@ unpack_super
 
 mkdir $USER_PARTITIONS
 unpack_user_partitions .
+
+
+mkdir $KERNEL_PARTITION
+unpack_boot_partition
 
 popd

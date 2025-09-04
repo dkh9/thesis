@@ -1,0 +1,13 @@
+{
+  "increased": [
+    {
+      "gid": "virtualmachine",
+      "change": "score 0 -> 10",
+      "added_permissions": [
+        "android.permission.MANAGE_VIRTUAL_MACHINE"
+      ],
+      "removed_permissions": []
+    }
+  ],
+  "decreased": []
+}

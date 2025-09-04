@@ -1,0 +1,14 @@
+{
+  "increased_visibility": [
+    {
+      "app": "KmxService.apk",
+      "component": {
+        "type": "receiver",
+        "name": "SPDE.env.version"
+      },
+      "from": "false",
+      "to": "true"
+    }
+  ],
+  "decreased_visibility": []
+}

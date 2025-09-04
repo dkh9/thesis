@@ -1,0 +1,34 @@
+{
+  "apex_payload_contents/bin/hw/android.hardware.camera.provider@2.7-service-google": {
+    "Similarity Score": 0.999,
+    "Radiff2 Distance": 266,
+    "Total Functions Analyzed": 294,
+    "Identical Functions": 291,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 3,
+    "Changed Matched Functions": 0,
+    "Changed Unmatched Functions": 3,
+    "Mentioned in .rc": false,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    }
+  },
+  "shiba-sep24/vendor/lib64/vendor.radio.base.so": {
+    "Similarity Score": 1.0,
+    "Radiff2 Distance": 46,
+    "Total Functions Analyzed": 1201,
+    "Identical Functions": 1201,
+    "New Functions": 0,
+    "Changed Functions (sim < 1.0, excluding NEW)": 0,
+    "Changed Matched Functions": 0,
+    "Changed Unmatched Functions": 0,
+    "Mentioned in .rc": false,
+    "TEE": false,
+    "Hardening comparison": {
+      "identical": true,
+      "differences": []
+    }
+  }
+}

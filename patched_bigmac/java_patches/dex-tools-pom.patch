@@ -1,0 +1,11 @@
+--- ./dex2jar/dex-tools/pom.xml	2025-04-10 12:44:01.601256615 +0300
++++ ./java_patches/modif_pom.xml	2025-04-10 12:54:21.341121750 +0300
+@@ -57,6 +57,8 @@
+             <groupId>com.google.android.tools</groupId>
+             <artifactId>dx</artifactId>
+             <version>23.0.0</version>
++            <scope>system</scope>
++            <systemPath>${project.basedir}/lib/dx-23.0.0.jar</systemPath>
+         </dependency>
+     </dependencies>
+     <build>

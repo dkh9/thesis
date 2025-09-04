@@ -1,0 +1,96 @@
+{
+  "increased": [
+    {
+      "apk": "Photos.apk",
+      "component": "com.google.android.apps.photos.experiments.phenotype.full.PhenotypeUpdateBroadcastReceiver",
+      "type": "receiver",
+      "permission_type": "permission",
+      "permission": "com.google.android.gms.permission.PHENOTYPE_UPDATE_BROADCAST",
+      "change": "added with score 30"
+    },
+    {
+      "apk": "EuiccSupportPixel-P23.apk",
+      "component": "com.google.euiccpixel.receiver.DialerCodeReceiver",
+      "type": "receiver",
+      "permission_type": "permission",
+      "permission": "android.permission.CONTROL_INCALL_EXPERIENCE",
+      "change": "added with score 36"
+    },
+    {
+      "apk": "WellbeingPrebuilt.apk",
+      "component": "com.google.apps.tiktok.experiments.phenotype.ConfigurationUpdatedReceiver_Receiver",
+      "type": "receiver",
+      "permission_type": "permission",
+      "permission": "com.google.android.gms.permission.PHENOTYPE_UPDATE_BROADCAST",
+      "change": "added with score 30"
+    },
+    {
+      "apk": "Velvet.apk",
+      "component": "com.google.apps.tiktok.experiments.phenotype.ConfigurationUpdatedReceiver_Receiver",
+      "type": "receiver",
+      "permission_type": "permission",
+      "permission": "com.google.android.gms.permission.PHENOTYPE_UPDATE_BROADCAST",
+      "change": "added with score 30"
+    },
+    {
+      "apk": "SettingsGoogle.apk",
+      "component": "com.android.settings.Settings$NetworkSelectActivity",
+      "type": "activity",
+      "permission_type": "permission",
+      "permission": "android.permission.SATELLITE_COMMUNICATION",
+      "change": "added with score 36"
+    },
+    {
+      "apk": "SettingsGoogle.apk",
+      "component": "com.android.settings.fuelgauge.batteryusage.BootBroadcastReceiver",
+      "type": "receiver",
+      "permission_type": "permission",
+      "permission": "com.android.settings.BATTERY_DATA",
+      "change": "added with score 10"
+    },
+    {
+      "apk": "PrebuiltBugle.apk",
+      "component": "com.google.apps.tiktok.experiments.phenotype.ConfigurationUpdatedReceiver_Receiver",
+      "type": "receiver",
+      "permission_type": "permission",
+      "permission": "com.google.android.gms.permission.PHENOTYPE_UPDATE_BROADCAST",
+      "change": "added with score 30"
+    },
+    {
+      "apk": "PrebuiltGmsCoreSc.apk",
+      "component": "com.google.android.gms.dck.service.DckOffHostApduService",
+      "type": "service",
+      "permission": "android.permission.BIND_NFC_SERVICE",
+      "change": "score 30 -> 31 (protection level change)"
+    },
+    {
+      "apk": "PrebuiltGmsCoreSc.apk",
+      "component": "com.google.android.gms.pay.hce.service.PayHceService",
+      "type": "service",
+      "permission": "android.permission.BIND_NFC_SERVICE",
+      "change": "score 30 -> 31 (protection level change)"
+    },
+    {
+      "apk": "PrebuiltGmsCoreSc.apk",
+      "component": "com.google.android.gms.nearby.mediums.nearfieldcommunication.NfcAdvertisingService",
+      "type": "service",
+      "permission": "android.permission.BIND_NFC_SERVICE",
+      "change": "score 30 -> 31 (protection level change)"
+    },
+    {
+      "apk": "PrebuiltGmsCoreSc.apk",
+      "component": "com.google.android.gms.tapandpay.hce.service.TpHceService",
+      "type": "service",
+      "permission": "android.permission.BIND_NFC_SERVICE",
+      "change": "score 30 -> 31 (protection level change)"
+    },
+    {
+      "apk": "PrebuiltGmsCoreSc.apk",
+      "component": "com.google.android.gms.dck.service.DckNfcApduService",
+      "type": "service",
+      "permission": "android.permission.BIND_NFC_SERVICE",
+      "change": "score 30 -> 31 (protection level change)"
+    }
+  ],
+  "decreased": []
+}

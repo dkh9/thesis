@@ -1,0 +1,14 @@
+{
+  "increased_visibility": [],
+  "decreased_visibility": [
+    {
+      "app": "YouTube.apk",
+      "component": {
+        "type": "service",
+        "name": "androidx.window.sidecar"
+      },
+      "from": "true",
+      "to": "false"
+    }
+  ]
+}

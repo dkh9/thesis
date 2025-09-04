@@ -1,0 +1,450 @@
+{
+  "shiba-jun24/product/overlay/PixelConfigOverlayCommon.apk": {
+    "apk": "PixelConfigOverlayCommon.apk",
+    "priv-app": false,
+    "changes": {
+      "tier_1": [],
+      "tier_2": [
+        {
+          "file": "tmp/apk2_szi9rglw/resources.arsc",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "product/priv-app/ImsServiceEntitlement/ImsServiceEntitlement.apk": {
+    "apk": "ImsServiceEntitlement.apk",
+    "priv-app": true,
+    "changes": {
+      "tier_1": [
+        {
+          "file": "tmp/apk2_9mzi8zuy/classes.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_2": [],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "system/app/EasterEgg/EasterEgg.apk": {
+    "apk": "EasterEgg.apk",
+    "priv-app": false,
+    "changes": {
+      "tier_1": [
+        {
+          "file": "tmp/apk2_qyli4v_v/classes.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_2": [],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "etc/security/fsverity/BuildManifest.apk.idsig": {
+    "apk": "BuildManifest.apk.idsig",
+    "priv-app": false,
+    "error": "Error processing APK diff: Command '['unzip', '-q', 'shiba-jun24/system/system/etc/security/fsverity/BuildManifest.apk.idsig', '-d', '/tmp/apk1_6mrk1wc6']' returned non-zero exit status 9."
+  },
+  "etc/security/fsverity/BuildManifest.apk": {
+    "apk": "BuildManifest.apk",
+    "priv-app": false,
+    "changes": {
+      "tier_1": [],
+      "tier_2": [
+        {
+          "file": "tmp/apk2_12zo3lw3/assets/build_manifest.pb",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "system/app/Traceur/Traceur.apk": {
+    "apk": "Traceur.apk",
+    "priv-app": false,
+    "changes": {
+      "tier_1": [
+        {
+          "file": "tmp/apk2_knye1v_d/classes.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_2": [],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "system/priv-app/ManagedProvisioning/ManagedProvisioning.apk": {
+    "apk": "ManagedProvisioning.apk",
+    "priv-app": true,
+    "changes": {
+      "tier_1": [
+        {
+          "file": "tmp/apk2_i5lih1mg/classes.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_2": [],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "system_ext/app/PersistentBackgroundServices/PersistentBackgroundServices.apk": {
+    "apk": "PersistentBackgroundServices.apk",
+    "priv-app": false,
+    "changes": {
+      "tier_1": [
+        {
+          "file": "tmp/apk2_kqcf8us5/classes.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_2": [],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "etc/security/fsverity/BuildManifestSystemExt.apk.idsig": {
+    "apk": "BuildManifestSystemExt.apk.idsig",
+    "priv-app": false,
+    "error": "Error processing APK diff: Command '['unzip', '-q', 'shiba-jun24/system_ext/etc/security/fsverity/BuildManifestSystemExt.apk.idsig', '-d', '/tmp/apk1_fenjbyjs']' returned non-zero exit status 9."
+  },
+  "etc/security/fsverity/BuildManifestSystemExt.apk": {
+    "apk": "BuildManifestSystemExt.apk",
+    "priv-app": false,
+    "changes": {
+      "tier_1": [],
+      "tier_2": [
+        {
+          "file": "tmp/apk2_wiu55x6n/assets/build_manifest.pb",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "system/priv-app/DeviceDiagnostics/DeviceDiagnostics.apk": {
+    "apk": "DeviceDiagnostics.apk",
+    "priv-app": true,
+    "changes": {
+      "tier_1": [
+        {
+          "file": "tmp/apk2_npq8s5_a/classes.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_2": [],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "system/priv-app/TeleService/TeleService.apk": {
+    "apk": "TeleService.apk",
+    "priv-app": true,
+    "changes": {
+      "tier_1": [
+        {
+          "file": "tmp/apk2_ep9wmyku/classes.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_2": [],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "system_ext/priv-app/ConnectivityThermalPowerManager/ConnectivityThermalPowerManager.apk": {
+    "apk": "ConnectivityThermalPowerManager.apk",
+    "priv-app": true,
+    "changes": {
+      "tier_1": [
+        {
+          "file": "tmp/apk2_kl84yt99/classes.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_2": [],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "system_ext/priv-app/EuiccGoogleOverlay/EuiccGoogleOverlay.apk": {
+    "apk": "EuiccGoogleOverlay.apk",
+    "priv-app": true,
+    "changes": {
+      "tier_1": [
+        {
+          "file": "tmp/apk2_g_fynrlj/classes.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_2": [],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "system_ext/app/Flipendo/Flipendo.apk": {
+    "apk": "Flipendo.apk",
+    "priv-app": false,
+    "changes": {
+      "tier_1": [
+        {
+          "file": "tmp/apk2__qbw1v2n/classes.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_2": [],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "system_ext/priv-app/CarrierSetup/CarrierSetup.apk": {
+    "apk": "CarrierSetup.apk",
+    "priv-app": true,
+    "changes": {
+      "tier_1": [
+        {
+          "file": "tmp/apk2_x4c4bacn/classes.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_2": [],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "system_ext/priv-app/SettingsGoogleFutureFaceEnroll/SettingsGoogleFutureFaceEnroll.apk": {
+    "apk": "SettingsGoogleFutureFaceEnroll.apk",
+    "priv-app": true,
+    "changes": {
+      "tier_1": [
+        {
+          "file": "tmp/apk2_fkasu6gc/classes.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_2": [],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "system_ext/priv-app/StorageManagerGoogle/StorageManagerGoogle.apk": {
+    "apk": "StorageManagerGoogle.apk",
+    "priv-app": true,
+    "changes": {
+      "tier_1": [
+        {
+          "file": "tmp/apk2_vo_ddmgh/classes.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_2": [],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "system_ext/priv-app/WallpaperPickerGoogleRelease/WallpaperPickerGoogleRelease.apk": {
+    "apk": "WallpaperPickerGoogleRelease.apk",
+    "priv-app": true,
+    "changes": {
+      "tier_1": [
+        {
+          "file": "tmp/apk2_ktf05g0i/classes.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_2": [],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "system_ext/priv-app/NexusLauncherRelease/NexusLauncherRelease.apk": {
+    "apk": "NexusLauncherRelease.apk",
+    "priv-app": true,
+    "changes": {
+      "tier_1": [
+        {
+          "file": "tmp/apk2_v_k5stbt/classes.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_2": [],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "system_ext/priv-app/SystemUIGoogle/SystemUIGoogle.apk": {
+    "apk": "SystemUIGoogle.apk",
+    "priv-app": true,
+    "changes": {
+      "tier_1": [
+        {
+          "file": "tmp/apk2_l4u_zsot/classes.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_l4u_zsot/classes2.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_2": [],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "system_ext/priv-app/SettingsGoogle/SettingsGoogle.apk": {
+    "apk": "SettingsGoogle.apk",
+    "priv-app": true,
+    "changes": {
+      "tier_1": [
+        {
+          "file": "tmp/apk2_iivr7vzp/classes.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_iivr7vzp/classes2.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_iivr7vzp/classes3.dex",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_2": [],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  },
+  "product/priv-app/PrebuiltGmsCore/PrebuiltGmsCoreSc.apk": {
+    "apk": "PrebuiltGmsCoreSc.apk",
+    "priv-app": true,
+    "changes": {
+      "tier_1": [],
+      "tier_2": [
+        {
+          "file": "tmp/apk2_42v_938p/assets/chimera-modules/AdsDynamite.apk",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_42v_938p/assets/chimera-modules/CronetDynamite.apk",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_42v_938p/assets/chimera-modules/DynamiteLoader.apk",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_42v_938p/assets/chimera-modules/DynamiteModulesA.apk",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_42v_938p/assets/chimera-modules/DynamiteModulesC.apk",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_42v_938p/assets/chimera-modules/GoogleCertificates.apk",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_42v_938p/assets/chimera-modules/MapsDynamite.apk",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        },
+        {
+          "file": "tmp/apk2_42v_938p/assets/chimera-modules/MeasurementDynamite.apk",
+          "added": "-",
+          "removed": "-",
+          "change_type": "modified"
+        }
+      ],
+      "tier_3": [],
+      "unclassified": []
+    },
+    "dex_diffs": {}
+  }
+}

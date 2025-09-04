@@ -1,0 +1,2270 @@
+### /home/dasha/thesis/remote/s23-101-u/system/system/apex/com.android.apex.cts.shim.apex.unzipped/apex_payload_contents/priv-app/CtsShimPriv@MASTER/CtsShimPriv.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/apex/com.android.apex.cts.shim.apex.unzipped/apex_payload_contents/app/CtsShim@MASTER/CtsShim.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/apex/com.samsung.android.wifi.apex.unzipped/apex_payload_contents/priv-app/ServiceWifiResources@341510000/ServiceWifiResources.apk
+com.android.server.wifi.action.CarrierNetwork.USER_CLICKED
+com.android.server.wifi.ClientModeImpl.ACTION_CERT_NOTIF_TAP
+com.android.server.wifi.ClientModeImpl.ACTION_CERT_NOTIF_ACCEPT
+com.android.server.wifi.ClientModeImpl.ACTION_CERT_NOTIF_REJECT
+com.android.server.wifi.ClientModeImpl.EXTRA_PENDING_CERT_SSID
+com.android.server.wifi.scanner.WifiPnoScanStateMachine.SwPnoScanState.SW_PNO_UPPERBOUND_ALARM
+com.android.server.wifi.scanner.WifiPnoScanStateMachine.SwPnoScanState.SW_PNO_ALARM
+### /home/dasha/thesis/remote/s23-101-u/system/system/apex/com.samsung.android.wifi.apex.unzipped/apex_payload_contents/app/OsuLogin@341510000/OsuLogin.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/apex/com.samsung.android.wifi.apex.unzipped/apex_payload_contents/app/WifiDialog@341510000/WifiDialog.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/apex/com.android.rkpd.apex.unzipped/apex_payload_contents/priv-app/rkpdapp@UP1A.231005.007/rkpdapp.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/apex/com.android.btservices.apex.unzipped/apex_payload_contents/app/Bluetooth@UP1A.231005.007/Bluetooth.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/framework/framework-res.apk
+android.intent.action.SCREEN_OFF
+android.intent.action.SCREEN_ON
+android.intent.action.USER_PRESENT
+android.intent.action.TIME_SET
+android.intent.action.TIME_TICK
+android.intent.action.TIMEZONE_CHANGED
+android.intent.action.DATE_CHANGED
+android.intent.action.PRE_BOOT_COMPLETED
+android.intent.action.BOOT_COMPLETED
+android.intent.action.PACKAGE_INSTALL
+android.intent.action.PACKAGE_ADDED
+android.intent.action.PACKAGE_REPLACED
+android.intent.action.MY_PACKAGE_REPLACED
+android.intent.action.PACKAGE_REMOVED
+android.intent.action.PACKAGE_REMOVED_INTERNAL
+android.intent.action.PACKAGE_FULLY_REMOVED
+android.intent.action.PACKAGE_CHANGED
+android.intent.action.PACKAGE_FULLY_LOADED
+android.intent.action.PACKAGE_ENABLE_ROLLBACK
+android.intent.action.CANCEL_ENABLE_ROLLBACK
+android.intent.action.ROLLBACK_COMMITTED
+android.intent.action.PACKAGE_RESTARTED
+android.intent.action.PACKAGE_DATA_CLEARED
+android.intent.action.PACKAGE_FIRST_LAUNCH
+android.intent.action.PACKAGE_NEEDS_INTEGRITY_VERIFICATION
+android.intent.action.PACKAGE_NEEDS_VERIFICATION
+android.intent.action.PACKAGE_VERIFIED
+android.intent.action.PACKAGES_SUSPENDED
+android.intent.action.PACKAGES_UNSUSPENDED
+android.intent.action.PACKAGES_SUSPENSION_CHANGED
+android.intent.action.PACKAGE_UNSUSPENDED_MANUALLY
+android.intent.action.DISTRACTING_PACKAGES_CHANGED
+android.intent.action.ACTION_PREFERRED_ACTIVITY_CHANGED
+android.intent.action.UID_REMOVED
+android.intent.action.QUERY_PACKAGE_RESTART
+android.intent.action.CONFIGURATION_CHANGED
+android.intent.action.SPLIT_CONFIGURATION_CHANGED
+android.intent.action.LOCALE_CHANGED
+android.intent.action.APPLICATION_LOCALE_CHANGED
+android.intent.action.BATTERY_CHANGED
+android.intent.action.BATTERY_LEVEL_CHANGED
+android.intent.action.BATTERY_LOW
+android.intent.action.BATTERY_OKAY
+android.intent.action.ACTION_POWER_CONNECTED
+android.intent.action.ACTION_POWER_DISCONNECTED
+android.intent.action.ACTION_SHUTDOWN
+android.intent.action.CHARGING
+android.intent.action.DISCHARGING
+android.intent.action.DEVICE_STORAGE_LOW
+android.intent.action.DEVICE_STORAGE_OK
+android.intent.action.DEVICE_STORAGE_FULL
+android.intent.action.DEVICE_STORAGE_NOT_FULL
+android.intent.action.NEW_OUTGOING_CALL
+android.intent.action.REBOOT
+android.intent.action.DOCK_EVENT
+android.intent.action.THERMAL_EVENT
+android.intent.action.MASTER_CLEAR_NOTIFICATION
+android.intent.action.USER_ADDED
+android.intent.action.USER_REMOVED
+android.intent.action.USER_STARTING
+android.intent.action.USER_STARTED
+android.intent.action.USER_STOPPING
+android.intent.action.USER_STOPPED
+android.intent.action.USER_BACKGROUND
+android.intent.action.USER_FOREGROUND
+android.intent.action.USER_SWITCHED
+android.intent.action.USER_INITIALIZE
+android.intent.action.INTENT_FILTER_NEEDS_VERIFICATION
+android.intent.action.DOMAINS_NEED_VERIFICATION
+android.intent.action.OVERLAY_ADDED
+android.intent.action.OVERLAY_CHANGED
+android.intent.action.OVERLAY_REMOVED
+android.intent.action.OVERLAY_PRIORITY_CHANGED
+android.intent.action.MY_PACKAGE_SUSPENDED
+android.intent.action.MY_PACKAGE_UNSUSPENDED
+android.os.action.POWER_SAVE_MODE_CHANGED
+android.os.action.DEVICE_IDLE_MODE_CHANGED
+android.os.action.POWER_SAVE_WHITELIST_CHANGED
+android.os.action.POWER_SAVE_TEMP_WHITELIST_CHANGED
+android.os.action.POWER_SAVE_MODE_CHANGED_INTERNAL
+android.os.action.LOW_POWER_STANDBY_ENABLED_CHANGED
+android.os.action.LOW_POWER_STANDBY_POLICY_CHANGED
+android.os.action.LOW_POWER_STANDBY_PORTS_CHANGED
+android.os.action.ENHANCED_DISCHARGE_PREDICTION_CHANGED
+android.os.action.SCREEN_BRIGHTNESS_BOOST_CHANGED
+android.app.action.CLOSE_NOTIFICATION_HANDLER_PANEL
+android.app.action.ENTER_CAR_MODE
+android.app.action.EXIT_CAR_MODE
+android.app.action.ENTER_CAR_MODE_PRIORITIZED
+android.app.action.EXIT_CAR_MODE_PRIORITIZED
+android.app.action.ENTER_DESK_MODE
+android.app.action.EXIT_DESK_MODE
+android.app.action.NEXT_ALARM_CLOCK_CHANGED
+com.samsung.activation.COMPLETED
+com.samsung.activation.ACTIVATION_DEVICE
+com.samsung.android.location.mock.delete
+com.samsung.intent.action.PREINSTALLER_FINISH
+android.app.action.ENTER_KNOX_DESKTOP_MODE
+android.app.action.EXIT_KNOX_DESKTOP_MODE
+com.samsung.android.desktopmode.action.ENTER_DESKTOP_MODE
+com.samsung.android.desktopmode.action.EXIT_DESKTOP_MODE
+com.samsung.android.desktopmode.action.UPDATE_DATABASE
+com.sec.android.app.desktoplauncher.SYSTEM_READY
+com.sec.android.app.desktoplauncher.intent.action.WALLPAPER_SHOWN
+com.samsung.android.mdx.instanthotspot.action.RFCOMM_SERVICE_DISCONNECTED
+com.samsung.intent.action.EMERGENCY_START_SERVICE_BY_ORDER
+com.samsung.intent.action.EMERGENCY_FINISHED_SENDING_PACKAGE_CHANGED
+com.samsung.android.action.ALARM_CLOCK_CHANGED
+android.app.action.USER_ADDED
+android.app.action.USER_REMOVED
+android.app.action.USER_STARTED
+android.app.action.USER_STOPPED
+android.app.action.USER_SWITCHED
+com.samsung.android.sm.ACTION_USER_MEM_LOW
+com.samsung.android.sm.ACTION_CANCEL_USER_MEM_LOW
+android.app.action.BUGREPORT_SHARING_DECLINED
+android.app.action.BUGREPORT_FAILED
+android.app.action.BUGREPORT_SHARE
+android.app.action.SHOW_DEVICE_MONITORING_DIALOG
+android.intent.action.PENDING_INCIDENT_REPORTS_CHANGED
+android.intent.action.INCIDENT_REPORT_READY
+android.appwidget.action.APPWIDGET_UPDATE_OPTIONS
+android.appwidget.action.APPWIDGET_DELETED
+android.appwidget.action.APPWIDGET_DISABLED
+android.appwidget.action.APPWIDGET_ENABLED
+android.appwidget.action.APPWIDGET_HOST_RESTORED
+android.appwidget.action.APPWIDGET_RESTORED
+android.appwidget.action.APPWIDGET_ENABLE_AND_UPDATE
+android.os.action.SETTING_RESTORED
+android.app.backup.intent.CLEAR
+android.app.backup.intent.INIT
+android.bluetooth.intent.DISCOVERABLE_TIMEOUT
+android.bluetooth.adapter.action.STATE_CHANGED
+android.bluetooth.adapter.action.SCAN_MODE_CHANGED
+android.bluetooth.adapter.action.DISCOVERY_STARTED
+android.bluetooth.adapter.action.DISCOVERY_FINISHED
+android.bluetooth.adapter.action.LOCAL_NAME_CHANGED
+android.bluetooth.adapter.action.BLUETOOTH_ADDRESS_CHANGED
+android.bluetooth.adapter.action.CONNECTION_STATE_CHANGED
+android.bluetooth.device.action.UUID
+android.bluetooth.device.action.MAS_INSTANCE
+android.bluetooth.device.action.ALIAS_CHANGED
+android.bluetooth.device.action.FOUND
+android.bluetooth.device.action.CLASS_CHANGED
+android.bluetooth.device.action.ACL_CONNECTED
+android.bluetooth.device.action.ACL_DISCONNECT_REQUESTED
+android.bluetooth.device.action.ACL_DISCONNECTED
+android.bluetooth.device.action.NAME_CHANGED
+android.bluetooth.device.action.BOND_STATE_CHANGED
+android.bluetooth.device.action.NAME_FAILED
+android.bluetooth.device.action.PAIRING_REQUEST
+android.bluetooth.device.action.PAIRING_CANCEL
+android.bluetooth.device.action.CONNECTION_ACCESS_REPLY
+android.bluetooth.device.action.CONNECTION_ACCESS_CANCEL
+android.bluetooth.device.action.CONNECTION_ACCESS_REQUEST
+android.bluetooth.device.action.SDP_RECORD
+android.bluetooth.device.action.BATTERY_LEVEL_CHANGED
+android.bluetooth.device.action.REMOTE_ISSUE_OCCURRED
+android.bluetooth.devicepicker.action.LAUNCH
+android.bluetooth.devicepicker.action.DEVICE_SELECTED
+android.bluetooth.headset.profile.action.CONNECTION_STATE_CHANGED
+android.bluetooth.headset.profile.action.AUDIO_STATE_CHANGED
+android.bluetooth.headset.action.VENDOR_SPECIFIC_HEADSET_EVENT
+android.bluetooth.headset.action.HF_INDICATORS_VALUE_CHANGED
+android.bluetooth.headset.profile.action.ACTIVE_DEVICE_CHANGED
+android.bluetooth.headsetclient.profile.action.CONNECTION_STATE_CHANGED
+android.bluetooth.headsetclient.profile.action.AUDIO_STATE_CHANGED
+android.bluetooth.headsetclient.profile.action.AG_EVENT
+android.bluetooth.headsetclient.profile.action.AG_CALL_CHANGED
+android.bluetooth.headsetclient.profile.action.RESULT
+android.bluetooth.headsetclient.profile.action.LAST_VTAG
+android.bluetooth.headsetclient.profile.action.NETWORK_SERVICE_STATE_CHANGED
+android.bluetooth.hearingaid.profile.action.CONNECTION_STATE_CHANGED
+android.bluetooth.hearingaid.profile.action.PLAYING_STATE_CHANGED
+android.bluetooth.hearingaid.profile.action.ACTIVE_DEVICE_CHANGED
+android.bluetooth.action.CSIS_CONNECTION_STATE_CHANGED
+android.bluetooth.action.CSIS_DEVICE_AVAILABLE
+android.bluetooth.action.CSIS_SET_MEMBER_AVAILABLE
+android.bluetooth.volume-control.profile.action.CONNECTION_STATE_CHANGED
+android.bluetooth.a2dp.profile.action.CONNECTION_STATE_CHANGED
+android.bluetooth.a2dp.profile.action.ACTIVE_DEVICE_CHANGED
+android.bluetooth.a2dp.profile.action.PLAYING_STATE_CHANGED
+android.bluetooth.a2dp.profile.action.CODEC_CONFIG_CHANGED
+android.bluetooth.a2dp-sink.profile.action.CONNECTION_STATE_CHANGED
+android.bluetooth.a2dp-sink.profile.action.PLAYING_STATE_CHANGED
+android.bluetooth.a2dp-sink.profile.action.AUDIO_CONFIG_CHANGED
+android.bluetooth.avrcp-controller.profile.action.BROWSE_CONNECTION_STATE_CHANGED
+android.bluetooth.avrcp-controller.profile.action.CONNECTION_STATE_CHANGED
+android.bluetooth.avrcp-controller.profile.action.FOLDER_LIST
+android.bluetooth.avrcp-controller.profile.action.TRACK_EVENT
+android.bluetooth.input.profile.action.CONNECTION_STATE_CHANGED
+android.bluetooth.input.profile.action.IDLE_TIME_CHANGED
+android.bluetooth.input.profile.action.PROTOCOL_MODE_CHANGED
+android.bluetooth.input.profile.action.VIRTUAL_UNPLUG_STATUS
+android.bluetooth.hiddevice.profile.action.CONNECTION_STATE_CHANGED
+android.bluetooth.map.profile.action.CONNECTION_STATE_CHANGED
+android.bluetooth.mapmce.profile.action.CONNECTION_STATE_CHANGED
+android.bluetooth.mapmce.profile.action.MESSAGE_RECEIVED
+android.bluetooth.mapmce.profile.action.MESSAGE_SENT_SUCCESSFULLY
+android.bluetooth.mapmce.profile.action.MESSAGE_DELIVERED_SUCCESSFULLY
+android.bluetooth.mapmce.profile.action.MESSAGE_READ_STATUS_CHANGED
+android.bluetooth.mapmce.profile.action.MESSAGE_DELETED_STATUS_CHANGED
+com.android.bluetooth.BluetoothMapContentObserver.action.MESSAGE_SENT
+com.android.bluetooth.BluetoothMapContentObserver.action.MESSAGE_DELIVERY
+android.bluetooth.pan.profile.action.CONNECTION_STATE_CHANGED
+android.bluetooth.action.HAP_CONNECTION_STATE_CHANGED
+android.bluetooth.action.LE_AUDIO_CONNECTION_STATE_CHANGED
+android.bluetooth.action.LE_AUDIO_ACTIVE_DEVICE_CHANGED
+android.bluetooth.action.LE_AUDIO_CONF_CHANGED
+android.bluetooth.action.LE_AUDIO_GROUP_NODE_STATUS_CHANGED
+android.bluetooth.action.LE_AUDIO_GROUP_STATUS_CHANGED
+android.bluetooth.action.TETHERING_STATE_CHANGED
+android.bluetooth.pbap.profile.action.CONNECTION_STATE_CHANGED
+android.bluetooth.pbapclient.profile.action.CONNECTION_STATE_CHANGED
+android.bluetooth.sap.profile.action.CONNECTION_STATE_CHANGED
+android.btopp.intent.action.INCOMING_FILE_NOTIFICATION
+android.btopp.intent.action.USER_CONFIRMATION_TIMEOUT
+android.btopp.intent.action.LIST
+android.btopp.intent.action.OPEN_OUTBOUND
+android.btopp.intent.action.HIDE_COMPLETE
+android.btopp.intent.action.CONFIRM
+android.btopp.intent.action.HIDE
+android.btopp.intent.action.RETRY
+android.btopp.intent.action.OPEN
+android.btopp.intent.action.OPEN_INBOUND
+android.btopp.intent.action.TRANSFER_COMPLETE
+android.btopp.intent.action.ACCEPT
+android.btopp.intent.action.DECLINE
+com.samsung.btopp.intent.action.HIDE_COMPLETE_INBOUND
+com.samsung.btopp.intent.action.HIDE_COMPLETE_OUTBOUND
+com.samsung.btopp.intent.action.HIDE_FAILED_INBOUND
+com.samsung.btopp.intent.action.HIDE_FAILED_OUTBOUND
+com.samsung.btopp.intent.action.HIDE_COMPLETE_CLEAR
+com.android.bluetooth.gatt.REFRESH_BATCHED_SCAN
+com.android.bluetooth.pbap.authchall
+com.android.bluetooth.pbap.userconfirmtimeout
+com.android.bluetooth.pbap.authresponse
+com.android.bluetooth.pbap.authcancelled
+com.android.bluetooth.sap.USER_CONFIRM_TIMEOUT
+com.android.bluetooth.sap.action.DISCONNECT_ACTION
+com.samsung.intent.action.DEVICE_STORAGE_NOT_EXHAUSTION
+com.samsung.intent.action.DEVICE_STORAGE_EXHAUSTION
+com.samsung.intent.action.DEVICE_FILENODE_FULL
+com.samsung.intent.action.DEVICE_FILENODE_NOT_FULL
+com.samsung.intent.action.DEVICE_STORAGE_FULL
+com.samsung.intent.action.DEVICE_STORAGE_NOT_FULL
+com.samsung.intent.action.DEVICE_STORAGE_WARNING_ON
+com.samsung.intent.action.DEVICE_STORAGE_WARNING_OFF
+com.samsung.intent.action.DEVICE_STORAGE_CAUTION_ON
+com.samsung.intent.action.DEVICE_STORAGE_CAUTION_OFF
+com.samsung.intent.action.SHOWMSG_OF_SDCARDBADREMOVED_HASAPK
+com.samsung.intent.action.RESTART_OF_SDCARDBADREMOVED_HASAPK
+com.samsung.intent.action.RUN_DISK_DEFRAGMENTATION
+com.samsung.intent.action.EXTERNAL_STORAGE_WARNING_SEC
+android.intent.action.USBHID_KEYBOARD_EVENT
+android.intent.action.USBHID_MOUSE_EVENT
+com.samsung.UsbOtgCableConnection
+com.samsung.intent.action.USB_WET_STATE
+com.samsung.intent.action.USB_RESTRICTION_STATE
+com.samsung.android.location.SERVICE_READY
+com.samsung.bluetooth.device.action.AUDIO_TYPE_CHANGED
+com.samsung.android.security.SemSdCardEncryption.UNMOUNT_POLICY
+com.samsung.bt.hfp.intent.action.HF_INDICATORS_VALUE_CHANGED
+com.samsung.bt.hfp.intent.action.MESSAGE_DELIVERY_FOR_ATMSG
+com.samsung.bt.hfp.intent.action.MESSAGE_SENT_FOR_ATMSG
+com.samsung.bt.hfp.intent.action.SET_BSSF
+com.verizon.bluetooth.headset.action.BLUETOOTH_CALL_COMMAND
+com.samsung.bt.hfp.intent.action.INBAND_RINGTONE_STATE_CHANGED
+com.samsung.bt.hfp.intent.action.SWB_ENABLED_STATE_CHANGED
+com.samsung.bluetooth.a2dp.intent.action.DUAL_PLAY_MODE_ENABLED
+com.samsung.bluetooth.btservice.action.ACTION_NOTIFY_SCMST_UPDATE
+com.samsung.bluetooth.a2dpsink.action.PLAYING_STATE_CHANGED
+com.samsung.bluetooth.btservice.action.ACTION_NOTIFY_A2DP_SINK_SERVICE
+com.samsung.bluetooth.btservice.action.ACTION_ENABLE_A2DP_SINK_SERVICE
+com.samsung.android.bluetooth.audiocast.action.device.AUDIO_SHARING_MODE_CHANGED
+com.samsung.android.bluetooth.audiocast.action.device.AUDIO_SHARING_DEVICE_VOLUME_CHANGED
+com.samsung.downloadable.BluetoothDownloadableDatabase.action.DOWNLOADABLE_DB_BLE_UPDATE_INTENT
+com.samsung.downloadable.BluetoothDownloadableDatabase.action.DOWNLOADABLE_DB_HFP_UPDATE_INTENT
+com.samsung.downloadable.BluetoothDownloadableDatabase.action.DOWNLOADABLE_DB_A2DP_UPDATE_INTENT
+com.samsung.downloadable.BluetoothDownloadableDatabase.action.DOWNLOADABLE_DB_GAP_UPDATE_INTENT
+com.samsung.bluetooth.action.GEAR_CONNECTION_STATE_CHANGED
+com.samsung.settings.CHINA_NAL_SECURITY_SCAN_CANCEL
+com.samsung.bluetooth.device.action.MANUFACTURER_CHANGED
+com.samsung.server.BT_IT_POLICY
+com.samsung.android.intent.action.NOTIFY_SC_SYNC_BLUETOOTH
+com.samsung.android.sconnect.action.CONNECT_WEARABLE
+com.samsung.android.wmanger.action.CONNECT_WEARABLE
+com.samsung.android.action.BLUETOOTH_DEVICE
+com.android.settings.DEVICE_NAME_CHANGED
+com.samsung.bluetooth.action.LE_AUDIO_GROUP_STATE_CHANGED
+com.samsung.bluetooth.action.LE_AUDIO_CIS_STATE_CHANGED
+android.bluetooth.action.CONNECTION_STATE_CHANGED
+com.samsung.bt.bass_client.action.CHANGE_BROADCAST_STATE
+com.samsung.android.bluetooth.cast.action.DISCOVERY_STARTED
+com.samsung.android.bluetooth.cast.action.DISCOVERY_FINISHED
+com.samsung.android.bluetooth.audiocast.action.device.CONNECTION_STATE_CHANGED
+com.samsung.android.bluetooth.cast.device.action.FOUND
+com.samsung.android.bluetooth.cast.device.action.REMOVED
+com.samsung.android.bluetooth.cast.action.AUTH_RESPONSE
+com.samsung.android.bluetooth.cast.action.AUTH_CANCEL
+com.samsung.android.bluetooth.cast.action.CAST_CONNECTION_STATE_CHANGED
+com.samsung.android.bluetoothcast.noti_connect
+com.samsung.android.bluetoothcast.noti_cancel
+com.samsung.android.bluetoothcast.noti_remove
+com.samsung.android.bluetoothcast.noti_content
+com.samsung.android.bluetooth.mcf.cast.action.WIFI_SERVICE_DISABLE_RESPONSE
+com.samsung.bluetooth.device.action.RSSI
+com.samsung.bluetooth.device.action.RSSI_OUT_OF_RANGE_ALERT
+com.samsung.bluetooth.device.action.RSSI_IN_RANGE_ALERT
+com.samsung.bluetooth.device.action.RSSI_OUT_OF_RANGE_ALERT_FOR_GEAR1
+com.samsung.bluetooth.device.action.RSSI_IN_RANGE_ALERT_FOR_GEAR1
+com.samsung.bluetooth.device.action.ACTION_OUT_OF_RANGE_ALERT_FOR_GEAR1
+com.samsung.bluetooth.device.action.ACTION_IN_RANGE_ALERT_FOR_GEAR1
+com.samsung.bluetooth.adapter.action.BLE_STATE_CHANGED
+com.samsung.bluetooth.device.action.BOND_STATE_CHANGED_FROM_NEARBY_DEVICE
+com.samsung.android.settings.bluetooth.RANGE_CONTACTS
+com.samsung.android.settings.bluetooth.RANGE_EVERYONE
+com.samsung.android.settings.bluetooth.PEMISSION_ASKME
+com.samsung.android.settings.bluetooth.PERMISSION_ALWAYS
+com.samsung.android.settings.bluetooth.AVAILABLE_DEVICE
+com.samsung.bluetooth.device.action.AUTO_SWITCH_MODE_CHANGED
+com.samsung.bluetooth.device.action.SMEP_CONNECTION_STATE_CHANGED
+com.samsung.bluetooth.device.action.META_DATA_CHANGED
+com.samsung.bluetooth.device.action.RE_PAIR_FOR_LEAUDIO
+com.samsung.bluetooth.device.action.BLUETOOTH_BUDS_SELL_OUT
+com.samsung.android.intent.action.RESPONSE_BACKUP_BLUETOOTH
+com.samsung.android.intent.action.RESPONSE_RESTORE_BLUETOOTH
+com.samsung.bluetooth.adapter.action.ACTION_DUALBT_SCAN_CORE_TEST_END
+com.samsung.bluetooth.adapter.action.ACTION_NONSIGNAL_RX_TEST_END
+com.samsung.bluetooth.adapter.action.ACTION_LE_TEST_RSSI_RESULT
+POWER_OFF_ANIMATION_START
+POWER_OFF_CANCEL
+com.android.bluetooth.p2p.SETTINGS_STRATED
+com.samsung.btopp.intent.action.BT_ADVOPP_RECOVER
+com.samsung.btopp.intent.action.OPP_FINISH_TRANSFER_ACTIVITY
+com.samsung.btopp.intent.action.ACTION_SHARE_MAC_ADVOPP_FOR_P2P
+com.samsung.btopp.intent.action.MSG_SESSION_COMPLETE
+com.samsung.btopp.intent.action.MSG_SESSION_ERROR
+com.samsung.btopp.intent.action.OPP_TRANSFER_STOP
+com.samsung.btopp.intent.action.SCONNECT_HANDOVER_SEND
+com.samsung.btopp.intent.action.SCONNECT_HANDOVER_SEND_MULTIPLE
+com.samsung.btopp.intent.action.SCONNECT_HANDOVER_STOP
+com.samsung.btopp.intent.action.KNOX_HANDOVER_SEND
+com.samsung.btopp.intent.action.KNOX_HANDOVER_SEND_MULTIPLE
+android.btopp.intent.action.ACCEPTLIST_DEVICE
+com.samsung.bluetooth.pan.inactivenap.ASK_CONFIRM
+android.net.BT_TETHER_STATE_CHANGED
+com.samsung.bluetooth.pan.panu_auth.auth_confirm
+com.samsung.intent.action.DLNA_STATUS_CHANGED
+com.samsung.intent.action.SEC_PRESENTATION_START_SMARTVIEW
+com.samsung.intent.action.SEC_PRESENTATION_STOP_SMARTVIEW
+com.samsung.intent.action.SET_SCREEN_RATIO_VALUE
+com.samsung.intent.action.WIFI_DISPLAY_SOURCE_STATE
+com.samsung.intent.action.DISCONNECT_LELINK_CAST
+com.sec.android.smartview.WFD_ENGINE_PAUSE
+com.sec.android.smartview.WFD_ENGINE_RESUME
+com.samsung.intent.action.NETWORK_CONNECTED_STATE
+com.samsung.intent.action.NETWORK_DISCONNECTED_STATE
+android.hardware.display.action.WIFI_DISPLAY_STATUS_CHANGED
+android.hardware.usb.action.USB_STATE
+android.hardware.usb.action.USB_PORT_CHANGED
+android.hardware.usb.action.USB_PORT_COMPLIANCE_CHANGED
+android.hardware.usb.action.USB_ACCESSORY_ATTACHED
+android.hardware.usb.action.USB_ACCESSORY_DETACHED
+android.hardware.usb.action.USB_ACCESSORY_HANDSHAKE
+android.hardware.usb.action.USB_DEVICE_ATTACHED
+android.hardware.usb.action.USB_DEVICE_DETACHED
+android.intent.action.HEADSET_PLUG
+android.media.action.HDMI_AUDIO_PLUG
+android.media.action.MICROPHONE_MUTE_CHANGED
+android.media.action.SPEAKERPHONE_STATE_CHANGED
+android.media.AUDIO_BECOMING_NOISY
+android.media.RINGER_MODE_CHANGED
+android.media.VIBRATE_SETTING_CHANGED
+android.media.VOLUME_CHANGED_ACTION
+android.media.MASTER_VOLUME_CHANGED_ACTION
+android.media.MASTER_MUTE_CHANGED_ACTION
+android.media.MASTER_MONO_CHANGED_ACTION
+android.media.MASTER_BALANCE_CHANGED_ACTION
+android.media.SCO_AUDIO_STATE_CHANGED
+android.media.ACTION_SCO_AUDIO_STATE_UPDATED
+com.android.server.audio.action.CHECK_MUSIC_ACTIVE
+android.intent.action.MEDIA_REMOVED
+android.intent.action.MEDIA_UNMOUNTED
+android.intent.action.MEDIA_CHECKING
+android.intent.action.MEDIA_NOFS
+android.intent.action.MEDIA_MOUNTED
+android.intent.action.MEDIA_SHARED
+android.intent.action.MEDIA_UNSHARED
+android.intent.action.MEDIA_BAD_REMOVAL
+android.intent.action.MEDIA_UNMOUNTABLE
+android.intent.action.MEDIA_EJECT
+android.net.conn.CAPTIVE_PORTAL
+android.net.conn.CONNECTIVITY_CHANGE
+android.net.conn.CONNECTIVITY_CHANGE_IMMEDIATE
+android.net.conn.DATA_ACTIVITY_CHANGE
+android.net.conn.RESTRICT_BACKGROUND_CHANGED
+android.net.conn.BACKGROUND_DATA_SETTING_CHANGED
+android.net.conn.CAPTIVE_PORTAL_TEST_COMPLETED
+android.net.nsd.STATE_CHANGED
+com.samsung.android.intent.action.ACCESSORY_COVER_ATTACH
+com.samsung.android.intent.action.ACCESSORY_COVER_DETACH
+android.se.omapi.action.SECURE_ELEMENT_STATE_CHANGED
+android.nfc.action.ADAPTER_STATE_CHANGED
+android.nfc.action.PREFERRED_PAYMENT_CHANGED
+android.nfc.action.TRANSACTION_DETECTED
+android.nfc.action.REQUIRE_UNLOCK_FOR_NFC
+com.android.nfc.action.LLCP_UP
+com.android.nfc.action.LLCP_DOWN
+com.android.nfc.cardemulation.action.CLOSE_TAP_DIALOG
+com.android.nfc.handover.action.ALLOW_CONNECT
+com.android.nfc.handover.action.DENY_CONNECT
+com.android.nfc.handover.action.TIMEOUT_CONNECT
+com.android.nfc_extras.action.RF_FIELD_ON_DETECTED
+com.android.nfc_extras.action.RF_FIELD_OFF_DETECTED
+com.android.nfc_extras.action.AID_SELECTED
+android.btopp.intent.action.WHITELIST_DEVICE
+android.btopp.intent.action.STOP_HANDOVER_TRANSFER
+android.nfc.handover.intent.action.HANDOVER_SEND
+android.nfc.handover.intent.action.HANDOVER_SEND_MULTIPLE
+com.android.nfc.handover.action.CANCEL_HANDOVER_TRANSFER
+android.net.action.CLEAR_DNS_CACHE
+android.intent.action.PROXY_CHANGE
+android.os.UpdateLock.UPDATE_LOCK_CHANGED
+android.intent.action.DREAMING_STARTED
+android.intent.action.DREAMING_STOPPED
+android.intent.action.ANY_DATA_STATE
+com.android.server.stats.action.TRIGGER_COLLECTION
+com.android.server.WifiManager.action.START_SCAN
+com.android.server.WifiManager.action.START_PNO
+com.android.server.WifiManager.action.DELAYED_DRIVER_STOP
+com.android.server.WifiManager.action.DEVICE_IDLE
+com.android.server.action.REMOTE_BUGREPORT_SHARING_ACCEPTED
+com.android.server.action.REMOTE_BUGREPORT_SHARING_DECLINED
+com.android.internal.action.EUICC_FACTORY_RESET
+com.android.internal.action.EUICC_REMOVE_INVISIBLE_SUBSCRIPTIONS
+com.android.server.usb.ACTION_OPEN_IN_APPS
+com.android.server.am.DELETE_DUMPHEAP
+com.android.server.net.action.SNOOZE_WARNING
+com.android.server.net.action.SNOOZE_RAPID
+com.android.server.wifi.ACTION_SHOW_SET_RANDOMIZATION_DETAILS
+com.android.server.wifi.action.NetworkSuggestion.USER_ALLOWED_APP
+com.android.server.wifi.action.NetworkSuggestion.USER_DISALLOWED_APP
+com.android.server.wifi.action.NetworkSuggestion.USER_DISMISSED
+com.android.server.wifi.action.CarrierNetwork.USER_ALLOWED_CARRIER
+com.android.server.wifi.action.CarrierNetwork.USER_DISALLOWED_CARRIER
+com.android.server.wifi.action.CarrierNetwork.USER_DISMISSED
+com.android.server.wifi.ConnectToNetworkNotification.USER_DISMISSED_NOTIFICATION
+com.android.server.wifi.ConnectToNetworkNotification.CONNECT_TO_NETWORK
+com.android.server.wifi.ConnectToNetworkNotification.PICK_WIFI_NETWORK
+com.android.server.wifi.ConnectToNetworkNotification.PICK_NETWORK_AFTER_FAILURE
+com.android.server.wifi.wakeup.DISMISS_NOTIFICATION
+com.android.server.wifi.wakeup.OPEN_WIFI_PREFERENCES
+com.android.server.wifi.wakeup.OPEN_WIFI_SETTINGS
+com.android.server.wifi.wakeup.TURN_OFF_WIFI_WAKE
+android.net.wifi.WIFI_STATE_CHANGED
+android.net.wifi.WIFI_AP_STATE_CHANGED
+android.net.wifi.WIFI_CREDENTIAL_CHANGED
+android.net.wifi.aware.action.WIFI_AWARE_STATE_CHANGED
+android.net.wifi.aware.action.WIFI_AWARE_RESOURCE_CHANGED
+android.net.wifi.rtt.action.WIFI_RTT_STATE_CHANGED
+android.net.wifi.SCAN_RESULTS
+android.net.wifi.RSSI_CHANGED
+android.net.wifi.STATE_CHANGE
+android.net.wifi.LINK_CONFIGURATION_CHANGED
+android.net.wifi.CONFIGURED_NETWORKS_CHANGE
+android.net.wifi.action.NETWORK_SETTINGS_RESET
+android.net.wifi.action.PASSPOINT_DEAUTH_IMMINENT
+android.net.wifi.action.PASSPOINT_ICON
+android.net.wifi.action.PASSPOINT_OSU_PROVIDERS_LIST
+android.net.wifi.action.PASSPOINT_SUBSCRIPTION_REMEDIATION
+android.net.wifi.action.PASSPOINT_LAUNCH_OSU_VIEW
+android.net.wifi.action.REFRESH_USER_PROVISIONING
+android.net.wifi.action.WIFI_NETWORK_SUGGESTION_POST_CONNECTION
+android.net.wifi.action.WIFI_SCAN_AVAILABILITY_CHANGED
+android.net.wifi.supplicant.CONNECTION_CHANGE
+android.net.wifi.supplicant.STATE_CHANGE
+android.net.wifi.p2p.STATE_CHANGED
+android.net.wifi.p2p.DISCOVERY_STATE_CHANGE
+android.net.wifi.p2p.THIS_DEVICE_CHANGED
+android.net.wifi.p2p.PEERS_CHANGED
+android.net.wifi.p2p.CONNECTION_STATE_CHANGE
+android.net.wifi.p2p.action.WIFI_P2P_PERSISTENT_GROUPS_CHANGED
+android.net.conn.TETHER_STATE_CHANGED
+android.net.conn.INET_CONDITION_ACTION
+android.net.conn.NETWORK_CONDITIONS_MEASURED
+android.net.ConnectivityService.action.PKT_CNT_SAMPLE_INTERVAL_ELAPSED
+android.net.scoring.SCORE_NETWORKS
+android.net.scoring.SCORER_CHANGED
+android.intent.action.EXTERNAL_APPLICATIONS_AVAILABLE
+android.intent.action.EXTERNAL_APPLICATIONS_UNAVAILABLE
+android.intent.action.AIRPLANE_MODE
+android.intent.action.ADVANCED_SETTINGS
+android.intent.action.APPLICATION_RESTRICTIONS_CHANGED
+com.android.server.adb.WIRELESS_DEBUG_PAIRED_DEVICES
+com.android.server.adb.WIRELESS_DEBUG_PAIRING_RESULT
+com.android.server.adb.WIRELESS_DEBUG_STATUS
+com.sec.android.WIFI_CONNECTIVITY_ACTION
+com.sec.android.WIFI_ICON_HIDE_ACTION
+com.sec.android.server.wifi.WCM_SCAN_STARTED
+com.sec.android.server.wifi.SCNT
+com.sec.android.WIFI_WCM_STATE_CHANGED_ACTION
+com.sec.android.WIFI_WCM_CONFIGURATION_CHANGED
+com.samsung.android.net.wifi.TCP_MONITOR_ACTION_USE_MOBILE_DATA
+com.samsung.android.net.wifi.WIFI_TCP_MONITOR_ACTION_SETTINGS
+com.samsung.android.net.wifi.WIFI_TCP_MONITOR_DELETE_NOTIFICATION
+com.samsung.android.net.wifi.WIFI_TCP_MONITOR_SWITCHABLE_APP_LIST_CHANGED
+com.sec.android.IWC_REWARD_EVENT_DEBUG
+com.samsung.android.wifi.ACTION_AUTO_WIFI_BUBBLE_TIP
+com.samsung.android.wifi.LATENCYMODE
+com.samsung.android.SwitchBoard.STATE
+com.samsung.android.SwitchBoard.WIFI_PREFERENCE_VALUE
+com.samsung.android.wifi.ENABLE_APE
+com.samsung.android.wifi.SET_APE_POLICY
+com.samsung.android.wifi.SET_APE_STATIC
+com.samsung.android.wifi.APE_INFO
+com.samsung.android.server.wifi.softap.smarttethering.changed
+com.samsung.android.server.wifi.softap.smarttethering.familyid
+com.samsung.android.server.wifi.softap.smarttethering.ssid_changed
+com.samsung.android.server.wifi.softap.smarttethering.d2dfamilyid
+com.samsung.android.server.wifi.softap.smarttethering.d2dClientUpdate
+com.samsung.android.net.wifi.WIFI_AP_STA_DHCPACK_EVENT
+com.samsung.android.net.wifi.WIFI_AP_STA_STATE_CHANGED
+com.samsung.android.server.wifi.softap.smarttethering.internet.changed
+com.samsung.android.server.wifi.stopcapture
+com.android.settings.wifi.p2p.SETTINGS_STRATED
+com.samsung.android.settings.wifi.enableNan
+com.samsung.android.settings.wifi.notifySelected
+com.samsung.android.wifi.p2p.PEER_FOUND
+com.samsung.android.net.wifi.ISSUE_DETECTED
+com.samsung.android.net.wifi.NETWORK_CONNECT_FAILED
+com.samsung.android.wifi.AUTO_WIFI_SCAN_STATE_CHANGED
+com.samsung.android.wifi.GEOFENCE
+com.samsung.intent.action.SETTINGS_RESET_WIFI
+com.sec.android.HEAT_WIFI_UNWANTED
+com.samsung.android.server.wifi.ui.PICK_WIFI_NETWORK
+com.samsung.android.server.wifi.ui.USER_DISMISSED_NOTIFICATION
+com.samsung.android.net.wifi.NETWORK_REJECTED_KT_HOME_AP
+android.intent.action.ACTION_IDLE_MAINTENANCE_START
+android.intent.action.ACTION_IDLE_MAINTENANCE_END
+com.android.server.ACTION_TRIGGER_IDLE
+android.intent.action.HDMI_PLUGGED
+android.intent.action.PHONE_STATE
+android.intent.action.SUB_DEFAULT_CHANGED
+android.location.PROVIDERS_CHANGED
+android.location.MODE_CHANGED
+android.location.action.GNSS_CAPABILITIES_CHANGED
+android.net.proxy.PAC_REFRESH
+android.telecom.action.DEFAULT_DIALER_CHANGED
+android.provider.action.DEFAULT_SMS_PACKAGE_CHANGED
+android.provider.action.SMS_MMS_DB_CREATED
+android.provider.action.SMS_MMS_DB_LOST
+android.intent.action.CONTENT_CHANGED
+android.provider.Telephony.MMS_DOWNLOADED
+com.android.server.connectivityservice.CONNECTED_TO_PROVISIONING_NETWORK_ACTION
+android.content.action.PERMISSION_RESPONSE_RECEIVED
+diagandroid.app.ApplicationState
+diagandroid.phone.detailedCallState
+diagandroid.data.PDPContextState
+android.content.action.REQUEST_PERMISSION
+android.nfc.handover.intent.action.HANDOVER_STARTED
+android.nfc.handover.intent.action.TRANSFER_DONE
+android.nfc.handover.intent.action.TRANSFER_PROGRESS
+android.nfc.handover.intent.action.TRANSFER_DONE
+android.intent.action.ACTION_DEFAULT_DATA_SUBSCRIPTION_CHANGED
+android.intent.action.ACTION_DEFAULT_VOICE_SUBSCRIPTION_CHANGED
+android.intent.action.ACTION_SET_RADIO_CAPABILITY_DONE
+android.intent.action.ACTION_SET_RADIO_CAPABILITY_FAILED
+android.internal.policy.action.BURN_IN_PROTECTION
+android.app.action.SYSTEM_UPDATE_POLICY_CHANGED
+android.app.action.RESET_PROTECTION_POLICY_CHANGED
+android.app.action.DEVICE_OWNER_CHANGED
+android.app.action.MANAGED_USER_CREATED
+android.intent.action.ANR
+android.intent.action.CALL
+android.intent.action.CALL_PRIVILEGED
+android.intent.action.DROPBOX_ENTRY_ADDED
+android.intent.action.INPUT_METHOD_CHANGED
+android.intent.action.internal_sim_state_changed
+android.intent.action.LOCKED_BOOT_COMPLETED
+android.intent.action.PRECISE_CALL_STATE
+android.intent.action.SUBSCRIPTION_PHONE_STATE
+android.intent.action.USER_INFO_CHANGED
+android.intent.action.USER_UNLOCKED
+android.intent.action.WALLPAPER_CHANGED
+android.app.action.DEVICE_POLICY_MANAGER_STATE_CHANGED
+android.app.action.CHOOSE_PRIVATE_KEY_ALIAS
+android.app.action.DEVICE_ADMIN_DISABLED
+android.app.action.DEVICE_ADMIN_DISABLE_REQUESTED
+android.app.action.DEVICE_ADMIN_ENABLED
+android.app.action.LOCK_TASK_ENTERING
+android.app.action.LOCK_TASK_EXITING
+android.app.action.NOTIFY_PENDING_SYSTEM_UPDATE
+android.app.action.ACTION_PASSWORD_CHANGED
+android.app.action.ACTION_PASSWORD_EXPIRING
+android.app.action.ACTION_PASSWORD_FAILED
+android.app.action.ACTION_PASSWORD_SUCCEEDED
+com.android.server.ACTION_EXPIRED_PASSWORD_NOTIFICATION
+com.android.server.ACTION_PROFILE_OFF_DEADLINE
+com.android.server.ACTION_TURN_PROFILE_ON_NOTIFICATION
+android.intent.action.MANAGED_PROFILE_ADDED
+android.intent.action.MANAGED_PROFILE_UNLOCKED
+android.intent.action.MANAGED_PROFILE_REMOVED
+android.app.action.MANAGED_PROFILE_PROVISIONED
+android.bluetooth.adapter.action.BLE_STATE_CHANGED
+com.android.bluetooth.map.USER_CONFIRM_TIMEOUT
+com.android.bluetooth.BluetoothMapContentObserver.action.MESSAGE_SENT
+com.android.bluetooth.BluetoothMapContentObserver.action.MESSAGE_DELIVERY
+android.content.jobscheduler.JOB_DELAY_EXPIRED
+android.content.syncmanager.SYNC_ALARM
+android.media.INTERNAL_RINGER_MODE_CHANGED_ACTION
+android.media.STREAM_DEVICES_CHANGED_ACTION
+android.media.STREAM_MUTE_CHANGED_ACTION
+android.net.sip.SIP_SERVICE_UP
+android.nfc.action.ADAPTER_STATE_CHANGED
+android.os.action.CHARGING
+android.os.action.DISCHARGING
+android.search.action.SEARCHABLES_CHANGED
+android.security.STORAGE_CHANGED
+android.security.action.TRUST_STORE_CHANGED
+android.security.action.KEYCHAIN_CHANGED
+android.security.action.KEY_ACCESS_CHANGED
+android.telecom.action.NUISANCE_CALL_STATUS_CHANGED
+android.telecom.action.PHONE_ACCOUNT_REGISTERED
+android.telecom.action.PHONE_ACCOUNT_UNREGISTERED
+android.telecom.action.POST_CALL
+android.telecom.action.SHOW_MISSED_CALLS_NOTIFICATION
+android.telephony.action.CARRIER_CONFIG_CHANGED
+android.telephony.action.DEFAULT_SUBSCRIPTION_CHANGED
+android.telephony.action.DEFAULT_SMS_SUBSCRIPTION_CHANGED
+android.telephony.action.SECRET_CODE
+android.telephony.action.SHOW_VOICEMAIL_NOTIFICATION
+android.telephony.action.SUBSCRIPTION_PLANS_CHANGED
+android.intent.action.CHAMELEON_TELEPHONY_UPDATE
+com.android.bluetooth.btservice.action.ALARM_WAKEUP
+com.android.server.action.NETWORK_STATS_POLL
+com.android.server.action.NETWORK_STATS_UPDATED
+com.android.server.timedetector.NetworkTimeUpdateService.action.POLL
+com.android.server.telecom.intent.action.CALLS_ADD_ENTRY
+com.android.settings.location.MODE_CHANGING
+com.android.settings.bluetooth.ACTION_DISMISS_PAIRING
+com.android.settings.network.DELETE_SUBSCRIPTION
+com.android.settings.network.SWITCH_TO_SUBSCRIPTION
+com.android.settings.wifi.action.NETWORK_REQUEST
+NotificationManagerService.TIMEOUT
+NotificationHistoryDatabase.CLEANUP
+ScheduleConditionProvider.EVALUATE
+EventConditionProvider.EVALUATE
+SnoozeHelper.EVALUATE
+wifi_scan_available
+action.cne.started
+android.content.jobscheduler.JOB_DEADLINE_EXPIRED
+android.intent.action.ACTION_UNSOL_RESPONSE_OEM_HOOK_RAW
+android.net.conn.CONNECTIVITY_CHANGE_SUPL
+android.os.action.LIGHT_DEVICE_IDLE_MODE_CHANGED
+android.os.storage.action.VOLUME_STATE_CHANGED
+android.os.storage.action.DISK_SCANNED
+com.android.server.action.UPDATE_TWILIGHT_STATE
+com.android.server.action.RESET_TWILIGHT_AUTO
+com.android.server.device_idle.STEP_IDLE_STATE
+com.android.server.device_idle.STEP_LIGHT_IDLE_STATE
+com.android.server.Wifi.action.TOGGLE_PNO
+intent.action.ACTION_RF_BAND_INFO
+android.intent.action.MEDIA_RESOURCE_GRANTED
+android.app.action.NETWORK_LOGS_AVAILABLE
+android.app.action.SECURITY_LOGS_AVAILABLE
+android.app.action.COMPLIANCE_ACKNOWLEDGEMENT_REQUIRED
+android.app.action.INTERRUPTION_FILTER_CHANGED
+android.app.action.INTERRUPTION_FILTER_CHANGED_INTERNAL
+android.app.action.NOTIFICATION_POLICY_CHANGED
+android.app.action.NOTIFICATION_POLICY_ACCESS_GRANTED_CHANGED
+android.app.action.AUTOMATIC_ZEN_RULE_STATUS_CHANGED
+android.os.action.ACTION_EFFECTS_SUPPRESSOR_CHANGED
+android.app.action.NOTIFICATION_CHANNEL_BLOCK_STATE_CHANGED
+android.app.action.NOTIFICATION_CHANNEL_GROUP_BLOCK_STATE_CHANGED
+android.app.action.NOTIFICATION_LISTENER_ENABLED_CHANGED
+android.app.action.APP_BLOCK_STATE_CHANGED
+android.permission.GET_APP_GRANTED_URI_PERMISSIONS
+android.permission.CLEAR_APP_GRANTED_URI_PERMISSIONS
+android.intent.action.DYNAMIC_SENSOR_CHANGED
+android.accounts.LOGIN_ACCOUNTS_CHANGED
+android.accounts.action.ACCOUNT_REMOVED
+android.accounts.action.VISIBLE_ACCOUNTS_CHANGED
+com.android.sync.SYNC_CONN_STATUS_CHANGED
+android.net.sip.action.SIP_INCOMING_CALL
+com.android.phone.SIP_ADD_PHONE
+android.net.sip.action.SIP_REMOVE_PROFILE
+android.net.sip.action.SIP_SERVICE_UP
+android.net.sip.action.SIP_CALL_OPTION_CHANGED
+android.net.sip.action.START_SIP
+android.bluetooth.adapter.action.BLE_ACL_CONNECTED
+android.bluetooth.adapter.action.BLE_ACL_DISCONNECTED
+android.bluetooth.input.profile.action.HANDSHAKE
+android.bluetooth.input.profile.action.REPORT
+android.intent.action.TWILIGHT_CHANGED
+com.android.server.fingerprint.ACTION_LOCKOUT_RESET
+android.net.wifi.PASSPOINT_ICON_RECEIVED
+com.android.server.notification.CountdownConditionProvider
+android.server.notification.action.ENABLE_NAS
+android.server.notification.action.DISABLE_NAS
+android.server.notification.action.LEARNMORE_NAS
+com.android.internal.location.ALARM_WAKEUP
+com.android.internal.location.ALARM_TIMEOUT
+android.intent.action.GLOBAL_BUTTON
+android.intent.action.MANAGED_PROFILE_AVAILABLE
+android.intent.action.MANAGED_PROFILE_UNAVAILABLE
+com.android.server.pm.DISABLE_QUIET_MODE_AFTER_UNLOCK
+android.intent.action.PROFILE_ACCESSIBLE
+android.intent.action.PROFILE_INACCESSIBLE
+com.android.server.retaildemo.ACTION_RESET_DEMO
+com.samsung.sea.rm.DEMO_RESET_STARTED
+android.intent.action.DEVICE_LOCKED_CHANGED
+com.android.content.pm.action.CAN_INTERACT_ACROSS_PROFILES_CHANGED
+android.app.action.APPLICATION_DELEGATION_SCOPES_CHANGED
+com.android.server.wm.ACTION_REVOKE_SYSTEM_ALERT_WINDOW_PERMISSION
+android.media.tv.action.PARENTAL_CONTROLS_ENABLED_CHANGED
+android.content.pm.action.SESSION_COMMITTED
+android.os.action.USER_RESTRICTIONS_CHANGED
+android.media.tv.action.PREVIEW_PROGRAM_ADDED_TO_WATCH_NEXT
+android.media.tv.action.PREVIEW_PROGRAM_BROWSABLE_DISABLED
+android.media.tv.action.WATCH_NEXT_PROGRAM_BROWSABLE_DISABLED
+android.media.tv.action.CHANNEL_BROWSABLE_REQUESTED
+android.intent.action.GET_RESTRICTION_ENTRIES
+android.telephony.euicc.action.OTA_STATUS_CHANGED
+android.app.action.PROFILE_OWNER_CHANGED
+android.app.action.TRANSFER_OWNERSHIP_COMPLETE
+android.app.action.AFFILIATED_PROFILE_TRANSFER_OWNERSHIP_COMPLETE
+android.app.action.STATSD_STARTED
+com.android.server.biometrics.fingerprint.ACTION_LOCKOUT_RESET
+com.android.server.biometrics.face.ACTION_LOCKOUT_RESET
+android.intent.action.DOCK_IDLE
+android.intent.action.DOCK_ACTIVE
+android.content.pm.action.SESSION_UPDATED
+android.settings.action.GRAYSCALE_CHANGED
+com.android.server.jobscheduler.GARAGE_MODE_ON
+com.android.server.jobscheduler.GARAGE_MODE_OFF
+com.android.server.jobscheduler.FORCE_IDLE
+com.android.server.jobscheduler.UNFORCE_IDLE
+android.provider.action.DEFAULT_SMS_PACKAGE_CHANGED_INTERNAL
+android.intent.action.DEVICE_CUSTOMIZATION_READY
+com.samsung.CHECK_COOLDOWN_LEVEL
+com.samsung.intent.action.ACT_CHARGING_TEST
+com.samsung.intent.action.CHECK_SIOP_LEVEL
+com.samsung.intent.action.GAME_TOUCH_BOOST
+com.samsung.intent.action.MAX_BRIGHTNESS_CHANGED
+com.samsung.intent.action.SIOP_LEVEL_CHANGED
+com.samsung.ssrm.SCREEN_ON
+com.sec.android.intent.action.POWER_SAVING_MODE_CHANGED
+com.sec.android.intent.action.SSRM_GAME_START
+com.sec.android.intent.action.ULTRA_POWER_SAVING_MODE_CHANGED
+com.sec.GMS_bundling
+com.samsung.intent.action.SDHMS_SIOP_DISABLE
+com.samsung.intent.action.PERFORMANCE_LOGGING
+com.samsung.android.ssrm.inputevent
+com.sec.android.sdhms.action.CRASH_ANR
+android.app.action.RESET_PROTECTION_POLICY_CHANGED
+com.android.server.connectivity.tethering.PROVISIONING_RECHECK_ALARM
+com.kt.show.manger.action.SHOW_DATA_SMS_RECEIVED
+com.kt.location.action.KTLBS_DATA_SMS_RECEIVED
+com.kt.menu.action.TWO_CALL_REG_CHANGED
+android.lgt.action.APM_SMS_RECEIVED
+com.samsung.provider.Telephony.SECURITY_SMS_RECEIVED
+com.samsung.provider.Telephony.WAP_PUSH_DS_NOTI_RECEIVED
+com.samsung.provider.Telephony.WAP_PUSH_DM_NOTI_RECEIVED
+android.provider.Telephony.WAP_PUSH_DM_NOTI_RECEIVED
+com.samsung.provider.Telephony.LMS_FIRST_DISPLAY_TIMEOUT_CTC
+com.samsung.provider.Telephony.LMS_MAXIMAL_CONNECTION_TIMEOUT_CTC
+android.intent.action.AT_CMSS_COMPLETE
+com.samsung.provider.Telephony.GET_SMSC
+android.intent.action.LTE_SMS_STATUS
+com.samsung.intent.action.VALIDITY_PERIOD
+com.samsung.intent.action.SMS_SEND_FAIL
+com.samsung.intent.action.SMS_BIG_DATA_INFO
+com.samsung.intent.action.AUTO_LOGIN_NOTI_SMS_RECEIVED
+com.samsung.intent.action.EMERGENCY_SMS_SEARCH_READY
+com.skt.push.SMS_PUSH
+android.provider.action.DEFAULT_MSG_APP_INFO_LOGGING
+com.samsung.provider.Telephony.CB_SETTINGS_AVAILABLE
+android.provider.Telephony.CB_SETTINGS_AVAILABLE
+com.samsung.android.knox.intent.action.NPA_STATUS
+com.android.internal.intent.action.BUGREPORT_REQUESTED
+com.samsung.android.intent.action.RESPONSE_RESTORE_DISPLAYMANAGER
+com.samsung.android.intent.action.RESPONSE_BACKUP_DISPLAYMANAGER
+android.scheduling.action.REBOOT_READY
+android.app.action.DEVICE_POLICY_CONSTANTS_CHANGED
+android.app.action.SCHEDULE_EXACT_ALARM_PERMISSION_STATE_CHANGED
+android.app.action.SHOW_NEW_USER_DISCLAIMER
+android.telecom.action.CURRENT_TTY_MODE_CHANGED
+android.intent.action.SERVICE_STATE
+android.intent.action.RADIO_TECHNOLOGY
+android.intent.action.EMERGENCY_CALLBACK_MODE_CHANGED
+android.intent.action.EMERGENCY_CALL_STATE_CHANGED
+android.intent.action.SIG_STR
+android.intent.action.ANY_DATA_STATE
+android.intent.action.DATA_STALL_DETECTED
+android.intent.action.SIM_STATE_CHANGED
+android.intent.action.USER_ACTIVITY_NOTIFICATION
+android.telephony.action.SHOW_NOTICE_ECM_BLOCK_OTHERS
+android.intent.action.ACTION_MDN_STATE_CHANGED
+android.telephony.action.SERVICE_PROVIDERS_UPDATED
+android.provider.Telephony.SIM_FULL
+com.android.internal.telephony.carrier_key_download_alarm
+com.android.internal.telephony.data-restart-trysetup
+com.android.internal.telephony.data-stall
+com.android.internal.telephony.provisioning_apn_alarm
+android.intent.action.DATA_SMS_RECEIVED
+android.provider.Telephony.SMS_RECEIVED
+android.provider.Telephony.SMS_DELIVER
+android.provider.Telephony.SMS_REJECTED
+android.provider.Telephony.WAP_PUSH_DELIVER
+android.provider.Telephony.WAP_PUSH_RECEIVED
+android.provider.Telephony.SMS_CB_RECEIVED
+android.provider.action.SMS_EMERGENCY_CB_RECEIVED
+android.provider.Telephony.SMS_SERVICE_CATEGORY_PROGRAM_DATA_RECEIVED
+android.provider.Telephony.SECRET_CODE
+com.android.internal.stk.command
+com.android.internal.stk.session_end
+com.android.internal.stk.icc_status_change
+com.android.internal.stk.alpha_notify
+com.android.internal.telephony.CARRIER_SIGNAL_REDIRECTED
+com.android.internal.telephony.CARRIER_SIGNAL_REQUEST_NETWORK_FAILED
+com.android.internal.telephony.CARRIER_SIGNAL_PCO_VALUE
+com.android.internal.telephony.CARRIER_SIGNAL_RESET
+com.android.internal.telephony.CARRIER_SIGNAL_DEFAULT_NETWORK_AVAILABLE
+com.android.internal.telephony.PROVISION
+com.android.internal.telephony.ACTION_LINE1_NUMBER_ERROR_DETECTED
+com.android.internal.provider.action.VOICEMAIL_SMS_RECEIVED
+com.android.intent.isim_refresh
+com.android.ims.ACTION_RCS_SERVICE_AVAILABLE
+com.android.ims.ACTION_RCS_SERVICE_UNAVAILABLE
+com.android.ims.ACTION_RCS_SERVICE_DIED
+com.android.ims.ACTION_PRESENCE_CHANGED
+com.android.ims.ACTION_PUBLISH_STATUS_CHANGED
+com.android.ims.IMS_SERVICE_UP
+com.android.ims.IMS_SERVICE_DOWN
+com.android.ims.IMS_INCOMING_CALL
+com.android.ims.internal.uce.UCE_SERVICE_UP
+com.android.ims.internal.uce.UCE_SERVICE_DOWN
+com.android.imsconnection.DISCONNECTED
+com.android.intent.action.IMS_FEATURE_CHANGED
+com.android.intent.action.IMS_CONFIG_CHANGED
+android.telephony.ims.action.WFC_IMS_REGISTRATION_ERROR
+com.android.phone.vvm.omtp.sms.REQUEST_SENT
+com.android.phone.vvm.ACTION_VISUAL_VOICEMAIL_SERVICE_EVENT
+com.android.internal.telephony.CARRIER_VVM_PACKAGE_INSTALLED
+com.android.cellbroadcastreceiver.GET_LATEST_CB_AREA_INFO
+com.android.internal.telephony.ACTION_CARRIER_CERTIFICATE_DOWNLOAD
+com.android.internal.telephony.action.COUNTRY_OVERRIDE
+com.android.internal.telephony.OPEN_DEFAULT_SMS_APP
+com.android.internal.telephony.ACTION_TEST_OVERRIDE_CARRIER_ID
+android.telephony.action.SIM_CARD_STATE_CHANGED
+android.telephony.action.SIM_APPLICATION_STATE_CHANGED
+android.telephony.action.SIM_SLOT_STATUS_CHANGED
+android.telephony.action.SUBSCRIPTION_CARRIER_IDENTITY_CHANGED
+android.telephony.action.SUBSCRIPTION_SPECIFIC_CARRIER_IDENTITY_CHANGED
+android.telephony.action.TOGGLE_PROVISION
+android.telephony.action.NETWORK_COUNTRY_CHANGED
+android.telephony.action.PRIMARY_SUBSCRIPTION_LIST_CHANGED
+android.telephony.action.MULTI_SIM_CONFIG_CHANGED
+android.telephony.action.CARRIER_SIGNAL_RESET
+android.telephony.action.CARRIER_SIGNAL_PCO_VALUE
+android.telephony.action.CARRIER_SIGNAL_DEFAULT_NETWORK_AVAILABLE
+android.telephony.action.CARRIER_SIGNAL_REDIRECTED
+android.telephony.action.CARRIER_SIGNAL_REQUEST_NETWORK_FAILED
+com.android.phone.settings.CARRIER_PROVISIONING
+com.android.phone.settings.TRIGGER_CARRIER_PROVISIONING
+com.android.internal.telephony.ACTION_VOWIFI_ENABLED
+android.telephony.action.ANOMALY_REPORTED
+android.intent.action.SUBSCRIPTION_INFO_RECORD_ADDED
+android.intent.action.ACTION_MANAGED_ROAMING_IND
+android.telephony.ims.action.RCS_SINGLE_REGISTRATION_CAPABILITY_UPDATE
+android.safetycenter.action.REFRESH_SAFETY_SOURCES
+android.safetycenter.action.SAFETY_CENTER_ENABLED_CHANGED
+android.app.action.DEVICE_POLICY_RESOURCE_UPDATED
+android.intent.action.SHOW_FOREGROUND_SERVICE_MANAGER
+android.service.autofill.action.DELAYED_FILL
+android.app.action.PROVISIONING_COMPLETED
+android.app.action.LOST_MODE_LOCATION_UPDATE
+android.intent.action.PROFILE_ADDED
+android.intent.action.PROFILE_REMOVED
+com.android.internal.telephony.cat.SMS_SENT_ACTION
+com.android.internal.telephony.cat.SMS_DELIVERY_ACTION
+com.android.internal.telephony.data.ACTION_RETRY
+android.companion.virtual.action.VIRTUAL_DEVICE_REMOVED
+com.android.internal.intent.action.FLASH_NOTIFICATION_START_PREVIEW
+com.android.internal.intent.action.FLASH_NOTIFICATION_STOP_PREVIEW
+android.app.admin.action.DEVICE_FINANCING_STATE_CHANGED
+android.app.admin.action.DEVICE_POLICY_SET_RESULT
+android.app.admin.action.DEVICE_POLICY_CHANGED
+com.samsung.android.intent.action.FINGERPRINT_LOCK_SET
+com.samsung.android.intent.action.FINGERPRINT_RESET
+com.samsung.android.intent.action.FINGERPRINT_REMOVED
+com.samsung.android.intent.action.FINGERPRINT_ADDED
+com.samsung.android.spay.gesture.fingerprint
+com.samsung.android.bio.face.service.ACTION_LOCKOUT_RESET
+com.samsung.android.bio.face.intent.action.FACE_RESET
+com.samsung.android.bio.face.intent.action.FACE_REMOVED
+com.samsung.android.bio.face.intent.action.FACE_ADDED
+com.samsung.android.intent.action.BIOMETRIC_AUTHENTICATION_START
+com.samsung.android.intent.action.BIOMETRIC_AUTHENTICATION_STOP
+com.samsung.android.server.biometrics.BIOMETRICS_NOTIFICATION
+com.samsung.android.intent.action.BIOMETRIC_EXTRA_INFO
+com.samsung.server.BatteryStatsService.action.BATTERYSTATS_RESET
+com.samsung.android.knox.intent.action.SDP_STATE_CHANGED
+com.sec.sdp.SDP_STATE_CHANGED
+com.samsung.android.action.ACTION_TOAST_DUMP_LOG
+com.samsung.android.knox.intent.action.SET_DEVICE_SPEAKER_ENABLED
+com.samsung.android.knox.intent.action.SCREEN_OFF_HOME_LONG_PRESS
+com.samsung.android.knox.intent.action.RECENT_LONG_PRESS
+com.samsung.android.intent.action.PACKAGE_INSTALL_STARTED
+com.sec.android.sdhms.PKG_CONFIG_CHANGED
+android.intent.action.enterprise.TERMINATE_KIOSK
+android.intent.action.sec.CBA_INSTALL_STATUS
+android.intent.action.sec.SIM_CARD_CHANGED
+com.samsung.android.email.GET_DEVICEID
+com.samsung.android.email.INSTALL_CERTIFICATE
+com.samsung.android.mdm.VPN_BIND_RESULT
+com.samsung.edm.intent.action.APPLICATION_FOCUS_CHANGE
+com.samsung.edm.intent.action.BLOCKED_DOMAIN
+com.samsung.edm.intent.action.CERTIFICATE_REMOVED
+com.samsung.edm.intent.action.ENFORCE_SMIME_ALIAS_INTERNAL
+com.samsung.edm.intent.action.ENFORCE_SMIME_ALIAS_RESULT
+com.samsung.edm.intent.action.EXCHANGE_CBA_INSTALL_STATUS
+com.samsung.edm.intent.action.GEARPOLICY_ENABLE_INTERNAL
+com.samsung.edm.intent.action.INFORMATION_STREAM_INTERNAL
+com.samsung.edm.intent.action.SIM_CARD_CHANGED
+com.samsung.edm.intent.action.UPDATE_NTP_PARAMETERS
+com.samsung.edm.intent.event.NTP_SERVER_UNREACHABLE
+com.samsung.knox.container.admin.locked
+com.samsung.knox.container.removed
+com.samsung.knox.ec.container.added
+com.samsung.knox.ec.container.removed
+com.samsung.sec.knox.KNOX_DOCK_WINDOW_CHANGED
+edm.intent.action.ACTION_EDM_BOOT_COMPLETED
+edm.intent.action.EMAIL_ACCOUNT_ADD_RESULT
+edm.intent.action.EMAIL_ACCOUNT_DELETE_RESULT
+edm.intent.action.EXCHANGE_ACCOUNT_ADD_RESULT
+edm.intent.action.EXCHANGE_ACCOUNT_DELETE_RESULT
+edm.intent.action.FORCE_LAUNCHER_REFRESH
+edm.intent.action.LAST_BOOT_SAFE_MODE
+edm.intent.action.PHONE_READY
+edm.intent.action.allow.settings
+edm.intent.action.backup.result
+edm.intent.action.backup.service.available
+edm.intent.action.changeUninstallStatus
+edm.intent.action.device.inside
+edm.intent.action.device.location.unavailable
+edm.intent.action.device.outside
+edm.intent.action.disable.kiosk.mode.result
+edm.intent.action.disable.mtp
+edm.intent.action.enable
+edm.intent.action.enable.kiosk.mode.result
+edm.intent.action.internal.CREATE_LDAPACCOUNT
+edm.intent.action.internal.RESTRICTION_DISABLE_WFD
+edm.intent.action.internal.RESTRICTION_SEND_BLOCKED_MMS
+edm.intent.action.internal.RESTRICTION_SEND_BLOCKED_SMS
+edm.intent.action.internal.ROAMING_SETROAMINGDATA
+edm.intent.action.internal.WIFI_STATE_CHANGED
+edm.intent.action.internal.kioskmode.REFRESH_HWKEY_CACHE
+edm.intent.action.internal.sec.DEFAULT_NETWORK_POLICY_APPLIED
+edm.intent.action.internal.sec.LSO_CONFIG_CHANGED
+edm.intent.action.knox_license.deactivation.internal
+edm.intent.action.knox_license.registration.internal
+edm.intent.action.knox_license.registration.internal_umc
+edm.intent.action.knox_license.status
+edm.intent.action.ldap.createacct.result
+edm.intent.action.license.registration.internal
+edm.intent.action.license.registration.internal_umc
+edm.intent.action.license.status
+edm.intent.action.restore.result
+edm.intent.action.sec.CHECK_REENROLLMENT
+edm.intent.action.smartcard.browser.authentication
+edm.intent.action.smartcard.email.authentication
+edm.intent.action.unexpected.kiosk.behavior
+edm.intent.application.action.prevent.start
+edm.intent.application.action.prevent.stop
+mdm.intent.action.audit.log.critical.size
+mdm.intent.action.audit.log.exception
+mdm.intent.action.audit.log.full.size
+mdm.intent.action.audit.log.maximum.size
+mdm.intent.action.clear.http.proxy
+mdm.intent.action.dump.audit.log.result
+mdm.intent.action.set.http.proxy
+sec.fota.intent.MDM_REGISTER
+com.samsung.android.knox.intent.action.NOTIFY_STATUS
+com.samsung.android.knox.containercore.action.FORESIGHT_RETURN
+com.samsung.android.knox.foresight.action.FORESIGHT_EVENT
+com.samsung.android.knox.analytics.intent.action.STATUS_INTERNAL
+com.samsung.android.knox.analytics.intent.action.DB_SIZE_WARNING_USAGE_INTERNAL
+com.samsung.android.knox.ACTION_CONTAINER_STATE_RECEIVER
+com.samsung.android.knox.container.LICENSE_UNLOCKED
+com.samsung.android.knox.container.LOCK_SECUREFOLDER
+com.samsung.android.knox.intent.action.ADD_PACKAGE_PREVENT_START_BLACKLIST_CHANGED_INTERNAL
+com.samsung.android.knox.intent.action.ALLOW_SETTINGS_CHANGES_INTERNAL
+com.samsung.android.knox.intent.action.APPLICATION_FOCUS_CHANGE
+com.samsung.android.knox.intent.action.AUDIT_CRITICAL_SIZE
+com.samsung.android.knox.intent.action.AUDIT_FULL_SIZE
+com.samsung.android.knox.intent.action.AUDIT_MAXIMUM_SIZE
+com.samsung.android.knox.intent.action.BLOCKED_DOMAIN
+com.samsung.android.knox.intent.action.CALL_STATE_CHANGED
+com.samsung.android.knox.intent.action.CAPTIVE_PORTAL_DETECTED_INTERNAL
+com.samsung.android.knox.intent.action.CBA_INSTALL_STATUS
+com.samsung.android.knox.intent.action.CERTIFICATE_FAILURE
+com.samsung.android.knox.intent.action.CERTIFICATE_POLICY_CHANGED_INTERNAL
+com.samsung.android.knox.intent.action.CERTIFICATE_REMOVED
+com.samsung.android.knox.intent.action.CHECK_REENROLLMENT_INTERNAL
+com.samsung.android.knox.intent.action.CLEAR_HTTP_BROWSER_PROXY_INTERNAL
+com.samsung.android.knox.intent.action.CONTAINER_ADMIN_LOCK
+com.samsung.android.knox.intent.action.CONTAINER_REMOVED
+com.samsung.android.knox.intent.action.CREATE_EMAILACCOUNT_INTERNAL
+com.samsung.android.knox.intent.action.CREATE_LDAPACCOUNT_INTERNAL
+com.samsung.android.knox.intent.action.DELETE_EMAILACCOUNT_INTERNAL
+com.samsung.android.knox.intent.action.DELETE_NOT_VALIDATED_EMAILACCOUNT_INTERNAL
+com.samsung.android.knox.intent.action.DEVICE_INSIDE_GEOFENCE
+com.samsung.android.knox.intent.action.DEVICE_LOCATION_UNAVAILABLE
+com.samsung.android.knox.intent.action.DEVICE_OUTSIDE_GEOFENCE
+com.samsung.android.knox.intent.action.DISABLE_KIOSK_MODE_RESULT
+com.samsung.android.knox.intent.action.DO_KEYGUARD_INTERNAL
+com.samsung.android.knox.intent.action.DUMP_LOG_RESULT
+com.samsung.android.knox.intent.action.EDM_BOOT_COMPLETED_INTERNAL
+com.samsung.android.knox.intent.action.EDM_FORCE_LAUNCHER_REFRESH_INTERNAL
+com.samsung.android.knox.intent.action.EDM_UNINSTALL_STATUS_INTERNAL
+com.samsung.android.knox.intent.action.EMAIL_ACCOUNT_ADD_RESULT
+com.samsung.android.knox.intent.action.EMAIL_ACCOUNT_DELETE_RESULT
+com.samsung.android.knox.intent.action.EMAIL_INSTALL_CERT_INTERNAL
+com.samsung.android.knox.intent.action.ENABLE_KIOSK_MODE_RESULT
+com.samsung.android.knox.intent.action.ENFORCE_SMIME_ALIAS_INTERNAL
+com.samsung.android.knox.intent.action.ENFORCE_SMIME_ALIAS_RESULT
+com.samsung.android.knox.intent.action.EVENT_NTP_SERVER_UNREACHABLE
+com.samsung.android.knox.intent.action.EXCHANGE_ACCOUNT_ADD_RESULT
+com.samsung.android.knox.intent.action.EXCHANGE_ACCOUNT_DELETE_RESULT
+com.samsung.android.knox.intent.action.FORCE_SMIME_CERTIFICATE_FOR_ENCRYPTION_INTERNAL
+com.samsung.android.knox.intent.action.FORCE_SMIME_CERTIFICATE_FOR_SIGNING_INTERNAL
+com.samsung.android.knox.intent.action.FORCE_SMIME_CERTIFICATE_INTERNAL
+com.samsung.android.knox.intent.action.GEARPOLICY_ENABLE_INTERNAL
+com.samsung.android.knox.intent.action.GET_EMAIL_DEVICEID_REQUEST_INTERNAL
+com.samsung.android.knox.intent.action.HARD_KEY_PRESS
+com.samsung.android.knox.intent.action.HARD_KEY_REPORT
+com.samsung.android.knox.intent.action.HIDE_DEV_OPTIONS
+com.samsung.android.knox.intent.action.INFORMATION_STREAM_INTERNAL
+com.samsung.android.knox.intent.action.INSTALL_COMMIT_INTERNAL
+com.samsung.android.knox.intent.action.INSTALL_SHORTCUT_INTERNAL
+com.samsung.android.knox.intent.action.INTERFACE_STATUS_INTERNAL
+com.samsung.android.knox.intent.action.KEYGUARD_REFRESH_INTERNAL
+com.samsung.android.knox.intent.action.KNOXFRAMEWORK_SYSTEMUI_REGISTCALLBACK_INTENT_INTERNAL
+com.samsung.android.knox.intent.action.KNOXFRAMEWORK_SYSTEMUI_UPDATE_INTENT_INTERNAL
+com.samsung.android.knox.intent.action.KNOX_LICENSE_ACATIVATE_DIALOG_INTERNAL
+com.samsung.android.knox.intent.action.KNOX_LICENSE_STATUS
+com.samsung.android.knox.intent.action.LAST_BOOT_SAFE_MODE_INTERNAL
+com.samsung.android.knox.intent.action.LDAP_CREATE_ACCT_RESULT
+com.samsung.android.knox.intent.action.LICENSE_LOG_DELETE_OLD_RECORDS_INTERNAL
+com.samsung.android.knox.intent.action.LICENSE_STATUS
+com.samsung.android.knox.intent.action.LOG_EXCEPTION
+com.samsung.android.knox.intent.action.LSO_CONFIG_CHANGED_INTERNAL
+com.samsung.android.knox.intent.action.MTP_DISABLED_INTERNAL
+com.samsung.android.knox.intent.action.MULTIWINDOW_PROKIOSK_MODE_INTERNAL
+com.samsung.android.knox.intent.action.NOTIFICATION_PASSWORD_EXPIRED_INTERNAL
+com.samsung.android.knox.intent.action.NO_USER_ACTIVITY
+com.samsung.android.knox.intent.action.NO_USER_ACTIVITY
+com.samsung.android.knox.intent.action.NPA_STATUS
+com.samsung.android.knox.intent.action.OPERATOR_NAME_INTERNAL
+com.samsung.android.knox.intent.action.PACKAGE_NAME_CHANGE
+com.samsung.android.knox.intent.action.PACKAGE_REMOVED_INTERNAL
+com.samsung.android.knox.intent.action.PHONE_READY_INTERNAL
+com.samsung.android.knox.intent.action.PREVENT_APPLICATION_START
+com.samsung.android.knox.intent.action.PREVENT_APPLICATION_STOP
+com.samsung.android.knox.intent.action.PROXY_REFRESH_CREDENTIALS_DIALOG_INTERNAL
+com.samsung.android.knox.intent.action.QUICKSETTING_REFRESH_INTERNAL
+com.samsung.android.knox.intent.action.REFRESH_CREDENTIALS_UI_INTERNAL
+com.samsung.android.knox.intent.action.REFRESH_HWKEY_CACHE_INTERNAL
+com.samsung.android.knox.intent.action.RELEASE_SMIME_CERTIFICATE_FOR_ENCRYPTION_INTERNAL
+com.samsung.android.knox.intent.action.RELEASE_SMIME_CERTIFICATE_FOR_SIGNING_INTERNAL
+com.samsung.android.knox.intent.action.RELEASE_SMIME_CERTIFICATE_INTERNAL
+com.samsung.android.knox.intent.action.RESTRICTION_DISABLE_WFD_INTERNAL
+com.samsung.android.knox.intent.action.ROAMING_SETROAMINGDATA_INTERNAL
+com.samsung.android.knox.intent.action.SEND_BLOCKED_MMS_INTERNAL
+com.samsung.android.knox.intent.action.SEND_BLOCKED_SMS_INTERNAL
+com.samsung.android.knox.intent.action.SEND_DTMF_INTERNAL
+com.samsung.android.knox.intent.action.SET_DEFAULT_HOME
+com.samsung.android.knox.intent.action.SET_HTTP_BROWSER_PROXY_INTERNAL
+com.samsung.android.knox.intent.action.SET_KEYBOARD_MODE_INTERNAL
+com.samsung.android.knox.intent.action.SIM_CARD_CHANGED
+com.samsung.android.knox.intent.action.SIM_PIN_SERVICE
+com.samsung.android.knox.intent.action.STRONGSWAN_START_CONNECTION_INTERNAL
+com.samsung.android.knox.intent.action.TERMINATE_KIOSK_INTERNAL
+com.samsung.android.knox.intent.action.UNEXPECTED_KIOSK_BEHAVIOR
+com.samsung.android.knox.intent.action.UPDATE_ALLOW_USB_HOST_STORAGE_STATE_INTERNAL
+com.samsung.android.knox.intent.action.UPDATE_FOTA_VERSION_RESULT
+com.samsung.android.knox.intent.action.UPDATE_NTP_PARAMETERS_INTERNAL
+com.samsung.android.knox.intent.action.USER_ACTIVITY
+com.samsung.android.knox.intent.action.USER_ACTIVITY
+com.samsung.android.knox.intent.action.VPN_BIND_RESULT
+com.samsung.android.knox.intent.action.VPN_PROXY_BROADCAST_INTERNAL
+com.samsung.android.knox.intent.action.VPN_RETRY_INTERNAL
+com.samsung.android.knox.intent.action.WFD_DISABLE_INTERNAL
+com.samsung.android.knox.intent.action.WIFI_POLICY_STATE_CHANGED_INTERNAL
+com.samsung.android.knox.intent.action.ACTION_RECREATE_VPN_PROFILE_FAIL
+com.samsung.app.enterprise.knoxcustom
+com.sec.action.CALL_STATE_CHANGED
+com.sec.action.HARD_KEY_PRESS
+com.sec.action.NO_USER_ACTIVITY
+com.sec.action.USER_ACTIVITY
+com.sec.action.knoxcustom.OPERATOR_NAME
+com.sec.android.keyguard.REFRESH
+com.sec.android.multiwindow.SEALED_MODE
+com.sec.android.quicksetting.REFRESH
+com.sec.knox.action.CREATE_BBC_CONTAINER
+com.sec.knox.action.CREATE_SECURE_FOLDER
+com.sec.knox.container.access.extsdcard
+com.sec.knox.start.MIGRATION_WIZARD
+samsung.intent.action.knoxcustom.SEND_DTMF
+com.samsung.android.knox.intent.action.KNOX_FACE_WIDGET_OFF_INTERNAL
+com.samsung.android.knox.intent.action.REQUEST_SMS_PATTERN_CHECK_INTERNAL
+com.samsung.android.knox.containercore.action.FORESIGHT_COMMAND
+com.samsung.android.bbc.bbcagent.ACTION_NOTIFY
+com.sec.android.mec.mecagent.utils.RECONNECT_ALARM.PROVISION
+com.sec.android.mec.mecagent.utils.RECONNECT_ALARM.REGISTER
+com.sec.android.mec.mecagent.utils.RECONNECT_ALARM.GETFQDNLIST
+com.sec.android.mec.mecagent.utils.RECONNECT_ALARM.SUBSCRIPTION
+com.samsung.android.knox.intent.action.NPA_STATUS
+com.samsung.android.knox.intent.action.NETWORK_VALIDATED_INTERNAL
+com.samsung.android.knox.intent.action.NOTIFY_KPU_INTERNAL
+com.samsung.android.knox.intent.action.NOTIFY_APPSEPARATION_INTERNAL
+com.samsung.android.knox.intent.action.KNOX_RESTRICTIONS_CHANGED_INTERNAL
+com.samsung.android.knox.intent.action.MAM_KNOX_PRIVACY_POLICY_CHANGED_BY_USER
+com.samsung.android.knox.intent.action.MTDL_PACKAGE_RULES_REMOVED
+com.samsung.android.knox.profilepolicy.intent.action.update
+com.samsung.server.PowerManagerService.action.USER_ACTIVITY
+android.intent.action.ACTION_SCREEN_ON_BY_PROXIMITY
+android.intent.action.ACTION_SCREEN_OFF_BY_PROXIMITY
+com.samsung.server.BatteryService.action.SEC_BATTERY_EVENT
+com.samsung.server.BatteryService.action.SEC_BATTERY_WATER_IN_CONNECTOR
+android.intent.action.RESPONSE_OTG_CHARGE_BLOCK
+com.samsung.server.BatteryService.action.WIRELESS_POWER_SHARING_CONNECTED
+com.samsung.server.BatteryService.action.WIRELESS_POWER_SHARING_ENABLED
+com.samsung.server.BatteryService.action.WIRELESS_POWER_SHARING_TX_EVENT
+com.samsung.server.BatteryService.action.ACTION_POPUP_BATTERY_DETERIORATION
+android.media.AUDIO_BECOMING_NOISY_SEC
+android.samsung.media.action.AUDIO_MODE
+android.samsung.media.action.ACTION_AUDIO_REMOTEMIC_SCO_RESUME
+com.samsung.android.splitsound.action.STATE_CHANGED
+com.samsung.intent.action.ACTION_DOLBY_CONTENT_PLAYBACK_STATE_CHANGED
+com.samsung.android.app.audio.epinforesponse
+com.samsung.android.intent.action.SOUND_EVENT
+com.samsung.android.intent.karaoke
+com.samsung.intent.action.MEDIA_SERVER_REBOOTED
+com.samsung.intent.action.MULTISOUND_STATE_CHANGED
+com.sec.android.contextaware.HEADSET_PLUG
+com.sec.media.action.mute_interval
+android.settings.ALL_SOUND_MUTE
+android.intent.action.MULTISOUND_STATE_CHANGE
+com.samsung.intent.action.PERFORMANCE_LOGGING
+android.intent.action.TurnOff_MultiSound
+com.samsung.MEMORY_ABNORMAL_APP_DETECTION
+com.samsung.KPM_STATE_CHANGED
+com.samsung.KPM_CRITICAL_MEMORY_STATUS
+com.samsung.KPM_USER_TREND_DAILY_SAMPLING
+com.android.server.am.BROADCAST_SET_KPM_POLICY
+com.android.server.am.BROADCAST_SET_KPM_DEBUG
+com.android.server.am.BROADCAST_SET_KPM_STATE
+com.android.server.am.BROADCAST_SET_KPM_ONOFF
+com.android.server.am.BROADCAST_SET_PMM_AUTO_RESTART_PARAMETER_INTENT
+com.android.server.am.BROADCAST_SET_LMKD_PARAMETER_INTENT
+com.android.server.am.BROADCAST_SET_DHA_PARAMETER
+com.android.server.am.BROADCAST_DHA_DEBUG_ON
+com.samsung.intent.action.RSCUPDATE_START
+com.samsung.omcagent.intent.action.OMC_APP_MANAGER
+com.samsung.intent.action.OMC_APP_DB_CHANGED
+com.samsung.intent.action.OMC_APP_INSTALL_COMPLETED
+com.samsung.intent.OPERATOR_APP_INSTALL_COMPLETED
+com.samsung.intent.action.CSC_FOTA_UPDATE_DONE
+com.samsung.omcagent.intent.USER_UPDATE
+com.xdm.intent.SOFTWARE_UPDATE_VERSION
+com.xdm.intent.UPDATE_RESULT
+sec.fota.action.SOFTWARE_UPDATE
+sec.fota.intent.CHECKED_DATE_UPDATED
+sec.fota.intent.MDM_REGISTER_RESULT
+sec.fota.intent.MDM_UNREGISTER
+com.samsung.fotaagent.intent.FOTA_UPDATABLE_RESULT
+com.samsung.android.omacp.action.CP_MSG_RECEIVED
+com.samsung.intent.action.OMADM_BROWSER_GET_HOMEPAGE
+com.samsung.intent.action.OMADM_BROWSER_SET_HOMEPAGE_PROTECTED
+com.samsung.intent.action.SOFTWARE_UPDATE_SETTING
+com.attdm.intent.action.NOTI_ACTION
+com.sec.android.FindingLostPhonePlus.SUBSCRIBE
+com.sec.android.FindingLostPhonePlus.CANCEL
+android.intent.action.ACTION_DATA_SELECTION_POPUP_PRESSED
+com.sec.android.diagmonagent.intent.REPORT_ERROR_V2
+com.samsung.android.settings.intelligence.ACTION_BATTERY_INFO_CHANGED
+com.samsung.android.settings.intelligence.ACTION_BATTERY_INFO_ADDED
+com.samsung.android.settings.intelligence.ACTION_BATTERY_INFO_REMOVED
+com.samsung.intent.action.CSC_COMPARE
+com.samsung.intent.action.CSC_CHAMELEON
+com.samsung.intent.action.OMCUPDATE_START
+com.samsung.intent.action.OMCUPDATE_FINISH
+com.samsung.intent.action.OMCUPDATE_MODEMSTART
+com.samsung.intent.action.OMCUPDATE_MODEMFINISH
+com.samsung.carrier.action.SUBSCRIPTION_CARRIER_IDENTITY_CHANGED
+com.samsung.carrier.action.CARRIER_FEATURE_CHANGED
+com.samsung.carrier.action.CARRIER_CHANGED
+com.samsung.android.cidmanager.action.DELETE_SUBSCRIPTION
+com.samsung.intent.action.LAZY_BOOT_COMPLETE
+com.samsung.BOTTLENECK_HINT_FOR_CHIMERA
+android.util.PerfLog.ACTION_BOTTLENECK_HINT
+android.util.PerfLog.ACTION_RESOURCE_HINT
+com.samsung.android.intent.action.CLM_TT
+com.samsung.android.intent.action.CLM_TT_POSITION_NOTI
+com.samsung.android.intent.action.CLM_TT_CELL_DB_REQUEST
+com.samsung.android.intent.action.CLM_TT_GEOFENCE_RES
+com.samsung.android.intent.action.CLM_TT_GEOFENCE_PATH_HISTORY_RES
+com.samsung.android.intent.action.CLM_TT_LOCAL_DB_RES
+com.samsung.android.intent.action.CLM_TT_WIFI_INFO_RES
+com.samsung.android.intent.action.CLM_TT_TAC_ENB_INFO_REQUEST
+com.samsung.android.intent.action.CLM_TT_PATH_HISTORY_RES
+com.samsung.android.intent.action.CLM_TT_POLICY_REQUEST
+com.samsung.android.intent.action.CLM_TT_SW_VERSION_RES
+com.samsung.android.intent.action.CLM_TT_SERVER_POS_REQ
+com.samsung.android.intent.action.CLM_TT_CELL_INFO_RES
+com.samsung.android.intent.action.CLM_TT_CELL_DB_REQUEST_REV01
+com.samsung.android.intent.action.CLM_TT_TACENB_INFO_REQUEST_REV01
+com.samsung.android.intent.action.CLM_TT_REGRESSION_RES
+com.samsung.android.intent.action.NOTIFY_PREPROCESSING_MAINTENANCE_MODE
+com.samsung.android.intent.action.NOTIFY_POSTPROCESSING_MAINTENANCE_MODE
+com.samsung.android.intent.action.HIDE_MAINTENANCE_MODE_MARK
+com.samsung.android.intent.action.SHOW_MAINTENANCE_MODE_MARK
+com.android.server.sepunion.semgoodcatchservice.GOOD_CATCH_STATE_CHANGED
+com.samsung.android.PEDOMETER_FAULT_DETECTION
+com.samsung.android.action.LOCK_TASK_MODE
+com.kddi.agent.action.SCREEN_PINNING_CONDITION
+com.samsung.android.action.DOUBLE_CLICK
+com.samsung.pen.INSERT
+com.samsung.android.action.START_DOCK_OR_HOME
+com.samsung.android.input.REMOTE_INPUT_READY_TO_CONNECT
+com.samsung.android.action.SHOWING_TOUCH_SENSITIVITY_NOTI
+com.samsung.android.fingerprint.action.FINGER_ON_DISPLAY
+com.samsung.android.spay.quickpay
+com.samsung.android.app.aodservice.intent.action.CHANGE_AOD_MODE
+com.samsung.MEMORY_ABNORMAL_APP_DETECTION
+com.samsung.isrb.SYSTEM_UPDATE
+com.sec.android.intent.action.SG_REPORT
+com.sec.android.intent.action.SG_ENTRY
+com.android.server.am.MARS_TRIGGER_UDS_POLICY
+com.android.server.am.MARS_CANCEL_UDS_POLICY
+com.sec.server.am.BROADCAST_SET_PMM_DMABUF_LEAK_DETECTOR_SOURCE
+com.samsung.android.motion.PALM_UP
+com.samsung.android.motion.PALM_DOWN
+com.samsung.android.spay.action.PFINSTALL
+com.qualcomm.qti.services.secureui.action.ACTION_SUI_ABORT_MSG
+com.samsung.android.inputshare.action.ACTION_MULTI_CONTROL_DIED
+com.samsung.android.inputshare.action.ACTION_TRIGGERED
+com.samsung.context.hqmbigdata.intent
+com.sec.android.intent.action.HQM_UPDATE_USER_ID
+com.sec.android.intent.action.HQM_HW_STATUS_ACK
+com.sec.android.intent.action.HQM_UPDATE_REQ
+com.sec.android.intent.action.DHR_HQM_REFRESH_REQ
+com.sec.android.intent.action.HQM_TRIGGER
+com.samsung.android.dqagent.ACTION_DQA_DATA
+com.samsung.android.dqagent.ACTION_DQA_EM_DATA
+com.samsung.android.dqagent.ACTION_DQA_SEND_REQ
+com.samsung.android.dqagent.ACTION_DQA_SETTING_INFO
+com.samsung.android.dqagent.ACTION_DQA_EXTRA_INFO
+com.samsung.android.dqagent.ACTION_DQA_SYSTEM_INFO
+com.samsung.android.intent.action.CELL_INFO_RES
+com.samsung.android.intent.action.CELL_TAG_RES
+com.samsung.android.intent.action.CELL_INFO_RES_V2
+sec.intent.action.networkdiagnostic.USE_APP_FEATURE_SURVEY
+com.samsung.android.intent.action.ACT_HQM_TEST_DIVISION
+com.samsung.android.intent.action.ISSUETRACKER_NR_DIVISION
+FIRST_ALARM_TRIGGER_ACTION
+com.sec.android.mars.APP_SLEEP_NOTIFY
+android.intent.ACTION_JOB_RESTRICT_UID
+com.sec.android.sdhms.action.FGS_ANOMALY
+com.android.server.am.MARS_TRIGGER_UDS_POLICY
+com.android.server.am.MARS_TRIGGER_SBIKE_MODE_POLICY
+com.android.server.am.MARS_TRIGGER_MPSM_POLICY
+com.samsung.android.action.SCREEN_ROTATION_ANIMATION_STARTED
+com.samsung.android.action.MULTI_WINDOW_ENABLE_CHANGED
+com.samsung.android.action.ENTER_CONTENTS_TO_WINDOW
+com.samsung.android.multiwindow.MINIMIZE_ALL_BY_SYSTEM
+com.samsung.intent.action.BIG_DATA_INFO
+com.verizon.provider.DATA_ACTIVITY_CHANGE
+com.samsung.intent.action.ACTION_DRX_BACK_TO_DEFAULT
+com.samsung.intent.action.WB_AMR
+com.samsung.intent.action.CALL_DROP
+com.sec.intent.action.SARDEVICE_CP
+com.sec.intent.action.CP_CHAN_INFO
+com.samsung.intent.action.CP_THERMAL
+com.sec.android.ims.action.IMS_RESET
+com.samsung.intent.action.RIL_TIMEOUT_ACTION
+com.samsung.intent.action.EMM_ERROR
+com.samsung.intent.action.PSBARRED_FOR_VOLTE
+com.samsung.intent.action.regist_reject
+com.samsung.intent.action.LTE_BAND
+com.samsung.android.intent.action.MANUAL_SET_TIME
+android.intent.action.PHONE_EXSTATE_CHANGED
+com.samsung.intent.action.LTE_REJECT
+com.samsung.android.intent.action.elevator_mode_start
+com.samsung.intent.action.FAKE_CELL
+com.samsung.intent.action.MSG_DECODE_ERROR
+com.samsung.telephony.event.EVENT_ICON_UW_DSQ_CHANGED
+com.samsung.intent.action.PS_BEARER_HANDOVER
+com.sec.epdg.DISABLE_WIFI_CALLING
+com.sec.epdg.PERIODIC_DPD_TIMER_EXPIRED
+com.sec.epdg.PERIODIC_DNS_TIMER_EXPIRED
+com.sec.epdg.INTENT_WIFI_SCAN_TIMER_EXPIRED
+com.sec.epdg.WFC_EPDG_ALLOWED
+com.sec.epdg.EPDG_INITIALIZE_RETRY
+com.sec.epdg.RETRY_TIMER_EXPIREDIMS
+com.sec.epdg.RETRY_TIMER_EXPIREDDEFAULT
+com.sec.epdg.RETRY_TIMER_EXPIREDCBS
+com.sec.epdg.RETRY_TIMER_EXPIREDMMS
+com.sec.epdg.RETRY_TIMER_EXPIREDXCAP
+com.sec.epdg.RETRY_TIMER_EXPIREDEMERGENCY
+com.sec.epdg.RETRY_TIMER_EXPIREDSOS
+com.sec.epdgtestapp.IPSEC_EVENT_REG_LISTENER_INTERNET
+com.sec.epdgtestapp.IPSEC_EVENT_REG_LISTENER_IMS
+com.sec.epdgtestapp.IPSEC_EVENT_REG_LISTENER_APP
+com.sec.epdgtestapp.IPSEC_EVENT_REG_LISTENER_ADMIN
+com.sec.epdgtestapp.IPSEC_EVENT_REG_LISTENER_MMS
+com.sec.epdgtestapp.IPSEC_EVENT_REG_LISTENER_XCAP
+com.sec.epdgtestapp.IPSEC_EVENT_REG_LISTENER_EPDN
+com.sec.epdgservice.IPSEC_CONNECTION_EVENT
+com.sec.epdgservice.UPDATE_UNIFIEDWFC_EVENT
+com.sec.erisclient.natkeepalive
+com.sec.epdg.DPD_LATENCY
+com.sec.epdg.EPDG_SSID_CHANGED
+com.sec.epdg.action_check_e911_addr
+com.sec.epdg.action.EPDG_CONFIGURATION_UPDATED
+com.tmobile.comm.METRIC
+com.samsung.android.unifiedwfc.LAUNCH_UNIFIED_WFC
+android.intent.action.EcholocateEpdgHandover
+com.samsung.android.server.action_check_gms_network
+com.samsung.android.server.action_insert_log
+com.samsung.android.server.action_google_net_state
+com.samsung.android.secinputdev.MOTION_AIVF
+com.samsung.battery.ACTION_BATTERY_INFO_CHANGED
+com.samsung.battery.ACTION_BATTERY_INFO_ADDED
+com.samsung.battery.ACTION_BATTERY_INFO_REMOVED
+com.samsung.android.action.PANIC_CALL
+com.samsung.android.intent.ACTION_CAMERA_SERVICE_WORKER_LOGGING
+com.samsung.android.camera.action.camera_open
+com.samsung.android.camera.action.camera_close
+com.sec.android.app.soundalive.RECEIVE_GAME_EVENTS
+com.sec.tasmanager.action.REGULAR_TIMER_EXPIRED
+com.sec.tasmanager.action.INTERVAL_TIMER_EXPIRED
+com.sec.minidump.action.ACTION_VALIDITY_TIMEOUT0
+com.sec.minidump.action.ACTION_VALIDITY_TIMEOUT1
+com.samsung.android.intent.action.MODE_RESET_AUTOBLOCKER
+com.samsung.android.wallpaper.intent.action.WALLPAPER_COMMAND
+com.samsung.android.knox.intent.action.UCM_CONFIG_STATUS
+com.samsung.rcs.CALL_STATE_CHANGED
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SCameraSDKService/SCameraSDKService.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/LinkToWindowsService/LinkToWindowsService.apk
+com.samsung.android.mdx.proximity.ACTION_SCREEN_OFF
+com.samsung.android.mdx.proximity.ACTION_USER_PRESENT
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/TalkbackSE/TalkbackSE.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/DiagMonAgent91/DiagMonAgent91.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/MtpService/MtpService.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/MediaProviderLegacy/MediaProviderLegacy.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/NSDSWebApp/NSDSWebApp.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/Bixby/Bixby.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/GooglePackageInstaller/GooglePackageInstaller.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/PetService/PetService.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/ManagedProvisioning/ManagedProvisioning.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/ImsLogger/ImsLogger.apk
+com.sec.imslogger.action.oemtimeout
+com.sec.imslogger.action_commands
+com.sec.imslogger.action_clear
+com.sec.imslogger.action_settings
+com.sec.imslogger.action_update
+com.sec.imslogger.action_finish
+com.sec.imslogger.action_debuginfo
+com.sec.imslogger_action_repeat_logging
+com.samsung.imslogger.action.DM_EVENT_READY
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SendHelpMessage/SendHelpMessage.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/BixbyInterpreter/BixbyInterpreter.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SumeNNService/SumeNNService.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/LocalTransport/LocalTransport.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/PhotoRemasterService/PhotoRemasterService.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/knoxvpnproxyhandler/knoxvpnproxyhandler.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SecAppSeparation/SecAppSeparation.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/Upday/Upday.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/TeleService/TeleService.apk
+com.android.phone.slice.action.START_SLICE_PURCHASE_APP
+com.android.phone.slice.action.SLICE_PURCHASE_APP_RESPONSE_TIMEOUT
+com.samsung.telephony.action.SHOW_WFC_ENABLE_NOTIFICATION
+com.samsung.telephony.action.DELETE_WFC_ENABLE_NOTIFICATION
+com.samsung.telephony.action.SHOW_WFC_ENABLE_NOTIFICATION_ON_CALL_DROP
+com.samsung.telephony.phone.action.PLAY_ACTION_LOW_BATTERY_SOUND
+com.samsung.intent.action.ACTION_TELEPHONY_NOT_RESPONDING
+com.samsung.telephony.action.ROAMING_STATE_CHANGED
+android.intent.action.ACTION_DATA_SELECTION_POPUP
+com.android.server.status.domestic_network
+com.android.server.status.roam_network_changed
+com.samsung.android.app.telephonyui.action.SMART_CALL_NOTIFICATION
+com.samsung.android.app.telephonyui.action.SMART_CALL_NOTIFICATION_ALARM
+com.samsung.android.app.telephonyui.action.UNIFIED_TTY_NOTIFICATION
+com.samsung.android.app.telephonyui.action.ANY_DATA_STATE
+com.samsung.android.app.telephonyui.action.ASK_USER_TO_ALLOW_DATA_CONNECTION
+com.samsung.android.app.telephonyui.action.DOMESTIC_NETWORK_EVENT
+com.samsung.android.app.telephonyui.action.EMERGENCY_STATE_CHANGED
+com.samsung.android.app.telephonyui.action.NETWORK_ERROR_EVENT
+com.samsung.android.app.telephonyui.action.NETWORK_NOTIFICATION_EVENT
+com.samsung.android.app.telephonyui.action.NETWORK_SERVICE_STATE_CHANGED
+com.samsung.android.app.telephonyui.action.NOTICE_USER_ABOUT_DATA_CONNECTION
+com.samsung.android.app.telephonyui.action.NOTICE_USER_ABOUT_NETWORK_STATE_IN_BOOTUP
+com.samsung.android.app.telephonyui.action.PHONE_PROCESS_CREATED
+com.samsung.android.app.telephonyui.action.SERVICE_STATE_CHANGED
+com.samsung.android.app.telephonyui.action.SIM_NETWORK_LOCKED
+com.samsung.android.app.telephonyui.action.SIM_STATE_CHANGED
+com.samsung.android.app.telephonyui.action.UPDATE_CALL_FORWARDING_INDICATOR
+com.samsung.android.app.telephonyui.action.UPDATE_CALL_FORWARDING_INDICATOR_CDMA
+com.samsung.android.app.telephonyui.action.UPDATE_CALL_FORWARDING_INDICATOR_MULTISIM
+com.samsung.android.app.telephonyui.action.UPDATE_MESSAGE_WAITING_INDICATOR
+com.samsung.iqi.action.SUBMIT
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/DesktopModeUiService/DesktopModeUiService.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SamsungDeviceHealthManagerService/SamsungDeviceHealthManagerService.apk
+com.sec.android.sdhms.action.NOTIFY_ANOMALY
+com.sec.android.sdhms.action.NOTIFY_HIDDEN_ANOMALY
+com.sec.android.sdhms.action.REPORT_TRACE
+com.sec.android.sdhms.action.REPORT_METRIC
+com.sec.android.sdhms.action.HIGH_CPU_USAGE
+com.sec.android.sdhms.action.HIGH_CPU_USAGE_APP
+com.sec.android.sdhms.action.HIGH_BRIGHTNESS_DISPLAY_USAGE
+com.sec.android.sdhms.action.APP_ERROR
+com.sec.android.ISSUE_TRACKER_ACTION
+com.sec.android.ISSUE_TRACKER_ONOFF
+com.sec.android.alarm.refresh.battery_stats
+com.enhance.gameservice.SpaIntent
+com.samsung.DO_ZLA
+com.samsung.MEMORY_ABNORMAL_APP_DETECTION
+FIRST_ALARM_TRIGGER_ACTION_FOR_ZLA
+MARS_REQUEST_PKG_INFO
+MARS_REQUEST_DB_COMPLETE
+com.sec.android.app.sdhms.SLUG_EVERY_DAY_UPDATE
+com.sec.android.app.sdhms.SLUG_EVERY_WEEK_CLEANUP
+com.sec.android.sdhms.action.INIT_COMPLETED
+com.sec.android.app.sdhms.RUT_EVERY_HOUR_UPDATE
+com.sec.android.sdhms.action.ACTION_THERMAL_THROTTLING_DELTA_CHANGED
+com.sec.android.sdhms.action.ABNORMAL_HEAT_DETECTED
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/EarphoneTypeC/EarphoneTypeC.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/BackupRestoreConfirmation/BackupRestoreConfirmation.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/BixbyVisionFramework3.5/BixbyVisionFramework3.5.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/PhotoEditor_AIFull/PhotoEditor_AIFull.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SamsungMultiConnectivity/SamsungMultiConnectivity.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/GalleryWidget/GalleryWidget.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/VolumeMonitorProvider_U/VolumeMonitorProvider_U.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SecDownloadProvider/SecDownloadProvider.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SEMFactoryApp/SEMFactoryApp.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/FactoryTestProvider/FactoryTestProvider.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/ThemeStore/ThemeStore.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/OmaCP/OmaCP.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SamsungVideoPlayer/SamsungVideoPlayer.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/MtpApplication/MtpApplication.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/MobileWips/MobileWips.apk
+com.sec.android.ISSUE_TRACKER_ACTION
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/Tag/Tag.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/LiveWallpapersPicker/LiveWallpapersPicker.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/KnoxDesktopLauncher/KnoxDesktopLauncher.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/DynamicSystemInstallationService/DynamicSystemInstallationService.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/GameDriver-SM8550/GameDriver-SM8550.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/PrivacyDashboard/PrivacyDashboard.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SmartSwitchAssistant/SmartSwitchAssistant.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/HWResourceShare/HWResourceShare.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/smartfaceservice/smartfaceservice.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/OneDrive_Samsung_v3/OneDrive_Samsung_v3.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/ExternalStorageProvider/ExternalStorageProvider.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/AdaptSound_U2/AdaptSound_U2.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SsuService/SsuService.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SmartManager_v5/SmartManager_v5.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/Crane/Crane.apk
+com.samsung.rcs.intent.action.END_CALL
+com.samsung.rcs.intent.action.SPEAKER_UPDATE
+com.samsung.rcs.intent.action.MUTE_UPDATE 
+com.samsung.rcs.intent.action.MUTE_ON
+com.samsung.rcs.intent.action.MUTE_OFF
+com.samsung.rcs.intent.action.SPEAKER_ON
+com.samsung.rcs.intent.action.SPEAKER_OFF
+com.samsung.rcs.contentsharing.action.NUMBER_TOKEN
+com.samsung.crane.callcomposer.IMPORTANCETOGGLE
+com.samsung.crane.contentshare.STOP_SHARE_OVERLAY
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SecSoundPicker/SecSoundPicker.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SamsungGallery2018/SamsungGallery2018.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/IAFDManagerService/IAFDManagerService.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/KnoxAIFrameworkApp/KnoxAIFrameworkApp.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/DeviceQualityAgent31/DeviceQualityAgent31.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/AODService_v80/AODService_v80.apk
+com.samsung.android.intent.action.REQUEST_SERVICEBOX_REMOTEVIEWS
+com.samsung.android.app.aodservice.intent.action.DASHBOARD_STATE_CHANGED
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/TaskEdgePanel_v3.2/TaskEdgePanel_v3.2.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/AREmoji/AREmoji.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SohService/SohService.apk
+com.samsung.sait.sohservice.action.CHARGE_EVENT
+com.samsung.sait.sohservice.action.BSOH_INIT
+com.samsung.sait.sohservice.action.BSOH_READ
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SoundAlive_U2/SoundAlive_U2.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/GpuWatchApp/GpuWatchApp.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/ThemeCenter/ThemeCenter.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/Telecom/Telecom.apk
+android.intent.action.SHOW_MISSED_CALLS_NOTIFICATION
+com.android.server.telecom.MESSAGE_SENT
+com.samsung.android.telecom.action.CURRENT_TTY_MODE_CHANGED_2
+com.samsung.intent.action.PACKAGE_ADDED
+com.samsung.server.telecom.USER_SELECT_WIFI_SERVICE_CALL
+com.samsung.server.telecom.action.TELECOM_UPDATE
+com.samsung.server.telecom.intent.action.CALLS_ADD_ENTRY
+com.samsung.telecom.action.DEFAULT_OUTGOING_PHONE_ACCOUNT_CHANGED
+diagandroid.phone.AppTriggeredCall
+diagandroid.phone.CallSetting
+diagandroid.phone.UICallState
+diagandroid.phone.detailedCallState
+diagandroid.phone.VoiceRadioBearerHandoverState
+samsung.intent.action.PHONE_STATE
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/KPECore/KPECore.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/TouchWizHome_2017/TouchWizHome_2017.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/KnoxZtFramework/KnoxZtFramework.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SmartManager_v6_DeviceSecurity/SmartManager_v6_DeviceSecurity.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SamsungCalendarProvider/SamsungCalendarProvider.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/AvatarEmojiSticker/AvatarEmojiSticker.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/wallpaper-res/wallpaper-res.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/BeaconManager/BeaconManager.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SamsungPositioning/SamsungPositioning.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SettingsProvider/SettingsProvider.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SamsungIntelliVoiceServices/SamsungIntelliVoiceServices.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/AppsEdgePanel_v3.2/AppsEdgePanel_v3.2.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SmartThingsKit/SmartThingsKit.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SamsungPass/SamsungPass.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/FBServices/FBServices.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/BuiltInPrintService/BuiltInPrintService.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/DeviceKeystring/DeviceKeystring.apk
+com.sec.android.systemupdate.REQ_DTBO_CLEAR
+com.sec.android.systemupdate.REQ_SENSORHUB_CLEAR
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/AuthFramework/AuthFramework.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/ModemServiceMode/ModemServiceMode.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/CredentialManager/CredentialManager.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SecMediaProvider/SecMediaProvider.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SPPPushClient/SPPPushClient.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SamsungMessages/SamsungMessages.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/DeXonPC/DeXonPC.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/KLMSAgent/KLMSAgent.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/FusedLocation/FusedLocation.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/DigitalWellbeing/DigitalWellbeing.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/BadgeProvider_N/BadgeProvider_N.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/ONS/ONS.apk
+com.android.ons.action.ESIM_DOWNLOAD
+com.android.ons.action.ESIM_CONFIG
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/StoryService/StoryService.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/HdmApk/HdmApk.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SecFactoryPhoneTest/SecFactoryPhoneTest.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/VpnDialogs/VpnDialogs.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/NetworkDiagnostic/NetworkDiagnostic.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SHClient/SHClient.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/MultiControl/MultiControl.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SOAgent7/SOAgent7.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SamsungCoreServices-Stub/SamsungCoreServices-Stub.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SecSettings/SecSettings.apk
+com.samsung.android.settings.action.LANGUAGE_PACK_SELECTED
+com.samsung.android.settings.action.LANGUAGE_PACK_ADDED
+com.samsung.android.settings.action.LANGUAGE_PACK_REMOVED
+com.samsung.android.settings.action.LANGUAGE_PACK_UPDATE_PROGRESS
+com.samsung.intent.action.SETTINGS_SOFT_RESET
+com.samsung.android.settings.action.LANGUAGE_PACK_SELECTED
+com.samsung.android.settings.action.LANGUAGE_PACK_ADDED
+com.samsung.android.settings.action.LANGUAGE_PACK_REMOVED
+com.samsung.android.settings.action.LANGUAGE_PACK_UPDATE_PROGRESS
+com.samsung.intent.action.SETTINGS_SOFT_RESET
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SKMSAgent/SKMSAgent.apk
+com.samsung.android.dqagent.ACTION_DQA_DATA
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/CallAssistant/CallAssistant.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/MCFDeviceSync/MCFDeviceSync.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/ProxyHandler/ProxyHandler.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SamsungAccount/SamsungAccount.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/CallLogBackup/CallLogBackup.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/ShareLive/ShareLive.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/DualOutFocusViewer_S/DualOutFocusViewer_S.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/PaymentFramework/PaymentFramework.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/OMCAgent5/OMCAgent5.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/DesktopSystemUI/DesktopSystemUI.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SCPMAgent/SCPMAgent.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/Shell/Shell.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/PeripheralFramework/PeripheralFramework.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/DeviceBasedServiceConsent/DeviceBasedServiceConsent.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/DynamicLockscreen/DynamicLockscreen.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/NetworkStackGoogle/NetworkStackGoogle-ldpi.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/NetworkStackGoogle/NetworkStackGoogle.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/NetworkStackGoogle/NetworkStackGoogle-mdpi.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/NetworkStackGoogle/NetworkStackGoogle-xhdpi.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/NetworkStackGoogle/NetworkStackGoogle-hdpi.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/NetworkStackGoogle/NetworkStackGoogle-xxxhdpi.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/NetworkStackGoogle/NetworkStackGoogle-xxhdpi.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/NetworkStackGoogle/NetworkStackGoogle-tvdpi.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/NetworkStackGoogle/NetworkStackGoogle-arm64_v8a.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/KnoxGuard/KnoxGuard.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SamsungCarKeyFw/SamsungCarKeyFw.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SamsungContactsProvider/SamsungContactsProvider.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/EsimKeyString/EsimKeyString.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/InputDevices/InputDevices.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/FaceService/FaceService.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/AppUpdateCenter/AppUpdateCenter.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SecMyFiles2020/SecMyFiles2020.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/StickerFaceARAvatar/StickerFaceARAvatar.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/YourPhone_P1_5/YourPhone_P1_5.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SettingsBixby/SettingsBixby.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/TelephonyUI/TelephonyUI.apk
+com.samsung.android.app.telephonyui.action.CLEAR_BLOCK_NUMBERS_NOTIFICATION
+com.samsung.intent.action.FDN_MODE_CHANGED
+com.samsung.intent.action.FDN2_MODE_CHANGED
+com.samsung.android.app.telephonyui.action.SMART_CALL_NOTIFICATION_CLICK
+com.samsung.android.app.telephonyui.action.SMART_CALL_NOTIFICATION_CANCEL
+com.samsung.android.app.telephonyui.action.TTY_TURNED_ON_DIALOG_CLICK
+com.samsung.android.app.telephonyui.action.USE_EXTERNAL_TTY_TURNED_OFF
+com.samsung.android.app.telephonyui.action.BLOCK_UNKNOWN
+com.samsung.settings.SIMCARD_MGT
+com.samsung.settings.SIMCARD_MGT_ACTIVATED
+com.samsung.intent.action.ACTION_DEFAULT_DATA_SUBSCRIPTION_CHANGE_SUCCESS
+com.samsung.android.app.telephonyui.action.ODA_DELAYED_PROFILE_POLLING
+android.samsung.action.ACTION_NETWORK_SLOT_CHANGING_FINISH
+com.samsung.android.app.telephonyui.netsettings.simcardmanager.SIMCARD_CHANGE_FINISHED
+com.samsung.android.app.telephonyui.action.SIM_STATE_CHANGED_FOR_SIMCARD_MANAGER
+com.samsung.android.app.telephonyui.action.UPDATE_TRANSFERRED_STATE
+com.samsung.android.app.telephonyui.action.UPDATE_PSIM1_STATE
+com.samsung.android.app.telephonyui.action.ACTION_UPDATE_PSIM2_DETECT_POPUP
+com.samsung.android.app.telephonyui.action.ACTION_UPDATE_PREFERRED_LIST
+android.intent.action.ACTION_DATA_SELECTION_POPUP_PRESSED
+com.samsung.android.app.telephonyui.action.NOTICE_USER_5G_OFF_CONSTRAINT
+com.samsung.android.app.telephonyui.action.NOTICE_USER_NETWORK_CONSTRAINT
+com.samsung.android.app.telephonyui.action.UPDATE_NETWORK_MODE_BY_CARRIERUI
+com.samsung.intent.action.DISABLE_MSTC
+com.samsung.android.app.telephonyui.action.HiddenNetworkSetting
+com.samsung.android.app.telephonyui.action.NetworkRoamingChanged
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/KmxService/KmxService.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/imsservice/imsservice.apk
+com.android.ims.IMS_SERVICE_UP
+com.android.ims.IMS_SERVICE_DOWN
+com.sec.imsservice.action.IMS_PROFILE_LOADED
+com.sec.ims.imsmanager.RESTART
+com.gsma.services.rcs.action.SERVICE_UP
+com.samsung.ims.action.onsimloaded
+com.samsung.ims.action.IMS_REGISTRATION
+com.sec.internal.ims.imsservice.alarmmanager
+com.sec.imsservice.REGISTERED_IMPU
+com.android.ims.RCS_AUTOCONFIG_START
+com.sec.internal.ims.config.workflow.validity_timeout
+com.sec.internal.ims.config.workflow.token_expired_after_max_retry
+com.sec.internal.ims.config.workflow.general_error_max_retry
+com.samsung.ims.dm.DM_CHANGED
+com.sec.internal.ims.imsservice.dm_polling_timeout
+com.sec.android.internal.ims.FLIGHT_MODE
+com.samsung.intent.action.IMS_CALL_DROP
+android.intent.action.IMS_SETTINGS_UPDATED
+com.samsung.ims.action.apcsconfigurationinfo
+com.samsung.intent.action.SMS_CALLBACK_MODE_CHANGED_INTERNAL
+com.sec.imsservice.ACTION_DAILY_REPORT_EXPIRED
+com.samsung.intent.action.EMERGENCY_SMS_OVER_IMS
+com.samsung.rcs.framework.filetransfer.notification.TRANSFER_INCOMING
+com.samsung.rcs.framework.filetransfer.notification.TRANSFER_PROGRESS
+com.samsung.rcs.framework.filetransfer.notification.TRANSFER_COMPLETED
+com.samsung.rcs.framework.filetransfer.notification.TRANSFER_CANCELED
+com.samsung.rcs.framework.filetransfer.notification.TRANSFER_CREATED
+com.samsung.rcs.framework.filetransfer.notification.TRANSFER_ATTACHED
+com.samsung.rcs.framework.filetransfer.notification.REQUEST_FAILED
+com.samsung.rcs.framework.filetransfer.request.REQUEST_FILE_RESIZE
+com.samsung.ims.rcs.filetransfer.action.INCOMING_FILE_TRANSFER
+com.samsung.ims.rcs.filetransfer.action.RESUME_FILE_TRANSFER
+com.gsma.services.rcs.filetransfer.action.NEW_FILE_TRANSFER
+com.gsma.services.rcs.filetransfer.action.RESUME_FILE_TRANSFER
+com.gsma.services.rcs.filetransfer.action.UNDELIVERED_FILE_TRANSFERS
+com.gsma.services.rcs.filetransfer.action.FILE_TRANSFER_DELIVERY_EXPIRED
+com.samsung.rcs.framework.instantmessaging.action.CREATE_CHAT_RESPONSE
+com.samsung.rcs.framework.instantmessaging.action.ADD_PARTICIPANTS_RESPONSE
+com.samsung.rcs.framework.instantmessaging.action.REMOVE_PARTICIPANTS_RESPONSE
+com.samsung.rcs.framework.instantmessaging.action.CHANGE_GROUPCHAT_LEADER_RESPONSE
+com.samsung.rcs.framework.instantmessaging.action.DELETE_MESSAGES_RESPONSE
+com.samsung.rcs.framework.instantmessaging.action.DELETE_CHATS_RESPONSE
+com.samsung.rcs.framework.instantmessaging.action.SEND_MESSAGE_RESPONSE
+com.samsung.rcs.framework.instantmessaging.action.SEND_MESSAGE_RESPONSE_TAKETOOLONG
+com.samsung.rcs.framework.instantmessaging.action.CLOSE_CHAT_RESPONSE
+com.samsung.rcs.framework.instantmessaging.action.CANCEL_MESSAGE_RESPONSE
+com.samsung.rcs.framework.instantmessaging.action.RECEIVE_TYPING_NOTIFICATION
+com.samsung.rcs.framework.instantmessaging.action.RECEIVE_CHAT_ESTABLISHED
+com.samsung.rcs.framework.instantmessaging.action.RECEIVE_CHAT_CLOSED
+com.samsung.rcs.framework.instantmessaging.action.RECEIVE_NEW_MESSAGE
+com.samsung.rcs.framework.instantmessaging.action.RECEIVE_CHAT_INVITATION
+com.samsung.rcs.framework.instantmessaging.action.RECEIVE_MESSAGE_NOTIFICATION_STATUS
+com.samsung.rcs.framework.instantmessaging.action.RECEIVE_MESSAGE_INSERTED
+com.samsung.rcs.framework.instantmessaging.action.RECEIVE_SEND_MESSAGE_RESPONSE
+com.samsung.rcs.framework.instantmessaging.action.RECEIVE_PARTICIPANT_INSERTED
+com.samsung.rcs.framework.instantmessaging.action.RECEIVE_PARTICIPANT_DELETED
+com.samsung.rcs.framework.instantmessaging.action.RECEIVE_PARTICIPANT_UPDATED
+com.samsung.rcs.framework.instantmessaging.action.RECEIVE_CHAT_UPDATED
+com.samsung.rcs.framework.instantmessaging.action.GET_IS_COMPOSING_ACTIVE_URIS_RESPONSE
+com.samsung.rcs.framework.instantmessaging.action.GET_LAST_MESSAGES_SENT_RESPONSE
+com.samsung.rcs.framework.instantmessaging.action.OUT_OF_MEMORY_ERROR
+com.samsung.rcs.framework.instantmessaging.action.RECEIVE_GROUPCHAT_SESSION
+com.samsung.rcs.framework.instantmessaging.action.SET_CHAT_SUBJECT_RESPONSE
+com.samsung.rcs.framework.instantmessaging.action.SET_GROUPCHAT_ICON_RESPONSE
+com.samsung.rcs.framework.instantmessaging.action.CHANGE_GROUP_ALIAS_RESPONSE
+com.samsung.rcs.framework.instantmessaging.action.RECEIVE_PARTICIPANTS_INSERTED
+com.samsung.rcs.framework.instantmessaging.action.RECEIVE_PARTICIPANTS_DELETED
+com.samsung.rcs.framework.instantmessaging.action.RECEIVE_PARTICIPANTS_UPDATED
+com.samsung.rcs.framework.instantmessaging.action.IGNORE_INCOMING_MESSAGE_RESPONSE
+com.samsung.rcs.framework.instantmessaging.action.RECEIVE_CHAT_SUBJECT_UPDATED
+com.samsung.rcs.framework.instantmessaging.action.RECEIVE_GROUPCHAT_ICON_UPDATED
+com.samsung.rcs.framework.instantmessaging.action.RECEIVE_GROUPCHAT_LEADER_CHANGED
+com.samsung.rcs.framework.instantmessaging.action.MESSAGE_REVOKE_TIMER_EXPIRED
+com.samsung.rcs.framework.instantmessaging.action.RECEIVE_GROUPCHAT_ICON_DELETED
+com.samsung.rcs.framework.instantmessaging.action.RECEIVE_PARTICIPANT_ALIAS_UPDATED
+com.gsma.services.rcs.action.RECEIVE_RCS_MESSAGE
+com.gsma.services.rcs.action.RCS_MESSAGE
+com.gsma.services.rcs.chat.action.NEW_ONE_TO_ONE_CHAT_MESSAGE
+com.gsma.services.rcs.chat.action.NEW_GROUP_CHAT
+com.gsma.services.rcs.chat.action.UNDELIVERED_MESSAGES
+com.gsma.services.rcs.chat.action.NEW_GROUP_CHAT_MESSAGE
+com.samsung.ims.rcs.chat.action.INCOMING_MESSAGE_EVENT
+com.samsung.rcs.framework.cloudmessage.RESTART
+com.samsung.rcs.framework.cloudmessage.action.MSGDATA
+com.samsung.rcs.framework.cloudmessage.action.MSGDATA.INITIALSYNCSTART
+com.samsung.rcs.framework.cloudmessage.action.MSGDATA.INITIALSYNCEND
+com.samsung.rcs.framework.cloudmessage.action.MSGDATA.INITIALSYNCFAIL
+com.samsung.rcs.framework.cloudmessage.action.MSGDELETEFAILURE
+com.samsung.rcs.framework.cloudmessage.action.MSGUI
+com.samsung.rcs.framework.cloudmessage.action.MSGAPPREQUEST
+com.samsung.rcs.framework.cloudmessage.action.VVMDATA
+com.samsung.rcs.framework.cloudmessage.action.VVMDATADELETEFAILURE
+com.samsung.rcs.framework.cloudmessage.action.VVMDATA.SYNCSTART
+com.samsung.rcs.framework.cloudmessage.action.VVMDATA.SYNCFINISHED
+com.samsung.rcs.framework.cloudmessage.action.VVMDATA.SYNCFAIL
+com.samsung.rcs.framework.cloudmessage.action.VVMDATA.BUSY
+com.samsung.rcs.framework.cloudmessage.action.CALLLOGDATA
+com.samsung.rcs.framework.cloudmessage.action.CALLLOGDATADELETEFAILURE
+com.samsung.rcs.framework.geolocationshare.action.SHARE_LOCATION_IN_CHAT_RESPONSE
+com.samsung.rcs.framework.geolocationshare.action.RECEIVE_SHARE_LOCATION_IN_CHAT_RESPONSE
+com.samsung.rcs.framework.geolocationshare.action.RECEIVE_LOCATION_SHARE_MESSAGE
+com.samsung.rcs.framework.geolocationshare.action.CREATE_SHARE_LOCATION_INCALL_RESPONSE
+com.samsung.rcs.framework.geolocationshare.action.START_SHARE_LOCATION_INCALL_RESPONSE
+com.samsung.rcs.framework.geolocationshare.action.SHARE_LOCATION_INCALL_COMPLETED
+com.samsung.rcs.framework.geolocationshare.action.RECEIVE_LOCATION_NOTIFICATION_STATUS
+com.samsung.rcs.framework.geolocationshare.action.INCOMING_LOCATION_SHARE_INCALL_INVITATION
+com.samsung.rcs.framework.geolocationshare.action.ACCEPT_LOCATION_SHARE_INCALL_RESPONSE
+com.samsung.rcs.framework.geolocationshare.action.REJECT_LOCATION_SHARE_INCALL_RESPONSE
+com.samsung.rcs.framework.geolocationshare.action.CANCEL_LOCATION_SHARE_INCALL_RESPONSE
+com.samsung.rcs.framework.geolocationshare.action.DELETE_ALL_LOCATION_SHARE_INCALL_RESPONSE
+com.sec.rcs.mediatransfer.ish.notification.SHARE_CREATED
+com.sec.rcs.mediatransfer.ish.notification.SHARE_INCOMING
+com.sec.rcs.mediatransfer.ish.notification.SHARE_PROGRESS
+com.sec.rcs.mediatransfer.ish.notification.SHARE_INTERRUPTED
+com.sec.rcs.mediatransfer.ish.notification.SHARE_COMPLETED
+com.sec.rcs.mediatransfer.ish.notification.SHARE_CANCELED
+com.sec.rcs.mediatransfer.ish.notification.SHARE_CONNECTED
+com.sec.rcs.mediatransfer.ish.notification.SHARE_TERMINATED
+com.sec.rcs.mediatransfer.ish.notification.SHARE_LIMIT_EXCEEDED
+com.sec.rcs.mediatransfer.ish.notification.SHARE_COMMUNICATION_ERROR
+com.sec.rcs.mediatransfer.ish.notification.SHARE_FILE_PATH_ERROR
+com.sec.rcs.mediatransfer.ish.notification.SHARE_SERVICE_NOTRSEPOSNIVE
+com.sec.rcs.mediatransfer.ish.notification.SHARE_SERVICE_READY
+com.sec.rcs.mediatransfer.ish.notification.SHARE_SERVICE_NOT_READY
+com.sec.rcs.mediatransfer.vsh.notification.SHARE_CREATED
+com.sec.rcs.mediatransfer.vsh.notification.SHARE_INCOMING
+com.sec.rcs.mediatransfer.vsh.notification.SHARE_CANCELED
+com.sec.rcs.mediatransfer.vsh.notification.SHARE_CONNECTED
+com.sec.rcs.mediatransfer.vsh.notification.CONFIGURATION_CHANGE
+com.sec.rcs.mediatransfer.vsh.notification.SHARE_LCOMMUNICATION_ERROR
+com.sec.rcs.mediatransfer.vsh.notification.SHARE_VIDEO_PATH_ERROR
+com.sec.rcs.mediatransfer.vsh.notification.SHARE_SERVICE_NOTRESPOSNIVE
+com.sec.rcs.mediatransfer.vsh.notification.SHARE_SERVICE_READY
+com.sec.rcs.mediatransfer.vsh.notification.SHARE_SERVICE_NOT_READY
+com.sec.rcs.mediatransfer.vsh.notification.APPROCHING_VS_MAX_DURATION
+com.sec.rcs.mediatransfer.vsh.notification.CSH_CAM_ERROR
+com.sec.internal.ims.servicemodules.options.sub_throttled_timeout
+com.sec.internal.ims.servicemodules.options.poll_timeout
+com.sec.internal.ims.servicemodules.options.poll_partial
+com.sec.internal.ims.servicemodules.presence.bad_event_timeout
+com.sec.internal.ims.servicemodules.presence.publish_timeout
+com.sec.internal.ims.servicemodules.presence.retry_publish
+com.sec.internal.ims.servicemodules.presence.retry_subscribe
+com.samsung.sdm.START_DM_SYNC_SESSION
+com.samsung.rcs.framework.eucr.action.VOLATILE_TIMEOUT
+com.sec.android.statistics.VZW_QUALITY_STATISTICS
+com.sec.imsservice.sip.signalling
+com.sec.imsservice.REQUEST_AKA_CHALLENGE
+com.sec.imsservice.AKA_CHALLENGE_COMPLETE
+com.samsung.intent.action.PHONE_NEED_SILENT_REDIAL
+com.sec.internal.ims.imsservice.periodic_lu
+diagandroid.phone.imsSignallingMessage
+diagandroid.phone.RTPDLStat
+diagandroid.phone.RTPULStat
+diagandroid.phone.emergencyCallTimerState
+diagandroid.phone.carrierConfig
+diagandroid.phone.detailedCallState
+com.samsung.rcs.framework.multimediadata.notification.MULTI_DATA_INSERTION
+com.sec.rcs.config.action.SET_SHOW_MSISDN_DIALOG
+com.samsung.nsds.action.SIM_DEVICE_ACTIVATED
+com.samsung.nsds.action.SIM_DEVICE_DEACTIVATED
+com.samsung.nsds.action.RECEIVED_PUSH_NOTIFICATION
+com.samsung.nsds.action.DEVICE_CONFIG_UPDATED
+com.samsung.nsds.action.ENTITLEMENT_AND_LOCTC_CHECK_COMPLETED
+com.samsung.nsds.action.ENTITLEMENT_CHECK_COMPLETED
+com.samsung.nsds.action.RECEIVED_GCM_EVENT_NOTIFICATION
+com.sec.vsim.ericssonnsds.E911_AID_EXP_CHECK_TIMEOUT
+com.sec.vsim.ericssonnsds.SVC_PROVISION_CHECK_TIMEOUT
+com.sec.vsim.ericssonnsds.ACTION_SVC_PROVISION_CHECK_RETRY_TIMEOUT
+com.sec.vsim.ericssonnsds.ACTION_REFRESH_DEVICE_INFO
+com.sec.vsim.ericssonnsds.ACTION_REFRESH_ENTITLEMENT_CHECK
+com.sec.vsim.ericssonnsds.ACTION_RETRY_ENTITLEMENT_CHECK
+com.sec.internal.vsim.action.UNIFIED_WFC_LOCATIONANDTC_OPEN_WEBSHEET
+com.sec.internal.vsim.action.SNT_MODE_LOCATIONANDTC_OPEN_WEBSHEET
+com.sec.internal.ims.entitlement.DEVICE_READY_AFTER_BOOTUP
+com.sec.imsservice.aec.action.COMPLETED_ENTITLEMENT
+com.samsung.softphone.action.ACCOUNT_LOGIN_COMPLETED
+com.samsung.softphone.action.ACCOUNT_REGISTERED
+com.samsung.softphone.action.ACCOUNT_DEREGISTERED
+com.samsung.softphone.action.ACCOUNT_REQUEST_LOGOUT
+com.samsung.softphone.action.ACCOUNT_IDENTITY_RELEASED
+com.samsung.softphone.action.ACCOUNT_MISSING_E911
+com.samsung.softphone.action.ACCOUNT_IN_INTERNATIONAL
+com.samsung.softphone.action.ACCOUNT_LOCATION_UNKNOWN
+com.samsung.ims.imsservice.handler.secims.audio_info
+com.sec.internal.ims.fcm.action.RECEIVE_FCM_REGISTRATION_TOKEN
+com.sec.internal.ims.fcm.action.REFRESH_FCM_REGISTRATION_TOKEN
+com.sec.internal.ims.fcm.action.RECEIVE_FCM_PUSH_NOTIFICATION
+com.samsung.ims.mcs.ACTION_CHECK_NOTIFICATION_CHANNEL_LIFETIME
+com.samsung.ims.mcs.ACTION_RETRY_FAILED_API
+com.sec.imsservice.cmstore.mcs.action.ACCESS_TOKEN_VALIDITY_TIMEOUT
+com.sec.imsservice.cmstore.mcs.action.REFRESH_TOKEN_VALIDITY_TIMEOUT
+com.sec.imsservice.cmstore.mcs.action.REGISTRATION_CODE_VALIDITY_TIMEOUT
+com.sec.imsservice.cmstore.mcs.action.AUTH_CODE_VALIDITY_TIMEOUT
+com.sec.imsservice.cmstore.mcs.action.OTP_RESPONSE_TIMEOUT
+com.samsung.ims.mcs.START_CONTACT_SYNC
+com.samsung.ims.mcs.STOP_CONTACT_SYNC
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/IPService/IPService.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/IntelligentDynamicFpsService/IntelligentDynamicFpsService.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/GlobalPostProcMgr/GlobalPostProcMgr.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/EmergencySOS/EmergencySOS.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/FBInstaller_NS/FBInstaller_NS.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/Fmm/Fmm.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SecSettingsIntelligence/SecSettingsIntelligence.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SVCAgent/SVCAgent.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/DigitalKey/DigitalKey.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/FotaAgent/FotaAgent.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SmartEpdgTestApp/SmartEpdgTestApp.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/BiometricSetting/BiometricSetting.apk
+com.samsung.android.intent.action.UPDATE_UDFPS_ICON_VISIBILITY
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SamsungContacts/SamsungContacts.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SamsungBilling/SamsungBilling.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/EpdgService/EpdgService.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SmartCallProvider/SmartCallProvider.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SmartTouchCall/SmartTouchCall.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SDMConfig/SDMConfig.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/IpsGeofence/IpsGeofence.apk
+com.samsung.android.intent.action.INTELLIGENT_PROXIMITY
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/BCService/BCService.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SingleTakeService/SingleTakeService.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/AuthFactorTouchService/AuthFactorTouchService.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SecTrashProvider/SecTrashProvider.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SamsungInCallUI/SamsungInCallUI.apk
+com.android.phone.ACTION_CALL_PROTECTION
+com.samsung.android.incallui.TRANSLATION_BUTTON_INFO
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/sec_camerax_service/sec_camerax_service.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/serviceModeApp_FB/serviceModeApp_FB.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/MmsService/MmsService.apk
+android.settings.ENABLE_MMS_DATA_REQUEST
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/GameTools_Dream/GameTools_Dream.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/CMHProvider/CMHProvider.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/OdaService/OdaService.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/BlockedNumberProvider/BlockedNumberProvider.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/DressRoom/DressRoom.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/EsimClient/EsimClient.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/HashTagService/HashTagService.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SamsungMagnifier3/SamsungMagnifier3.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SecureFolder/SecureFolder.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SharedStorageBackup/SharedStorageBackup.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/CallContentProvider/CallContentProvider.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/PeopleStripe/PeopleStripe.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/IntentResolver/IntentResolver.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/Quickboard/Quickboard.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/DownloadProviderUi/DownloadProviderUi.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/GalaxyApps_OPEN/GalaxyApps_OPEN.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/NSFusedLocation_v6.0/NSFusedLocation_v6.0.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/GameHome/GameHome.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SecTelephonyProvider/SecTelephonyProvider.apk
+android.provider.action.EXTERNAL_PROVIDER_CHANGE
+android.intent.action.CONTENT_CHANGED
+com.samsung.android.messaging.intent.action.FINISH_RESTORE_MESSAGE
+com.samsung.android.intent.action.RESPONSE_BACKUP_MESSAGE
+com.samsung.android.intent.action.RESPONSE_RESTORE_MESSAGE
+com.samsung.android.intent.action.PROGRESS_RESTORE_MESSAGE
+com.samsung.android.intent.action.RESPONSE_BACKUP_MESSAGE_DB
+com.samsung.android.intent.action.RESPONSE_RESTORE_MESSAGE_DB
+com.samsung.android.intent.action.PROGRESS_RESTORE_MESSAGE_DB
+com.samsung.android.intent.action.RESPONSE_RESTORE_MESSAGE_FILE
+com.samsung.android.intent.action.PROGRESS_RESTORE_MESSAGE_FILE
+com.samsung.android.messaging.intent.action.TP_SYNC_FOR_RESTORE_MESSAGE
+com.samsung.android.messaging.intent.action.CLEAR_DB_BEFORE_TP_SYNC
+com.samsung.android.intent.action.NWKNAME_SELECT_DONE
+com.samsung.android.intent.action.SHOW_SELECT_APN_POPUP
+com.samsung.intent.action.CSC_CONNECTION_RESET_DONE
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/KnoxNetworkFilter/KnoxNetworkFilter.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/BlueLightFilter/BlueLightFilter.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/EnhancedAttestationAgent/EnhancedAttestationAgent.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/KnoxPushManager/KnoxPushManager.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/MultiSoundSetting/MultiSoundSetting.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/VideoScan/VideoScan.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/AREmojiEditor/AREmojiEditor.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle-tvdpi.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle-mdpi.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle-hdpi.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle-xxhdpi.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle-xhdpi.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle-ldpi.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/DocumentsUIGoogle/DocumentsUIGoogle-xxxhdpi.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/Accessibility/Accessibility.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/EasySetup/EasySetup.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/RubinVersion35/RubinVersion35.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SamsungCamera/SamsungCamera.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/FacAtFunction/FacAtFunction.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/GameOptimizingService/GameOptimizingService.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SecSetupWizard_Global/SecSetupWizard_Global.apk
+com.sec.android.app.secsetupwizard.SETUPWIZARD_COMPLETE
+com.sec.android.app.secsetupwizard.FOTA_SUW_COMPLETE
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/CSC/CSC.apk
+com.samsung.intent.action.CSC_MODEM_SETTING
+com.samsung.intent.action.PRE_CSC_MODEM_SETTING
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/CallBGProvider/CallBGProvider.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/AudioMirroring/AudioMirroring.apk
+androidx.mediarouter.media.actions.ACTION_ITEM_STATUS_CHANGED
+androidx.mediarouter.media.actions.ACTION_SESSION_STATUS_CHANGED
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/MediaSearch/MediaSearch.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/CIDManager/CIDManager.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/KnoxMposAgent/KnoxMposAgent.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/KnoxCore/KnoxCore.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SamsungExperienceService/SamsungExperienceService.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/Routines/Routines.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SamsungDialer/SamsungDialer.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/UserDictionaryProvider/UserDictionaryProvider.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/AutoDoodle/AutoDoodle.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SamsungCloudClient/SamsungCloudClient.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/knoxanalyticsagent/knoxanalyticsagent.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/CocktailBarService_v3.2/CocktailBarService_v3.2.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/SamsungSmartSuggestions/SamsungSmartSuggestions.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/EuiccService/EuiccService.apk
+com.samsung.euicc.action.EVENT_ENTRY_DATA
+com.samsung.euicc.action.PUSH
+com.samsung.euicc.FCM_TOKEN_EXPIRED
+### /home/dasha/thesis/remote/s23-101-u/system/system/priv-app/PhoneErrService/PhoneErrService.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/preload/Facebook_stub_preload/Facebook_stub_preload.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/preload/Tips/Tips.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/hidden/SmartTutor/SmartTutor.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/WifiRROverlayAppQC/WifiRROverlayAppQC.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/PacProcessor/PacProcessor.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/SetupWizardLegalProvider/SetupWizardLegalProvider.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/MhsAiService/MhsAiService.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/AASAservice/AASAservice.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/BasicDreams/BasicDreams.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/SamsungTTSVoice_hi_IN_f00/SamsungTTSVoice_hi_IN_f00.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/USBSettings/USBSettings.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/GalaxyResourceUpdater/GalaxyResourceUpdater.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/HoneyBoard/HoneyBoard.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/BrightnessBackupService/BrightnessBackupService.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/VideoEditorLite_Dream_N/VideoEditorLite_Dream_N.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/VoiceAccess/VoiceAccess.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/WifiRROverlayApp/WifiRROverlayApp.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/TetheringAutomation/TetheringAutomation.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/Rampart/Rampart.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/SamsungTTSVoice_es_ES_f00/SamsungTTSVoice_es_ES_f00.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/WifiRROverlayAppWifiLock/WifiRROverlayAppWifiLock.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/PhotoTable/PhotoTable.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/FilterProvider/FilterProvider.apk
+com.samsung.android.provider.filterprovider.INTENT_PACKAGE_ADDED
+com.samsung.android.provider.filterprovider.INTENT_PACKAGE_REMOVED
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/GearManagerStub/GearManagerStub.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/WifiRROverlayAppH2E/WifiRROverlayAppH2E.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/WlanTest/WlanTest.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/ARDrawing/ARDrawing.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/LiveTranscribe/LiveTranscribe.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/SilentLog/SilentLog.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/DictDiotekForSec/DictDiotekForSec.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/P2pAwareOverlay/P2pAwareOverlay.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/SamsungCalendar/SamsungCalendar.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/SamsungTTSVoice_th_TH_f00/SamsungTTSVoice_th_TH_f00.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/Stk2/Stk2.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/PartnerBookmarksProvider/PartnerBookmarksProvider.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/VTCameraSetting/VTCameraSetting.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/FactoryAirCommandManager/FactoryAirCommandManager.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/SamsungTTSVoice_es_MX_f00/SamsungTTSVoice_es_MX_f00.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/FactoryCameraFB/FactoryCameraFB.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/EasterEgg/EasterEgg.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/SmartTethering/SmartTethering.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/ChromeCustomizations/ChromeCustomizations.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/OCRDataProvider/OCRDataProvider.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/DRParser/DRParser.apk
+android.telephony.action.SECRET_CODE
+com.samsung.android.action.SECRET_CODE
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/Fast/Fast.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/EasymodeContactsWidget81/EasymodeContactsWidget81.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/PlayAutoInstallConfig/PlayAutoInstallConfig.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/ApexService/ApexService.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/SamsungTTSVoice_it_IT_f00/SamsungTTSVoice_it_IT_f00.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/FBAppManager_NS/FBAppManager_NS.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/HiyaService/HiyaService.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/ARCore/ARCore.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/VisualCloudCore/VisualCloudCore.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/SmartSwitchStub/SmartSwitchStub.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/SamsungTTS/SamsungTTS.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/HMT/HMT.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/SamsungTTSVoice_en_US_l03/SamsungTTSVoice_en_US_l03.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/Traceur/Traceur.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/SamsungOne/SamsungOne.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/WallpaperBackup/WallpaperBackup.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/NfwLocationPrivacy/NfwLocationPrivacy.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/AutomationTest_FB/AutomationTest_FB.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/DAAgent/DAAgent.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/KeyCustomizationInfoBackupService/KeyCustomizationInfoBackupService.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/SamsungPassAutofill_v1/SamsungPassAutofill_v1.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/Personalization/Personalization.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/SmartSwitchAgent/SmartSwitchAgent.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/ShortcutBackupService/ShortcutBackupService.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/ParentalCare/ParentalCare.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/SamsungWeather/SamsungWeather.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/BixbyWakeup/BixbyWakeup.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/UniversalMDMClient/UniversalMDMClient.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/SamsungTTSVoice_en_GB_f00/SamsungTTSVoice_en_GB_f00.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/SimMobilityKit/SimMobilityKit.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/MdecService/MdecService.apk
+com.samsung.android.mdecservice.SMS_SENT
+com.samsung.android.mdecservice.POST_TIMEOUT
+com.samsung.android.mdecservice.CMC_SEND_RCS
+com.samsung.android.mdecservice.CMC_PAYLOAD_PROGRESS
+com.samsung.android.mdecservice.CMC_PUSH_RECEIVED
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/ContainerService/ContainerService.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/SoundPicker_U/SoundPicker_U.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/VideoTrimmer/VideoTrimmer.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/ImsSettings/ImsSettings.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/UnifiedWFC/UnifiedWFC.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/sveservice/sveservice.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/MDMApp/MDMApp.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/SamsungTTSVoice_pl_PL_f00/SamsungTTSVoice_pl_PL_f00.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/SmartMirroring/SmartMirroring.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/MdxKitService/MdxKitService.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/BluetoothAgent/BluetoothAgent.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/SamsungTTSVoice_es_US_f00/SamsungTTSVoice_es_US_f00.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/WifiGuider/WifiGuider.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/WebManual/WebManual.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/Roboto/Roboto.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/GooglePrintRecommendationService/GooglePrintRecommendationService.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/BlockchainBasicKit/BlockchainBasicKit.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/WifiAiService/WifiAiService.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/ClipboardEdge/ClipboardEdge.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/SmartCapture/SmartCapture.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/PrintSpooler/PrintSpooler.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/HandwritingService/HandwritingService.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/SamsungTTSVoice_ru_RU_f00/SamsungTTSVoice_ru_RU_f00.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/SecureElement/SecureElement.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/EdmSimPinService/EdmSimPinService.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/BBCAgent/BBCAgent.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/BGMProvider/BGMProvider.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/BookmarkProvider/BookmarkProvider.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/SamsungTTSVoice_fr_FR_f00/SamsungTTSVoice_fr_FR_f00.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/Stk/Stk.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/VisionIntelligence3.7/VisionIntelligence3.7.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/SLocation/SLocation.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/CompanionDeviceManager/CompanionDeviceManager.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/ESEServiceAgent/ESEServiceAgent.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/ccinfo/ccinfo.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/GoogleExtShared/GoogleExtShared.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/AllshareMediaShare/AllshareMediaShare.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/NfcNci/NfcNci.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/SamsungTTSVoice_pt_BR_f00/SamsungTTSVoice_pt_BR_f00.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/CaptivePortalLoginGoogle/CaptivePortalLoginGoogle-xxxhdpi.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/CaptivePortalLoginGoogle/CaptivePortalLoginGoogle-mdpi.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/CaptivePortalLoginGoogle/CaptivePortalLoginGoogle-xhdpi.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/CaptivePortalLoginGoogle/CaptivePortalLoginGoogle-hdpi.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/CaptivePortalLoginGoogle/CaptivePortalLoginGoogle-tvdpi.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/CaptivePortalLoginGoogle/CaptivePortalLoginGoogle-xxhdpi.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/CaptivePortalLoginGoogle/CaptivePortalLoginGoogle.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/CaptivePortalLoginGoogle/CaptivePortalLoginGoogle-ldpi.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/AllShareAware/AllShareAware.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/MoccaMobile/MoccaMobile.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/Foundation/Foundation.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/MAPSAgent/MAPSAgent.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/KidsHome_Installer/KidsHome_Installer.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/CameraExtensionsProxy/CameraExtensionsProxy.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/KeyChain/KeyChain.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/SafetyInformation/SafetyInformation.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/BluetoothMidiService/BluetoothMidiService.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/CocktailQuickTool/CocktailQuickTool.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/EmergencyLauncher/EmergencyLauncher.apk
+com.samsung.intent.action.EMERGENCY_STATE_CHANGED
+com.samsung.intent.action.EMERGENCY_STATE_CHANGED_THEME
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/StickerCenter/StickerCenter.apk
+samsung.stickercenter.intent.PROCESS_COMPLETE
+samsung.stickercenter.intent.PRELOAD_PREPARED
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/SimAppDialog/SimAppDialog.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/SamsungTTSVoice_de_DE_f00/SamsungTTSVoice_de_DE_f00.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/SamsungTTSVoice_vi_VN_f00/SamsungTTSVoice_vi_VN_f00.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/CarrierDefaultApp/CarrierDefaultApp.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/SecHTMLViewer/SecHTMLViewer.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/EasyOneHand3/EasyOneHand3.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/CertInstaller/CertInstaller.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/SmartReminder/SmartReminder.apk
+### /home/dasha/thesis/remote/s23-101-u/system/system/app/DsmsAPK/DsmsAPK.apk
+### /home/dasha/thesis/remote/s23-101-u/system_ext/overlay/smartfaceservice_overlay.apk
+### /home/dasha/thesis/remote/s23-101-u/system_ext/priv-app/SetupWizard/SetupWizard.apk
+### /home/dasha/thesis/remote/s23-101-u/system_ext/priv-app/com.qualcomm.location/com.qualcomm.location.apk
+com.android.location.osagent.COUNTRY_SELECT_ACTION
+IzatService.restart
+### /home/dasha/thesis/remote/s23-101-u/system_ext/priv-app/AccessibilityMenu/AccessibilityMenu.apk
+### /home/dasha/thesis/remote/s23-101-u/system_ext/priv-app/GoogleFeedback/GoogleFeedback.apk
+### /home/dasha/thesis/remote/s23-101-u/system_ext/priv-app/SystemUI/SystemUI.apk
+com.samsung.keyguard.KEYGUARD_STATE_UPDATE
+com.samsung.keyguard.FINGERPRINT_UNLOCK_STATE
+com.samsung.keyguard.FACE_UNLOCK_STATE
+com.android.settingslib.action.REGISTER_SLICE_RECEIVER
+com.android.settingslib.action.UNREGISTER_SLICE_RECEIVER
+com.android.settings.flashlight.action.FLASHLIGHT_CHANGED
+com.android.systemui.action.ACTION_LAUNCH_MEDIA_OUTPUT_BROADCAST_DIALOG
+com.android.systemui.STARTED
+com.samsung.android.multiwindow.ADD_PAIR_APP_SHORTCUT_LAUNCHER
+com.samsung.android.multiwindow.ADD_PAIR_APP_SHORTCUT_EDGEPANEL
+com.samsung.android.intent.action.WALLPAPER_ENGINE_SHOWN
+com.samsung.Keyguard.UNLOCK_FMM_ALERT
+com.samsung.systemui.power.action.ACTION_AUTOMATIC_TEST_MODE_OFF
+com.samsung.systemui.power.action.ACTION_AUTOMATIC_TEST_MODE_ON
+com.samsung.systemui.power.action.LOW_BATTERY_DUMP
+com.samsung.systemui.power.action.WATER_POPUP_DISMISSED
+com.samsung.systemui.power.action.USB_DAMAGE_POPUP_SHOW
+com.samsung.systemui.qs.action.NETWORK_MODE_CHANGED
+com.sec.android.systemui.action.FLASHLIGHT_OFF
+com.samsung.systemui.statusbar.ANIMATING
+com.samsung.systemui.statusbar.COLLAPSED
+com.samsung.systemui.statusbar.EXPANDED
+com.samsung.systemui.statusbar.STARTED
+com.sec.android.FindingLostPhonePlus.RELEASE
+com.samsung.android.snote.SCREEN_OFF
+com.samsung.android.multiwindow.SEND_SPLIT_STATE_CHANGED
+com.samsung.keyguard.KEYGUARD_STATE_UPDATE
+com.samsung.keyguard.FINGERPRINT_UNLOCK_STATE
+com.samsung.keyguard.FACE_UNLOCK_STATE
+com.android.settingslib.action.REGISTER_SLICE_RECEIVER
+com.android.settingslib.action.UNREGISTER_SLICE_RECEIVER
+com.android.settings.flashlight.action.FLASHLIGHT_CHANGED
+com.android.systemui.action.ACTION_LAUNCH_MEDIA_OUTPUT_BROADCAST_DIALOG
+com.android.systemui.STARTED
+com.samsung.android.multiwindow.ADD_PAIR_APP_SHORTCUT_LAUNCHER
+com.samsung.android.multiwindow.ADD_PAIR_APP_SHORTCUT_EDGEPANEL
+com.samsung.android.intent.action.WALLPAPER_ENGINE_SHOWN
+com.samsung.Keyguard.UNLOCK_FMM_ALERT
+com.samsung.systemui.power.action.ACTION_AUTOMATIC_TEST_MODE_OFF
+com.samsung.systemui.power.action.ACTION_AUTOMATIC_TEST_MODE_ON
+com.samsung.systemui.power.action.LOW_BATTERY_DUMP
+com.samsung.systemui.power.action.WATER_POPUP_DISMISSED
+com.samsung.systemui.power.action.USB_DAMAGE_POPUP_SHOW
+com.samsung.systemui.qs.action.NETWORK_MODE_CHANGED
+com.sec.android.systemui.action.FLASHLIGHT_OFF
+com.samsung.systemui.statusbar.ANIMATING
+com.samsung.systemui.statusbar.COLLAPSED
+com.samsung.systemui.statusbar.EXPANDED
+com.samsung.systemui.statusbar.STARTED
+com.sec.android.FindingLostPhonePlus.RELEASE
+com.samsung.android.snote.SCREEN_OFF
+com.samsung.android.multiwindow.SEND_SPLIT_STATE_CHANGED
+### /home/dasha/thesis/remote/s23-101-u/system_ext/priv-app/StorageManager/StorageManager.apk
+### /home/dasha/thesis/remote/s23-101-u/system_ext/priv-app/CarrierConfig/CarrierConfig.apk
+### /home/dasha/thesis/remote/s23-101-u/system_ext/priv-app/GoogleServicesFramework/GoogleServicesFramework.apk
+### /home/dasha/thesis/remote/s23-101-u/system_ext/priv-app/WallpaperCropper/WallpaperCropper.apk
+### /home/dasha/thesis/remote/s23-101-u/system_ext/priv-app/com.qualcomm.qti.services.systemhelper/com.qualcomm.qti.services.systemhelper.apk
+### /home/dasha/thesis/remote/s23-101-u/system_ext/app/QdcmFF/QdcmFF.apk
+### /home/dasha/thesis/remote/s23-101-u/system_ext/app/QCC/QCC.apk
+com.qti.smq.Feedback.ENABLED
+com.qti.smq.Feedback.DISABLED
+com.qti.smq.Feedback.notification
+### /home/dasha/thesis/remote/s23-101-u/product/overlay/DisplayCutoutEmulationTall/DisplayCutoutEmulationTallOverlay.apk
+### /home/dasha/thesis/remote/s23-101-u/product/overlay/CellBroadcastServiceOverlay.apk
+### /home/dasha/thesis/remote/s23-101-u/product/overlay/SoftapOverlay6GHz/SoftapOverlay6GHz.apk
+### /home/dasha/thesis/remote/s23-101-u/product/overlay/FontNotoSerifSource/FontNotoSerifSourceOverlay.apk
+### /home/dasha/thesis/remote/s23-101-u/product/overlay/GoogleExtServicesConfigOverlay.apk
+### /home/dasha/thesis/remote/s23-101-u/product/overlay/NavigationBarModeGesturalNoHint/NavigationBarModeGesturalNoHintOverlay.apk
+### /home/dasha/thesis/remote/s23-101-u/product/overlay/CellBroadcastConfigOverlay.apk
+### /home/dasha/thesis/remote/s23-101-u/product/overlay/GmsConfigOverlayASI.apk
+### /home/dasha/thesis/remote/s23-101-u/product/overlay/DisplayCutoutEmulationHole/DisplayCutoutEmulationHoleOverlay.apk
+### /home/dasha/thesis/remote/s23-101-u/product/overlay/NavigationBarModeSamsungGesturalNoHint/NavigationBarModeSamsungGesturalNoHintOverlay.apk
+### /home/dasha/thesis/remote/s23-101-u/product/overlay/NavigationBarMode3Button/NavigationBarMode3ButtonOverlay.apk
+### /home/dasha/thesis/remote/s23-101-u/product/overlay/CaptivePortalLoginFrameworkOverlay.apk
+### /home/dasha/thesis/remote/s23-101-u/product/overlay/DisplayCutoutEmulationWaterfall/DisplayCutoutEmulationWaterfallOverlay.apk
+### /home/dasha/thesis/remote/s23-101-u/product/overlay/NavigationBarModeGestural/NavigationBarModeGesturalOverlay.apk
+### /home/dasha/thesis/remote/s23-101-u/product/overlay/GmsConfigOverlayPhotos.apk
+### /home/dasha/thesis/remote/s23-101-u/product/overlay/SoftapOverlay/SoftapOverlay.apk
+### /home/dasha/thesis/remote/s23-101-u/product/overlay/GooglePermissionControllerOverlay.apk
+### /home/dasha/thesis/remote/s23-101-u/product/overlay/GmsConfigOverlayCommon.apk
+### /home/dasha/thesis/remote/s23-101-u/product/overlay/NavigationBarModeSamsungGestural/NavigationBarModeSamsungGesturalOverlay.apk
+### /home/dasha/thesis/remote/s23-101-u/product/overlay/NavigationBarModeGesturalExtraWideBack/NavigationBarModeGesturalOverlayExtraWideBack.apk
+### /home/dasha/thesis/remote/s23-101-u/product/overlay/NavigationBarModeGesturalWideBack/NavigationBarModeGesturalOverlayWideBack.apk
+### /home/dasha/thesis/remote/s23-101-u/product/overlay/DisplayCutoutEmulationCorner/DisplayCutoutEmulationCornerOverlay.apk
+### /home/dasha/thesis/remote/s23-101-u/product/overlay/ModuleMetadataGoogleOverlay.apk
+### /home/dasha/thesis/remote/s23-101-u/product/overlay/NotesRoleEnabled/NotesRoleEnabledOverlay.apk
+### /home/dasha/thesis/remote/s23-101-u/product/overlay/SoftapOverlayDualAp/SoftapOverlayDualAp.apk
+### /home/dasha/thesis/remote/s23-101-u/product/overlay/GooglePermissionControllerFrameworkOverlay.apk
+### /home/dasha/thesis/remote/s23-101-u/product/overlay/GmsConfigOverlaySearchSelector.apk
+### /home/dasha/thesis/remote/s23-101-u/product/overlay/SoftapOverlayQC/SoftapOverlayQC.apk
+### /home/dasha/thesis/remote/s23-101-u/product/overlay/DisplayCutoutEmulationDouble/DisplayCutoutEmulationDoubleOverlay.apk
+### /home/dasha/thesis/remote/s23-101-u/product/overlay/GmsQSfastpairOverlay.apk
+### /home/dasha/thesis/remote/s23-101-u/product/overlay/GmsConfigOverlayGeotz.apk
+### /home/dasha/thesis/remote/s23-101-u/product/overlay/OneHandedModeGestural/OneHandedModeGesturalOverlay.apk
+### /home/dasha/thesis/remote/s23-101-u/product/overlay/TransparentNavigationBar/TransparentNavigationBarOverlay.apk
+### /home/dasha/thesis/remote/s23-101-u/product/overlay/framework-res__auto_generated_rro_product.apk
+### /home/dasha/thesis/remote/s23-101-u/product/overlay/GoogleDocumentsUIOverlay.apk
+### /home/dasha/thesis/remote/s23-101-u/product/overlay/GmsConfigOverlayGSA.apk
+### /home/dasha/thesis/remote/s23-101-u/product/overlay/SoftapOverlayOWE/SoftapOverlayOWE.apk
+### /home/dasha/thesis/remote/s23-101-u/product/overlay/NavigationBarModeGesturalNarrowBack/NavigationBarModeGesturalOverlayNarrowBack.apk
+### /home/dasha/thesis/remote/s23-101-u/product/priv-app/PrivateComputeServices/PrivateComputeServices.apk
+### /home/dasha/thesis/remote/s23-101-u/product/priv-app/GoogleOneTimeInitializer/GoogleOneTimeInitializer.apk
+### /home/dasha/thesis/remote/s23-101-u/product/priv-app/Phonesky/Phonesky.apk
+### /home/dasha/thesis/remote/s23-101-u/product/priv-app/SearchSelector/SearchSelector.apk
+### /home/dasha/thesis/remote/s23-101-u/product/priv-app/AndroidAutoStub/AndroidAutoStub.apk
+### /home/dasha/thesis/remote/s23-101-u/product/priv-app/ConfigUpdater/ConfigUpdater.apk
+### /home/dasha/thesis/remote/s23-101-u/product/priv-app/AiWallpaper/AiWallpaper.apk
+### /home/dasha/thesis/remote/s23-101-u/product/priv-app/GooglePartnerSetup/GooglePartnerSetup.apk
+### /home/dasha/thesis/remote/s23-101-u/product/priv-app/Velvet/Velvet.apk
+### /home/dasha/thesis/remote/s23-101-u/product/priv-app/AndroidSystemIntelligence/AndroidSystemIntelligence.apk
+### /home/dasha/thesis/remote/s23-101-u/product/priv-app/HotwordEnrollmentXGoogleEx4HEXAGON/HotwordEnrollmentXGoogleEx4HEXAGON.apk
+### /home/dasha/thesis/remote/s23-101-u/product/priv-app/CarrierWifi/CarrierWifi.apk
+### /home/dasha/thesis/remote/s23-101-u/product/priv-app/GoogleRestore/GoogleRestore.apk
+### /home/dasha/thesis/remote/s23-101-u/product/priv-app/FamilyLinkParentalControls/FamilyLinkParentalControls.apk
+### /home/dasha/thesis/remote/s23-101-u/product/priv-app/GmsCore/m/independent/AndroidPlatformServices.apk
+### /home/dasha/thesis/remote/s23-101-u/product/priv-app/GmsCore/GmsCore.apk
+### /home/dasha/thesis/remote/s23-101-u/product/priv-app/Messages/Messages.apk
+### /home/dasha/thesis/remote/s23-101-u/product/priv-app/Turbo/Turbo.apk
+### /home/dasha/thesis/remote/s23-101-u/product/priv-app/HotwordEnrollmentOKGoogleEx4HEXAGON/HotwordEnrollmentOKGoogleEx4HEXAGON.apk
+### /home/dasha/thesis/remote/s23-101-u/product/app/WifiRROverlayAppIncreaseScanInterval/WifiRROverlayAppIncreaseScanInterval.apk
+### /home/dasha/thesis/remote/s23-101-u/product/app/com.google.android.modulemetadata/com.google.android.modulemetadata.apk
+### /home/dasha/thesis/remote/s23-101-u/product/app/Gmail2/Gmail2.apk
+### /home/dasha/thesis/remote/s23-101-u/product/app/ConnectivityUxOverlay/ConnectivityUxOverlay.apk
+### /home/dasha/thesis/remote/s23-101-u/product/app/AssistantShell/AssistantShell.apk
+### /home/dasha/thesis/remote/s23-101-u/product/app/com.google.mainline.adservices/com.google.mainline.adservices.apk
+### /home/dasha/thesis/remote/s23-101-u/product/app/Chrome/Chrome.apk
+### /home/dasha/thesis/remote/s23-101-u/product/app/Maps/Maps.apk
+### /home/dasha/thesis/remote/s23-101-u/product/app/DuoStub/DuoStub.apk
+### /home/dasha/thesis/remote/s23-101-u/product/app/GoogleCalendarSyncAdapter/GoogleCalendarSyncAdapter.apk
+### /home/dasha/thesis/remote/s23-101-u/product/app/WcmUrlsNetworkStackOverlay/WcmUrlsNetworkStackOverlay.apk
+### /home/dasha/thesis/remote/s23-101-u/product/app/SpeechServicesByGoogle/SpeechServicesByGoogle.apk
+### /home/dasha/thesis/remote/s23-101-u/product/app/TrichromeLibrary/TrichromeLibrary.apk
+### /home/dasha/thesis/remote/s23-101-u/product/app/com.google.mainline.telemetry/com.google.mainline.telemetry.apk
+### /home/dasha/thesis/remote/s23-101-u/product/app/WebViewGoogle/WebViewGoogle.apk
+### /home/dasha/thesis/remote/s23-101-u/product/app/NetworkStackOverlay/NetworkStackOverlay.apk
+### /home/dasha/thesis/remote/s23-101-u/product/app/WifiRROverlayAppDecreaseScanInterval/WifiRROverlayAppDecreaseScanInterval.apk
+### /home/dasha/thesis/remote/s23-101-u/product/app/YouTube/YouTube.apk
+### /home/dasha/thesis/remote/s23-101-u/product/app/GoogleLocationHistory/GoogleLocationHistory.apk
+### /home/dasha/thesis/remote/s23-101-u/vendor/overlay/TetheringOverlay_Gsi/TetheringOverlay_Gsi.apk
+### /home/dasha/thesis/remote/s23-101-u/vendor/overlay/SoftapOverlayWpa3/SoftapOverlayWpa3.apk
+### /home/dasha/thesis/remote/s23-101-u/vendor/overlay/TetheringOverlay/TetheringOverlay.apk
+### /home/dasha/thesis/remote/s23-101-u/vendor/overlay/ConnectivityOverlay/ConnectivityOverlay.apk
+### /home/dasha/thesis/remote/s23-101-u/vendor/overlay/framework-res__auto_generated_rro_vendor.apk
+### /home/dasha/thesis/remote/s23-101-u/vendor/app/TxPwrAdmin/TxPwrAdmin.apk
+### /home/dasha/thesis/remote/s23-101-u/vendor/app/com.qualcomm.qti.gpudrivers.kalama.api33/com.qualcomm.qti.gpudrivers.kalama.api33.apk
+### /home/dasha/thesis/remote/s23-101-u/vendor/app/TimeService/TimeService.apk
