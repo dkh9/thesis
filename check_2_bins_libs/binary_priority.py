@@ -13,7 +13,7 @@ def is_root_user_or_group(entry):
     return rc.get("user") == "root" or rc.get("group") == "root"
 
 if len(sys.argv) != 3:
-    print("Usage: script.py <input_json> <output_json>")
+    print("Usage: binary_priority.py <input_json> <output_json>")
     sys.exit(1)
 
 input_path = sys.argv[1]

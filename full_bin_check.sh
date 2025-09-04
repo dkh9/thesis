@@ -9,6 +9,8 @@ fw1=$1
 fw2=$2
 diffname=$3
 
+mkdir check_2_bins_libs/intermediate_files/
+
 echo "Unpacking apex...."
 ./unpack_apexes.sh $fw1
 ./unpack_apexes.sh $fw2

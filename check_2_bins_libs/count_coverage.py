@@ -45,6 +45,7 @@ def count_bin_and_lib_json_entries(bin_json_path: Path):
         bin_count = 0
         lib_count = 0
         tee_count = 0
+        tee_lib_count = 0
         rc_bin_count = 0
         rc_lib_count = 0
         hardening_diff_count = 0
@@ -62,6 +63,8 @@ def count_bin_and_lib_json_entries(bin_json_path: Path):
 
             if is_lib:
                 lib_count += 1
+                if entry.get("TEE"):
+                    tee_lib_count += 1
                 if entry.get("Mentioned in .rc"):
                     rc_lib_count += 1
             else:
@@ -76,7 +79,8 @@ def count_bin_and_lib_json_entries(bin_json_path: Path):
 
         return (
             bin_count, lib_count,
-            tee_count, rc_bin_count, rc_lib_count, hardening_diff_count,
+            tee_count, tee_lib_count,
+            rc_bin_count, rc_lib_count, hardening_diff_count,
             total_bin_count, total_lib_count
         )
 
@@ -89,7 +93,7 @@ def show_stats(name, json_count, actual_count):
 
 def main():
     if len(sys.argv) != 4:
-        print("Usage: script.py <firmware_path> <apk_sorted.json> <bin_sorted.json>")
+        print("Usage: count_coverage.py <firmware_path> <apk_sorted.json> <bin_sorted.json>")
         sys.exit(1)
 
     firmware_path = Path(sys.argv[1])
@@ -105,7 +109,8 @@ def main():
     actual_bin_count, actual_lib_count = count_bins_and_libs(firmware_path)
     (
         bin_json_count, lib_json_count,
-        tee_count, rc_bin_count, rc_lib_count, hardening_diff_count,
+        tee_count, tee_lib_count,
+        rc_bin_count, rc_lib_count, hardening_diff_count,
         total_bin_json_count, total_lib_json_count
     ) = count_bin_and_lib_json_entries(bin_json_path)
 
@@ -115,6 +120,7 @@ def main():
     # Additional stats
     print("Additional binary and library stats from JSON (excluding identical):")
     print(f"  Binaries with TEE:                     {tee_count}")
+    print(f"  Libraries with TEE:                    {tee_lib_count}")
     print(f"  Binaries with 'Mentioned in .rc':      {rc_bin_count}")
     print(f"  Libraries with 'Mentioned in .rc':     {rc_lib_count}")
     print(f"  Entries with non-identical hardening:  {hardening_diff_count}")

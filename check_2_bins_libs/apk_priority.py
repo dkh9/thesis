@@ -3,7 +3,7 @@ import json
 import sys
 
 if len(sys.argv) != 3:
-    print("Usage: script.py <input_json> <output_json>")
+    print("Usage: apk_priority.py <input_json> <output_json>")
     sys.exit(1)
 
 input_path = sys.argv[1]
